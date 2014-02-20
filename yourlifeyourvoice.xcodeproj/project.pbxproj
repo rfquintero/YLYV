@@ -69,6 +69,8 @@
 		4525190718B68CE400D1B561 /* BYCEntryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4525190518B68CE400D1B561 /* BYCEntryView.m */; };
 		4525192318B6976C00D1B561 /* BYCEntryRowLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4525192218B6976C00D1B561 /* BYCEntryRowLayoutView.m */; };
 		4525192418B6976C00D1B561 /* BYCEntryRowLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4525192218B6976C00D1B561 /* BYCEntryRowLayoutView.m */; };
+		4525192918B6A2A400D1B561 /* BYCSideViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4525192818B6A2A400D1B561 /* BYCSideViewCell.m */; };
+		4525192A18B6A2A400D1B561 /* BYCSideViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4525192818B6A2A400D1B561 /* BYCSideViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +139,8 @@
 		4525192118B6976C00D1B561 /* BYCEntryRowLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCEntryRowLayoutView.h; sourceTree = "<group>"; };
 		4525192218B6976C00D1B561 /* BYCEntryRowLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCEntryRowLayoutView.m; sourceTree = "<group>"; };
 		4525192518B69E2F00D1B561 /* BYCConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYCConstants.h; sourceTree = "<group>"; };
+		4525192718B6A2A400D1B561 /* BYCSideViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCSideViewCell.h; sourceTree = "<group>"; };
+		4525192818B6A2A400D1B561 /* BYCSideViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCSideViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,8 +283,6 @@
 			children = (
 				452518AE18B679A200D1B561 /* BYCViewController.h */,
 				452518AF18B679A200D1B561 /* BYCViewController.m */,
-				452518B618B67AC100D1B561 /* BYCSplitViewController.h */,
-				452518B718B67AC100D1B561 /* BYCSplitViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -290,8 +292,6 @@
 			children = (
 				452518F618B68B3D00D1B561 /* BYCMoodView.h */,
 				452518F718B68B3D00D1B561 /* BYCMoodView.m */,
-				452518C818B67D9200D1B561 /* BYCSideView.h */,
-				452518C918B67D9200D1B561 /* BYCSideView.m */,
 				452518CC18B67F3C00D1B561 /* BYCNavigationView.h */,
 				452518CD18B67F3C00D1B561 /* BYCNavigationView.m */,
 				452518D018B6822800D1B561 /* BYCContentView.h */,
@@ -325,6 +325,7 @@
 		452518BB18B67BAA00D1B561 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				4525192618B6A27E00D1B561 /* Split Controller */,
 				4525192518B69E2F00D1B561 /* BYCConstants.h */,
 				452518AD18B6777900D1B561 /* Models */,
 				452518AC18B6777600D1B561 /* Views */,
@@ -368,6 +369,19 @@
 			children = (
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		4525192618B6A27E00D1B561 /* Split Controller */ = {
+			isa = PBXGroup;
+			children = (
+				452518C818B67D9200D1B561 /* BYCSideView.h */,
+				452518C918B67D9200D1B561 /* BYCSideView.m */,
+				452518B618B67AC100D1B561 /* BYCSplitViewController.h */,
+				452518B718B67AC100D1B561 /* BYCSplitViewController.m */,
+				4525192718B6A2A400D1B561 /* BYCSideViewCell.h */,
+				4525192818B6A2A400D1B561 /* BYCSideViewCell.m */,
+			);
+			name = "Split Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -500,6 +514,7 @@
 				4525188118B6750800D1B561 /* main.m in Sources */,
 				452518CE18B67F3C00D1B561 /* BYCNavigationView.m in Sources */,
 				4525192318B6976C00D1B561 /* BYCEntryRowLayoutView.m in Sources */,
+				4525192918B6A2A400D1B561 /* BYCSideViewCell.m in Sources */,
 				4525188518B6750800D1B561 /* BYCAppDelegate.m in Sources */,
 				452518B418B679DE00D1B561 /* BYCApplicationState.m in Sources */,
 				452518D218B6822800D1B561 /* BYCContentView.m in Sources */,
@@ -516,6 +531,7 @@
 				4525189A18B6750800D1B561 /* yourlifeyourvoiceTests.m in Sources */,
 				452518B518B679DE00D1B561 /* BYCApplicationState.m in Sources */,
 				452518BF18B67BD400D1B561 /* BYCUI.m in Sources */,
+				4525192A18B6A2A400D1B561 /* BYCSideViewCell.m in Sources */,
 				452518C318B67BE800D1B561 /* UIView+Layouts.m in Sources */,
 				452518B118B679A200D1B561 /* BYCViewController.m in Sources */,
 				452518CB18B67D9200D1B561 /* BYCSideView.m in Sources */,

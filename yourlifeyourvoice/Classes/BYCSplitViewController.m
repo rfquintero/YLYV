@@ -3,9 +3,9 @@
 #import "BYCSideView.h"
 #import "BYCConstants.h"
 
-#define kSidebarMargin 100
+#define kSidebarMargin 120
 
-@interface BYCSplitViewController ()
+@interface BYCSplitViewController ()<BYCSideViewDelegate>
 @property (nonatomic) BYCApplicationState *applicationState;
 @property (nonatomic) UINavigationController *navController;
 @property (nonatomic) BYCSideView *sideView;
@@ -31,6 +31,7 @@
     
     self.sideView = [[BYCSideView alloc] initWithFrame:CGRectZero];
     self.sideView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+    self.sideView.delegate = self;
     
     self.touchBlocker = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.touchBlocker addTarget:self action:@selector(hideSidebar) forControlEvents:UIControlEventTouchUpInside];

@@ -1,5 +1,9 @@
 #import <UIKit/UIKit.h>
 
-@interface BYCSideView : UIView
+@protocol BYCSideViewDelegate <NSObject>
+-(void)hideSidebar;
+@end
 
+@interface BYCSideView : UIView
+-(void)setDelegate:(id<BYCSideViewDelegate>)delegate;
 @end
