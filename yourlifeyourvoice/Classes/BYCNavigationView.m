@@ -17,8 +17,8 @@
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        self.title = [BYCUI labelWithBoldFontSize:20.0f];
-        self.title.textColor = [UIColor whiteColor];
+        self.title = [BYCUI labelWithBoldFontSize:18.0f];
+        self.title.textColor = [UIColor blackColor];
         
         self.barView = [[UIView alloc] initWithFrame:CGRectZero];
         self.barView.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.8f];
@@ -48,8 +48,9 @@
     [self.rightButton centerVerticallyAtX:width-rightSize.width inBounds:self.barView.bounds withSize:rightSize offsetY:0];
     
     CGFloat titleWidth = CGRectGetMinX(self.rightButton.frame) - CGRectGetMaxX(self.leftButton.frame)-20.0f;
-    [self.title centerInBounds:self.barView.bounds offsetX:0 offsetY:0 thatFits:CGSizeMake(titleWidth, kBarHeight)];
-    [self.titleImage centerInBounds:self.barView.bounds offsetX:0 offsetY:0];
+    CGFloat titleOffsetX = CGRectGetMaxX(self.leftButton.frame)+10.0f;
+    [self.title centerVerticallyAtX:titleOffsetX inBounds:self.barView.bounds thatFits:CGSizeMake(titleWidth, kBarHeight)];
+    [self.titleImage centerVerticallyAtX:titleOffsetX inBounds:self.barView.bounds thatFits:CGSizeMake(titleWidth, kBarHeight)];
     
     self.contentView.frame = self.bounds;
 }
@@ -77,6 +78,7 @@
     [_contentView removeFromSuperview];
     _contentView = contentView;
     [self addSubview:contentView];
+    [self bringSubviewToFront:self.barView];
     [self setNeedsLayout];
 }
 

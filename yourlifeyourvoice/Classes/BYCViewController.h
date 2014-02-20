@@ -9,4 +9,5 @@
 @property (nonatomic, readonly) BYCNavigationView *navView;
 
 -(id)initWithApplicationState:(BYCApplicationState*)applicationState;
+-(void)setupMenuButton;
 @end

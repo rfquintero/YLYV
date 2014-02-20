@@ -9,6 +9,7 @@
 #import "BYCAppDelegate.h"
 #import "BYCApplicationState.h"
 #import "BYCSplitViewController.h"
+#import "BYCEntryViewController.h"
 
 @implementation BYCAppDelegate
 
@@ -18,8 +19,7 @@
     BYCApplicationState *applicationState = [[BYCApplicationState alloc] init];
     
     BYCSplitViewController *splitViewController = [[BYCSplitViewController alloc] initWithApplicationState:applicationState];
-    
-    UIViewController *vc = [[UIViewController alloc] init]; vc.title = @"Yay"; vc.view.backgroundColor = [UIColor blueColor];
+    UIViewController *vc = [[BYCEntryViewController alloc] initWithApplicationState:applicationState];
     splitViewController.mainViewController = vc;
     
     self.window.rootViewController = splitViewController;

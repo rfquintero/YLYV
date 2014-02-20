@@ -1,6 +1,7 @@
 #import "BYCSplitViewController.h"
 #import "BYCUI.h"
 #import "BYCSideView.h"
+#import "BYCConstants.h"
 
 #define kSidebarMargin 100
 
@@ -38,6 +39,11 @@
     [self.view addSubview:self.mainView];
     [self.view addSubview:self.touchBlocker];
     [self.view addSubview:self.sideView];
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showSidebar) name:BYCNotificationShowMenu object:self.navController];
 }
 
 -(void)setMainViewController:(UIViewController*)viewController {
