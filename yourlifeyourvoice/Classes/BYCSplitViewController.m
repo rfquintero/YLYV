@@ -2,6 +2,7 @@
 #import "BYCUI.h"
 #import "BYCSideView.h"
 #import "BYCConstants.h"
+#import "BYCViewController.h"
 
 #define kSidebarMargin 120
 
@@ -71,6 +72,7 @@
 }
 
 -(void)showSidebar:(BOOL)show animated:(BOOL)animated {
+    [(BYCViewController*)[self.navController topViewController] sidebarShown:show animated:animated];
     if(animated) {
         [UIView animateWithDuration:0.3 animations:^{
             [self layoutSidebarShown:show];

@@ -35,4 +35,8 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:BYCNotificationShowMenu object:self.navigationController];
 }
 
+-(void)sidebarShown:(BOOL)shown animated:(BOOL)animated {
+    [self.navView setRightButtonHidden:shown animated:animated];
+}
+
 @end

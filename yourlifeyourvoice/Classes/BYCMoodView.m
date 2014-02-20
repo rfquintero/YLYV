@@ -52,6 +52,7 @@
 
 -(void)setTextHidden:(BOOL)hidden animated:(BOOL)animated {
     if(animated) {
+        self.text.hidden = NO;
         [UIView animateWithDuration:0.3f animations:^{
             self.text.alpha = hidden ? 0.0f : 1.0f;
         } completion:^(BOOL finished) {

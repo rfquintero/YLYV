@@ -10,4 +10,6 @@
 
 -(id)initWithApplicationState:(BYCApplicationState*)applicationState;
 -(void)setupMenuButton;
+
+-(void)sidebarShown:(BOOL)shown animated:(BOOL)animated;
 @end

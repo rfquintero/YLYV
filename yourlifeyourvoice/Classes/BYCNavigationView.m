@@ -106,6 +106,7 @@
 
 -(void)setButton:(UIButton*)button hidden:(BOOL)hidden animated:(BOOL)animated {
     if(animated) {
+        button.hidden = NO;
         [UIView animateWithDuration:0.3f animations:^{
             button.alpha = hidden ? 0.0f : 1.0f;
         } completion:^(BOOL finished) {
