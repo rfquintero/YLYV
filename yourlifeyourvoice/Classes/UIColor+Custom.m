@@ -13,6 +13,7 @@ return colorName; \
 
 @implementation UIColor (Custom)
 
+CREATE_HEX_COLOR(bgLightGray, @"#F4F4F4");
 
 + (CGFloat)colorComponentFrom:(NSString *)string start:(NSUInteger)start length:(NSUInteger)length {
     NSString *substring = [string substringWithRange:NSMakeRange(start, length)];
