@@ -81,6 +81,8 @@
 				4525189318B6750800D1B561 /* yourlifeyourvoiceTests */,
 				4525187318B6750800D1B561 /* Frameworks */,
 				4525187218B6750800D1B561 /* Products */,
+				452518AA18B6774E00D1B561 /* Resources */,
+				452518A918B6774E00D1B561 /* Fonts */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +109,7 @@
 		4525187A18B6750800D1B561 /* yourlifeyourvoice */ = {
 			isa = PBXGroup;
 			children = (
+				452518A818B6774E00D1B561 /* Classes */,
 				4525188318B6750800D1B561 /* BYCAppDelegate.h */,
 				4525188418B6750800D1B561 /* BYCAppDelegate.m */,
 				4525188618B6750800D1B561 /* Images.xcassets */,
@@ -142,6 +145,53 @@
 				4525189618B6750800D1B561 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		452518A818B6774E00D1B561 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				452518AD18B6777900D1B561 /* Models */,
+				452518AC18B6777600D1B561 /* Views */,
+				452518AB18B6777000D1B561 /* Controllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		452518A918B6774E00D1B561 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Fonts;
+			path = yourlifeyourvoice/Fonts;
+			sourceTree = "<group>";
+		};
+		452518AA18B6774E00D1B561 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			path = yourlifeyourvoice/Resources;
+			sourceTree = "<group>";
+		};
+		452518AB18B6777000D1B561 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		452518AC18B6777600D1B561 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		452518AD18B6777900D1B561 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,6 +415,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "yourlifeyourvoice/yourlifeyourvoice-Prefix.pch";
 				INFOPLIST_FILE = "yourlifeyourvoice/yourlifeyourvoice-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -378,6 +429,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "yourlifeyourvoice/yourlifeyourvoice-Prefix.pch";
 				INFOPLIST_FILE = "yourlifeyourvoice/yourlifeyourvoice-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
