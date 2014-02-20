@@ -19,6 +19,20 @@
 		4525189018B6750800D1B561 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4525187818B6750800D1B561 /* UIKit.framework */; };
 		4525189818B6750800D1B561 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4525189618B6750800D1B561 /* InfoPlist.strings */; };
 		4525189A18B6750800D1B561 /* yourlifeyourvoiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4525189918B6750800D1B561 /* yourlifeyourvoiceTests.m */; };
+		452518B018B679A200D1B561 /* BYCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452518AF18B679A200D1B561 /* BYCViewController.m */; };
+		452518B118B679A200D1B561 /* BYCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452518AF18B679A200D1B561 /* BYCViewController.m */; };
+		452518B418B679DE00D1B561 /* BYCApplicationState.m in Sources */ = {isa = PBXBuildFile; fileRef = 452518B318B679DE00D1B561 /* BYCApplicationState.m */; };
+		452518B518B679DE00D1B561 /* BYCApplicationState.m in Sources */ = {isa = PBXBuildFile; fileRef = 452518B318B679DE00D1B561 /* BYCApplicationState.m */; };
+		452518B818B67AC100D1B561 /* BYCSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452518B718B67AC100D1B561 /* BYCSplitViewController.m */; };
+		452518B918B67AC100D1B561 /* BYCSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452518B718B67AC100D1B561 /* BYCSplitViewController.m */; };
+		452518BE18B67BD400D1B561 /* BYCUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 452518BD18B67BD400D1B561 /* BYCUI.m */; };
+		452518BF18B67BD400D1B561 /* BYCUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 452518BD18B67BD400D1B561 /* BYCUI.m */; };
+		452518C218B67BE800D1B561 /* UIView+Layouts.m in Sources */ = {isa = PBXBuildFile; fileRef = 452518C118B67BE800D1B561 /* UIView+Layouts.m */; };
+		452518C318B67BE800D1B561 /* UIView+Layouts.m in Sources */ = {isa = PBXBuildFile; fileRef = 452518C118B67BE800D1B561 /* UIView+Layouts.m */; };
+		452518C618B67BF400D1B561 /* UIColor+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 452518C518B67BF400D1B561 /* UIColor+Custom.m */; };
+		452518C718B67BF400D1B561 /* UIColor+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 452518C518B67BF400D1B561 /* UIColor+Custom.m */; };
+		452518CA18B67D9200D1B561 /* BYCSideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 452518C918B67D9200D1B561 /* BYCSideView.m */; };
+		452518CB18B67D9200D1B561 /* BYCSideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 452518C918B67D9200D1B561 /* BYCSideView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +62,20 @@
 		4525189518B6750800D1B561 /* yourlifeyourvoiceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "yourlifeyourvoiceTests-Info.plist"; sourceTree = "<group>"; };
 		4525189718B6750800D1B561 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4525189918B6750800D1B561 /* yourlifeyourvoiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = yourlifeyourvoiceTests.m; sourceTree = "<group>"; };
+		452518AE18B679A200D1B561 /* BYCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCViewController.h; sourceTree = "<group>"; };
+		452518AF18B679A200D1B561 /* BYCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCViewController.m; sourceTree = "<group>"; };
+		452518B218B679DE00D1B561 /* BYCApplicationState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCApplicationState.h; sourceTree = "<group>"; };
+		452518B318B679DE00D1B561 /* BYCApplicationState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCApplicationState.m; sourceTree = "<group>"; };
+		452518B618B67AC100D1B561 /* BYCSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCSplitViewController.h; sourceTree = "<group>"; };
+		452518B718B67AC100D1B561 /* BYCSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCSplitViewController.m; sourceTree = "<group>"; };
+		452518BC18B67BD400D1B561 /* BYCUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCUI.h; sourceTree = "<group>"; };
+		452518BD18B67BD400D1B561 /* BYCUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCUI.m; sourceTree = "<group>"; };
+		452518C018B67BE800D1B561 /* UIView+Layouts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layouts.h"; sourceTree = "<group>"; };
+		452518C118B67BE800D1B561 /* UIView+Layouts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layouts.m"; sourceTree = "<group>"; };
+		452518C418B67BF400D1B561 /* UIColor+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Custom.h"; sourceTree = "<group>"; };
+		452518C518B67BF400D1B561 /* UIColor+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Custom.m"; sourceTree = "<group>"; };
+		452518C818B67D9200D1B561 /* BYCSideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCSideView.h; sourceTree = "<group>"; };
+		452518C918B67D9200D1B561 /* BYCSideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCSideView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,9 +178,8 @@
 		452518A818B6774E00D1B561 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				452518AD18B6777900D1B561 /* Models */,
-				452518AC18B6777600D1B561 /* Views */,
-				452518AB18B6777000D1B561 /* Controllers */,
+				452518BB18B67BAA00D1B561 /* Common */,
+				452518BA18B67BA200D1B561 /* UI */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -176,6 +203,10 @@
 		452518AB18B6777000D1B561 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				452518AE18B679A200D1B561 /* BYCViewController.h */,
+				452518AF18B679A200D1B561 /* BYCViewController.m */,
+				452518B618B67AC100D1B561 /* BYCSplitViewController.h */,
+				452518B718B67AC100D1B561 /* BYCSplitViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -183,6 +214,8 @@
 		452518AC18B6777600D1B561 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				452518C818B67D9200D1B561 /* BYCSideView.h */,
+				452518C918B67D9200D1B561 /* BYCSideView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -190,8 +223,33 @@
 		452518AD18B6777900D1B561 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				452518B218B679DE00D1B561 /* BYCApplicationState.h */,
+				452518B318B679DE00D1B561 /* BYCApplicationState.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		452518BA18B67BA200D1B561 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				452518BC18B67BD400D1B561 /* BYCUI.h */,
+				452518BD18B67BD400D1B561 /* BYCUI.m */,
+				452518C018B67BE800D1B561 /* UIView+Layouts.h */,
+				452518C118B67BE800D1B561 /* UIView+Layouts.m */,
+				452518C418B67BF400D1B561 /* UIColor+Custom.h */,
+				452518C518B67BF400D1B561 /* UIColor+Custom.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		452518BB18B67BAA00D1B561 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				452518AD18B6777900D1B561 /* Models */,
+				452518AC18B6777600D1B561 /* Views */,
+				452518AB18B6777000D1B561 /* Controllers */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,8 +348,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				452518BE18B67BD400D1B561 /* BYCUI.m in Sources */,
+				452518CA18B67D9200D1B561 /* BYCSideView.m in Sources */,
+				452518C218B67BE800D1B561 /* UIView+Layouts.m in Sources */,
+				452518B018B679A200D1B561 /* BYCViewController.m in Sources */,
 				4525188118B6750800D1B561 /* main.m in Sources */,
 				4525188518B6750800D1B561 /* BYCAppDelegate.m in Sources */,
+				452518B418B679DE00D1B561 /* BYCApplicationState.m in Sources */,
+				452518C618B67BF400D1B561 /* UIColor+Custom.m in Sources */,
+				452518B818B67AC100D1B561 /* BYCSplitViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +364,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				452518B918B67AC100D1B561 /* BYCSplitViewController.m in Sources */,
 				4525189A18B6750800D1B561 /* yourlifeyourvoiceTests.m in Sources */,
+				452518B518B679DE00D1B561 /* BYCApplicationState.m in Sources */,
+				452518BF18B67BD400D1B561 /* BYCUI.m in Sources */,
+				452518C318B67BE800D1B561 /* UIView+Layouts.m in Sources */,
+				452518B118B679A200D1B561 /* BYCViewController.m in Sources */,
+				452518CB18B67D9200D1B561 /* BYCSideView.m in Sources */,
+				452518C718B67BF400D1B561 /* UIColor+Custom.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
