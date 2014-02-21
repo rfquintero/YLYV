@@ -75,6 +75,10 @@
 		4525192D18B6CF0000D1B561 /* WalterTurncoat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4525192B18B6CF0000D1B561 /* WalterTurncoat.ttf */; };
 		4525193018B70D8900D1B561 /* BYCAddEntryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4525192F18B70D8900D1B561 /* BYCAddEntryView.m */; };
 		4525193118B70D8900D1B561 /* BYCAddEntryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4525192F18B70D8900D1B561 /* BYCAddEntryView.m */; };
+		4592F1DF18B7A744009CCC65 /* BYCTalkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4592F1DE18B7A744009CCC65 /* BYCTalkViewController.m */; };
+		4592F1E018B7A744009CCC65 /* BYCTalkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4592F1DE18B7A744009CCC65 /* BYCTalkViewController.m */; };
+		4592F1E318B7A76B009CCC65 /* BYCTalkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4592F1E218B7A76B009CCC65 /* BYCTalkView.m */; };
+		4592F1E418B7A76B009CCC65 /* BYCTalkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4592F1E218B7A76B009CCC65 /* BYCTalkView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +152,10 @@
 		4525192B18B6CF0000D1B561 /* WalterTurncoat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = WalterTurncoat.ttf; sourceTree = "<group>"; };
 		4525192E18B70D8900D1B561 /* BYCAddEntryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCAddEntryView.h; sourceTree = "<group>"; };
 		4525192F18B70D8900D1B561 /* BYCAddEntryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCAddEntryView.m; sourceTree = "<group>"; };
+		4592F1DD18B7A744009CCC65 /* BYCTalkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCTalkViewController.h; sourceTree = "<group>"; };
+		4592F1DE18B7A744009CCC65 /* BYCTalkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCTalkViewController.m; sourceTree = "<group>"; };
+		4592F1E118B7A76B009CCC65 /* BYCTalkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCTalkView.h; sourceTree = "<group>"; };
+		4592F1E218B7A76B009CCC65 /* BYCTalkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCTalkView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +258,7 @@
 		452518A818B6774E00D1B561 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4592F1D918B7A71F009CCC65 /* Talk */,
 				452518F218B68AF400D1B561 /* Entry */,
 				452518BB18B67BAA00D1B561 /* Common */,
 				452518BA18B67BA200D1B561 /* UI */,
@@ -394,6 +403,41 @@
 			name = "Split Controller";
 			sourceTree = "<group>";
 		};
+		4592F1D918B7A71F009CCC65 /* Talk */ = {
+			isa = PBXGroup;
+			children = (
+				4592F1DC18B7A72D009CCC65 /* Models */,
+				4592F1DB18B7A72A009CCC65 /* Views */,
+				4592F1DA18B7A725009CCC65 /* Controllers */,
+			);
+			name = Talk;
+			sourceTree = "<group>";
+		};
+		4592F1DA18B7A725009CCC65 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4592F1DD18B7A744009CCC65 /* BYCTalkViewController.h */,
+				4592F1DE18B7A744009CCC65 /* BYCTalkViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		4592F1DB18B7A72A009CCC65 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4592F1E118B7A76B009CCC65 /* BYCTalkView.h */,
+				4592F1E218B7A76B009CCC65 /* BYCTalkView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4592F1DC18B7A72D009CCC65 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -529,6 +573,8 @@
 				4525192318B6976C00D1B561 /* BYCEntryRowLayoutView.m in Sources */,
 				4525192918B6A2A400D1B561 /* BYCSideViewCell.m in Sources */,
 				4525188518B6750800D1B561 /* BYCAppDelegate.m in Sources */,
+				4592F1DF18B7A744009CCC65 /* BYCTalkViewController.m in Sources */,
+				4592F1E318B7A76B009CCC65 /* BYCTalkView.m in Sources */,
 				452518B418B679DE00D1B561 /* BYCApplicationState.m in Sources */,
 				452518D218B6822800D1B561 /* BYCContentView.m in Sources */,
 				452518C618B67BF400D1B561 /* UIColor+Custom.m in Sources */,
@@ -541,9 +587,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4525193118B70D8900D1B561 /* BYCAddEntryView.m in Sources */,
+				4592F1E418B7A76B009CCC65 /* BYCTalkView.m in Sources */,
 				452518B918B67AC100D1B561 /* BYCSplitViewController.m in Sources */,
 				4525189A18B6750800D1B561 /* yourlifeyourvoiceTests.m in Sources */,
 				452518B518B679DE00D1B561 /* BYCApplicationState.m in Sources */,
+				4592F1E018B7A744009CCC65 /* BYCTalkViewController.m in Sources */,
 				452518BF18B67BD400D1B561 /* BYCUI.m in Sources */,
 				4525192A18B6A2A400D1B561 /* BYCSideViewCell.m in Sources */,
 				452518C318B67BE800D1B561 /* UIView+Layouts.m in Sources */,

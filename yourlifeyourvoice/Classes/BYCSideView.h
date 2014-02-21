@@ -2,6 +2,8 @@
 
 @protocol BYCSideViewDelegate <NSObject>
 -(void)hideSidebar;
+-(void)entrySelected;
+-(void)talkSelected;
 @end
 
 @interface BYCSideView : UIView

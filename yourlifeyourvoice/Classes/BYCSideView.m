@@ -6,6 +6,7 @@
 @property (nonatomic) UITableView *tableView;
 @property (nonatomic) NSArray *items;
 @property (nonatomic) UIButton *closeButton;
+@property (nonatomic) NSUInteger selectedIndex;
 @property (nonatomic, weak) id<BYCSideViewDelegate> delegate;
 @end
 
@@ -64,8 +65,20 @@
         cell = [[BYCSideViewCell alloc] initWithReuseIdentifier:identifier];
     }
     [cell setTitleText:self.items[indexPath.row]];
-    [cell setCellSelected:indexPath.row == 0];
+    [cell setCellSelected:indexPath.row == self.selectedIndex];
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if(indexPath.row == 0) {
+        [self.delegate entrySelected];
+        self.selectedIndex = 0;
+        [self.tableView reloadData];
+    } else if(indexPath.row == 5) {
+        [self.delegate talkSelected];
+        self.selectedIndex = 5;
+        [self.tableView reloadData];
+    }
 }
 
 @end

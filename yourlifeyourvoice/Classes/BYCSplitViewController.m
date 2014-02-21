@@ -3,6 +3,8 @@
 #import "BYCSideView.h"
 #import "BYCConstants.h"
 #import "BYCViewController.h"
+#import "BYCTalkViewController.h"
+#import "BYCEntryViewController.h"
 
 #define kSidebarMargin 120
 
@@ -50,7 +52,6 @@
 
 -(void)setMainViewController:(UIViewController*)viewController {
     [self.navController setViewControllers:@[viewController] animated:NO];
-    viewController.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStyleBordered target:self action:@selector(showSidebar)];
 }
 
 -(void)layoutSidebarShown:(BOOL)show {
@@ -88,6 +89,19 @@
 
 -(void)showSidebar {
     [self showSidebar:YES animated:YES];
+}
+
+-(void)showViewController:(UIViewController*)vc {
+    self.mainViewController = vc;
+    [self hideSidebar];
+}
+
+-(void)entrySelected {
+    [self showViewController:[[BYCEntryViewController alloc] initWithApplicationState:self.applicationState]];
+}
+
+-(void)talkSelected {
+    [self showViewController:[[BYCTalkViewController alloc] initWithApplicationState:self.applicationState]];
 }
 
 @end
