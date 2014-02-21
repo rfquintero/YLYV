@@ -6,5 +6,6 @@
 
 @interface BYCEntryView : BYCContentView
 -(void)discardEntry;
+-(void)setNavView:(UIView*)navView;
 -(void)setDelegate:(id<BYCEntryViewDelegate>)delegate;
 @end

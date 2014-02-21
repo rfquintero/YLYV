@@ -17,6 +17,7 @@
     [self.navView setNavTitle:@"I'm feeling..."];
     [self.navView setupBackButton:self action:@selector(backSelected)];
     [self.navView setLeftButtonHidden:YES animated:NO];
+    [self.entryView setNavView:self.navView];
     [self setupMenuButton];
 }
 

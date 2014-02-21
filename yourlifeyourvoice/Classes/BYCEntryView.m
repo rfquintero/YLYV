@@ -39,7 +39,6 @@
         
         [self.scrollView addSubview:self.rowLayout];
         [self addSubview:self.addEntry];
-        [self addSubview:self.largeMood];
     }
     return self;
 }
@@ -49,9 +48,13 @@
     [self.rowLayout setFrameAtOrigin:CGPointZero thatFits:CGSizeMake(self.bounds.size.width, CGFLOAT_MAX)];
     [self setContentHeight:CGRectGetMaxY(self.rowLayout.frame)];
     
-    [self.largeMood centerHorizonallyAtY:60 inBounds:self.bounds thatFits:CGSizeUnbounded];
+    [self.largeMood centerHorizonallyAtY:10 inBounds:self.bounds thatFits:CGSizeUnbounded];
     CGFloat offsetY = CGRectGetMaxY(self.largeMood.frame)-20;
     self.addEntry.frame = CGRectMake(0, offsetY, self.bounds.size.width, self.bounds.size.height-offsetY);
+}
+
+-(void)setNavView:(UIView *)navView {
+    [navView addSubview:self.largeMood];
 }
 
 -(void)moodView:(BYCMoodView*)view selectedWithType:(BYCMoodViewType)type {
