@@ -16,6 +16,6 @@ return [self labelWithFont:[self fontName:size]];\
     return label;
 }
 
-CREATE_FONT(fontOfSize, labelWithFontSize, @"Helvetica");
-CREATE_FONT(boldFontOfSize, labelWithBoldFontSize, @"Helvetica-Bold");
+CREATE_FONT(fontOfSize, labelWithFontSize, @"WalterTurncoat");
+CREATE_FONT(roundFontOfSize, labelWithRoundFontSize, @"ArialRoundedMTBold");
 @end

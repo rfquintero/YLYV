@@ -1,7 +1,7 @@
 #import "BYCSideViewCell.h"
 #import "BYCUI.h"
 
-#define kFont [BYCUI boldFontOfSize:20.0f]
+#define kFont [BYCUI roundFontOfSize:20.0f]
 #define kPadding 15.0f
 
 @interface BYCSideViewCell()

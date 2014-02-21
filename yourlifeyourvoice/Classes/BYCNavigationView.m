@@ -17,7 +17,7 @@
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        self.title = [BYCUI labelWithBoldFontSize:18.0f];
+        self.title = [BYCUI labelWithRoundFontSize:18.0f];
         self.title.textColor = [UIColor blackColor];
         
         self.barView = [[UIView alloc] initWithFrame:CGRectZero];

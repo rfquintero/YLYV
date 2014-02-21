@@ -71,6 +71,8 @@
 		4525192418B6976C00D1B561 /* BYCEntryRowLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4525192218B6976C00D1B561 /* BYCEntryRowLayoutView.m */; };
 		4525192918B6A2A400D1B561 /* BYCSideViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4525192818B6A2A400D1B561 /* BYCSideViewCell.m */; };
 		4525192A18B6A2A400D1B561 /* BYCSideViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4525192818B6A2A400D1B561 /* BYCSideViewCell.m */; };
+		4525192C18B6CF0000D1B561 /* WalterTurncoat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4525192B18B6CF0000D1B561 /* WalterTurncoat.ttf */; };
+		4525192D18B6CF0000D1B561 /* WalterTurncoat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4525192B18B6CF0000D1B561 /* WalterTurncoat.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +143,7 @@
 		4525192518B69E2F00D1B561 /* BYCConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYCConstants.h; sourceTree = "<group>"; };
 		4525192718B6A2A400D1B561 /* BYCSideViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCSideViewCell.h; sourceTree = "<group>"; };
 		4525192818B6A2A400D1B561 /* BYCSideViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCSideViewCell.m; sourceTree = "<group>"; };
+		4525192B18B6CF0000D1B561 /* WalterTurncoat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = WalterTurncoat.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +256,7 @@
 		452518A918B6774E00D1B561 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				4525192B18B6CF0000D1B561 /* WalterTurncoat.ttf */,
 			);
 			name = Fonts;
 			path = yourlifeyourvoice/Fonts;
@@ -460,6 +464,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4525192C18B6CF0000D1B561 /* WalterTurncoat.ttf in Resources */,
 				452518EC18B6892400D1B561 /* icon_navbar_close@2x.png in Resources */,
 				4525187F18B6750800D1B561 /* InfoPlist.strings in Resources */,
 				452518E218B6892400D1B561 /* icon_button_close.png in Resources */,
@@ -486,6 +491,7 @@
 				452518E118B6892400D1B561 /* icon_button_add@2x.png in Resources */,
 				452518FF18B68C9100D1B561 /* face_lonely@2x.png in Resources */,
 				452518E318B6892400D1B561 /* icon_button_close.png in Resources */,
+				4525192D18B6CF0000D1B561 /* WalterTurncoat.ttf in Resources */,
 				452518E718B6892400D1B561 /* icon_navbar_back.png in Resources */,
 				452518DF18B6892400D1B561 /* icon_button_add.png in Resources */,
 				452518E918B6892400D1B561 /* icon_navbar_back@2x.png in Resources */,

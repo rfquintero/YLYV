@@ -4,9 +4,9 @@
 
 @interface BYCUI : NSObject
 +(UIFont*)fontOfSize:(CGFloat)size;
-+(UIFont*)boldFontOfSize:(CGFloat)size;
++(UIFont*)roundFontOfSize:(CGFloat)size;
 
 +(UILabel*)labelWithFont:(UIFont*)font;
 +(UILabel*)labelWithFontSize:(CGFloat)size;
-+(UILabel*)labelWithBoldFontSize:(CGFloat)size;
++(UILabel*)labelWithRoundFontSize:(CGFloat)size;
 @end
