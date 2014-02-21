@@ -1,7 +1,7 @@
 #import "BYCEntryViewController.h"
 #import "BYCEntryView.h"
 
-@interface BYCEntryViewController ()
+@interface BYCEntryViewController ()<BYCEntryViewDelegate>
 @property (nonatomic) BYCEntryView *entryView;
 @end
 
@@ -11,9 +11,24 @@
     [super loadView];
     
     self.entryView = [[BYCEntryView alloc] initWithFrame:self.view.bounds];
+    self.entryView.delegate = self;
+    
     [self.navView setContentView:self.entryView];
     [self.navView setNavTitle:@"I'm feeling..."];
+    [self.navView setupBackButton:self action:@selector(backSelected)];
+    [self.navView setLeftButtonHidden:YES animated:NO];
     [self setupMenuButton];
+}
+
+-(void)entryStarted {
+    [self.navView setLeftButtonHidden:NO animated:YES];
+    [self.navView setNavTitleHidden:YES animated:YES];
+}
+
+-(void)backSelected {
+    [self.entryView discardEntry];
+    [self.navView setNavTitleHidden:NO animated:YES];
+    [self.navView setLeftButtonHidden:YES animated:YES];
 }
 
 @end

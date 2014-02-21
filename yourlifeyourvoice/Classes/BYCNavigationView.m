@@ -48,9 +48,8 @@
     [self.rightButton centerVerticallyAtX:width-rightSize.width inBounds:self.barView.bounds withSize:rightSize offsetY:0];
     
     CGFloat titleWidth = CGRectGetMinX(self.rightButton.frame) - CGRectGetMaxX(self.leftButton.frame)-20.0f;
-    CGFloat titleOffsetX = CGRectGetMaxX(self.leftButton.frame)+10.0f;
-    [self.title centerVerticallyAtX:titleOffsetX inBounds:self.barView.bounds thatFits:CGSizeMake(titleWidth, kBarHeight)];
-    [self.titleImage centerVerticallyAtX:titleOffsetX inBounds:self.barView.bounds thatFits:CGSizeMake(titleWidth, kBarHeight)];
+    [self.title centerInBounds:self.barView.bounds offsetX:0 offsetY:0 thatFits:CGSizeMake(titleWidth, kBarHeight)];
+    [self.titleImage centerInBounds:self.barView.bounds offsetX:0 offsetY:0 thatFits:CGSizeMake(titleWidth, kBarHeight)];
     
     self.contentView.frame = self.bounds;
 }
@@ -104,26 +103,30 @@
     [self setupButton:self.rightButton image:image target:target action:action];
 }
 
--(void)setButton:(UIButton*)button hidden:(BOOL)hidden animated:(BOOL)animated {
+-(void)setView:(UIView*)view hidden:(BOOL)hidden animated:(BOOL)animated {
     if(animated) {
-        button.hidden = NO;
+        view.hidden = NO;
         [UIView animateWithDuration:0.3f animations:^{
-            button.alpha = hidden ? 0.0f : 1.0f;
+            view.alpha = hidden ? 0.0f : 1.0f;
         } completion:^(BOOL finished) {
-            button.hidden = hidden;
+            view.hidden = hidden;
         }];
     } else {
-        button.alpha = hidden ? 0.0f : 1.0f;
-        button.hidden = hidden;
+        view.alpha = hidden ? 0.0f : 1.0f;
+        view.hidden = hidden;
     }
 }
 
 -(void)setLeftButtonHidden:(BOOL)hidden animated:(BOOL)animated {
-    [self setButton:self.leftButton hidden:hidden animated:animated];
+    [self setView:self.leftButton hidden:hidden animated:animated];
 }
 
 -(void)setRightButtonHidden:(BOOL)hidden animated:(BOOL)animated {
-    [self setButton:self.rightButton hidden:hidden animated:animated];
+    [self setView:self.rightButton hidden:hidden animated:animated];
+}
+
+-(void)setNavTitleHidden:(BOOL)hidden animated:(BOOL)animated {
+    [self setView:self.title hidden:hidden animated:animated];
 }
 
 @end

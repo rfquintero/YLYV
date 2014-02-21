@@ -9,4 +9,7 @@
 +(UILabel*)labelWithFont:(UIFont*)font;
 +(UILabel*)labelWithFontSize:(CGFloat)size;
 +(UILabel*)labelWithRoundFontSize:(CGFloat)size;
+
++(UIButton*)deleteButtonWithTarget:(id)target action:(SEL)action;
++(UIButton*)standardButtonWithTitle:(NSString*)title target:(id)target action:(SEL)action;
 @end

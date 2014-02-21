@@ -4,6 +4,7 @@
 @interface BYCNavigationView : UIView
 -(void)setNavTitle:(NSString*)title;
 -(void)setNavImage:(UIImage*)image;
+-(void)setNavTitleHidden:(BOOL)hidden animated:(BOOL)animated;
 -(void)setContentView:(UIView *)contentView;
 
 -(void)setupBackButton:(id)target action:(SEL)action;

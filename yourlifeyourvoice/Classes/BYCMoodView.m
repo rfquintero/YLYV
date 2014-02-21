@@ -7,6 +7,7 @@
 @property (nonatomic) UIImageView *face;
 @property (nonatomic) BYCMoodViewType type;
 @property (nonatomic) UILabel *text;
+@property (nonatomic, weak) id<BYCMoodViewDelegate> delegate;
 @end
 
 @implementation BYCMoodView
@@ -16,6 +17,11 @@
     if (self) {
         self.type = type;
         self.face = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"face_lonely"]];
+        self.face.contentMode = UIViewContentModeScaleAspectFill;
+        self.face.userInteractionEnabled = YES;
+        
+        UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(moodSelected)];
+        [self.face addGestureRecognizer:tapRecognizer];
         
         self.text = [BYCUI labelWithFontSize:14.0f];
         self.text.text = [self moodString];
@@ -28,26 +34,21 @@
 
 -(void)layoutSubviews {
     [super layoutSubviews];
-    if(self.text.hidden) {
-        self.face.frame = self.bounds;
-    } else {
-        CGFloat height = self.bounds.size.height;
-        CGSize textSize = [self.text sizeThatFits:CGSizeUnbounded];
-        [self.text centerHorizonallyAtY:height-textSize.height inBounds:self.bounds withSize:textSize];
-        
-        CGFloat faceSize = height-textSize.height-kSpacing;
-        [self.face centerHorizonallyAtY:0 inBounds:self.bounds withSize:CGSizeMake(faceSize, faceSize)];
-    }
+    CGFloat height = self.bounds.size.height;
+    CGSize textSize = [self.text sizeThatFits:CGSizeUnbounded];
+    [self.text centerHorizonallyAtY:height-textSize.height inBounds:self.bounds withSize:textSize];
+    
+    [self.face centerHorizonallyAtY:0 inBounds:self.bounds withSize:CGSizeMake(_faceSize, _faceSize)];
 }
 
 -(CGSize)sizeThatFits:(CGSize)size {
-    CGSize faceSize = [self.face sizeThatFits:CGSizeUnbounded];
     CGSize textSize = [self.text sizeThatFits:CGSizeUnbounded];
-    if(self.text.hidden) {
-        return faceSize;
-    } else {
-        return CGSizeMake(MAX(faceSize.width, textSize.width), faceSize.height + textSize.height + kSpacing);
-    }
+
+    return CGSizeMake(MAX(_faceSize, textSize.width), _faceSize + textSize.height + kSpacing);
+}
+
+-(void)moodSelected {
+    [self.delegate moodView:self selectedWithType:self.type];
 }
 
 -(void)setTextHidden:(BOOL)hidden animated:(BOOL)animated {

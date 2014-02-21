@@ -16,6 +16,9 @@ return colorName; \
 CREATE_HEX_COLOR(bgLightGray, @"#F4F4F4");
 CREATE_HEX_COLOR(bgSidebarGray, @"#2C2D33");
 CREATE_HEX_COLOR(textOrange, @"#EF722B");
+CREATE_HEX_COLOR(textRed, @"#EA283A");
+CREATE_HEX_COLOR(textDarkRed, @"#811414");
+CREATE_HEX_COLOR(borderLightGray, @"#DCDCDC");
 
 + (CGFloat)colorComponentFrom:(NSString *)string start:(NSUInteger)start length:(NSUInteger)length {
     NSString *substring = [string substringWithRange:NSMakeRange(start, length)];

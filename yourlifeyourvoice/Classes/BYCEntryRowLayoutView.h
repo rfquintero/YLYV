@@ -5,8 +5,8 @@
 @end
 
 @interface BYCEntryRowLayoutView : UIView
--(void)showLargeView:(UIView *)view forIndex:(NSNumber *)index;
--(void)hideLargeViewForIndex:(NSNumber *)index;
+@property (nonatomic, readonly) NSArray *icons;
+
 -(void)addSmallIconView:(UIView *)view;
 -(void)setDelegate:(id<BYCEntryRowLayoutViewDelegate>)delegate;
 @end
