@@ -79,6 +79,11 @@
 		4592F1E018B7A744009CCC65 /* BYCTalkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4592F1DE18B7A744009CCC65 /* BYCTalkViewController.m */; };
 		4592F1E318B7A76B009CCC65 /* BYCTalkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4592F1E218B7A76B009CCC65 /* BYCTalkView.m */; };
 		4592F1E418B7A76B009CCC65 /* BYCTalkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4592F1E218B7A76B009CCC65 /* BYCTalkView.m */; };
+		45DEC7D318BBBE2600A92550 /* BYCDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DEC7D218BBBE2600A92550 /* BYCDatabase.m */; };
+		45DEC7D418BBBE2600A92550 /* BYCDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DEC7D218BBBE2600A92550 /* BYCDatabase.m */; };
+		45DEC7D718BBBE4800A92550 /* BYCDatabaseUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DEC7D618BBBE4800A92550 /* BYCDatabaseUtilities.m */; };
+		45DEC7D818BBBE4800A92550 /* BYCDatabaseUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DEC7D618BBBE4800A92550 /* BYCDatabaseUtilities.m */; };
+		45DEC7DC18BBC07100A92550 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 45DEC7DB18BBC07100A92550 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +161,11 @@
 		4592F1DE18B7A744009CCC65 /* BYCTalkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCTalkViewController.m; sourceTree = "<group>"; };
 		4592F1E118B7A76B009CCC65 /* BYCTalkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCTalkView.h; sourceTree = "<group>"; };
 		4592F1E218B7A76B009CCC65 /* BYCTalkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCTalkView.m; sourceTree = "<group>"; };
+		45DEC7D118BBBE2600A92550 /* BYCDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCDatabase.h; sourceTree = "<group>"; };
+		45DEC7D218BBBE2600A92550 /* BYCDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCDatabase.m; sourceTree = "<group>"; };
+		45DEC7D518BBBE4800A92550 /* BYCDatabaseUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCDatabaseUtilities.h; sourceTree = "<group>"; };
+		45DEC7D618BBBE4800A92550 /* BYCDatabaseUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCDatabaseUtilities.m; sourceTree = "<group>"; };
+		45DEC7DB18BBC07100A92550 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +173,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45DEC7DC18BBC07100A92550 /* libsqlite3.dylib in Frameworks */,
 				4525187718B6750800D1B561 /* CoreGraphics.framework in Frameworks */,
 				4525187918B6750800D1B561 /* UIKit.framework in Frameworks */,
 				4525187518B6750800D1B561 /* Foundation.framework in Frameworks */,
@@ -206,6 +217,7 @@
 		4525187318B6750800D1B561 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				45DEC7DB18BBC07100A92550 /* libsqlite3.dylib */,
 				4525187418B6750800D1B561 /* Foundation.framework */,
 				4525187618B6750800D1B561 /* CoreGraphics.framework */,
 				4525187818B6750800D1B561 /* UIKit.framework */,
@@ -258,6 +270,7 @@
 		452518A818B6774E00D1B561 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				45DEC7D018BBBE1300A92550 /* Database */,
 				4592F1D918B7A71F009CCC65 /* Talk */,
 				452518F218B68AF400D1B561 /* Entry */,
 				452518BB18B67BAA00D1B561 /* Common */,
@@ -438,6 +451,17 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		45DEC7D018BBBE1300A92550 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				45DEC7D118BBBE2600A92550 /* BYCDatabase.h */,
+				45DEC7D218BBBE2600A92550 /* BYCDatabase.m */,
+				45DEC7D518BBBE4800A92550 /* BYCDatabaseUtilities.h */,
+				45DEC7D618BBBE4800A92550 /* BYCDatabaseUtilities.m */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -486,6 +510,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Banyan Communications";
 				TargetAttributes = {
+					4525187018B6750800D1B561 = {
+						DevelopmentTeam = WK2QJ946QX;
+					};
 					4525188B18B6750800D1B561 = {
 						TestTargetID = 4525187018B6750800D1B561;
 					};
@@ -567,6 +594,8 @@
 				4525190618B68CE400D1B561 /* BYCEntryView.m in Sources */,
 				452518C218B67BE800D1B561 /* UIView+Layouts.m in Sources */,
 				452518B018B679A200D1B561 /* BYCViewController.m in Sources */,
+				45DEC7D718BBBE4800A92550 /* BYCDatabaseUtilities.m in Sources */,
+				45DEC7D318BBBE2600A92550 /* BYCDatabase.m in Sources */,
 				4525188118B6750800D1B561 /* main.m in Sources */,
 				4525193018B70D8900D1B561 /* BYCAddEntryView.m in Sources */,
 				452518CE18B67F3C00D1B561 /* BYCNavigationView.m in Sources */,
@@ -586,6 +615,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45DEC7D818BBBE4800A92550 /* BYCDatabaseUtilities.m in Sources */,
 				4525193118B70D8900D1B561 /* BYCAddEntryView.m in Sources */,
 				4592F1E418B7A76B009CCC65 /* BYCTalkView.m in Sources */,
 				452518B918B67AC100D1B561 /* BYCSplitViewController.m in Sources */,
@@ -595,6 +625,7 @@
 				452518BF18B67BD400D1B561 /* BYCUI.m in Sources */,
 				4525192A18B6A2A400D1B561 /* BYCSideViewCell.m in Sources */,
 				452518C318B67BE800D1B561 /* UIView+Layouts.m in Sources */,
+				45DEC7D418BBBE2600A92550 /* BYCDatabase.m in Sources */,
 				452518B118B679A200D1B561 /* BYCViewController.m in Sources */,
 				452518CB18B67D9200D1B561 /* BYCSideView.m in Sources */,
 				4525190718B68CE400D1B561 /* BYCEntryView.m in Sources */,
@@ -716,6 +747,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "yourlifeyourvoice/yourlifeyourvoice-Prefix.pch";
 				INFOPLIST_FILE = "yourlifeyourvoice/yourlifeyourvoice-Info.plist";
@@ -730,6 +762,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "yourlifeyourvoice/yourlifeyourvoice-Prefix.pch";
 				INFOPLIST_FILE = "yourlifeyourvoice/yourlifeyourvoice-Info.plist";
