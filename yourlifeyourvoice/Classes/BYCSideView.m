@@ -1,6 +1,7 @@
 #import "BYCSideView.h"
 #import "BYCUI.h"
 #import "BYCSideViewCell.h"
+#import "BYCConstants.h"
 
 @interface BYCSideView()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic) UITableView *tableView;
@@ -23,7 +24,7 @@
         self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         self.tableView.delegate = self;
         self.tableView.dataSource = self;
-        self.tableView.bounces = NO;
+        self.tableView.bounces = YES;
         self.tableView.backgroundColor = [UIColor clearColor];
         self.tableView.backgroundView = nil;
         
@@ -40,8 +41,9 @@
 
 -(void)layoutSubviews {
     [super layoutSubviews];
-    CGFloat offsetY = 44;
-    [self.closeButton setFrameAtOriginThatFitsUnbounded:CGPointMake(10, 2)];
+    CGFloat extra = SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0") ? 20 : 0;
+    CGFloat offsetY = 44 + extra;
+    [self.closeButton setFrameAtOriginThatFitsUnbounded:CGPointMake(10, 2+extra)];
     self.tableView.frame = CGRectMake(0, offsetY, self.bounds.size.width, self.bounds.size.height-offsetY);
 }
 

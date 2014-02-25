@@ -1,5 +1,6 @@
 #import "BYCNavigationView.h"
 #import "BYCUI.h"
+#import "BYCConstants.h"
 
 #define kBarHeight 44
 
@@ -41,15 +42,19 @@
 -(void)layoutSubviews {
     [super layoutSubviews];
     CGFloat width = self.bounds.size.width;
+    CGFloat extra = 0;
+    if(SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")) {
+        extra = 20;
+    }
     
-    self.barView.frame = CGRectMake(0, 0, width, kBarHeight);
+    self.barView.frame = CGRectMake(0, 0, width, kBarHeight+extra);
     [self.leftButton centerVerticallyAtX:0 inBounds:self.barView.bounds thatFits:CGSizeUnbounded offsetY:0];
     CGSize rightSize = [self.rightButton sizeThatFits:CGSizeUnbounded];
-    [self.rightButton centerVerticallyAtX:width-rightSize.width inBounds:self.barView.bounds withSize:rightSize offsetY:0];
+    [self.rightButton centerVerticallyAtX:width-rightSize.width inBounds:self.barView.bounds withSize:rightSize offsetY:extra/2];
     
     CGFloat titleWidth = CGRectGetMinX(self.rightButton.frame) - CGRectGetMaxX(self.leftButton.frame)-20.0f;
-    [self.title centerInBounds:self.barView.bounds offsetX:0 offsetY:0 thatFits:CGSizeMake(titleWidth, kBarHeight)];
-    [self.titleImage centerInBounds:self.barView.bounds offsetX:0 offsetY:0 thatFits:CGSizeMake(titleWidth, kBarHeight)];
+    [self.title centerInBounds:self.barView.bounds offsetX:0 offsetY:extra/2 thatFits:CGSizeMake(titleWidth, kBarHeight)];
+    [self.titleImage centerInBounds:self.barView.bounds offsetX:0 offsetY:extra/2 thatFits:CGSizeMake(titleWidth, kBarHeight)];
     
     self.contentView.frame = self.bounds;
 }
