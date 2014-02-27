@@ -129,6 +129,8 @@
 		458F0CD618BEB270002FEC75 /* BYCMood.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F0CD418BEB270002FEC75 /* BYCMood.m */; };
 		458F0CD918BEB54E002FEC75 /* BYCMoodSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F0CD818BEB54E002FEC75 /* BYCMoodSprite.m */; };
 		458F0CDA18BEB54E002FEC75 /* BYCMoodSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F0CD818BEB54E002FEC75 /* BYCMoodSprite.m */; };
+		458F0FBF18BFC631002FEC75 /* BYCActionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F0FBE18BFC631002FEC75 /* BYCActionView.m */; };
+		458F0FC018BFC631002FEC75 /* BYCActionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F0FBE18BFC631002FEC75 /* BYCActionView.m */; };
 		4592F1DF18B7A744009CCC65 /* BYCTalkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4592F1DE18B7A744009CCC65 /* BYCTalkViewController.m */; };
 		4592F1E018B7A744009CCC65 /* BYCTalkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4592F1DE18B7A744009CCC65 /* BYCTalkViewController.m */; };
 		4592F1E318B7A76B009CCC65 /* BYCTalkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4592F1E218B7A76B009CCC65 /* BYCTalkView.m */; };
@@ -241,6 +243,8 @@
 		458F0CD418BEB270002FEC75 /* BYCMood.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCMood.m; sourceTree = "<group>"; };
 		458F0CD718BEB54E002FEC75 /* BYCMoodSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCMoodSprite.h; sourceTree = "<group>"; };
 		458F0CD818BEB54E002FEC75 /* BYCMoodSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCMoodSprite.m; sourceTree = "<group>"; };
+		458F0FBD18BFC631002FEC75 /* BYCActionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCActionView.h; sourceTree = "<group>"; };
+		458F0FBE18BFC631002FEC75 /* BYCActionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCActionView.m; sourceTree = "<group>"; };
 		4592F1DD18B7A744009CCC65 /* BYCTalkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCTalkViewController.h; sourceTree = "<group>"; };
 		4592F1DE18B7A744009CCC65 /* BYCTalkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCTalkViewController.m; sourceTree = "<group>"; };
 		4592F1E118B7A76B009CCC65 /* BYCTalkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCTalkView.h; sourceTree = "<group>"; };
@@ -409,6 +413,8 @@
 				452518CD18B67F3C00D1B561 /* BYCNavigationView.m */,
 				452518D018B6822800D1B561 /* BYCContentView.h */,
 				452518D118B6822800D1B561 /* BYCContentView.m */,
+				458F0FBD18BFC631002FEC75 /* BYCActionView.h */,
+				458F0FBE18BFC631002FEC75 /* BYCActionView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -864,6 +870,7 @@
 				452518F818B68B3D00D1B561 /* BYCMoodView.m in Sources */,
 				452518BE18B67BD400D1B561 /* BYCUI.m in Sources */,
 				4525190218B68CCA00D1B561 /* BYCEntryViewController.m in Sources */,
+				458F0FBF18BFC631002FEC75 /* BYCActionView.m in Sources */,
 				452518CA18B67D9200D1B561 /* BYCSideView.m in Sources */,
 				4525190618B68CE400D1B561 /* BYCEntryView.m in Sources */,
 				452518C218B67BE800D1B561 /* UIView+Layouts.m in Sources */,
@@ -909,6 +916,7 @@
 				452518B118B679A200D1B561 /* BYCViewController.m in Sources */,
 				452518CB18B67D9200D1B561 /* BYCSideView.m in Sources */,
 				4525190718B68CE400D1B561 /* BYCEntryView.m in Sources */,
+				458F0FC018BFC631002FEC75 /* BYCActionView.m in Sources */,
 				452518C718B67BF400D1B561 /* UIColor+Custom.m in Sources */,
 				452518F918B68B3D00D1B561 /* BYCMoodView.m in Sources */,
 				452518CF18B67F3C00D1B561 /* BYCNavigationView.m in Sources */,

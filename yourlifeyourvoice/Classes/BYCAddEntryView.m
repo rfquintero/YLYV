@@ -1,8 +1,15 @@
 #import "BYCAddEntryView.h"
 #import "BYCUI.h"
 #import "BYCNavigationView.h"
+#import "BYCActionView.h"
 
-@interface BYCAddEntryView()<UITextViewDelegate>
+typedef enum {
+    Action_Because,
+    Action_Photo,
+    Action_Audio,
+} ActionItem;
+
+@interface BYCAddEntryView()<UITextViewDelegate, BYCActionViewDelegate>
 @property (nonatomic) UIScrollView *scrollView;
 @property (nonatomic) UIView *backgroundView;
 @property (nonatomic) UILabel *feelingLabel;
@@ -11,7 +18,10 @@
 @property (nonatomic) UITextView *noteView;
 @property (nonatomic) UIButton *saveButton;
 @property (nonatomic) UIButton *deleteButton;
+@property (nonatomic) BYCActionView *actionView;
+@property (nonatomic) UITapGestureRecognizer *tapRecognizer;
 
+@property (nonatomic) BOOL showAction;
 @property (nonatomic) CGFloat navHeight;
 @property (nonatomic, weak) id<BYCAddEntryViewDelegate> delegate;
 @end
@@ -25,10 +35,13 @@
         
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
         [self addGestureRecognizer:tap];
+        self.tapRecognizer = tap;
         
+        UITapGestureRecognizer *bgTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
         self.backgroundView = [[UIView alloc] initWithFrame:CGRectZero];
         self.backgroundView.backgroundColor = [[UIColor blueColor] colorWithAlphaComponent:0.3f];
         self.backgroundView.userInteractionEnabled = NO;
+        [self.backgroundView addGestureRecognizer:bgTap];
         
         self.feelingLabel = [BYCUI labelWithRoundFontSize:12.0f];
         self.feelingLabel.textColor = [UIColor blackColor];
@@ -54,8 +67,15 @@
         self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectZero];
         self.scrollView.delegate = self;
         
+        self.actionView = [[BYCActionView alloc] initWithFrame:CGRectZero];
+        self.actionView.delegate = self;
+        [self.actionView addTitle:@"because of..." withTag:Action_Because];
+        [self.actionView addTitle:@"Add Photo" withTag:Action_Photo];
+        [self.actionView addTitle:@"Record Voice" withTag:Action_Audio];
+        
         [self addSubview:self.scrollView];
         [self addSubview:self.backgroundView];
+        [self addSubview:self.actionView];
         [self addSubview:self.feelingLabel];
         [self addSubview:self.moodLabel];
         [self addSubview:self.addButton];
@@ -80,6 +100,7 @@
     }
     
     CGFloat width = self.bounds.size.width;
+    CGFloat height = self.bounds.size.height;
     CGFloat padding = 10.0f;
     
     self.scrollView.frame = self.bounds;
@@ -92,8 +113,15 @@
     [self.deleteButton centerHorizonallyAtY:CGRectGetMaxY(self.saveButton.frame)+padding inBounds:self.bounds thatFits:CGSizeUnbounded];
     
     self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, topHeight, 0);
-    CGFloat scrollHeight = MAX(topHeight+self.bounds.size.height-44, CGRectGetMaxY(self.deleteButton.frame)+padding);
+    CGFloat scrollHeight = MAX(topHeight+height-44, CGRectGetMaxY(self.deleteButton.frame)+padding);
     [self.scrollView setContentSize:CGSizeMake(width, scrollHeight)];
+    
+    CGFloat actionHeight = (height-topHeight-padding-self.addButton.frame.size.height/2);
+    if(self.showAction) {
+        self.actionView.frame = CGRectMake(0, self.addButton.center.y, width, actionHeight);
+    } else {
+        self.actionView.frame = CGRectMake(0, height, width, actionHeight);
+    }
 }
 
 -(CGFloat)minOffset {
@@ -143,10 +171,26 @@
     }
 }
 
+-(void)setActionSheetVisible:(BOOL)visible {
+    if(visible != _showAction) {
+        _showAction = visible;
+        if(self.showAction) {
+            [self scrollToTop:YES];
+        }
+        self.scrollView.scrollEnabled = !self.showAction;
+        self.buttonsEnabled = !self.showAction;
+        self.backgroundView.userInteractionEnabled = self.showAction;
+        self.tapRecognizer.enabled = !self.showAction;
+        [UIView animateWithDuration:0.3f animations:^{
+            [self layoutSubviews];
+        }];
+    }
+}
+
 #pragma mark callbacks
 
 -(void)addSelected {
-    [self.delegate addSelected];
+    [self setActionSheetVisible:!self.showAction];
 }
 
 -(void)saveSelected {
@@ -157,10 +201,15 @@
     [self.delegate deleteSelected];
 }
 
+-(void)actionSelectedWithTag:(NSInteger)tag {
+    [self setActionSheetVisible:NO];
+}
+
 #pragma mark keyboard
 
 -(void)hideKeyboard {
     [self.noteView resignFirstResponder];
+    [self setActionSheetVisible:NO];
 }
 
 -(void)setButtonsEnabled:(BOOL)enabled {

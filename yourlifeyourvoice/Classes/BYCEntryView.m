@@ -12,7 +12,6 @@
 @property (nonatomic) BYCEntryRowLayoutView *rowLayout;
 @property (nonatomic) BYCMoodView *largeMood;
 @property (nonatomic) BYCAddEntryView *addEntry;
-@property (nonatomic) UIButton *blocker;
 @property (nonatomic, weak) id<BYCEntryViewDelegate> delegate;
 @end
 
@@ -22,9 +21,6 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.rowLayout = [[BYCEntryRowLayoutView alloc] initWithFrame:CGRectZero];
-        
-        self.blocker = [UIButton buttonWithType:UIButtonTypeCustom];
-
         
         for(NSNumber *type in self.moods) {
             BYCMoodView *mood = [[BYCMoodView alloc] initWithFrame:CGRectZero type:[type intValue]];
