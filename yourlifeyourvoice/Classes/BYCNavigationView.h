@@ -13,4 +13,6 @@
 -(void)setupRightButton:(UIImage*)image target:(id)target action:(SEL)action;
 -(void)setLeftButtonHidden:(BOOL)hidden animated:(BOOL)animated;
 -(void)setRightButtonHidden:(BOOL)hidden animated:(BOOL)animated;
+
++(CGFloat)navbarHeight;
 @end

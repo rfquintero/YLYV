@@ -8,10 +8,11 @@
 #define kLargeSize 190.0f
 #define kSmallSize 110.0f
 
-@interface BYCEntryView()<BYCMoodViewDelegate>
+@interface BYCEntryView()<BYCMoodViewDelegate, BYCAddEntryViewDelegate>
 @property (nonatomic) BYCEntryRowLayoutView *rowLayout;
 @property (nonatomic) BYCMoodView *largeMood;
 @property (nonatomic) BYCAddEntryView *addEntry;
+@property (nonatomic) UIButton *blocker;
 @property (nonatomic, weak) id<BYCEntryViewDelegate> delegate;
 @end
 
@@ -21,6 +22,9 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.rowLayout = [[BYCEntryRowLayoutView alloc] initWithFrame:CGRectZero];
+        
+        self.blocker = [UIButton buttonWithType:UIButtonTypeCustom];
+
         
         for(NSNumber *type in self.moods) {
             BYCMoodView *mood = [[BYCMoodView alloc] initWithFrame:CGRectZero type:[type intValue]];
@@ -36,6 +40,8 @@
         self.largeMood.hidden = YES;
         
         self.addEntry = [[BYCAddEntryView alloc] initWithFrame:CGRectZero];
+        self.addEntry.delegate = self;
+        self.addEntry.contentOffset = [self layoutLargeMood];;
         [self setAddEntryHidden:YES animated:NO];
         
         [self.scrollView addSubview:self.rowLayout];
@@ -49,10 +55,14 @@
     [self.rowLayout setFrameAtOrigin:CGPointZero thatFits:CGSizeMake(self.bounds.size.width, CGFLOAT_MAX)];
     [self setContentHeight:CGRectGetMaxY(self.rowLayout.frame)];
     
-    CGFloat largeMoodY = SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0") ? 30 : 10;
+    [self layoutLargeMood];
+    self.addEntry.frame = self.bounds;
+}
+
+-(CGFloat)layoutLargeMood {
+    CGFloat largeMoodY = SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0") ? 25 : 5;
     [self.largeMood centerHorizonallyAtY:largeMoodY inBounds:self.bounds thatFits:CGSizeUnbounded];
-    CGFloat offsetY = CGRectGetMaxY(self.largeMood.frame)-20;
-    self.addEntry.frame = CGRectMake(0, offsetY, self.bounds.size.width, self.bounds.size.height-offsetY);
+    return CGRectGetMaxY(self.largeMood.frame)-20;
 }
 
 -(void)setNavView:(UIView *)navView {
@@ -84,7 +94,6 @@
             }
         }
     } completion:^(BOOL finished) {
-        [self.largeMood animate];
         self.largeMood.hidden = NO;
         self.rowLayout.hidden = YES;
         self.scrollView.scrollEnabled = NO;
@@ -106,6 +115,7 @@
             [icon setTextHidden:NO animated:NO];
         }
     } completion:^(BOOL finished) {
+        [self.addEntry resetContent];
     }];
 }
 
@@ -122,6 +132,32 @@
         self.addEntry.hidden = hidden;
     }
 }
+
+#pragma mark BYCAddEntryViewDelegate
+
+-(void)addSelected {
+    
+}
+
+-(void)saveSelected {
+    
+}
+
+-(void)deleteSelected {
+    
+}
+
+-(void)offsetChanged:(CGFloat)percent {
+    CGFloat minSize = 34.0f;
+    CGFloat faceSize = minSize + (kLargeSize-minSize)*percent;
+    
+    [self.largeMood animate:NO];
+    self.largeMood.faceSize = faceSize;
+    
+    [self layoutLargeMood];
+}
+
+#pragma mark moods
 
 -(NSArray*)moods {
     return @[@(BYCMood_Happy), @(BYCMood_Relieved), @(BYCMood_Confident), @(BYCMood_Proud), @(BYCMood_Depressed),

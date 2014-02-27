@@ -5,7 +5,8 @@
 #define kSpacing 5.0f
 
 @interface BYCMoodView()
-@property (nonatomic) BYCMoodSprite *face;
+@property (nonatomic) BYCMoodSprite *sprite;
+@property (nonatomic) UIImageView *face;
 @property (nonatomic) BYCMoodType type;
 @property (nonatomic) UILabel *text;
 @property (nonatomic, weak) id<BYCMoodViewDelegate> delegate;
@@ -17,15 +18,17 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.type = type;
-        self.face = [[BYCMoodSprite alloc] initWithFrame:CGRectZero type:type];
-        self.face.userInteractionEnabled = YES;
+        self.sprite = [[BYCMoodSprite alloc] initWithFrame:CGRectZero type:type];
+        self.face = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"face_lonely"]];
+        self.face.hidden = YES;
         
         UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(moodSelected)];
-        [self.face addGestureRecognizer:tapRecognizer];
+        [self addGestureRecognizer:tapRecognizer];
         
         self.text = [BYCUI labelWithFontSize:14.0f];
         self.text.text = [BYCMood moodString:type];
         
+        [self addSubview:self.sprite];
         [self addSubview:self.face];
         [self addSubview:self.text];
     }
@@ -38,28 +41,34 @@
     CGSize textSize = [self.text sizeThatFits:CGSizeUnbounded];
     [self.text centerHorizonallyAtY:height-textSize.height inBounds:self.bounds withSize:textSize];
     
+    [self.sprite centerHorizonallyAtY:0 inBounds:self.bounds withSize:CGSizeMake(_faceSize, _faceSize)];
     [self.face centerHorizonallyAtY:0 inBounds:self.bounds withSize:CGSizeMake(_faceSize, _faceSize)];
 }
 
 -(CGSize)sizeThatFits:(CGSize)size {
     CGSize textSize = [self.text sizeThatFits:CGSizeUnbounded];
-
-    return CGSizeMake(MAX(_faceSize, textSize.width), _faceSize + textSize.height + kSpacing);
+    CGFloat height = _faceSize + textSize.height + kSpacing;
+    
+    return CGSizeMake(_faceSize, height);
 }
 
 -(void)setType:(BYCMoodType)type {
     _type = type;
-    [self.face setType:type];
+    [self.sprite setType:type];
     self.text.text = [BYCMood moodString:type];
 }
 
 -(void)moodSelected {
     [self.delegate moodView:self selectedWithType:self.type];
-    [self animate];
+    [self animate:YES];
 }
 
--(void)animate {
-    [self.face animate];
+-(void)animate:(BOOL)animate {
+    if(animate) {
+        [self.sprite animate];
+    }
+    self.sprite.hidden = !animate;
+    self.face.hidden = animate;
 }
 
 -(void)setTextHidden:(BOOL)hidden animated:(BOOL)animated {

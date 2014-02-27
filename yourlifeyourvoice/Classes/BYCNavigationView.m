@@ -48,7 +48,7 @@
     }
     
     self.barView.frame = CGRectMake(0, 0, width, kBarHeight+extra);
-    [self.leftButton centerVerticallyAtX:0 inBounds:self.barView.bounds thatFits:CGSizeUnbounded offsetY:0];
+    [self.leftButton centerVerticallyAtX:0 inBounds:self.barView.bounds thatFits:CGSizeUnbounded offsetY:extra/2];
     CGSize rightSize = [self.rightButton sizeThatFits:CGSizeUnbounded];
     [self.rightButton centerVerticallyAtX:width-rightSize.width inBounds:self.barView.bounds withSize:rightSize offsetY:extra/2];
     
@@ -132,6 +132,10 @@
 
 -(void)setNavTitleHidden:(BOOL)hidden animated:(BOOL)animated {
     [self setView:self.title hidden:hidden animated:animated];
+}
+
++(CGFloat)navbarHeight {
+    return kBarHeight + (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0") ? 20.0f : 0.0f);
 }
 
 @end
