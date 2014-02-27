@@ -1,20 +1,18 @@
 #import <UIKit/UIKit.h>
-
-typedef enum {
-    BYCMoodView_Lonely,
-} BYCMoodViewType;
+#import "BYCMood.h"
 
 @class BYCMoodView;
 
 @protocol BYCMoodViewDelegate <NSObject>
--(void)moodView:(BYCMoodView*)view selectedWithType:(BYCMoodViewType)type;
+-(void)moodView:(BYCMoodView*)view selectedWithType:(BYCMoodType)type;
 @end
 
 @interface BYCMoodView : UIView
-@property (nonatomic, readonly) NSString *moodString;
 @property (nonatomic) CGFloat faceSize;
--(id)initWithFrame:(CGRect)frame type:(BYCMoodViewType)type;
+-(id)initWithFrame:(CGRect)frame type:(BYCMoodType)type;
 -(void)setTextHidden:(BOOL)hidden animated:(BOOL)animated;
 -(void)setTextFont:(UIFont*)font;
+-(void)setType:(BYCMoodType)type;
+-(void)animate;
 -(void)setDelegate:(id<BYCMoodViewDelegate>)delegate;
 @end

@@ -1,0 +1,23 @@
+#import <Foundation/Foundation.h>
+
+typedef enum {
+    BYCMood_Angry,
+    BYCMood_Confident,
+    BYCMood_Confused,
+    BYCMood_Depressed,
+    BYCMood_Embarassed,
+    BYCMood_Frustrated,
+    BYCMood_Happy,
+    BYCMood_Invisible,
+    BYCMood_Lonely,
+    BYCMood_Proud,
+    BYCMood_Relieved,
+    BYCMood_Stressed,
+} BYCMoodType;
+
+@interface BYCMood : NSObject
+
++(NSString*)moodString:(BYCMoodType)type;
++(UIImage*)spriteImage:(BYCMoodType)type;
++(NSDictionary*)plist:(BYCMoodType)type;
+@end

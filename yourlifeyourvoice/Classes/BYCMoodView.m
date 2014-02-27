@@ -1,30 +1,30 @@
 #import "BYCMoodView.h"
 #import "BYCUI.h"
+#import "BYCMoodSprite.h"
 
 #define kSpacing 5.0f
 
 @interface BYCMoodView()
-@property (nonatomic) UIImageView *face;
-@property (nonatomic) BYCMoodViewType type;
+@property (nonatomic) BYCMoodSprite *face;
+@property (nonatomic) BYCMoodType type;
 @property (nonatomic) UILabel *text;
 @property (nonatomic, weak) id<BYCMoodViewDelegate> delegate;
 @end
 
 @implementation BYCMoodView
 
--(id)initWithFrame:(CGRect)frame type:(BYCMoodViewType)type {
+-(id)initWithFrame:(CGRect)frame type:(BYCMoodType)type {
     self = [super initWithFrame:frame];
     if (self) {
         self.type = type;
-        self.face = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"face_lonely"]];
-        self.face.contentMode = UIViewContentModeScaleAspectFill;
+        self.face = [[BYCMoodSprite alloc] initWithFrame:CGRectZero type:type];
         self.face.userInteractionEnabled = YES;
         
         UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(moodSelected)];
         [self.face addGestureRecognizer:tapRecognizer];
         
         self.text = [BYCUI labelWithFontSize:14.0f];
-        self.text.text = [self moodString];
+        self.text.text = [BYCMood moodString:type];
         
         [self addSubview:self.face];
         [self addSubview:self.text];
@@ -47,8 +47,19 @@
     return CGSizeMake(MAX(_faceSize, textSize.width), _faceSize + textSize.height + kSpacing);
 }
 
+-(void)setType:(BYCMoodType)type {
+    _type = type;
+    [self.face setType:type];
+    self.text.text = [BYCMood moodString:type];
+}
+
 -(void)moodSelected {
     [self.delegate moodView:self selectedWithType:self.type];
+    [self animate];
+}
+
+-(void)animate {
+    [self.face animate];
 }
 
 -(void)setTextHidden:(BOOL)hidden animated:(BOOL)animated {
@@ -68,13 +79,6 @@
 -(void)setTextFont:(UIFont*)font {
     self.text.font = font;
     [self setNeedsLayout];
-}
-
--(NSString*)moodString {
-    switch(self.type) {
-        case BYCMoodView_Lonely:
-            return @"Lonely";
-    }
 }
 
 @end

@@ -22,14 +22,14 @@
     if (self) {
         self.rowLayout = [[BYCEntryRowLayoutView alloc] initWithFrame:CGRectZero];
         
-        for(int i=0; i<10; i++) {
-            BYCMoodView *mood = [[BYCMoodView alloc] initWithFrame:CGRectZero type:BYCMoodView_Lonely];
+        for(NSNumber *type in self.moods) {
+            BYCMoodView *mood = [[BYCMoodView alloc] initWithFrame:CGRectZero type:[type intValue]];
             mood.faceSize = kSmallSize;
             mood.delegate = self;
             [self.rowLayout addSmallIconView:mood];
         }
         
-        self.largeMood = [[BYCMoodView alloc] initWithFrame:CGRectZero type:BYCMoodView_Lonely];
+        self.largeMood = [[BYCMoodView alloc] initWithFrame:CGRectZero type:BYCMood_Lonely];
         self.largeMood.userInteractionEnabled = NO;
         self.largeMood.faceSize = kLargeSize;
         [self.largeMood setTextHidden:YES animated:NO];
@@ -59,7 +59,9 @@
     [navView addSubview:self.largeMood];
 }
 
--(void)moodView:(BYCMoodView*)view selectedWithType:(BYCMoodViewType)type {
+-(void)moodView:(BYCMoodView*)view selectedWithType:(BYCMoodType)type {
+    [self.largeMood setType:type];
+    
     CGRect start = [self.scrollView convertRect:view.frame fromView:self.rowLayout];
     CGRect end = self.largeMood.frame;
     CGPoint center = self.rowLayout.center;
@@ -73,7 +75,7 @@
     
     [view setTextHidden:YES animated:NO];
     [self.delegate entryStarted];
-    [self.addEntry setMoodText:[view moodString]];
+    [self.addEntry setMoodText:[BYCMood moodString:type]];
     [UIView animateWithDuration:0.3f animations:^{
         self.rowLayout.transform = CGAffineTransformMake(scale, 0.f, 0.f, scale, tx, ty);
         for(UIView *icon in self.rowLayout.icons) {
@@ -82,6 +84,7 @@
             }
         }
     } completion:^(BOOL finished) {
+        [self.largeMood animate];
         self.largeMood.hidden = NO;
         self.rowLayout.hidden = YES;
         self.scrollView.scrollEnabled = NO;
@@ -118,6 +121,12 @@
         self.addEntry.alpha = hidden ? 0.0f : 1.0f;
         self.addEntry.hidden = hidden;
     }
+}
+
+-(NSArray*)moods {
+    return @[@(BYCMood_Happy), @(BYCMood_Relieved), @(BYCMood_Confident), @(BYCMood_Proud), @(BYCMood_Depressed),
+             @(BYCMood_Lonely), @(BYCMood_Invisible), @(BYCMood_Embarassed), @(BYCMood_Stressed), @(BYCMood_Confused),
+             @(BYCMood_Angry), @(BYCMood_Frustrated)];
 }
 
 @end
