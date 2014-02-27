@@ -131,16 +131,24 @@
 
 #pragma mark BYCAddEntryViewDelegate
 
--(void)addSelected {
-    
+-(void)photoSelected {
+    [self.delegate photoSelected];
+}
+
+-(void)becauseSelected {
+    [self.delegate becauseSelected];
+}
+
+-(void)audioSelected {
+    [self.delegate audioSelected];
 }
 
 -(void)saveSelected {
-    
+    [self.delegate saveSelected];
 }
 
 -(void)deleteSelected {
-    
+    [self.delegate deleteSelected];
 }
 
 -(void)setNavActive:(BOOL)active {

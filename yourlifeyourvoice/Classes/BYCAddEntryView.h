@@ -1,7 +1,9 @@
 #import <UIKit/UIKit.h>
 
 @protocol BYCAddEntryViewDelegate <NSObject>
--(void)addSelected;
+-(void)photoSelected;
+-(void)becauseSelected;
+-(void)audioSelected;
 -(void)saveSelected;
 -(void)deleteSelected;
 -(void)offsetChanged:(CGFloat)percent;

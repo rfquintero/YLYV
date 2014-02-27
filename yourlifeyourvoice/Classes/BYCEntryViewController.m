@@ -21,6 +21,28 @@
     [self setupMenuButton];
 }
 
+#pragma mark BYCEntryViewDelegate
+
+-(void)photoSelected {
+    
+}
+
+-(void)becauseSelected {
+    
+}
+
+-(void)audioSelected {
+    
+}
+
+-(void)saveSelected {
+    
+}
+
+-(void)deleteSelected {
+    
+}
+
 -(void)entryStarted {
     [self.navView setLeftButtonHidden:NO animated:YES];
     [self.navView setNavTitleHidden:YES animated:YES];

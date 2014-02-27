@@ -2,6 +2,7 @@
 #import "BYCUI.h"
 #import "BYCNavigationView.h"
 #import "BYCActionView.h"
+#import "BYCImageButton.h"
 
 typedef enum {
     Action_Because,
@@ -14,7 +15,7 @@ typedef enum {
 @property (nonatomic) UIView *backgroundView;
 @property (nonatomic) UILabel *feelingLabel;
 @property (nonatomic) UILabel *moodLabel;
-@property (nonatomic) UIButton *addButton;
+@property (nonatomic) BYCImageButton *addButton;
 @property (nonatomic) UITextView *noteView;
 @property (nonatomic) UIButton *saveButton;
 @property (nonatomic) UIButton *deleteButton;
@@ -50,8 +51,8 @@ typedef enum {
         self.moodLabel = [BYCUI labelWithFontSize:20.0f];
         self.moodLabel.textColor = [UIColor blackColor];
         
-        self.addButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [self.addButton setImage:[UIImage imageNamed:@"icon_button_add"] forState:UIControlStateNormal];
+        self.addButton = [[BYCImageButton alloc] initWithFrame:CGRectZero];
+        [self.addButton setImage:[UIImage imageNamed:@"icon_button_add"]];
         [self.addButton addTarget:self action:@selector(addSelected) forControlEvents:UIControlEventTouchUpInside];
         
         self.noteView = [[UITextView alloc] initWithFrame:CGRectZero];
@@ -179,10 +180,13 @@ typedef enum {
         }
         self.scrollView.scrollEnabled = !self.showAction;
         self.buttonsEnabled = !self.showAction;
+        self.addButton.userInteractionEnabled = YES;
         self.backgroundView.userInteractionEnabled = self.showAction;
         self.tapRecognizer.enabled = !self.showAction;
         [UIView animateWithDuration:0.3f animations:^{
             [self layoutSubviews];
+            
+            self.addButton.imageTransform = self.showAction ? CGAffineTransformConcat(CGAffineTransformIdentity, CGAffineTransformMakeRotation(M_PI/4.0f)) : CGAffineTransformIdentity;
         }];
     }
 }
