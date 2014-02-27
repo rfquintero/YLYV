@@ -23,6 +23,9 @@
     if (self) {
         self.navHeight = [BYCNavigationView navbarHeight];
         
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
+        [self addGestureRecognizer:tap];
+        
         self.backgroundView = [[UIView alloc] initWithFrame:CGRectZero];
         self.backgroundView.backgroundColor = [[UIColor blueColor] colorWithAlphaComponent:0.3f];
         self.backgroundView.userInteractionEnabled = NO;
@@ -43,7 +46,6 @@
         self.noteView.font = [BYCUI roundFontOfSize:14.0f];
         self.noteView.layer.borderWidth = 1.0f;
         self.noteView.layer.borderColor = [UIColor borderLightGray].CGColor;
-        self.noteView.returnKeyType = UIReturnKeyDone;
         self.noteView.delegate = self;
         
         self.saveButton = [BYCUI standardButtonWithTitle:@"SAVE MOOD" target:self action:@selector(saveSelected)];
@@ -60,8 +62,15 @@
         [self.scrollView addSubview:self.noteView];
         [self.scrollView addSubview:self.saveButton];
         [self.scrollView addSubview:self.deleteButton];
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardUp) name:UIKeyboardWillShowNotification object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDown) name:UIKeyboardWillHideNotification object:nil];
     }
     return self;
+}
+
+-(void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 -(void)layoutSubviews {
@@ -112,14 +121,6 @@
     [self layoutTop:YES];
 }
 
-- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
-    if([text isEqual:@"\n"]) {
-        [textView resignFirstResponder];
-        return NO;
-    }
-    return YES;
-}
-
 -(void)setMoodText:(NSString*)text {
     self.moodLabel.text = [text uppercaseString];
     [self setNeedsLayout];
@@ -135,6 +136,13 @@
     [self layoutSubviews];
 }
 
+-(void)scrollToTop:(BOOL)animated {
+    CGFloat offset = self.contentOffset - self.minOffset;
+    if(self.scrollView.contentOffset.y < offset) {
+        [self.scrollView setContentOffset:CGPointMake(0, self.contentOffset-self.minOffset) animated:animated];
+    }
+}
+
 #pragma mark callbacks
 
 -(void)addSelected {
@@ -147,6 +155,27 @@
 
 -(void)deleteSelected {
     [self.delegate deleteSelected];
+}
+
+#pragma mark keyboard
+
+-(void)hideKeyboard {
+    [self.noteView resignFirstResponder];
+}
+
+-(void)setButtonsEnabled:(BOOL)enabled {
+    self.addButton.userInteractionEnabled = enabled;
+    self.deleteButton.userInteractionEnabled = enabled;
+    [self.delegate setNavActive:enabled];
+}
+
+-(void)keyboardUp {
+    self.buttonsEnabled = NO;
+    [self scrollToTop:YES];
+}
+
+-(void)keyboardDown {
+    self.buttonsEnabled = YES;
 }
 
 @end

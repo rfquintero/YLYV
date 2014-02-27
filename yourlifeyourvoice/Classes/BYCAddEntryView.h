@@ -5,6 +5,7 @@
 -(void)saveSelected;
 -(void)deleteSelected;
 -(void)offsetChanged:(CGFloat)percent;
+-(void)setNavActive:(BOOL)active;
 @end
 
 @interface BYCAddEntryView : UIView

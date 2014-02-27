@@ -32,4 +32,8 @@
     [self.navView setLeftButtonHidden:YES animated:YES];
 }
 
+-(void)setNavActive:(BOOL)active {
+    [self.navView setButtonsAcive:active];
+}
+
 @end

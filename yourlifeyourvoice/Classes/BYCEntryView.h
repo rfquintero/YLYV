@@ -2,6 +2,7 @@
 
 @protocol BYCEntryViewDelegate <NSObject>
 -(void)entryStarted;
+-(void)setNavActive:(BOOL)active;
 @end
 
 @interface BYCEntryView : BYCContentView

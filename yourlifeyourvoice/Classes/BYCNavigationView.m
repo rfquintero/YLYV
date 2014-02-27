@@ -134,6 +134,12 @@
     [self setView:self.title hidden:hidden animated:animated];
 }
 
+-(void)setButtonsAcive:(BOOL)active {
+    self.leftButton.userInteractionEnabled = active;
+    self.rightButton.userInteractionEnabled = active;
+    self.barView.userInteractionEnabled = active;
+}
+
 +(CGFloat)navbarHeight {
     return kBarHeight + (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0") ? 20.0f : 0.0f);
 }

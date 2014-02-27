@@ -147,6 +147,10 @@
     
 }
 
+-(void)setNavActive:(BOOL)active {
+    [self.delegate setNavActive:active];
+}
+
 -(void)offsetChanged:(CGFloat)percent {
     CGFloat minSize = 34.0f;
     CGFloat faceSize = minSize + (kLargeSize-minSize)*percent;
