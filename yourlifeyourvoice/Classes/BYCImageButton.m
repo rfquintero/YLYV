@@ -2,7 +2,7 @@
 #import "UIImage+Custom.h"
 
 @interface BYCImageButton()
-@property (nonatomic) UIImageView *customImage;
+@property (nonatomic, readwrite) UIImageView *customImage;
 @property (nonatomic) UIImage *enabledImage;
 @property (nonatomic) UIImage *disabledImage;
 @end

@@ -16,6 +16,7 @@ typedef enum {
 @property (nonatomic) UILabel *feelingLabel;
 @property (nonatomic) UILabel *moodLabel;
 @property (nonatomic) BYCImageButton *addButton;
+@property (nonatomic) BYCImageButton *photo;
 @property (nonatomic) UITextView *noteView;
 @property (nonatomic) UIButton *saveButton;
 @property (nonatomic) UIButton *deleteButton;
@@ -40,7 +41,7 @@ typedef enum {
         
         UITapGestureRecognizer *bgTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
         self.backgroundView = [[UIView alloc] initWithFrame:CGRectZero];
-        self.backgroundView.backgroundColor = [[UIColor blueColor] colorWithAlphaComponent:0.3f];
+        self.backgroundView.backgroundColor = [[UIColor bgBlue] colorWithAlphaComponent:0.7f];
         self.backgroundView.userInteractionEnabled = NO;
         [self.backgroundView addGestureRecognizer:bgTap];
         
@@ -54,6 +55,11 @@ typedef enum {
         self.addButton = [[BYCImageButton alloc] initWithFrame:CGRectZero];
         [self.addButton setImage:[UIImage imageNamed:@"icon_button_add"]];
         [self.addButton addTarget:self action:@selector(addSelected) forControlEvents:UIControlEventTouchUpInside];
+        
+        self.photo = [[BYCImageButton alloc] initWithFrame:CGRectZero];
+        self.photo.customImage.contentMode = UIViewContentModeScaleAspectFit;
+        [self.photo addTarget:self action:@selector(photoSelected) forControlEvents:UIControlEventTouchUpInside];
+        self.photo.hidden = YES;
         
         self.noteView = [[UITextView alloc] initWithFrame:CGRectZero];
         self.noteView.textColor = [UIColor blackColor];
@@ -80,12 +86,14 @@ typedef enum {
         [self addSubview:self.feelingLabel];
         [self addSubview:self.moodLabel];
         [self addSubview:self.addButton];
+        [self.scrollView addSubview:self.photo];
         [self.scrollView addSubview:self.noteView];
         [self.scrollView addSubview:self.saveButton];
         [self.scrollView addSubview:self.deleteButton];
         
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardUp) name:UIKeyboardWillShowNotification object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardUp:) name:UIKeyboardWillShowNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDown) name:UIKeyboardWillHideNotification object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChanged) name:UITextViewTextDidChangeNotification object:self.noteView];
     }
     return self;
 }
@@ -107,14 +115,15 @@ typedef enum {
     self.scrollView.frame = self.bounds;
     
     CGFloat topHeight = [self layoutTop:NO]+padding;
-    [self.noteView setFrame:CGRectMake(padding, self.contentOffset + topHeight, width-2*padding, 90)];
+    [self.photo setFrame:CGRectMake(padding, self.contentOffset + topHeight, width-2*padding, width-2*padding)];
+    CGFloat noteOffsetY = self.photo.hidden ? self.contentOffset + topHeight : CGRectGetMaxY(self.photo.frame)+padding;
+    [self.noteView setFrame:CGRectMake(padding, noteOffsetY, width-2*padding, 90)];
     
     CGSize saveSize = [self.saveButton sizeThatFits:CGSizeUnbounded];
     [self.saveButton setFrame:CGRectMake(padding, CGRectGetMaxY(self.noteView.frame)+padding, width-2*padding, saveSize.height)];
     [self.deleteButton centerHorizonallyAtY:CGRectGetMaxY(self.saveButton.frame)+padding inBounds:self.bounds thatFits:CGSizeUnbounded];
     
-    self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, topHeight, 0);
-    CGFloat scrollHeight = MAX(topHeight+height-44, CGRectGetMaxY(self.deleteButton.frame)+padding);
+    CGFloat scrollHeight = MAX(height+self.contentOffset-self.minOffset, CGRectGetMaxY(self.deleteButton.frame)+padding);
     [self.scrollView setContentSize:CGSizeMake(width, scrollHeight)];
     
     CGFloat actionHeight = (height-topHeight-padding-self.addButton.frame.size.height/2);
@@ -126,7 +135,7 @@ typedef enum {
 }
 
 -(CGFloat)minOffset {
-    return self.navHeight + 17.0f;
+    return self.navHeight + 10.0f;
 }
 
 -(CGFloat)layoutTop:(BOOL)scrolling {
@@ -144,10 +153,10 @@ typedef enum {
     return CGRectGetMaxY(self.addButton.frame) - offset;
 }
 
-#pragma mark UIScrollViewDelegate
-
--(void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    [self layoutTop:YES];
+-(void)setImage:(UIImage *)image {
+    self.photo.image = image;
+    self.photo.hidden = !image;
+    [self setNeedsLayout];
 }
 
 -(void)setMoodText:(NSString*)text {
@@ -172,7 +181,11 @@ typedef enum {
     }
 }
 
--(void)setActionSheetVisible:(BOOL)visible {
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    [self layoutTop:YES];
+}
+
+-(void)setActionSheetVisible:(BOOL)visible completion:(void (^)())completion {
     if(visible != _showAction) {
         _showAction = visible;
         if(self.showAction) {
@@ -185,16 +198,21 @@ typedef enum {
         self.tapRecognizer.enabled = !self.showAction;
         [UIView animateWithDuration:0.3f animations:^{
             [self layoutSubviews];
-            
             self.addButton.imageTransform = self.showAction ? CGAffineTransformConcat(CGAffineTransformIdentity, CGAffineTransformMakeRotation(M_PI/4.0f)) : CGAffineTransformIdentity;
+        } completion:^(BOOL finished) {
+            completion();
         }];
     }
 }
 
 #pragma mark callbacks
 
+-(void)photoSelected {
+    [self.delegate photoSelected];
+}
+
 -(void)addSelected {
-    [self setActionSheetVisible:!self.showAction];
+    [self setActionSheetVisible:!self.showAction completion:^{ }];
 }
 
 -(void)saveSelected {
@@ -206,29 +224,57 @@ typedef enum {
 }
 
 -(void)actionSelectedWithTag:(NSInteger)tag {
-    [self setActionSheetVisible:NO];
+    __block id<BYCAddEntryViewDelegate> delegate = self.delegate;
+    [self setActionSheetVisible:NO  completion:^{
+        switch(tag) {
+            case Action_Audio:
+                [delegate audioSelected];
+                break;
+            case Action_Because:
+                [delegate becauseSelected];
+                break;
+            case Action_Photo:
+                [delegate photoSelected];
+                break;
+            default:
+                break;
+        }
+    }];
+}
+
+-(void)textChanged {
+    [self.delegate noteChanged:self.noteView.text];
 }
 
 #pragma mark keyboard
 
 -(void)hideKeyboard {
     [self.noteView resignFirstResponder];
-    [self setActionSheetVisible:NO];
+    [self setActionSheetVisible:NO completion:^{ }];
 }
 
 -(void)setButtonsEnabled:(BOOL)enabled {
     self.addButton.userInteractionEnabled = enabled;
     self.deleteButton.userInteractionEnabled = enabled;
+    self.photo.userInteractionEnabled = enabled;
     [self.delegate setNavActive:enabled];
 }
 
--(void)keyboardUp {
+-(void)keyboardUp:(NSNotification*)notification {
+    CGFloat keyboardHeight = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue].size.height;
+    CGFloat extraHeight = self.scrollView.contentSize.height - CGRectGetMaxY(self.deleteButton.frame)+10.0f;
+    if(extraHeight < keyboardHeight) {
+        self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, keyboardHeight-extraHeight, 0);
+    }
     self.buttonsEnabled = NO;
-    [self scrollToTop:YES];
+    
 }
 
 -(void)keyboardDown {
     self.buttonsEnabled = YES;
+    [UIView animateWithDuration:0.3f animations:^{
+        self.scrollView.contentInset = UIEdgeInsetsZero;
+    }];
 }
 
 @end

@@ -65,6 +65,10 @@
     [navView addSubview:self.largeMood];
 }
 
+-(void)setImage:(UIImage*)image {
+    self.addEntry.image = image;
+}
+
 -(void)moodView:(BYCMoodView*)view selectedWithType:(BYCMoodType)type {
     [self.largeMood setType:type];
     
@@ -153,6 +157,10 @@
 
 -(void)setNavActive:(BOOL)active {
     [self.delegate setNavActive:active];
+}
+
+-(void)noteChanged:(NSString *)string {
+    [self.delegate noteChanged:string];
 }
 
 -(void)offsetChanged:(CGFloat)percent {

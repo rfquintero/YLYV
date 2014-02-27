@@ -137,6 +137,8 @@
 		458F0FC918BFD516002FEC75 /* UIImage+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F0FC718BFD516002FEC75 /* UIImage+Custom.m */; };
 		458F0FD018BFE94F002FEC75 /* BYCEntryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F0FCF18BFE94F002FEC75 /* BYCEntryModel.m */; };
 		458F0FD118BFE94F002FEC75 /* BYCEntryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F0FCF18BFE94F002FEC75 /* BYCEntryModel.m */; };
+		458F0FD418BFEEE4002FEC75 /* BYCImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F0FD318BFEEE4002FEC75 /* BYCImagePickerController.m */; };
+		458F0FD518BFEEE4002FEC75 /* BYCImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F0FD318BFEEE4002FEC75 /* BYCImagePickerController.m */; };
 		4592F1DF18B7A744009CCC65 /* BYCTalkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4592F1DE18B7A744009CCC65 /* BYCTalkViewController.m */; };
 		4592F1E018B7A744009CCC65 /* BYCTalkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4592F1DE18B7A744009CCC65 /* BYCTalkViewController.m */; };
 		4592F1E318B7A76B009CCC65 /* BYCTalkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4592F1E218B7A76B009CCC65 /* BYCTalkView.m */; };
@@ -257,6 +259,8 @@
 		458F0FC718BFD516002FEC75 /* UIImage+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Custom.m"; sourceTree = "<group>"; };
 		458F0FCE18BFE94E002FEC75 /* BYCEntryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCEntryModel.h; sourceTree = "<group>"; };
 		458F0FCF18BFE94F002FEC75 /* BYCEntryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCEntryModel.m; sourceTree = "<group>"; };
+		458F0FD218BFEEE4002FEC75 /* BYCImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCImagePickerController.h; sourceTree = "<group>"; };
+		458F0FD318BFEEE4002FEC75 /* BYCImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCImagePickerController.m; sourceTree = "<group>"; };
 		4592F1DD18B7A744009CCC65 /* BYCTalkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCTalkViewController.h; sourceTree = "<group>"; };
 		4592F1DE18B7A744009CCC65 /* BYCTalkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCTalkViewController.m; sourceTree = "<group>"; };
 		4592F1E118B7A76B009CCC65 /* BYCTalkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCTalkView.h; sourceTree = "<group>"; };
@@ -415,6 +419,8 @@
 			children = (
 				452518AE18B679A200D1B561 /* BYCViewController.h */,
 				452518AF18B679A200D1B561 /* BYCViewController.m */,
+				458F0FD218BFEEE4002FEC75 /* BYCImagePickerController.h */,
+				458F0FD318BFEEE4002FEC75 /* BYCImagePickerController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -909,6 +915,7 @@
 				4525193018B70D8900D1B561 /* BYCAddEntryView.m in Sources */,
 				458F0C7C18BEAD74002FEC75 /* BYCSpriteLayer.m in Sources */,
 				458F0CD518BEB270002FEC75 /* BYCMood.m in Sources */,
+				458F0FD418BFEEE4002FEC75 /* BYCImagePickerController.m in Sources */,
 				458F0FD018BFE94F002FEC75 /* BYCEntryModel.m in Sources */,
 				452518CE18B67F3C00D1B561 /* BYCNavigationView.m in Sources */,
 				4525192318B6976C00D1B561 /* BYCEntryRowLayoutView.m in Sources */,
@@ -932,6 +939,7 @@
 				4525193118B70D8900D1B561 /* BYCAddEntryView.m in Sources */,
 				4592F1E418B7A76B009CCC65 /* BYCTalkView.m in Sources */,
 				458F0CD618BEB270002FEC75 /* BYCMood.m in Sources */,
+				458F0FD518BFEEE4002FEC75 /* BYCImagePickerController.m in Sources */,
 				458F0C7D18BEAD74002FEC75 /* BYCSpriteLayer.m in Sources */,
 				452518B918B67AC100D1B561 /* BYCSplitViewController.m in Sources */,
 				4525189A18B6750800D1B561 /* yourlifeyourvoiceTests.m in Sources */,

@@ -15,10 +15,19 @@ return colorName; \
 
 CREATE_HEX_COLOR(bgLightGray, @"#F4F4F4");
 CREATE_HEX_COLOR(bgSidebarGray, @"#2C2D33");
+CREATE_HEX_COLOR(bgBlue, @"#2E60FF");
+CREATE_HEX_COLOR(bgYellow, @"#FCFC00");
+CREATE_HEX_COLOR(bgPurple, @"#B051F4");
+CREATE_HEX_COLOR(bgGreen, @"#88EA2A");
+CREATE_HEX_COLOR(bgOrange, @"#FF9000");
+CREATE_HEX_COLOR(bgRed, @"#FF3200");
+
 CREATE_HEX_COLOR(textOrange, @"#EF722B");
 CREATE_HEX_COLOR(textRed, @"#EA283A");
 CREATE_HEX_COLOR(textDarkRed, @"#811414");
+
 CREATE_HEX_COLOR(borderLightGray, @"#DCDCDC");
+
 
 + (CGFloat)colorComponentFrom:(NSString *)string start:(NSUInteger)start length:(NSUInteger)length {
     NSString *substring = [string substringWithRange:NSMakeRange(start, length)];
