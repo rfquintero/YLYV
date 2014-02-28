@@ -263,11 +263,17 @@ typedef enum {
 -(void)keyboardUp:(NSNotification*)notification {
     CGFloat keyboardHeight = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue].size.height;
     CGFloat extraHeight = self.scrollView.contentSize.height - CGRectGetMaxY(self.deleteButton.frame)+10.0f;
+    CGFloat offset = self.contentOffset - self.minOffset;
     if(extraHeight < keyboardHeight) {
-        self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, keyboardHeight-extraHeight, 0);
+        [UIView animateWithDuration:0.3f animations:^{
+            self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, keyboardHeight-extraHeight, 0);
+        } completion:^(BOOL finished) {
+            [self.scrollView setContentOffset:CGPointMake(0, self.noteView.frame.origin.y-offset) animated:YES];
+        }];
+    } else {
+        [self.scrollView setContentOffset:CGPointMake(0, self.noteView.frame.origin.y-offset) animated:YES];
     }
     self.buttonsEnabled = NO;
-    
 }
 
 -(void)keyboardDown {
