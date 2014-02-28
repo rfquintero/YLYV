@@ -15,5 +15,6 @@
 -(void)discardEntry;
 -(void)setNavView:(UIView*)navView;
 -(void)setImage:(UIImage*)image;
+-(void)setReasons:(NSArray*)reasons;
 -(void)setDelegate:(id<BYCEntryViewDelegate>)delegate;
 @end

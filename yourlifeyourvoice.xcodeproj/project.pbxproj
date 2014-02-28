@@ -139,6 +139,12 @@
 		458F0FD118BFE94F002FEC75 /* BYCEntryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F0FCF18BFE94F002FEC75 /* BYCEntryModel.m */; };
 		458F0FD418BFEEE4002FEC75 /* BYCImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F0FD318BFEEE4002FEC75 /* BYCImagePickerController.m */; };
 		458F0FD518BFEEE4002FEC75 /* BYCImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F0FD318BFEEE4002FEC75 /* BYCImagePickerController.m */; };
+		458F0FD818C0E121002FEC75 /* BYCAddReasonsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F0FD718C0E121002FEC75 /* BYCAddReasonsView.m */; };
+		458F0FD918C0E121002FEC75 /* BYCAddReasonsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F0FD718C0E121002FEC75 /* BYCAddReasonsView.m */; };
+		458F0FDC18C0EA87002FEC75 /* BYCAddReasonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F0FDB18C0EA87002FEC75 /* BYCAddReasonsViewController.m */; };
+		458F0FDD18C0EA87002FEC75 /* BYCAddReasonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F0FDB18C0EA87002FEC75 /* BYCAddReasonsViewController.m */; };
+		458F0FE018C0F9A4002FEC75 /* BYCReasonsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F0FDF18C0F9A4002FEC75 /* BYCReasonsView.m */; };
+		458F0FE118C0F9A4002FEC75 /* BYCReasonsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F0FDF18C0F9A4002FEC75 /* BYCReasonsView.m */; };
 		4592F1DF18B7A744009CCC65 /* BYCTalkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4592F1DE18B7A744009CCC65 /* BYCTalkViewController.m */; };
 		4592F1E018B7A744009CCC65 /* BYCTalkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4592F1DE18B7A744009CCC65 /* BYCTalkViewController.m */; };
 		4592F1E318B7A76B009CCC65 /* BYCTalkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4592F1E218B7A76B009CCC65 /* BYCTalkView.m */; };
@@ -261,6 +267,12 @@
 		458F0FCF18BFE94F002FEC75 /* BYCEntryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCEntryModel.m; sourceTree = "<group>"; };
 		458F0FD218BFEEE4002FEC75 /* BYCImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCImagePickerController.h; sourceTree = "<group>"; };
 		458F0FD318BFEEE4002FEC75 /* BYCImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCImagePickerController.m; sourceTree = "<group>"; };
+		458F0FD618C0E121002FEC75 /* BYCAddReasonsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCAddReasonsView.h; sourceTree = "<group>"; };
+		458F0FD718C0E121002FEC75 /* BYCAddReasonsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCAddReasonsView.m; sourceTree = "<group>"; };
+		458F0FDA18C0EA87002FEC75 /* BYCAddReasonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCAddReasonsViewController.h; sourceTree = "<group>"; };
+		458F0FDB18C0EA87002FEC75 /* BYCAddReasonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCAddReasonsViewController.m; sourceTree = "<group>"; };
+		458F0FDE18C0F9A4002FEC75 /* BYCReasonsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCReasonsView.h; sourceTree = "<group>"; };
+		458F0FDF18C0F9A4002FEC75 /* BYCReasonsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCReasonsView.m; sourceTree = "<group>"; };
 		4592F1DD18B7A744009CCC65 /* BYCTalkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCTalkViewController.h; sourceTree = "<group>"; };
 		4592F1DE18B7A744009CCC65 /* BYCTalkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCTalkViewController.m; sourceTree = "<group>"; };
 		4592F1E118B7A76B009CCC65 /* BYCTalkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCTalkView.h; sourceTree = "<group>"; };
@@ -490,6 +502,8 @@
 			children = (
 				4525190018B68CCA00D1B561 /* BYCEntryViewController.h */,
 				4525190118B68CCA00D1B561 /* BYCEntryViewController.m */,
+				458F0FDA18C0EA87002FEC75 /* BYCAddReasonsViewController.h */,
+				458F0FDB18C0EA87002FEC75 /* BYCAddReasonsViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -503,6 +517,10 @@
 				4525192218B6976C00D1B561 /* BYCEntryRowLayoutView.m */,
 				4525192E18B70D8900D1B561 /* BYCAddEntryView.h */,
 				4525192F18B70D8900D1B561 /* BYCAddEntryView.m */,
+				458F0FD618C0E121002FEC75 /* BYCAddReasonsView.h */,
+				458F0FD718C0E121002FEC75 /* BYCAddReasonsView.m */,
+				458F0FDE18C0F9A4002FEC75 /* BYCReasonsView.h */,
+				458F0FDF18C0F9A4002FEC75 /* BYCReasonsView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -900,6 +918,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				452518F818B68B3D00D1B561 /* BYCMoodView.m in Sources */,
+				458F0FDC18C0EA87002FEC75 /* BYCAddReasonsViewController.m in Sources */,
 				452518BE18B67BD400D1B561 /* BYCUI.m in Sources */,
 				4525190218B68CCA00D1B561 /* BYCEntryViewController.m in Sources */,
 				458F0FBF18BFC631002FEC75 /* BYCActionView.m in Sources */,
@@ -910,6 +929,7 @@
 				452518B018B679A200D1B561 /* BYCViewController.m in Sources */,
 				45DEC7D718BBBE4800A92550 /* BYCDatabaseUtilities.m in Sources */,
 				458F0FC318BFD4DC002FEC75 /* BYCImageButton.m in Sources */,
+				458F0FD818C0E121002FEC75 /* BYCAddReasonsView.m in Sources */,
 				45DEC7D318BBBE2600A92550 /* BYCDatabase.m in Sources */,
 				4525188118B6750800D1B561 /* main.m in Sources */,
 				4525193018B70D8900D1B561 /* BYCAddEntryView.m in Sources */,
@@ -928,6 +948,7 @@
 				452518D218B6822800D1B561 /* BYCContentView.m in Sources */,
 				452518C618B67BF400D1B561 /* UIColor+Custom.m in Sources */,
 				452518B818B67AC100D1B561 /* BYCSplitViewController.m in Sources */,
+				458F0FE018C0F9A4002FEC75 /* BYCReasonsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -948,9 +969,12 @@
 				4592F1E018B7A744009CCC65 /* BYCTalkViewController.m in Sources */,
 				452518BF18B67BD400D1B561 /* BYCUI.m in Sources */,
 				458F0CDA18BEB54E002FEC75 /* BYCMoodSprite.m in Sources */,
+				458F0FDD18C0EA87002FEC75 /* BYCAddReasonsViewController.m in Sources */,
 				4525192A18B6A2A400D1B561 /* BYCSideViewCell.m in Sources */,
+				458F0FD918C0E121002FEC75 /* BYCAddReasonsView.m in Sources */,
 				452518C318B67BE800D1B561 /* UIView+Layouts.m in Sources */,
 				458F0FC418BFD4DC002FEC75 /* BYCImageButton.m in Sources */,
+				458F0FE118C0F9A4002FEC75 /* BYCReasonsView.m in Sources */,
 				45DEC7D418BBBE2600A92550 /* BYCDatabase.m in Sources */,
 				452518B118B679A200D1B561 /* BYCViewController.m in Sources */,
 				452518CB18B67D9200D1B561 /* BYCSideView.m in Sources */,

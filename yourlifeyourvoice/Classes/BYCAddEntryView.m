@@ -3,6 +3,7 @@
 #import "BYCNavigationView.h"
 #import "BYCActionView.h"
 #import "BYCImageButton.h"
+#import "BYCReasonsView.h"
 
 typedef enum {
     Action_Because,
@@ -16,6 +17,7 @@ typedef enum {
 @property (nonatomic) UILabel *feelingLabel;
 @property (nonatomic) UILabel *moodLabel;
 @property (nonatomic) BYCImageButton *addButton;
+@property (nonatomic) BYCReasonsView *reasonsView;
 @property (nonatomic) BYCImageButton *photo;
 @property (nonatomic) UITextView *noteView;
 @property (nonatomic) UIButton *saveButton;
@@ -45,16 +47,21 @@ typedef enum {
         self.backgroundView.userInteractionEnabled = NO;
         [self.backgroundView addGestureRecognizer:bgTap];
         
-        self.feelingLabel = [BYCUI labelWithRoundFontSize:12.0f];
+        self.feelingLabel = [BYCUI labelWithRoundFontSize:14.0f];
         self.feelingLabel.textColor = [UIColor blackColor];
         self.feelingLabel.text = @"I'm feeling...";
         
-        self.moodLabel = [BYCUI labelWithFontSize:20.0f];
+        self.moodLabel = [BYCUI labelWithFontSize:22.0f];
         self.moodLabel.textColor = [UIColor blackColor];
         
         self.addButton = [[BYCImageButton alloc] initWithFrame:CGRectZero];
         [self.addButton setImage:[UIImage imageNamed:@"icon_button_add"]];
         [self.addButton addTarget:self action:@selector(addSelected) forControlEvents:UIControlEventTouchUpInside];
+        
+        self.reasonsView = [[BYCReasonsView alloc] initWithFrame:CGRectZero];
+        UITapGestureRecognizer *reasonsTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(becauseSelected)];
+        [self.reasonsView addGestureRecognizer:reasonsTap];
+        self.reasonsView.hidden = YES;
         
         self.photo = [[BYCImageButton alloc] initWithFrame:CGRectZero];
         self.photo.customImage.contentMode = UIViewContentModeScaleAspectFit;
@@ -86,6 +93,7 @@ typedef enum {
         [self addSubview:self.feelingLabel];
         [self addSubview:self.moodLabel];
         [self addSubview:self.addButton];
+        [self.scrollView addSubview:self.reasonsView];
         [self.scrollView addSubview:self.photo];
         [self.scrollView addSubview:self.noteView];
         [self.scrollView addSubview:self.saveButton];
@@ -111,16 +119,20 @@ typedef enum {
     CGFloat width = self.bounds.size.width;
     CGFloat height = self.bounds.size.height;
     CGFloat padding = 10.0f;
+    CGFloat paddedWidth = width-2*padding;
     
     self.scrollView.frame = self.bounds;
     
     CGFloat topHeight = [self layoutTop:NO]+padding;
-    [self.photo setFrame:CGRectMake(padding, self.contentOffset + topHeight, width-2*padding, width-2*padding)];
-    CGFloat noteOffsetY = self.photo.hidden ? self.contentOffset + topHeight : CGRectGetMaxY(self.photo.frame)+padding;
-    [self.noteView setFrame:CGRectMake(padding, noteOffsetY, width-2*padding, 90)];
+    CGFloat offsetY = self.contentOffset + topHeight;
+    [self.reasonsView centerHorizonallyAtY:offsetY inBounds:self.bounds thatFits:CGSizeMake(paddedWidth, CGFLOAT_MAX)];
+    offsetY = [self offset:offsetY belowView:self.reasonsView];
+    [self.photo setFrame:CGRectMake(padding, self.contentOffset + topHeight, paddedWidth, paddedWidth)];
+    offsetY = [self offset:offsetY belowView:self.photo];
+    [self.noteView setFrame:CGRectMake(padding, offsetY, paddedWidth, 90)];
     
     CGSize saveSize = [self.saveButton sizeThatFits:CGSizeUnbounded];
-    [self.saveButton setFrame:CGRectMake(padding, CGRectGetMaxY(self.noteView.frame)+padding, width-2*padding, saveSize.height)];
+    [self.saveButton setFrame:CGRectMake(padding, CGRectGetMaxY(self.noteView.frame)+padding, paddedWidth, saveSize.height)];
     [self.deleteButton centerHorizonallyAtY:CGRectGetMaxY(self.saveButton.frame)+padding inBounds:self.bounds thatFits:CGSizeUnbounded];
     
     CGFloat scrollHeight = MAX(height+self.contentOffset-self.minOffset, CGRectGetMaxY(self.deleteButton.frame)+padding);
@@ -132,6 +144,10 @@ typedef enum {
     } else {
         self.actionView.frame = CGRectMake(0, height, width, actionHeight);
     }
+}
+
+-(CGFloat)offset:(CGFloat)offset belowView:(UIView*)view {
+    return (view.hidden ? offset : CGRectGetMaxY(view.frame) + 20.0f);
 }
 
 -(CGFloat)minOffset {
@@ -156,6 +172,12 @@ typedef enum {
 -(void)setImage:(UIImage *)image {
     self.photo.image = image;
     self.photo.hidden = !image;
+    [self setNeedsLayout];
+}
+
+-(void)setReasons:(NSArray*)reasons {
+    [self.reasonsView setReasons:reasons];
+    self.reasonsView.hidden = reasons.count == 0;
     [self setNeedsLayout];
 }
 
@@ -211,6 +233,10 @@ typedef enum {
     [self.delegate photoSelected];
 }
 
+-(void)becauseSelected {
+    [self.delegate becauseSelected];
+}
+
 -(void)addSelected {
     [self setActionSheetVisible:!self.showAction completion:^{ }];
 }
@@ -257,6 +283,7 @@ typedef enum {
     self.addButton.userInteractionEnabled = enabled;
     self.deleteButton.userInteractionEnabled = enabled;
     self.photo.userInteractionEnabled = enabled;
+    self.reasonsView.userInteractionEnabled = enabled;
     [self.delegate setNavActive:enabled];
 }
 

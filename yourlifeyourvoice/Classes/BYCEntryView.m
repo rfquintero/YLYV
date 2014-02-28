@@ -66,7 +66,11 @@
 }
 
 -(void)setImage:(UIImage*)image {
-    self.addEntry.image = image;
+    [self.addEntry setImage:image];
+}
+
+-(void)setReasons:(NSArray*)reasons {
+    [self.addEntry setReasons:reasons];
 }
 
 -(void)moodView:(BYCMoodView*)view selectedWithType:(BYCMoodType)type {

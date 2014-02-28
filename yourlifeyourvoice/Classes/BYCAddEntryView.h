@@ -15,6 +15,7 @@
 @property (nonatomic) CGFloat contentOffset;
 -(void)setMoodText:(NSString*)text;
 -(void)setImage:(UIImage*)image;
+-(void)setReasons:(NSArray*)reasons;
 -(void)resetContent;
 -(void)setDelegate:(id<BYCAddEntryViewDelegate>)delegate;
 @end

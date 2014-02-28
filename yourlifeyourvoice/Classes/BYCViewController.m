@@ -31,6 +31,14 @@
     [self.navView setupMenuButton:self action:@selector(showMenu)];
 }
 
+-(void)setupBackButton {
+    [self.navView setupBackButton:self action:@selector(backSelected)];
+}
+
+-(void)backSelected {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 -(void)showMenu {
     [[NSNotificationCenter defaultCenter] postNotificationName:BYCNotificationShowMenu object:self.navigationController];
 }

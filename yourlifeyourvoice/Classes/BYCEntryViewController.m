@@ -1,6 +1,7 @@
 #import "BYCEntryViewController.h"
 #import "BYCEntryView.h"
 #import "BYCImagePickerController.h"
+#import "BYCAddReasonsViewController.h"
 #import "BYCEntryModel.h"
 
 @interface BYCEntryViewController ()<BYCEntryViewDelegate, BYCImagePickerControllerDelegate>
@@ -29,6 +30,16 @@
     [self setupMenuButton];
 }
 
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self refreshView];
+}
+
+-(void)refreshView {
+    self.entryView.image = self.model.image;
+    self.entryView.reasons = self.model.reasons;
+}
+
 #pragma mark BYCEntryViewDelegate
 
 -(void)photoSelected {
@@ -36,7 +47,8 @@
 }
 
 -(void)becauseSelected {
-    
+    UIViewController *vc = [[BYCAddReasonsViewController alloc] initWithApplicationState:self.applicationState model:self.model];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 -(void)audioSelected {
@@ -74,11 +86,13 @@
 #pragma mark BYCImagePickerControllerDelegate
 
 -(void)imagePickerSelected:(UIImage *)image {
-    self.model.image = self.entryView.image = image;
+    self.model.image = image;
+    [self refreshView];
 }
 
 -(void)imagePickerRemoveSelected {
-    self.model.image = self.entryView.image = nil;
+    self.model.image = nil;
+    [self refreshView];
 }
 
 @end
