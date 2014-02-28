@@ -43,7 +43,7 @@ typedef enum {
         
         UITapGestureRecognizer *bgTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
         self.backgroundView = [[UIView alloc] initWithFrame:CGRectZero];
-        self.backgroundView.backgroundColor = [[UIColor bgBlue] colorWithAlphaComponent:0.7f];
+        self.backgroundView.backgroundColor = [[UIColor bgBlue] colorWithAlphaComponent:0.9f];
         self.backgroundView.userInteractionEnabled = NO;
         [self.backgroundView addGestureRecognizer:bgTap];
         
@@ -127,7 +127,7 @@ typedef enum {
     CGFloat offsetY = self.contentOffset + topHeight;
     [self.reasonsView centerHorizonallyAtY:offsetY inBounds:self.bounds thatFits:CGSizeMake(paddedWidth, CGFLOAT_MAX)];
     offsetY = [self offset:offsetY belowView:self.reasonsView];
-    [self.photo setFrame:CGRectMake(padding, self.contentOffset + topHeight, paddedWidth, paddedWidth)];
+    [self.photo setFrame:CGRectMake(padding, offsetY, paddedWidth, paddedWidth)];
     offsetY = [self offset:offsetY belowView:self.photo];
     [self.noteView setFrame:CGRectMake(padding, offsetY, paddedWidth, 90)];
     
