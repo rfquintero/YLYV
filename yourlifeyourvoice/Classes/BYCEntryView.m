@@ -73,6 +73,18 @@
     [self.addEntry setReasons:reasons];
 }
 
+-(void)setSpeakerMode:(BOOL)speakerMode {
+    [self.addEntry setSpeakerMode:speakerMode];
+}
+
+-(void)setAudioDuration:(NSTimeInterval)duration {
+    [self.addEntry setAudioDuration:duration];
+}
+
+-(void)playbackStopped {
+    [self.addEntry playbackStopped];
+}
+
 -(void)moodView:(BYCMoodView*)view selectedWithType:(BYCMoodType)type {
     [self.largeMood setType:type];
     
@@ -157,6 +169,18 @@
 
 -(void)deleteSelected {
     [self.delegate deleteSelected];
+}
+
+-(void)playRecording {
+    [self.delegate playRecording];
+}
+
+-(void)stopPlayback {
+    [self.delegate stopPlayback];
+}
+
+-(void)toggleSpeaker {
+    [self.delegate toggleSpeaker];
 }
 
 -(void)setNavActive:(BOOL)active {

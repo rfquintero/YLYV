@@ -4,6 +4,7 @@
 #import "BYCActionView.h"
 #import "BYCImageButton.h"
 #import "BYCReasonsView.h"
+#import "BYCAudioView.h"
 
 typedef enum {
     Action_Because,
@@ -11,7 +12,7 @@ typedef enum {
     Action_Audio,
 } ActionItem;
 
-@interface BYCAddEntryView()<UITextViewDelegate, BYCActionViewDelegate>
+@interface BYCAddEntryView()<UITextViewDelegate, BYCActionViewDelegate, BYCAudioViewDelegate>
 @property (nonatomic) UIScrollView *scrollView;
 @property (nonatomic) UIView *backgroundView;
 @property (nonatomic) UILabel *feelingLabel;
@@ -19,6 +20,7 @@ typedef enum {
 @property (nonatomic) BYCImageButton *addButton;
 @property (nonatomic) BYCReasonsView *reasonsView;
 @property (nonatomic) BYCImageButton *photo;
+@property (nonatomic) BYCAudioView *audioView;
 @property (nonatomic) UITextView *noteView;
 @property (nonatomic) UIButton *saveButton;
 @property (nonatomic) UIButton *deleteButton;
@@ -68,6 +70,10 @@ typedef enum {
         [self.photo addTarget:self action:@selector(photoSelected) forControlEvents:UIControlEventTouchUpInside];
         self.photo.hidden = YES;
         
+        self.audioView = [[BYCAudioView alloc] initWithFrame:CGRectZero];
+        self.audioView.delegate = self;
+        self.audioView.hidden = YES;
+        
         self.noteView = [[UITextView alloc] initWithFrame:CGRectZero];
         self.noteView.textColor = [UIColor blackColor];
         self.noteView.font = [BYCUI roundFontOfSize:14.0f];
@@ -95,6 +101,7 @@ typedef enum {
         [self addSubview:self.addButton];
         [self.scrollView addSubview:self.reasonsView];
         [self.scrollView addSubview:self.photo];
+        [self.scrollView addSubview:self.audioView];
         [self.scrollView addSubview:self.noteView];
         [self.scrollView addSubview:self.saveButton];
         [self.scrollView addSubview:self.deleteButton];
@@ -129,6 +136,8 @@ typedef enum {
     offsetY = [self offset:offsetY belowView:self.reasonsView];
     [self.photo setFrame:CGRectMake(padding, offsetY, paddedWidth, paddedWidth)];
     offsetY = [self offset:offsetY belowView:self.photo];
+    [self.audioView centerHorizonallyAtY:offsetY inBounds:self.bounds thatFits:CGSizeMake(paddedWidth, CGFLOAT_MAX)];
+    offsetY = [self offset:offsetY belowView:self.audioView];
     [self.noteView setFrame:CGRectMake(padding, offsetY, paddedWidth, 90)];
     
     CGSize saveSize = [self.saveButton sizeThatFits:CGSizeUnbounded];
@@ -152,6 +161,13 @@ typedef enum {
 
 -(CGFloat)minOffset {
     return self.navHeight + 10.0f;
+}
+
+-(CGFloat)minTopHeight {
+    CGFloat height = [self.feelingLabel sizeThatFits:CGSizeUnbounded].height;
+    height += [self.moodLabel sizeThatFits:CGSizeUnbounded].height;
+    height += [self.addButton sizeThatFits:CGSizeUnbounded].height + 5.0f;
+    return height + 10.0f;
 }
 
 -(CGFloat)layoutTop:(BOOL)scrolling {
@@ -179,6 +195,22 @@ typedef enum {
     [self.reasonsView setReasons:reasons];
     self.reasonsView.hidden = reasons.count == 0;
     [self setNeedsLayout];
+}
+
+-(void)setSpeakerMode:(BOOL)speakerMode {
+    [self.audioView setSpeakerMode:speakerMode];
+}
+
+-(void)setAudioDuration:(NSTimeInterval)duration {
+    if(duration > 0) {
+        [self.audioView setDuration:duration];
+        self.audioView.hidden = NO;
+    } else {
+        self.audioView.hidden = YES;
+    }
+}
+-(void)playbackStopped {
+    [self.audioView playbackStopped];
 }
 
 -(void)setMoodText:(NSString*)text {
@@ -272,6 +304,23 @@ typedef enum {
     [self.delegate noteChanged:self.noteView.text];
 }
 
+#pragma mark audio view
+-(void)playRecording {
+    [self.delegate playRecording];
+}
+
+-(void)stopPlayback {
+    [self.delegate stopPlayback];
+}
+
+-(void)toggleSpeaker {
+    [self.delegate toggleSpeaker];
+}
+
+-(void)editSelected {
+    [self.delegate audioSelected];
+}
+
 #pragma mark keyboard
 
 -(void)hideKeyboard {
@@ -289,8 +338,8 @@ typedef enum {
 
 -(void)keyboardUp:(NSNotification*)notification {
     CGFloat keyboardHeight = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue].size.height;
-    CGFloat extraHeight = self.scrollView.contentSize.height - CGRectGetMaxY(self.deleteButton.frame)+10.0f;
-    CGFloat offset = self.contentOffset - self.minOffset;
+    CGFloat extraHeight = self.scrollView.contentSize.height - CGRectGetMaxY(self.deleteButton.frame);
+    CGFloat offset = self.navHeight + self.minTopHeight+10;
     if(extraHeight < keyboardHeight) {
         [UIView animateWithDuration:0.3f animations:^{
             self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, keyboardHeight-extraHeight, 0);

@@ -149,6 +149,29 @@
 		4592F1E018B7A744009CCC65 /* BYCTalkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4592F1DE18B7A744009CCC65 /* BYCTalkViewController.m */; };
 		4592F1E318B7A76B009CCC65 /* BYCTalkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4592F1E218B7A76B009CCC65 /* BYCTalkView.m */; };
 		4592F1E418B7A76B009CCC65 /* BYCTalkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4592F1E218B7A76B009CCC65 /* BYCTalkView.m */; };
+		45AFD5DB18C10C4F002C18F9 /* BYCAddAudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AFD5DA18C10C4F002C18F9 /* BYCAddAudioView.m */; };
+		45AFD5DC18C10C4F002C18F9 /* BYCAddAudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AFD5DA18C10C4F002C18F9 /* BYCAddAudioView.m */; };
+		45AFD5DF18C10C81002C18F9 /* BYCAddAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AFD5DE18C10C81002C18F9 /* BYCAddAudioViewController.m */; };
+		45AFD5E018C10C81002C18F9 /* BYCAddAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AFD5DE18C10C81002C18F9 /* BYCAddAudioViewController.m */; };
+		45AFD5E218C1284A002C18F9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45AFD5E118C1284A002C18F9 /* AVFoundation.framework */; };
+		45AFD5E518C134E8002C18F9 /* icon_button_play.png in Resources */ = {isa = PBXBuildFile; fileRef = 45AFD5E318C134E8002C18F9 /* icon_button_play.png */; };
+		45AFD5E618C134E8002C18F9 /* icon_button_play.png in Resources */ = {isa = PBXBuildFile; fileRef = 45AFD5E318C134E8002C18F9 /* icon_button_play.png */; };
+		45AFD5E718C134E8002C18F9 /* icon_button_play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45AFD5E418C134E8002C18F9 /* icon_button_play@2x.png */; };
+		45AFD5E818C134E8002C18F9 /* icon_button_play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45AFD5E418C134E8002C18F9 /* icon_button_play@2x.png */; };
+		45AFD5EB18C13936002C18F9 /* icon_button_stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 45AFD5E918C13936002C18F9 /* icon_button_stop.png */; };
+		45AFD5EC18C13936002C18F9 /* icon_button_stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 45AFD5E918C13936002C18F9 /* icon_button_stop.png */; };
+		45AFD5ED18C13936002C18F9 /* icon_button_stop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45AFD5EA18C13936002C18F9 /* icon_button_stop@2x.png */; };
+		45AFD5EE18C13936002C18F9 /* icon_button_stop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45AFD5EA18C13936002C18F9 /* icon_button_stop@2x.png */; };
+		45AFD5F918C147CD002C18F9 /* icon_speaker_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 45AFD5F518C147CD002C18F9 /* icon_speaker_off.png */; };
+		45AFD5FA18C147CD002C18F9 /* icon_speaker_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 45AFD5F518C147CD002C18F9 /* icon_speaker_off.png */; };
+		45AFD5FB18C147CD002C18F9 /* icon_speaker_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45AFD5F618C147CD002C18F9 /* icon_speaker_off@2x.png */; };
+		45AFD5FC18C147CD002C18F9 /* icon_speaker_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45AFD5F618C147CD002C18F9 /* icon_speaker_off@2x.png */; };
+		45AFD5FD18C147CD002C18F9 /* icon_speaker_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 45AFD5F718C147CD002C18F9 /* icon_speaker_on.png */; };
+		45AFD5FE18C147CD002C18F9 /* icon_speaker_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 45AFD5F718C147CD002C18F9 /* icon_speaker_on.png */; };
+		45AFD5FF18C147CD002C18F9 /* icon_speaker_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45AFD5F818C147CD002C18F9 /* icon_speaker_on@2x.png */; };
+		45AFD60018C147CD002C18F9 /* icon_speaker_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45AFD5F818C147CD002C18F9 /* icon_speaker_on@2x.png */; };
+		45AFD60318C149B9002C18F9 /* BYCAudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AFD60218C149B9002C18F9 /* BYCAudioView.m */; };
+		45AFD60418C149B9002C18F9 /* BYCAudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AFD60218C149B9002C18F9 /* BYCAudioView.m */; };
 		45DEC7D318BBBE2600A92550 /* BYCDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DEC7D218BBBE2600A92550 /* BYCDatabase.m */; };
 		45DEC7D418BBBE2600A92550 /* BYCDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DEC7D218BBBE2600A92550 /* BYCDatabase.m */; };
 		45DEC7D718BBBE4800A92550 /* BYCDatabaseUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DEC7D618BBBE4800A92550 /* BYCDatabaseUtilities.m */; };
@@ -277,6 +300,21 @@
 		4592F1DE18B7A744009CCC65 /* BYCTalkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCTalkViewController.m; sourceTree = "<group>"; };
 		4592F1E118B7A76B009CCC65 /* BYCTalkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCTalkView.h; sourceTree = "<group>"; };
 		4592F1E218B7A76B009CCC65 /* BYCTalkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCTalkView.m; sourceTree = "<group>"; };
+		45AFD5D918C10C4F002C18F9 /* BYCAddAudioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCAddAudioView.h; sourceTree = "<group>"; };
+		45AFD5DA18C10C4F002C18F9 /* BYCAddAudioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCAddAudioView.m; sourceTree = "<group>"; };
+		45AFD5DD18C10C81002C18F9 /* BYCAddAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCAddAudioViewController.h; sourceTree = "<group>"; };
+		45AFD5DE18C10C81002C18F9 /* BYCAddAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCAddAudioViewController.m; sourceTree = "<group>"; };
+		45AFD5E118C1284A002C18F9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		45AFD5E318C134E8002C18F9 /* icon_button_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_button_play.png; sourceTree = "<group>"; };
+		45AFD5E418C134E8002C18F9 /* icon_button_play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_button_play@2x.png"; sourceTree = "<group>"; };
+		45AFD5E918C13936002C18F9 /* icon_button_stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_button_stop.png; sourceTree = "<group>"; };
+		45AFD5EA18C13936002C18F9 /* icon_button_stop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_button_stop@2x.png"; sourceTree = "<group>"; };
+		45AFD5F518C147CD002C18F9 /* icon_speaker_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_speaker_off.png; sourceTree = "<group>"; };
+		45AFD5F618C147CD002C18F9 /* icon_speaker_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_speaker_off@2x.png"; sourceTree = "<group>"; };
+		45AFD5F718C147CD002C18F9 /* icon_speaker_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_speaker_on.png; sourceTree = "<group>"; };
+		45AFD5F818C147CD002C18F9 /* icon_speaker_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_speaker_on@2x.png"; sourceTree = "<group>"; };
+		45AFD60118C149B9002C18F9 /* BYCAudioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCAudioView.h; sourceTree = "<group>"; };
+		45AFD60218C149B9002C18F9 /* BYCAudioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCAudioView.m; sourceTree = "<group>"; };
 		45DEC7D118BBBE2600A92550 /* BYCDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCDatabase.h; sourceTree = "<group>"; };
 		45DEC7D218BBBE2600A92550 /* BYCDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCDatabase.m; sourceTree = "<group>"; };
 		45DEC7D518BBBE4800A92550 /* BYCDatabaseUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCDatabaseUtilities.h; sourceTree = "<group>"; };
@@ -289,6 +327,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45AFD5E218C1284A002C18F9 /* AVFoundation.framework in Frameworks */,
 				45DEC7DC18BBC07100A92550 /* libsqlite3.dylib in Frameworks */,
 				4525187718B6750800D1B561 /* CoreGraphics.framework in Frameworks */,
 				4525187918B6750800D1B561 /* UIKit.framework in Frameworks */,
@@ -333,6 +372,7 @@
 		4525187318B6750800D1B561 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				45AFD5E118C1284A002C18F9 /* AVFoundation.framework */,
 				45DEC7DB18BBC07100A92550 /* libsqlite3.dylib */,
 				4525187418B6750800D1B561 /* Foundation.framework */,
 				4525187618B6750800D1B561 /* CoreGraphics.framework */,
@@ -409,6 +449,14 @@
 			isa = PBXGroup;
 			children = (
 				458F0C7E18BEAF9F002FEC75 /* sprites */,
+				45AFD5E318C134E8002C18F9 /* icon_button_play.png */,
+				45AFD5E418C134E8002C18F9 /* icon_button_play@2x.png */,
+				45AFD5E918C13936002C18F9 /* icon_button_stop.png */,
+				45AFD5EA18C13936002C18F9 /* icon_button_stop@2x.png */,
+				45AFD5F518C147CD002C18F9 /* icon_speaker_off.png */,
+				45AFD5F618C147CD002C18F9 /* icon_speaker_off@2x.png */,
+				45AFD5F718C147CD002C18F9 /* icon_speaker_on.png */,
+				45AFD5F818C147CD002C18F9 /* icon_speaker_on@2x.png */,
 				452518FA18B68C9100D1B561 /* face_lonely.png */,
 				452518FB18B68C9100D1B561 /* face_lonely@2x.png */,
 				452518D418B6892400D1B561 /* icon_button_add.png */,
@@ -504,6 +552,8 @@
 				4525190118B68CCA00D1B561 /* BYCEntryViewController.m */,
 				458F0FDA18C0EA87002FEC75 /* BYCAddReasonsViewController.h */,
 				458F0FDB18C0EA87002FEC75 /* BYCAddReasonsViewController.m */,
+				45AFD5DD18C10C81002C18F9 /* BYCAddAudioViewController.h */,
+				45AFD5DE18C10C81002C18F9 /* BYCAddAudioViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -521,6 +571,10 @@
 				458F0FD718C0E121002FEC75 /* BYCAddReasonsView.m */,
 				458F0FDE18C0F9A4002FEC75 /* BYCReasonsView.h */,
 				458F0FDF18C0F9A4002FEC75 /* BYCReasonsView.m */,
+				45AFD5D918C10C4F002C18F9 /* BYCAddAudioView.h */,
+				45AFD5DA18C10C4F002C18F9 /* BYCAddAudioView.m */,
+				45AFD60118C149B9002C18F9 /* BYCAudioView.h */,
+				45AFD60218C149B9002C18F9 /* BYCAudioView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -823,11 +877,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45AFD5E518C134E8002C18F9 /* icon_button_play.png in Resources */,
 				458F0CB918BEAF9F002FEC75 /* frustrated.plist in Resources */,
+				45AFD5FF18C147CD002C18F9 /* icon_speaker_on@2x.png in Resources */,
+				45AFD5FB18C147CD002C18F9 /* icon_speaker_off@2x.png in Resources */,
 				458F0CCD18BEAF9F002FEC75 /* relieved.plist in Resources */,
 				4525192C18B6CF0000D1B561 /* WalterTurncoat.ttf in Resources */,
 				458F0CA718BEAF9F002FEC75 /* confident.1.png in Resources */,
 				458F0CC718BEAF9F002FEC75 /* proud.1.png in Resources */,
+				45AFD5E718C134E8002C18F9 /* icon_button_play@2x.png in Resources */,
 				458F0CBB18BEAF9F002FEC75 /* happy.1.png in Resources */,
 				452518EC18B6892400D1B561 /* icon_navbar_close@2x.png in Resources */,
 				458F0CA918BEAF9F002FEC75 /* confident.plist in Resources */,
@@ -850,15 +908,19 @@
 				452518EE18B6892400D1B561 /* icon_navbar_menu.png in Resources */,
 				4525188718B6750800D1B561 /* Images.xcassets in Resources */,
 				458F0CBD18BEAF9F002FEC75 /* happy.plist in Resources */,
+				45AFD5ED18C13936002C18F9 /* icon_button_stop@2x.png in Resources */,
 				452518E018B6892400D1B561 /* icon_button_add@2x.png in Resources */,
 				452518FE18B68C9100D1B561 /* face_lonely@2x.png in Resources */,
 				458F0CB318BEAF9F002FEC75 /* embarassed.1.png in Resources */,
 				452518EA18B6892400D1B561 /* icon_navbar_close.png in Resources */,
 				452518E818B6892400D1B561 /* icon_navbar_back@2x.png in Resources */,
 				452518F018B6892400D1B561 /* icon_navbar_menu@2x.png in Resources */,
+				45AFD5F918C147CD002C18F9 /* icon_speaker_off.png in Resources */,
 				458F0CC518BEAF9F002FEC75 /* lonely.plist in Resources */,
 				458F0CCF18BEAF9F002FEC75 /* stressed.1.png in Resources */,
 				452518FC18B68C9100D1B561 /* face_lonely.png in Resources */,
+				45AFD5FD18C147CD002C18F9 /* icon_speaker_on.png in Resources */,
+				45AFD5EB18C13936002C18F9 /* icon_button_stop.png in Resources */,
 				458F0CB518BEAF9F002FEC75 /* embarassed.plist in Resources */,
 				458F0CA318BEAF9F002FEC75 /* angry.1.png in Resources */,
 				452518E618B6892400D1B561 /* icon_navbar_back.png in Resources */,
@@ -874,6 +936,8 @@
 				458F0CB418BEAF9F002FEC75 /* embarassed.1.png in Resources */,
 				452518EF18B6892400D1B561 /* icon_navbar_menu.png in Resources */,
 				458F0CB818BEAF9F002FEC75 /* frustrated.1.png in Resources */,
+				45AFD5FC18C147CD002C18F9 /* icon_speaker_off@2x.png in Resources */,
+				45AFD5E818C134E8002C18F9 /* icon_button_play@2x.png in Resources */,
 				458F0CAC18BEAF9F002FEC75 /* confused.1.png in Resources */,
 				452518E118B6892400D1B561 /* icon_button_add@2x.png in Resources */,
 				458F0CCC18BEAF9F002FEC75 /* relieved.1.png in Resources */,
@@ -882,24 +946,30 @@
 				458F0CAE18BEAF9F002FEC75 /* confused.plist in Resources */,
 				458F0CB618BEAF9F002FEC75 /* embarassed.plist in Resources */,
 				452518FF18B68C9100D1B561 /* face_lonely@2x.png in Resources */,
+				45AFD5FE18C147CD002C18F9 /* icon_speaker_on.png in Resources */,
 				458F0CC218BEAF9F002FEC75 /* invisible.plist in Resources */,
+				45AFD5EE18C13936002C18F9 /* icon_button_stop@2x.png in Resources */,
 				458F0CD018BEAF9F002FEC75 /* stressed.1.png in Resources */,
 				458F0CCA18BEAF9F002FEC75 /* proud.plist in Resources */,
 				458F0CC018BEAF9F002FEC75 /* invisible.1.png in Resources */,
 				452518E318B6892400D1B561 /* icon_button_close.png in Resources */,
 				458F0CB218BEAF9F002FEC75 /* depressed.plist in Resources */,
 				458F0CA618BEAF9F002FEC75 /* angry.plist in Resources */,
+				45AFD5E618C134E8002C18F9 /* icon_button_play.png in Resources */,
 				4525192D18B6CF0000D1B561 /* WalterTurncoat.ttf in Resources */,
 				452518E718B6892400D1B561 /* icon_navbar_back.png in Resources */,
+				45AFD5FA18C147CD002C18F9 /* icon_speaker_off.png in Resources */,
 				458F0CB018BEAF9F002FEC75 /* depressed.1.png in Resources */,
 				452518DF18B6892400D1B561 /* icon_button_add.png in Resources */,
 				452518E918B6892400D1B561 /* icon_navbar_back@2x.png in Resources */,
 				458F0CCE18BEAF9F002FEC75 /* relieved.plist in Resources */,
 				458F0CC418BEAF9F002FEC75 /* lonely.1.png in Resources */,
 				458F0CD218BEAF9F002FEC75 /* stressed.plist in Resources */,
+				45AFD5EC18C13936002C18F9 /* icon_button_stop.png in Resources */,
 				458F0CC818BEAF9F002FEC75 /* proud.1.png in Resources */,
 				458F0CBA18BEAF9F002FEC75 /* frustrated.plist in Resources */,
 				458F0CBC18BEAF9F002FEC75 /* happy.1.png in Resources */,
+				45AFD60018C147CD002C18F9 /* icon_speaker_on@2x.png in Resources */,
 				458F0CC618BEAF9F002FEC75 /* lonely.plist in Resources */,
 				4525189818B6750800D1B561 /* InfoPlist.strings in Resources */,
 				458F0CBE18BEAF9F002FEC75 /* happy.plist in Resources */,
@@ -921,6 +991,7 @@
 				458F0FDC18C0EA87002FEC75 /* BYCAddReasonsViewController.m in Sources */,
 				452518BE18B67BD400D1B561 /* BYCUI.m in Sources */,
 				4525190218B68CCA00D1B561 /* BYCEntryViewController.m in Sources */,
+				45AFD5DB18C10C4F002C18F9 /* BYCAddAudioView.m in Sources */,
 				458F0FBF18BFC631002FEC75 /* BYCActionView.m in Sources */,
 				452518CA18B67D9200D1B561 /* BYCSideView.m in Sources */,
 				4525190618B68CE400D1B561 /* BYCEntryView.m in Sources */,
@@ -936,8 +1007,10 @@
 				458F0C7C18BEAD74002FEC75 /* BYCSpriteLayer.m in Sources */,
 				458F0CD518BEB270002FEC75 /* BYCMood.m in Sources */,
 				458F0FD418BFEEE4002FEC75 /* BYCImagePickerController.m in Sources */,
+				45AFD60318C149B9002C18F9 /* BYCAudioView.m in Sources */,
 				458F0FD018BFE94F002FEC75 /* BYCEntryModel.m in Sources */,
 				452518CE18B67F3C00D1B561 /* BYCNavigationView.m in Sources */,
+				45AFD5DF18C10C81002C18F9 /* BYCAddAudioViewController.m in Sources */,
 				4525192318B6976C00D1B561 /* BYCEntryRowLayoutView.m in Sources */,
 				4525192918B6A2A400D1B561 /* BYCSideViewCell.m in Sources */,
 				4525188518B6750800D1B561 /* BYCAppDelegate.m in Sources */,
@@ -956,6 +1029,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45AFD5DC18C10C4F002C18F9 /* BYCAddAudioView.m in Sources */,
+				45AFD5E018C10C81002C18F9 /* BYCAddAudioViewController.m in Sources */,
+				45AFD60418C149B9002C18F9 /* BYCAudioView.m in Sources */,
 				45DEC7D818BBBE4800A92550 /* BYCDatabaseUtilities.m in Sources */,
 				4525193118B70D8900D1B561 /* BYCAddEntryView.m in Sources */,
 				4592F1E418B7A76B009CCC65 /* BYCTalkView.m in Sources */,

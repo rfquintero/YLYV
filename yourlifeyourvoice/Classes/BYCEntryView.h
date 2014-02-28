@@ -7,6 +7,9 @@
 -(void)audioSelected;
 -(void)saveSelected;
 -(void)deleteSelected;
+-(void)playRecording;
+-(void)stopPlayback;
+-(void)toggleSpeaker;
 -(void)noteChanged:(NSString*)note;
 -(void)setNavActive:(BOOL)active;
 @end
@@ -16,5 +19,8 @@
 -(void)setNavView:(UIView*)navView;
 -(void)setImage:(UIImage*)image;
 -(void)setReasons:(NSArray*)reasons;
+-(void)setSpeakerMode:(BOOL)speakerMode;
+-(void)setAudioDuration:(NSTimeInterval)duration;
+-(void)playbackStopped;
 -(void)setDelegate:(id<BYCEntryViewDelegate>)delegate;
 @end

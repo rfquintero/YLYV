@@ -1,9 +1,10 @@
 #import "BYCViewController.h"
 #import "BYCConstants.h"
 
-@interface BYCViewController ()
+@interface BYCViewController ()<UIAlertViewDelegate>
 @property (nonatomic, readwrite) BYCApplicationState *applicationState;
 @property (nonatomic, readwrite) BYCNavigationView *navView;
+@property (nonatomic) UIAlertView *alert;
 @end
 
 @implementation BYCViewController
@@ -45,6 +46,17 @@
 
 -(void)sidebarShown:(BOOL)shown animated:(BOOL)animated {
     [self.navView setRightButtonHidden:shown animated:animated];
+}
+
+-(void)showError:(NSString*)title message:(NSString*)message {
+    if(!self.alert) {
+        self.alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        [self.alert show];
+    }
+}
+
+-(void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    self.alert = nil;
 }
 
 @end
