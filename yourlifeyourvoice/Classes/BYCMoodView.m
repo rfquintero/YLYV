@@ -19,7 +19,7 @@
     if (self) {
         self.type = type;
         self.sprite = [[BYCMoodSprite alloc] initWithFrame:CGRectZero type:type];
-        self.face = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"face_lonely"]];
+        self.face = [[UIImageView alloc] initWithImage:[BYCMood moodImage:type]];
         self.face.hidden = YES;
         
         UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(moodSelected)];
@@ -55,6 +55,7 @@
 -(void)setType:(BYCMoodType)type {
     _type = type;
     [self.sprite setType:type];
+    self.face.image = [BYCMood moodImage:type];
     self.text.text = [BYCMood moodString:type];
 }
 

@@ -101,7 +101,7 @@
     
     [view setTextHidden:YES animated:NO];
     [self.delegate entryStarted];
-    [self.addEntry setMoodText:[BYCMood moodString:type]];
+    [self.addEntry setMood:type];
     [UIView animateWithDuration:0.3f animations:^{
         self.rowLayout.transform = CGAffineTransformMake(scale, 0.f, 0.f, scale, tx, ty);
         for(UIView *icon in self.rowLayout.icons) {

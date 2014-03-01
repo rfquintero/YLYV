@@ -1,4 +1,5 @@
 #import <UIKit/UIKit.h>
+#import "BYCMood.h"
 
 @protocol BYCAddEntryViewDelegate <NSObject>
 -(void)photoSelected;
@@ -16,7 +17,7 @@
 
 @interface BYCAddEntryView : UIView
 @property (nonatomic) CGFloat contentOffset;
--(void)setMoodText:(NSString*)text;
+-(void)setMood:(BYCMoodType)type;
 -(void)setImage:(UIImage*)image;
 -(void)setReasons:(NSArray*)reasons;
 -(void)resetContent;

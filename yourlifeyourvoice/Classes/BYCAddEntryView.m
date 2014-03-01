@@ -213,8 +213,9 @@ typedef enum {
     [self.audioView playbackStopped];
 }
 
--(void)setMoodText:(NSString*)text {
-    self.moodLabel.text = [text uppercaseString];
+-(void)setMood:(BYCMoodType)type {
+    self.moodLabel.text = [[BYCMood moodString:type] uppercaseString];
+    self.backgroundView.backgroundColor = [[BYCMood moodColor:type] colorWithAlphaComponent:0.9f];
     [self setNeedsLayout];
 }
 

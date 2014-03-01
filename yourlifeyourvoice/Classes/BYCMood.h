@@ -18,6 +18,8 @@ typedef enum {
 @interface BYCMood : NSObject
 
 +(NSString*)moodString:(BYCMoodType)type;
++(UIColor*)moodColor:(BYCMoodType)type;
++(UIImage*)moodImage:(BYCMoodType)type;
 +(UIImage*)spriteImage:(BYCMoodType)type;
 +(NSDictionary*)plist:(BYCMoodType)type;
 @end
