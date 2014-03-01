@@ -6,13 +6,15 @@
 @property (nonatomic) NSArray *rotations;
 @property (nonatomic) CALayer *imageLayer;
 @property (nonatomic) BYCSpriteLayer *spriteLayer;
+@property (nonatomic) BOOL small;
 @property (nonatomic) NSUInteger currentFrame;
 @end
 
 @implementation BYCMoodSprite
 
--(id)initWithFrame:(CGRect)frame type:(BYCMoodType)type {
+-(id)initWithFrame:(CGRect)frame type:(BYCMoodType)type small:(BOOL)small {
     if (self = [super initWithFrame:frame]) {
+        self.small = small;
         self.imageLayer = [CALayer layer];
         self.imageLayer.frame = self.bounds;
         self.imageLayer.masksToBounds = YES;
@@ -34,8 +36,14 @@
     [self.spriteLayer removeAllAnimations];
     [self.imageLayer removeAllAnimations];
     
-    UIImage *image = [BYCMood spriteImage:type];
-    [self processRects:[BYCMood plist:type] atlas:image];
+    UIImage *image;
+    if(self.small) {
+        image = [BYCMood smallSpriteImage:type];
+        [self processRects:[BYCMood smallPlist:type] atlas:image];
+    } else {
+        image = [BYCMood spriteImage:type];
+        [self processRects:[BYCMood plist:type] atlas:image];
+    }
     
     self.imageLayer.contents = (__bridge id)(image.CGImage);
     self.imageLayer.contentsRect = [self rectForFrameIndex:0];

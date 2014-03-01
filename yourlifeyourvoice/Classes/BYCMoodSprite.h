@@ -2,7 +2,7 @@
 #import "BYCMood.h"
 
 @interface BYCMoodSprite : UIView
--(id)initWithFrame:(CGRect)frame type:(BYCMoodType)type;
+-(id)initWithFrame:(CGRect)frame type:(BYCMoodType)type small:(BOOL)small;
 -(void)setType:(BYCMoodType)type;
 -(void)animate;
 @end

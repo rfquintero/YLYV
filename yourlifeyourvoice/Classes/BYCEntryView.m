@@ -23,13 +23,13 @@
         self.rowLayout = [[BYCEntryRowLayoutView alloc] initWithFrame:CGRectZero];
         
         for(NSNumber *type in self.moods) {
-            BYCMoodView *mood = [[BYCMoodView alloc] initWithFrame:CGRectZero type:[type intValue]];
+            BYCMoodView *mood = [[BYCMoodView alloc] initWithFrame:CGRectZero type:[type intValue] small:YES];
             mood.faceSize = kSmallSize;
             mood.delegate = self;
             [self.rowLayout addSmallIconView:mood];
         }
         
-        self.largeMood = [[BYCMoodView alloc] initWithFrame:CGRectZero type:BYCMood_Lonely];
+        self.largeMood = [[BYCMoodView alloc] initWithFrame:CGRectZero type:BYCMood_Lonely small:NO];
         self.largeMood.userInteractionEnabled = NO;
         self.largeMood.faceSize = kLargeSize;
         [self.largeMood setTextHidden:YES animated:NO];
@@ -110,6 +110,7 @@
             }
         }
     } completion:^(BOOL finished) {
+        [self.largeMood animate:YES];
         self.largeMood.hidden = NO;
         self.rowLayout.hidden = YES;
         self.scrollView.scrollEnabled = NO;

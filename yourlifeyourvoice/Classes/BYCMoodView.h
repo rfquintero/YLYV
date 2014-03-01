@@ -9,7 +9,7 @@
 
 @interface BYCMoodView : UIView
 @property (nonatomic) CGFloat faceSize;
--(id)initWithFrame:(CGRect)frame type:(BYCMoodType)type;
+-(id)initWithFrame:(CGRect)frame type:(BYCMoodType)type small:(BOOL)small;
 -(void)setTextHidden:(BOOL)hidden animated:(BOOL)animated;
 -(void)setTextFont:(UIFont*)font;
 -(void)setType:(BYCMoodType)type;

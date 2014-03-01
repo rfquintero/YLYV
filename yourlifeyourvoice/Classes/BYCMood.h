@@ -22,4 +22,6 @@ typedef enum {
 +(UIImage*)moodImage:(BYCMoodType)type;
 +(UIImage*)spriteImage:(BYCMoodType)type;
 +(NSDictionary*)plist:(BYCMoodType)type;
++(UIImage*)smallSpriteImage:(BYCMoodType)type;
++(NSDictionary*)smallPlist:(BYCMoodType)type;
 @end

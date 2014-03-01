@@ -50,6 +50,18 @@
     return [NSDictionary dictionaryWithContentsOfFile:path];
 }
 
++(UIImage*)smallSpriteImage:(BYCMoodType)type {
+    NSString *mood = [[self moodString:type] lowercaseString];
+    NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@_small.1", mood] ofType:@"png"];
+    return [UIImage imageWithContentsOfFile:path];
+}
+
++(NSDictionary*)smallPlist:(BYCMoodType)type {
+    NSString *mood = [[self moodString:type] lowercaseString];
+    NSString* path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@_small", mood] ofType:@"plist"];
+    return [NSDictionary dictionaryWithContentsOfFile:path];
+}
+
 +(UIColor*)moodColor:(BYCMoodType)type {
     switch(type) {
         case BYCMood_Confident:

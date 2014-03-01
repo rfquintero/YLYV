@@ -14,11 +14,11 @@
 
 @implementation BYCMoodView
 
--(id)initWithFrame:(CGRect)frame type:(BYCMoodType)type {
+-(id)initWithFrame:(CGRect)frame type:(BYCMoodType)type small:(BOOL)small {
     self = [super initWithFrame:frame];
     if (self) {
         self.type = type;
-        self.sprite = [[BYCMoodSprite alloc] initWithFrame:CGRectZero type:type];
+        self.sprite = [[BYCMoodSprite alloc] initWithFrame:CGRectZero type:type small:small];
         self.face = [[UIImageView alloc] initWithImage:[BYCMood moodImage:type]];
         self.face.hidden = YES;
         
