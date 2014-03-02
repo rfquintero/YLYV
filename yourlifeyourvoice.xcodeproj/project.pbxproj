@@ -236,6 +236,7 @@
 		45C329E818C265ED00CA8A86 /* relieved_small.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45C329CF18C265ED00CA8A86 /* relieved_small.plist */; };
 		45C329E918C265ED00CA8A86 /* stressed_small.1.png in Resources */ = {isa = PBXBuildFile; fileRef = 45C329D118C265ED00CA8A86 /* stressed_small.1.png */; };
 		45C329EA18C265ED00CA8A86 /* stressed_small.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45C329D218C265ED00CA8A86 /* stressed_small.plist */; };
+		45C329EC18C26AC100CA8A86 /* animations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45C329EB18C26AC100CA8A86 /* animations.plist */; };
 		45DEC7D318BBBE2600A92550 /* BYCDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DEC7D218BBBE2600A92550 /* BYCDatabase.m */; };
 		45DEC7D418BBBE2600A92550 /* BYCDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DEC7D218BBBE2600A92550 /* BYCDatabase.m */; };
 		45DEC7D718BBBE4800A92550 /* BYCDatabaseUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DEC7D618BBBE4800A92550 /* BYCDatabaseUtilities.m */; };
@@ -423,6 +424,7 @@
 		45C329CF18C265ED00CA8A86 /* relieved_small.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = relieved_small.plist; sourceTree = "<group>"; };
 		45C329D118C265ED00CA8A86 /* stressed_small.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stressed_small.1.png; sourceTree = "<group>"; };
 		45C329D218C265ED00CA8A86 /* stressed_small.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = stressed_small.plist; sourceTree = "<group>"; };
+		45C329EB18C26AC100CA8A86 /* animations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = animations.plist; path = ../animations.plist; sourceTree = "<group>"; };
 		45DEC7D118BBBE2600A92550 /* BYCDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCDatabase.h; sourceTree = "<group>"; };
 		45DEC7D218BBBE2600A92550 /* BYCDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCDatabase.m; sourceTree = "<group>"; };
 		45DEC7D518BBBE4800A92550 /* BYCDatabaseUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCDatabaseUtilities.h; sourceTree = "<group>"; };
@@ -725,6 +727,7 @@
 		458F0C7E18BEAF9F002FEC75 /* sprites */ = {
 			isa = PBXGroup;
 			children = (
+				45C329EB18C26AC100CA8A86 /* animations.plist */,
 				458F0C7F18BEAF9F002FEC75 /* angry.atlasc */,
 				458F0C8218BEAF9F002FEC75 /* confident.atlasc */,
 				458F0C8518BEAF9F002FEC75 /* confused.atlasc */,
@@ -1166,6 +1169,7 @@
 				458F0CBF18BEAF9F002FEC75 /* invisible.1.png in Resources */,
 				4525187F18B6750800D1B561 /* InfoPlist.strings in Resources */,
 				45AFD63418C24CB3002C18F9 /* face_frustrated@2x.png in Resources */,
+				45C329EC18C26AC100CA8A86 /* animations.plist in Resources */,
 				45AFD62818C24CB3002C18F9 /* face_confused@2x.png in Resources */,
 				45C329D418C265ED00CA8A86 /* angry_small.plist in Resources */,
 				458F0CAD18BEAF9F002FEC75 /* confused.plist in Resources */,

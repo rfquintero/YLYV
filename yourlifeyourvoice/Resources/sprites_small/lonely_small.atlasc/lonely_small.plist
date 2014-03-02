@@ -7,7 +7,7 @@
             <key>generator</key>
             <string>TexturePacker 3.2.1 - http://www.codeandweb.com/texturepacker</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:ee014ac111517ac53ae7873a1e5aae84:2a8e2d56092e7ae8a33b5d5f56c1491d:172cfae86f90c43411459fa14db4e449$</string>
+            <string>$TexturePacker:SmartUpdate:e5fcdb53455b1f8de52dad21d662990d:2a8e2d56092e7ae8a33b5d5f56c1491d:172cfae86f90c43411459fa14db4e449$</string>
         </dict>
         <key>format</key>
         <string>APPL</string>
@@ -17,7 +17,7 @@
                 <key>path</key>
                 <string>lonely_small.1.png</string>
                 <key>size</key>
-                <string>{924,1430}</string>
+                <string>{1440,908}</string>
                 <key>subimages</key>
                 <array>
                     <dict>
@@ -26,7 +26,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-lonely_00074.png</string>
+                        <string>face-lonely_00034.png</string>
                         <key>spriteOffset</key>
                         <string>{11,12}</string>
                         <key>spriteSourceSize</key>
@@ -42,7 +42,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-lonely_00073.png</string>
+                        <string>face-lonely_00035.png</string>
                         <key>spriteOffset</key>
                         <string>{11,12}</string>
                         <key>spriteSourceSize</key>
@@ -58,7 +58,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-lonely_00072.png</string>
+                        <string>face-lonely_00036.png</string>
                         <key>spriteOffset</key>
                         <string>{11,12}</string>
                         <key>spriteSourceSize</key>
@@ -74,7 +74,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-lonely_00057.png</string>
+                        <string>face-lonely_00037.png</string>
                         <key>spriteOffset</key>
                         <string>{11,12}</string>
                         <key>spriteSourceSize</key>
@@ -90,7 +90,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-lonely_00056.png</string>
+                        <string>face-lonely_00038.png</string>
                         <key>spriteOffset</key>
                         <string>{11,12}</string>
                         <key>spriteSourceSize</key>
@@ -106,237 +106,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-lonely_00055.png</string>
+                        <string>face-lonely_00039.png</string>
                         <key>spriteOffset</key>
                         <string>{11,12}</string>
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
-                        <string>{{1,179},{178,176}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-lonely_00054.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,12}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{181,179},{178,176}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-lonely_00053.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,12}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{361,179},{178,176}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-lonely_00052.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,12}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{541,179},{178,176}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-lonely_00051.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,12}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{721,179},{178,176}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-lonely_00050.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,12}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{1,357},{178,176}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-lonely_00049.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,12}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{181,357},{178,176}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-lonely_00048.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,12}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{361,357},{178,176}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-lonely_00046.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,12}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{541,357},{178,176}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-lonely_00047.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,12}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{541,357},{178,176}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-lonely_00045.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,12}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{721,357},{178,176}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-lonely_00044.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,12}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{1,535},{178,176}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-lonely_00043.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,12}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{181,535},{178,176}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-lonely_00042.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,12}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{361,535},{178,176}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-lonely_00041.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,12}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{541,535},{178,176}}</string>
+                        <string>{{901,1},{178,176}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -352,7 +128,7 @@
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
-                        <string>{{721,535},{178,176}}</string>
+                        <string>{{1081,1},{178,176}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -362,13 +138,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-lonely_00039.png</string>
+                        <string>face-lonely_00041.png</string>
                         <key>spriteOffset</key>
                         <string>{11,12}</string>
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
-                        <string>{{1,713},{178,176}}</string>
+                        <string>{{1261,1},{178,176}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -378,13 +154,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-lonely_00038.png</string>
+                        <string>face-lonely_00042.png</string>
                         <key>spriteOffset</key>
                         <string>{11,12}</string>
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
-                        <string>{{181,713},{178,176}}</string>
+                        <string>{{1,179},{178,176}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -394,13 +170,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-lonely_00037.png</string>
+                        <string>face-lonely_00043.png</string>
                         <key>spriteOffset</key>
                         <string>{11,12}</string>
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
-                        <string>{{361,713},{178,176}}</string>
+                        <string>{{181,179},{178,176}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -410,13 +186,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-lonely_00036.png</string>
+                        <string>face-lonely_00044.png</string>
                         <key>spriteOffset</key>
                         <string>{11,12}</string>
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
-                        <string>{{541,713},{178,176}}</string>
+                        <string>{{361,179},{178,176}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -426,13 +202,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-lonely_00035.png</string>
+                        <string>face-lonely_00045.png</string>
                         <key>spriteOffset</key>
                         <string>{11,12}</string>
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
-                        <string>{{721,713},{178,176}}</string>
+                        <string>{{541,179},{178,176}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -442,13 +218,189 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-lonely_00034.png</string>
+                        <string>face-lonely_00046.png</string>
                         <key>spriteOffset</key>
                         <string>{11,12}</string>
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
-                        <string>{{1,891},{178,176}}</string>
+                        <string>{{721,179},{178,176}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-lonely_00047.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,12}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{721,179},{178,176}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-lonely_00048.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,12}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{901,179},{178,176}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-lonely_00049.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,12}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{1081,179},{178,176}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-lonely_00050.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,12}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{1261,179},{178,176}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-lonely_00051.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,12}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{1,357},{178,176}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-lonely_00052.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,12}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{181,357},{178,176}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-lonely_00053.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,12}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{361,357},{178,176}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-lonely_00054.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,12}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{541,357},{178,176}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-lonely_00055.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,12}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{721,357},{178,176}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-lonely_00056.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,12}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{901,357},{178,176}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-lonely_00057.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,12}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{1081,357},{178,176}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -464,137 +416,9 @@
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
-                        <string>{{181,891},{178,178}}</string>
+                        <string>{{1261,357},{178,178}}</string>
                         <key>textureRotated</key>
                         <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-lonely_00071.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,12}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{361,891},{180,178}}</string>
-                        <key>textureRotated</key>
-                        <true/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-lonely_00070.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,12}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{543,891},{182,178}}</string>
-                        <key>textureRotated</key>
-                        <true/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-lonely_00061.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,12}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{727,891},{182,178}}</string>
-                        <key>textureRotated</key>
-                        <true/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-lonely_00069.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,12}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{1,1071},{184,178}}</string>
-                        <key>textureRotated</key>
-                        <true/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-lonely_00067.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,12}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{187,1071},{184,178}}</string>
-                        <key>textureRotated</key>
-                        <true/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-lonely_00068.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,12}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{187,1071},{184,178}}</string>
-                        <key>textureRotated</key>
-                        <true/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-lonely_00066.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,12}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{373,1071},{184,178}}</string>
-                        <key>textureRotated</key>
-                        <true/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-lonely_00065.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,12}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{559,1071},{184,178}}</string>
-                        <key>textureRotated</key>
-                        <true/>
                     </dict>
                     <dict>
                         <key>aliases</key>
@@ -608,7 +432,71 @@
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
-                        <string>{{745,1071},{178,180}}</string>
+                        <string>{{1,537},{178,180}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-lonely_00060.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,12}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{181,537},{178,182}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-lonely_00061.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,12}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{361,537},{178,182}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-lonely_00062.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,12}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{541,537},{178,184}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-lonely_00063.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,12}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{721,537},{178,184}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -624,9 +512,9 @@
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
-                        <string>{{1,1251},{184,178}}</string>
+                        <string>{{901,537},{178,184}}</string>
                         <key>textureRotated</key>
-                        <true/>
+                        <false/>
                     </dict>
                     <dict>
                         <key>aliases</key>
@@ -634,15 +522,15 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-lonely_00063.png</string>
+                        <string>face-lonely_00065.png</string>
                         <key>spriteOffset</key>
                         <string>{11,12}</string>
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
-                        <string>{{187,1251},{184,178}}</string>
+                        <string>{{1081,537},{178,184}}</string>
                         <key>textureRotated</key>
-                        <true/>
+                        <false/>
                     </dict>
                     <dict>
                         <key>aliases</key>
@@ -650,15 +538,15 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-lonely_00062.png</string>
+                        <string>face-lonely_00066.png</string>
                         <key>spriteOffset</key>
                         <string>{11,12}</string>
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
-                        <string>{{373,1251},{184,178}}</string>
+                        <string>{{1261,537},{178,184}}</string>
                         <key>textureRotated</key>
-                        <true/>
+                        <false/>
                     </dict>
                     <dict>
                         <key>aliases</key>
@@ -666,15 +554,127 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-lonely_00060.png</string>
+                        <string>face-lonely_00067.png</string>
                         <key>spriteOffset</key>
                         <string>{11,12}</string>
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
-                        <string>{{559,1251},{182,178}}</string>
+                        <string>{{1,723},{178,184}}</string>
                         <key>textureRotated</key>
-                        <true/>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-lonely_00068.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,12}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{1,723},{178,184}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-lonely_00069.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,12}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{181,723},{178,184}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-lonely_00070.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,12}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{361,723},{178,182}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-lonely_00071.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,12}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{541,723},{178,180}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-lonely_00072.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,12}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{721,723},{178,176}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-lonely_00073.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,12}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{901,723},{178,176}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-lonely_00074.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,12}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{1081,723},{178,176}}</string>
+                        <key>textureRotated</key>
+                        <false/>
                     </dict>
                 </array>
             </dict>

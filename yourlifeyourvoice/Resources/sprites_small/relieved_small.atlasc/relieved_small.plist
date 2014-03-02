@@ -7,7 +7,7 @@
             <key>generator</key>
             <string>TexturePacker 3.2.1 - http://www.codeandweb.com/texturepacker</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:e5f7be38cb4c60b377f31a747570064f:3b8f0fd70c1b2c8941f0f4f4e8cc3085:007664b1da715ddc2220759bc7eb2709$</string>
+            <string>$TexturePacker:SmartUpdate:13732013b3a6279d72486dd6c99e1bff:3b8f0fd70c1b2c8941f0f4f4e8cc3085:007664b1da715ddc2220759bc7eb2709$</string>
         </dict>
         <key>format</key>
         <string>APPL</string>
@@ -17,7 +17,7 @@
                 <key>path</key>
                 <string>relieved_small.1.png</string>
                 <key>size</key>
-                <string>{1956,704}</string>
+                <string>{1958,704}</string>
                 <key>subimages</key>
                 <array>
                     <dict>
@@ -26,7 +26,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00063.png</string>
+                        <string>face-relieved_00020.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -42,7 +42,23 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00062.png</string>
+                        <string>face-relieved_00021.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,16}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{1,1},{176,174}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-relieved_00022.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -58,7 +74,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00061.png</string>
+                        <string>face-relieved_00023.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -74,7 +90,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00060.png</string>
+                        <string>face-relieved_00024.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -90,7 +106,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00059.png</string>
+                        <string>face-relieved_00025.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -106,7 +122,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00058.png</string>
+                        <string>face-relieved_00026.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -122,7 +138,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00057.png</string>
+                        <string>face-relieved_00027.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -138,7 +154,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00056.png</string>
+                        <string>face-relieved_00028.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -154,7 +170,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00055.png</string>
+                        <string>face-relieved_00029.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -170,7 +186,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00054.png</string>
+                        <string>face-relieved_00030.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -186,15 +202,15 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00053.png</string>
+                        <string>face-relieved_00031.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
-                        <string>{{1781,1},{174,176}}</string>
+                        <string>{{1781,1},{176,174}}</string>
                         <key>textureRotated</key>
-                        <true/>
+                        <false/>
                     </dict>
                     <dict>
                         <key>aliases</key>
@@ -202,7 +218,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00052.png</string>
+                        <string>face-relieved_00032.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -218,7 +234,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00051.png</string>
+                        <string>face-relieved_00033.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -234,7 +250,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00050.png</string>
+                        <string>face-relieved_00034.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -250,7 +266,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00049.png</string>
+                        <string>face-relieved_00035.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -266,7 +282,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00048.png</string>
+                        <string>face-relieved_00036.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -282,7 +298,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00047.png</string>
+                        <string>face-relieved_00037.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -298,7 +314,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00046.png</string>
+                        <string>face-relieved_00038.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -314,7 +330,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00045.png</string>
+                        <string>face-relieved_00039.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -330,7 +346,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00044.png</string>
+                        <string>face-relieved_00040.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -346,7 +362,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00043.png</string>
+                        <string>face-relieved_00041.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -368,9 +384,9 @@
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
-                        <string>{{1781,179},{174,176}}</string>
+                        <string>{{1781,177},{176,174}}</string>
                         <key>textureRotated</key>
-                        <true/>
+                        <false/>
                     </dict>
                     <dict>
                         <key>aliases</key>
@@ -378,7 +394,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00041.png</string>
+                        <string>face-relieved_00043.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -394,7 +410,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00040.png</string>
+                        <string>face-relieved_00044.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -410,7 +426,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00039.png</string>
+                        <string>face-relieved_00045.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -426,7 +442,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00038.png</string>
+                        <string>face-relieved_00046.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -442,7 +458,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00037.png</string>
+                        <string>face-relieved_00047.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -458,7 +474,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00036.png</string>
+                        <string>face-relieved_00048.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -474,7 +490,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00035.png</string>
+                        <string>face-relieved_00049.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -490,7 +506,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00034.png</string>
+                        <string>face-relieved_00050.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -506,7 +522,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00033.png</string>
+                        <string>face-relieved_00051.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -522,7 +538,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00032.png</string>
+                        <string>face-relieved_00052.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -538,15 +554,15 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00031.png</string>
+                        <string>face-relieved_00053.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
-                        <string>{{1781,357},{174,176}}</string>
+                        <string>{{1781,353},{176,174}}</string>
                         <key>textureRotated</key>
-                        <true/>
+                        <false/>
                     </dict>
                     <dict>
                         <key>aliases</key>
@@ -554,7 +570,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00030.png</string>
+                        <string>face-relieved_00054.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -570,7 +586,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00029.png</string>
+                        <string>face-relieved_00055.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -586,7 +602,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00028.png</string>
+                        <string>face-relieved_00056.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -602,7 +618,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00027.png</string>
+                        <string>face-relieved_00057.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -618,7 +634,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00026.png</string>
+                        <string>face-relieved_00058.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -634,7 +650,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00025.png</string>
+                        <string>face-relieved_00059.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -650,7 +666,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00024.png</string>
+                        <string>face-relieved_00060.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -666,7 +682,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00023.png</string>
+                        <string>face-relieved_00061.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -682,7 +698,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00022.png</string>
+                        <string>face-relieved_00062.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>
@@ -698,23 +714,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-relieved_00020.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,16}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{1603,529},{176,174}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-relieved_00021.png</string>
+                        <string>face-relieved_00063.png</string>
                         <key>spriteOffset</key>
                         <string>{11,16}</string>
                         <key>spriteSourceSize</key>

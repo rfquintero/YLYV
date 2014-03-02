@@ -62,6 +62,12 @@
     return [NSDictionary dictionaryWithContentsOfFile:path];
 }
 
++(NSDictionary*)animationList:(BYCMoodType)type {
+    NSString *mood = [[self moodString:type] lowercaseString];
+    NSString* path = [[NSBundle mainBundle] pathForResource:@"animations" ofType:@"plist"];
+    return [NSDictionary dictionaryWithContentsOfFile:path][mood];
+}
+
 +(UIColor*)moodColor:(BYCMoodType)type {
     switch(type) {
         case BYCMood_Confident:

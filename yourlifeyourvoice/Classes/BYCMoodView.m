@@ -61,12 +61,13 @@
 
 -(void)moodSelected {
     [self.delegate moodView:self selectedWithType:self.type];
-    [self animate:YES];
 }
 
 -(void)animate:(BOOL)animate {
     if(animate) {
         [self.sprite animate];
+    } else {
+        [self.sprite stopAnimating];
     }
     self.sprite.hidden = !animate;
     self.face.hidden = animate;

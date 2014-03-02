@@ -5,6 +5,8 @@
 @end
 
 @interface BYCSpriteLayer : CALayer
--(void)animateFrom:(NSUInteger)start to:(NSUInteger)end;
+@property (nonatomic, readonly) BOOL animating;
+-(void)animateFrom:(NSUInteger)start to:(NSUInteger)end duration:(CGFloat)duration;
+-(void)animateFrom:(NSUInteger)start to:(NSUInteger)end fps:(CGFloat)fps;
 -(void)setDataSource:(id<BYCSpriteLayerDataSource>)dataSource;
 @end

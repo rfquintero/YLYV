@@ -5,4 +5,5 @@
 -(id)initWithFrame:(CGRect)frame type:(BYCMoodType)type small:(BOOL)small;
 -(void)setType:(BYCMoodType)type;
 -(void)animate;
+-(void)stopAnimating;
 @end

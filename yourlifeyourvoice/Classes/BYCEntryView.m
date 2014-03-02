@@ -119,6 +119,7 @@
 }
 
 -(void)discardEntry {
+    [self.largeMood animate:NO];
     self.largeMood.hidden = YES;
     self.rowLayout.hidden = NO;
     self.scrollView.scrollEnabled = YES;

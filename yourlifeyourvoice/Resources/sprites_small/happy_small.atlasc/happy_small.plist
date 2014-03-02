@@ -7,7 +7,7 @@
             <key>generator</key>
             <string>TexturePacker 3.2.1 - http://www.codeandweb.com/texturepacker</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:380589a30355006212ecc749054c7dc6:6114a7c42f0c09681ab8712ebe8cb398:a541e5fd18ec64770f04b5f99b55288d$</string>
+            <string>$TexturePacker:SmartUpdate:b6cab731b7d069ef9c7be71803608295:6114a7c42f0c09681ab8712ebe8cb398:a541e5fd18ec64770f04b5f99b55288d$</string>
         </dict>
         <key>format</key>
         <string>APPL</string>
@@ -26,7 +26,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-happy_00035.png</string>
+                        <string>face-happy_00030.png</string>
                         <key>spriteOffset</key>
                         <string>{10,0}</string>
                         <key>spriteSourceSize</key>
@@ -42,7 +42,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-happy_00042.png</string>
+                        <string>face-happy_00036.png</string>
                         <key>spriteOffset</key>
                         <string>{10,0}</string>
                         <key>spriteSourceSize</key>
@@ -58,7 +58,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-happy_00049.png</string>
+                        <string>face-happy_00037.png</string>
                         <key>spriteOffset</key>
                         <string>{10,0}</string>
                         <key>spriteSourceSize</key>
@@ -74,7 +74,39 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-happy_00033.png</string>
+                        <string>face-happy_00043.png</string>
+                        <key>spriteOffset</key>
+                        <string>{10,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{1,1},{176,176}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-happy_00044.png</string>
+                        <key>spriteOffset</key>
+                        <string>{10,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{1,1},{176,176}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-happy_00031.png</string>
                         <key>spriteOffset</key>
                         <string>{10,0}</string>
                         <key>spriteSourceSize</key>
@@ -90,7 +122,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-happy_00040.png</string>
+                        <string>face-happy_00034.png</string>
                         <key>spriteOffset</key>
                         <string>{10,0}</string>
                         <key>spriteSourceSize</key>
@@ -106,7 +138,55 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-happy_00047.png</string>
+                        <string>face-happy_00038.png</string>
+                        <key>spriteOffset</key>
+                        <string>{10,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{179,1},{176,176}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-happy_00041.png</string>
+                        <key>spriteOffset</key>
+                        <string>{10,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{179,1},{176,176}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-happy_00045.png</string>
+                        <key>spriteOffset</key>
+                        <string>{10,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{179,1},{176,176}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-happy_00048.png</string>
                         <key>spriteOffset</key>
                         <string>{10,0}</string>
                         <key>spriteSourceSize</key>
@@ -170,7 +250,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-happy_00031.png</string>
+                        <string>face-happy_00033.png</string>
                         <key>spriteOffset</key>
                         <string>{10,0}</string>
                         <key>spriteSourceSize</key>
@@ -186,7 +266,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-happy_00034.png</string>
+                        <string>face-happy_00040.png</string>
                         <key>spriteOffset</key>
                         <string>{10,0}</string>
                         <key>spriteSourceSize</key>
@@ -202,7 +282,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-happy_00038.png</string>
+                        <string>face-happy_00047.png</string>
                         <key>spriteOffset</key>
                         <string>{10,0}</string>
                         <key>spriteSourceSize</key>
@@ -218,55 +298,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-happy_00041.png</string>
-                        <key>spriteOffset</key>
-                        <string>{10,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{535,1},{176,176}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-happy_00045.png</string>
-                        <key>spriteOffset</key>
-                        <string>{10,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{535,1},{176,176}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-happy_00048.png</string>
-                        <key>spriteOffset</key>
-                        <string>{10,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{535,1},{176,176}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-happy_00030.png</string>
+                        <string>face-happy_00035.png</string>
                         <key>spriteOffset</key>
                         <string>{10,0}</string>
                         <key>spriteSourceSize</key>
@@ -282,7 +314,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-happy_00036.png</string>
+                        <string>face-happy_00042.png</string>
                         <key>spriteOffset</key>
                         <string>{10,0}</string>
                         <key>spriteSourceSize</key>
@@ -298,39 +330,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-happy_00037.png</string>
-                        <key>spriteOffset</key>
-                        <string>{10,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{713,1},{176,176}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-happy_00043.png</string>
-                        <key>spriteOffset</key>
-                        <string>{10,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{713,1},{176,176}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-happy_00044.png</string>
+                        <string>face-happy_00049.png</string>
                         <key>spriteOffset</key>
                         <string>{10,0}</string>
                         <key>spriteSourceSize</key>

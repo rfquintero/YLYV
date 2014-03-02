@@ -7,7 +7,7 @@
             <key>generator</key>
             <string>TexturePacker 3.2.1 - http://www.codeandweb.com/texturepacker</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:a7a38e9a46356e66c5818bc293fce3f0:6d801d88e811a00af6b81e44d993178a:8cf65460bfee6828975f83eff85f3e59$</string>
+            <string>$TexturePacker:SmartUpdate:c7e139bf651f9d8629a4c79fccc9cc54:6d801d88e811a00af6b81e44d993178a:8cf65460bfee6828975f83eff85f3e59$</string>
         </dict>
         <key>format</key>
         <string>APPL</string>
@@ -26,7 +26,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-frustrated_00056.png</string>
+                        <string>face-frustrated_00029.png</string>
                         <key>spriteOffset</key>
                         <string>{11,0}</string>
                         <key>spriteSourceSize</key>
@@ -42,39 +42,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-frustrated_00055.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{1,179},{176,176}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-frustrated_00057.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{1,179},{176,176}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-frustrated_00054.png</string>
+                        <string>face-frustrated_00030.png</string>
                         <key>spriteOffset</key>
                         <string>{11,0}</string>
                         <key>spriteSourceSize</key>
@@ -90,13 +58,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-frustrated_00058.png</string>
+                        <string>face-frustrated_00031.png</string>
                         <key>spriteOffset</key>
                         <string>{11,0}</string>
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
-                        <string>{{179,1},{176,176}}</string>
+                        <string>{{357,1},{176,176}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -106,13 +74,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-frustrated_00046.png</string>
+                        <string>face-frustrated_00032.png</string>
                         <key>spriteOffset</key>
                         <string>{11,0}</string>
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
-                        <string>{{179,179},{176,176}}</string>
+                        <string>{{535,1},{176,176}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -122,13 +90,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-frustrated_00047.png</string>
+                        <string>face-frustrated_00033.png</string>
                         <key>spriteOffset</key>
                         <string>{11,0}</string>
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
-                        <string>{{179,179},{176,176}}</string>
+                        <string>{{535,1},{176,176}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -138,13 +106,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-frustrated_00048.png</string>
+                        <string>face-frustrated_00034.png</string>
                         <key>spriteOffset</key>
                         <string>{11,0}</string>
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
-                        <string>{{179,179},{176,176}}</string>
+                        <string>{{535,1},{176,176}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -154,13 +122,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-frustrated_00049.png</string>
+                        <string>face-frustrated_00035.png</string>
                         <key>spriteOffset</key>
                         <string>{11,0}</string>
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
-                        <string>{{179,179},{176,176}}</string>
+                        <string>{{535,1},{176,176}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -170,13 +138,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-frustrated_00050.png</string>
+                        <string>face-frustrated_00036.png</string>
                         <key>spriteOffset</key>
                         <string>{11,0}</string>
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
-                        <string>{{179,179},{176,176}}</string>
+                        <string>{{535,1},{176,176}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -186,13 +154,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-frustrated_00051.png</string>
+                        <string>face-frustrated_00042.png</string>
                         <key>spriteOffset</key>
                         <string>{11,0}</string>
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
-                        <string>{{179,179},{176,176}}</string>
+                        <string>{{535,1},{176,176}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -202,13 +170,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-frustrated_00052.png</string>
+                        <string>face-frustrated_00037.png</string>
                         <key>spriteOffset</key>
                         <string>{11,0}</string>
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
-                        <string>{{179,179},{176,176}}</string>
+                        <string>{{713,1},{176,176}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -218,13 +186,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-frustrated_00053.png</string>
+                        <string>face-frustrated_00041.png</string>
                         <key>spriteOffset</key>
                         <string>{11,0}</string>
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
-                        <string>{{179,179},{176,176}}</string>
+                        <string>{{713,1},{176,176}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -234,7 +202,71 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-frustrated_00059.png</string>
+                        <string>face-frustrated_00038.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{891,1},{176,176}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-frustrated_00040.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{891,1},{176,176}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-frustrated_00039.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{1069,1},{176,176}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-frustrated_00043.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{1,179},{176,176}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-frustrated_00044.png</string>
                         <key>spriteOffset</key>
                         <string>{11,0}</string>
                         <key>spriteSourceSize</key>
@@ -256,22 +288,6 @@
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
-                        <string>{{357,1},{176,176}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-frustrated_00044.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
                         <string>{{357,179},{176,176}}</string>
                         <key>textureRotated</key>
                         <false/>
@@ -282,23 +298,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-frustrated_00043.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{535,1},{176,176}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-frustrated_00039.png</string>
+                        <string>face-frustrated_00046.png</string>
                         <key>spriteOffset</key>
                         <string>{11,0}</string>
                         <key>spriteSourceSize</key>
@@ -314,13 +314,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-frustrated_00038.png</string>
+                        <string>face-frustrated_00047.png</string>
                         <key>spriteOffset</key>
                         <string>{11,0}</string>
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
-                        <string>{{713,1},{176,176}}</string>
+                        <string>{{535,179},{176,176}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -330,13 +330,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-frustrated_00040.png</string>
+                        <string>face-frustrated_00048.png</string>
                         <key>spriteOffset</key>
                         <string>{11,0}</string>
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
-                        <string>{{713,1},{176,176}}</string>
+                        <string>{{535,179},{176,176}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -346,7 +346,103 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-frustrated_00037.png</string>
+                        <string>face-frustrated_00049.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{535,179},{176,176}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-frustrated_00050.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{535,179},{176,176}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-frustrated_00051.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{535,179},{176,176}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-frustrated_00052.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{535,179},{176,176}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-frustrated_00053.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{535,179},{176,176}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-frustrated_00059.png</string>
+                        <key>spriteOffset</key>
+                        <string>{11,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{535,179},{176,176}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-frustrated_00054.png</string>
                         <key>spriteOffset</key>
                         <string>{11,0}</string>
                         <key>spriteSourceSize</key>
@@ -362,7 +458,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-frustrated_00041.png</string>
+                        <string>face-frustrated_00058.png</string>
                         <key>spriteOffset</key>
                         <string>{11,0}</string>
                         <key>spriteSourceSize</key>
@@ -378,103 +474,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-frustrated_00032.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{891,1},{176,176}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-frustrated_00033.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{891,1},{176,176}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-frustrated_00034.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{891,1},{176,176}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-frustrated_00035.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{891,1},{176,176}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-frustrated_00036.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{891,1},{176,176}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-frustrated_00042.png</string>
-                        <key>spriteOffset</key>
-                        <string>{11,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{891,1},{176,176}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-frustrated_00031.png</string>
+                        <string>face-frustrated_00055.png</string>
                         <key>spriteOffset</key>
                         <string>{11,0}</string>
                         <key>spriteSourceSize</key>
@@ -490,13 +490,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-frustrated_00030.png</string>
+                        <string>face-frustrated_00057.png</string>
                         <key>spriteOffset</key>
                         <string>{11,0}</string>
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
-                        <string>{{1069,1},{176,176}}</string>
+                        <string>{{891,179},{176,176}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -506,7 +506,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-frustrated_00029.png</string>
+                        <string>face-frustrated_00056.png</string>
                         <key>spriteOffset</key>
                         <string>{11,0}</string>
                         <key>spriteSourceSize</key>

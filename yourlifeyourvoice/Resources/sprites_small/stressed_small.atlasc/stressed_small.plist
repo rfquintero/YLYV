@@ -7,7 +7,7 @@
             <key>generator</key>
             <string>TexturePacker 3.2.1 - http://www.codeandweb.com/texturepacker</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:b35ddf3aa0078d4d7d13ac5b27f1b2d2:fdaf51f763aaeaffdd7c2226363000dc:ee39de5ad7f609535cde93c07dbc7637$</string>
+            <string>$TexturePacker:SmartUpdate:09162d8a9c7ad18c03b82d887c1044d7:fdaf51f763aaeaffdd7c2226363000dc:ee39de5ad7f609535cde93c07dbc7637$</string>
         </dict>
         <key>format</key>
         <string>APPL</string>
@@ -17,7 +17,7 @@
                 <key>path</key>
                 <string>stressed_small.1.png</string>
                 <key>size</key>
-                <string>{1778,704}</string>
+                <string>{1780,704}</string>
                 <key>subimages</key>
                 <array>
                     <dict>
@@ -26,7 +26,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-stressed_00067.png</string>
+                        <string>face-stressed_00030.png</string>
                         <key>spriteOffset</key>
                         <string>{10,0}</string>
                         <key>spriteSourceSize</key>
@@ -42,7 +42,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-stressed_00066.png</string>
+                        <string>face-stressed_00031.png</string>
                         <key>spriteOffset</key>
                         <string>{10,0}</string>
                         <key>spriteSourceSize</key>
@@ -58,7 +58,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-stressed_00065.png</string>
+                        <string>face-stressed_00032.png</string>
                         <key>spriteOffset</key>
                         <string>{10,0}</string>
                         <key>spriteSourceSize</key>
@@ -74,7 +74,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-stressed_00064.png</string>
+                        <string>face-stressed_00033.png</string>
                         <key>spriteOffset</key>
                         <string>{10,0}</string>
                         <key>spriteSourceSize</key>
@@ -90,7 +90,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-stressed_00063.png</string>
+                        <string>face-stressed_00034.png</string>
                         <key>spriteOffset</key>
                         <string>{10,0}</string>
                         <key>spriteSourceSize</key>
@@ -106,7 +106,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-stressed_00062.png</string>
+                        <string>face-stressed_00035.png</string>
                         <key>spriteOffset</key>
                         <string>{10,0}</string>
                         <key>spriteSourceSize</key>
@@ -122,7 +122,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-stressed_00061.png</string>
+                        <string>face-stressed_00036.png</string>
                         <key>spriteOffset</key>
                         <string>{10,0}</string>
                         <key>spriteSourceSize</key>
@@ -138,7 +138,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-stressed_00060.png</string>
+                        <string>face-stressed_00037.png</string>
                         <key>spriteOffset</key>
                         <string>{10,0}</string>
                         <key>spriteSourceSize</key>
@@ -154,7 +154,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-stressed_00059.png</string>
+                        <string>face-stressed_00038.png</string>
                         <key>spriteOffset</key>
                         <string>{10,0}</string>
                         <key>spriteSourceSize</key>
@@ -170,285 +170,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-stressed_00058.png</string>
+                        <string>face-stressed_00039.png</string>
                         <key>spriteOffset</key>
                         <string>{10,0}</string>
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
-                        <string>{{1603,1},{174,176}}</string>
-                        <key>textureRotated</key>
-                        <true/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-stressed_00057.png</string>
-                        <key>spriteOffset</key>
-                        <string>{10,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{1,177},{176,174}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-stressed_00056.png</string>
-                        <key>spriteOffset</key>
-                        <string>{10,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{179,177},{176,174}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-stressed_00055.png</string>
-                        <key>spriteOffset</key>
-                        <string>{10,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{357,177},{176,174}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-stressed_00054.png</string>
-                        <key>spriteOffset</key>
-                        <string>{10,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{535,177},{176,174}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-stressed_00053.png</string>
-                        <key>spriteOffset</key>
-                        <string>{10,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{713,177},{176,174}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-stressed_00052.png</string>
-                        <key>spriteOffset</key>
-                        <string>{10,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{891,177},{176,174}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-stressed_00051.png</string>
-                        <key>spriteOffset</key>
-                        <string>{10,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{1069,177},{176,174}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-stressed_00050.png</string>
-                        <key>spriteOffset</key>
-                        <string>{10,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{1247,177},{176,174}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-stressed_00049.png</string>
-                        <key>spriteOffset</key>
-                        <string>{10,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{1425,177},{176,174}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-stressed_00048.png</string>
-                        <key>spriteOffset</key>
-                        <string>{10,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{1603,179},{174,176}}</string>
-                        <key>textureRotated</key>
-                        <true/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-stressed_00047.png</string>
-                        <key>spriteOffset</key>
-                        <string>{10,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{1,353},{176,174}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-stressed_00046.png</string>
-                        <key>spriteOffset</key>
-                        <string>{10,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{179,353},{176,174}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-stressed_00045.png</string>
-                        <key>spriteOffset</key>
-                        <string>{10,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{357,353},{176,174}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-stressed_00044.png</string>
-                        <key>spriteOffset</key>
-                        <string>{10,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{535,353},{176,174}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-stressed_00043.png</string>
-                        <key>spriteOffset</key>
-                        <string>{10,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{713,353},{176,174}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-stressed_00042.png</string>
-                        <key>spriteOffset</key>
-                        <string>{10,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{891,353},{176,174}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-stressed_00041.png</string>
-                        <key>spriteOffset</key>
-                        <string>{10,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{200,200}</string>
-                        <key>textureRect</key>
-                        <string>{{1069,353},{176,174}}</string>
+                        <string>{{1603,1},{176,174}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -464,6 +192,278 @@
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
+                        <string>{{1,177},{176,174}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-stressed_00041.png</string>
+                        <key>spriteOffset</key>
+                        <string>{10,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{179,177},{176,174}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-stressed_00042.png</string>
+                        <key>spriteOffset</key>
+                        <string>{10,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{357,177},{176,174}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-stressed_00043.png</string>
+                        <key>spriteOffset</key>
+                        <string>{10,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{535,177},{176,174}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-stressed_00044.png</string>
+                        <key>spriteOffset</key>
+                        <string>{10,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{713,177},{176,174}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-stressed_00045.png</string>
+                        <key>spriteOffset</key>
+                        <string>{10,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{891,177},{176,174}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-stressed_00046.png</string>
+                        <key>spriteOffset</key>
+                        <string>{10,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{1069,177},{176,174}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-stressed_00047.png</string>
+                        <key>spriteOffset</key>
+                        <string>{10,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{1247,177},{176,174}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-stressed_00048.png</string>
+                        <key>spriteOffset</key>
+                        <string>{10,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{1425,177},{176,174}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-stressed_00049.png</string>
+                        <key>spriteOffset</key>
+                        <string>{10,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{1603,177},{176,174}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-stressed_00050.png</string>
+                        <key>spriteOffset</key>
+                        <string>{10,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{1,353},{176,174}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-stressed_00051.png</string>
+                        <key>spriteOffset</key>
+                        <string>{10,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{179,353},{176,174}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-stressed_00052.png</string>
+                        <key>spriteOffset</key>
+                        <string>{10,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{357,353},{176,174}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-stressed_00053.png</string>
+                        <key>spriteOffset</key>
+                        <string>{10,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{535,353},{176,174}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-stressed_00054.png</string>
+                        <key>spriteOffset</key>
+                        <string>{10,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{713,353},{176,174}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-stressed_00055.png</string>
+                        <key>spriteOffset</key>
+                        <string>{10,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{891,353},{176,174}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-stressed_00056.png</string>
+                        <key>spriteOffset</key>
+                        <string>{10,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
+                        <string>{{1069,353},{176,174}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-stressed_00057.png</string>
+                        <key>spriteOffset</key>
+                        <string>{10,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{200,200}</string>
+                        <key>textureRect</key>
                         <string>{{1247,353},{176,174}}</string>
                         <key>textureRotated</key>
                         <false/>
@@ -474,7 +474,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-stressed_00039.png</string>
+                        <string>face-stressed_00058.png</string>
                         <key>spriteOffset</key>
                         <string>{10,0}</string>
                         <key>spriteSourceSize</key>
@@ -490,15 +490,15 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-stressed_00038.png</string>
+                        <string>face-stressed_00059.png</string>
                         <key>spriteOffset</key>
                         <string>{10,0}</string>
                         <key>spriteSourceSize</key>
                         <string>{200,200}</string>
                         <key>textureRect</key>
-                        <string>{{1603,357},{174,176}}</string>
+                        <string>{{1603,353},{176,174}}</string>
                         <key>textureRotated</key>
-                        <true/>
+                        <false/>
                     </dict>
                     <dict>
                         <key>aliases</key>
@@ -506,7 +506,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-stressed_00037.png</string>
+                        <string>face-stressed_00060.png</string>
                         <key>spriteOffset</key>
                         <string>{10,0}</string>
                         <key>spriteSourceSize</key>
@@ -522,7 +522,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-stressed_00036.png</string>
+                        <string>face-stressed_00061.png</string>
                         <key>spriteOffset</key>
                         <string>{10,0}</string>
                         <key>spriteSourceSize</key>
@@ -538,7 +538,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-stressed_00035.png</string>
+                        <string>face-stressed_00062.png</string>
                         <key>spriteOffset</key>
                         <string>{10,0}</string>
                         <key>spriteSourceSize</key>
@@ -554,7 +554,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-stressed_00034.png</string>
+                        <string>face-stressed_00063.png</string>
                         <key>spriteOffset</key>
                         <string>{10,0}</string>
                         <key>spriteSourceSize</key>
@@ -570,7 +570,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-stressed_00033.png</string>
+                        <string>face-stressed_00064.png</string>
                         <key>spriteOffset</key>
                         <string>{10,0}</string>
                         <key>spriteSourceSize</key>
@@ -586,7 +586,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-stressed_00032.png</string>
+                        <string>face-stressed_00065.png</string>
                         <key>spriteOffset</key>
                         <string>{10,0}</string>
                         <key>spriteSourceSize</key>
@@ -602,7 +602,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-stressed_00031.png</string>
+                        <string>face-stressed_00066.png</string>
                         <key>spriteOffset</key>
                         <string>{10,0}</string>
                         <key>spriteSourceSize</key>
@@ -618,7 +618,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-stressed_00030.png</string>
+                        <string>face-stressed_00067.png</string>
                         <key>spriteOffset</key>
                         <string>{10,0}</string>
                         <key>spriteSourceSize</key>
