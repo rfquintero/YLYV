@@ -9,6 +9,7 @@
 @property (nonatomic) UIImageView *face;
 @property (nonatomic) BYCMoodType type;
 @property (nonatomic) UILabel *text;
+@property (nonatomic) BOOL showSprite;
 @property (nonatomic, weak) id<BYCMoodViewDelegate> delegate;
 @end
 
@@ -78,8 +79,11 @@
 }
 
 -(void)showSprite:(BOOL)show {
-    self.sprite.hidden = !show;
-    self.face.hidden = show;
+    if(_showSprite != show) {
+        _showSprite = show;
+        self.sprite.hidden = !show;
+        self.face.hidden = show;
+    }
 }
 
 -(void)setTextHidden:(BOOL)hidden animated:(BOOL)animated {

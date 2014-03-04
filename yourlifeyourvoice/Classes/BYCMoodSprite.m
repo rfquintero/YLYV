@@ -53,15 +53,14 @@
 }
 
 -(void)loadImage {
-    UIImage *image;
     if(self.small) {
-        image = [BYCMood smallSpriteImage:self.type];
-        [self processRects:[BYCMood smallPlist:self.type] atlas:image];
+        self.image = [BYCMood smallSpriteImage:self.type];
+        [self processRects:[BYCMood smallPlist:self.type] atlas:self.image];
     } else {
-        image = [BYCMood spriteImage:self.type];
-        [self processRects:[BYCMood plist:self.type] atlas:image];
+        self.image = [BYCMood spriteImage:self.type];
+        [self processRects:[BYCMood plist:self.type] atlas:self.image];
     }
-    self.imageLayer.contents = (__bridge id)(image.CGImage);
+    self.imageLayer.contents = (__bridge id)(self.image.CGImage);
     [self update:[self frame:0]];
 }
 

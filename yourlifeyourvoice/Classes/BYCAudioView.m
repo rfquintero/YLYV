@@ -57,9 +57,9 @@
 }
 
 -(void)setDuration:(NSTimeInterval)duration {
-    NSUInteger sec = (int)duration % 60;
-    NSUInteger min = (int)(duration/60)%60;
-    NSUInteger hour = (int)(duration/3600);
+    int sec = (int)duration % 60;
+    int min = (int)(duration/60)%60;
+    int hour = (int)(duration/3600);
     if(hour) {
         self.durationLabel.text = [NSString stringWithFormat:@"%d:%d:%02d", hour, min, sec];
     } else {
