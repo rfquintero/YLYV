@@ -13,6 +13,8 @@
 -(void)setTextHidden:(BOOL)hidden animated:(BOOL)animated;
 -(void)setTextFont:(UIFont*)font;
 -(void)setType:(BYCMoodType)type;
--(void)animate:(BOOL)animate;
+-(void)animateStep;
+-(void)animateAll;
+-(void)resetAnimation;
 -(void)setDelegate:(id<BYCMoodViewDelegate>)delegate;
 @end

@@ -20,7 +20,6 @@
         self.type = type;
         self.sprite = [[BYCMoodSprite alloc] initWithFrame:CGRectZero type:type small:small];
         self.face = [[UIImageView alloc] initWithImage:[BYCMood moodImage:type]];
-        self.face.hidden = YES;
         
         UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(moodSelected)];
         [self addGestureRecognizer:tapRecognizer];
@@ -63,14 +62,24 @@
     [self.delegate moodView:self selectedWithType:self.type];
 }
 
--(void)animate:(BOOL)animate {
-    if(animate) {
-        [self.sprite animate];
-    } else {
-        [self.sprite stopAnimating];
-    }
-    self.sprite.hidden = !animate;
-    self.face.hidden = animate;
+-(void)animateStep {
+    [self.sprite animate];
+    [self showSprite:YES];
+}
+
+-(void)animateAll {
+    [self.sprite animateAll];
+    [self showSprite:YES];
+}
+
+-(void)resetAnimation {
+    [self.sprite resetAnimation];
+    [self showSprite:NO];
+}
+
+-(void)showSprite:(BOOL)show {
+    self.sprite.hidden = !show;
+    self.face.hidden = show;
 }
 
 -(void)setTextHidden:(BOOL)hidden animated:(BOOL)animated {

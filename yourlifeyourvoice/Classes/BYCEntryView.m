@@ -4,6 +4,7 @@
 #import "BYCAddEntryView.h"
 #import "BYCUI.h"
 #import "BYCConstants.h"
+#import "BYCMoodAnimator.h"
 
 #define kLargeSize 190.0f
 #define kSmallSize 110.0f
@@ -12,6 +13,7 @@
 @property (nonatomic) BYCEntryRowLayoutView *rowLayout;
 @property (nonatomic) BYCMoodView *largeMood;
 @property (nonatomic) BYCAddEntryView *addEntry;
+@property (nonatomic) BYCMoodAnimator *animator;
 @property (nonatomic, weak) id<BYCEntryViewDelegate> delegate;
 @end
 
@@ -28,6 +30,9 @@
             mood.delegate = self;
             [self.rowLayout addSmallIconView:mood];
         }
+        
+        self.animator = [[BYCMoodAnimator alloc] initWithViews:self.rowLayout.icons delay:1.5f];
+        [self.animator start];
         
         self.largeMood = [[BYCMoodView alloc] initWithFrame:CGRectZero type:BYCMood_Lonely small:NO];
         self.largeMood.userInteractionEnabled = NO;
@@ -102,6 +107,7 @@
     [view setTextHidden:YES animated:NO];
     [self.delegate entryStarted];
     [self.addEntry setMood:type];
+    [self.animator stop];
     [UIView animateWithDuration:0.3f animations:^{
         self.rowLayout.transform = CGAffineTransformMake(scale, 0.f, 0.f, scale, tx, ty);
         for(UIView *icon in self.rowLayout.icons) {
@@ -110,7 +116,7 @@
             }
         }
     } completion:^(BOOL finished) {
-        [self.largeMood animate:YES];
+        [self.largeMood animateAll];
         self.largeMood.hidden = NO;
         self.rowLayout.hidden = YES;
         self.scrollView.scrollEnabled = NO;
@@ -119,7 +125,7 @@
 }
 
 -(void)discardEntry {
-    [self.largeMood animate:NO];
+    [self.largeMood resetAnimation];
     self.largeMood.hidden = YES;
     self.rowLayout.hidden = NO;
     self.scrollView.scrollEnabled = YES;
@@ -134,6 +140,7 @@
         }
     } completion:^(BOOL finished) {
         [self.addEntry resetContent];
+        [self.animator start];
     }];
 }
 
@@ -197,7 +204,7 @@
     CGFloat minSize = 34.0f;
     CGFloat faceSize = minSize + (kLargeSize-minSize)*percent;
     
-    [self.largeMood animate:NO];
+    [self.largeMood resetAnimation];
     self.largeMood.faceSize = faceSize;
     
     [self layoutLargeMood];

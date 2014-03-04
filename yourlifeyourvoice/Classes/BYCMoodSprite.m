@@ -12,9 +12,11 @@
 
 @interface BYCMoodSprite()<BYCSpriteLayerDataSource>
 @property (nonatomic) NSArray *frames;
+@property (nonatomic) UIImage *image;
 @property (nonatomic) CALayer *imageLayer;
 @property (nonatomic) BYCSpriteLayer *spriteLayer;
 @property (nonatomic) BOOL small;
+@property (nonatomic) BYCMoodType type;
 
 @property (nonatomic) NSDictionary *animations;
 @property (nonatomic) NSUInteger currentAnimation;
@@ -41,19 +43,24 @@
 }
 
 -(void)setType:(BYCMoodType)type {
+    _type = type;
     [self.spriteLayer removeAllAnimations];
     [self.imageLayer removeAllAnimations];
-    
-    UIImage *image;
-    if(self.small) {
-        image = [BYCMood smallSpriteImage:type];
-        [self processRects:[BYCMood smallPlist:type] atlas:image];
-    } else {
-        image = [BYCMood spriteImage:type];
-        [self processRects:[BYCMood plist:type] atlas:image];
-    }
+    self.imageLayer.contents = nil;
+    self.image = nil;
     self.currentAnimation = 0;
     self.animations = [BYCMood animationList:type];
+}
+
+-(void)loadImage {
+    UIImage *image;
+    if(self.small) {
+        image = [BYCMood smallSpriteImage:self.type];
+        [self processRects:[BYCMood smallPlist:self.type] atlas:image];
+    } else {
+        image = [BYCMood spriteImage:self.type];
+        [self processRects:[BYCMood plist:self.type] atlas:image];
+    }
     self.imageLayer.contents = (__bridge id)(image.CGImage);
     [self update:[self frame:0]];
 }
@@ -114,29 +121,48 @@
     }
 }
 
+-(void)loadCheck {
+    if(!self.image) {
+        [self loadImage];
+    }
+}
+
 -(void)animate {
+    [self loadCheck];
     if(!self.spriteLayer.animating) {
         CGPoint point = [self nextAnimation];
         [self.spriteLayer animateFrom:[self frame:point.x] to:[self frame:point.y] fps:[self.animations[@"fps"] floatValue]];
     }
 }
 
--(void)stopAnimating {
+-(void)animateAll {
+    [self loadCheck];
+    NSArray *intro = self.animations[@"intro"];
+    NSArray *loop = self.animations[@"loop"];
+    NSMutableArray *frames = [NSMutableArray array];
+    
+    for(NSUInteger i=self.currentAnimation; i<intro.count+loop.count; i++) {
+        CGPoint point = [self pointForIndex:i];
+        if(![[frames lastObject] isEqual:@(point.x)]) {
+            [frames addObject:@(point.x)];
+        }
+        [frames addObject:@(point.y)];
+    }
+    [self.spriteLayer animateFrames:frames fps:[self.animations[@"fps"] floatValue]];
+    self.currentAnimation = intro.count;
+}
+
+-(void)resetAnimation {
     [self.spriteLayer removeAllAnimations];
     [self.imageLayer removeAllAnimations];
+    self.currentAnimation = 0;
 }
 
 -(CGPoint)nextAnimation {
-    CGPoint point;
     NSArray *intro = self.animations[@"intro"];
     NSArray *loop = self.animations[@"loop"];
-    NSInteger loopIndex = self.currentAnimation-intro.count;
-    if(loopIndex < 0) {
-        point = CGPointFromString(intro[self.currentAnimation]);
-    } else {
-        point = CGPointFromString(loop[loopIndex]);
-    }
     
+    CGPoint point = [self pointForIndex:self.currentAnimation];
     self.currentAnimation += 1;
     if(self.currentAnimation >= intro.count + loop.count) {
         self.currentAnimation = intro.count;
@@ -145,8 +171,19 @@
     return point;
 }
 
+-(CGPoint)pointForIndex:(NSUInteger)index {
+    NSArray *intro = self.animations[@"intro"];
+    NSArray *loop = self.animations[@"loop"];
+    NSInteger loopIndex = index-intro.count;
+    if(loopIndex < 0) {
+        return CGPointFromString(intro[self.currentAnimation]);
+    } else if(loopIndex < loop.count) {
+        return CGPointFromString(loop[loopIndex]);
+    }
+    return CGPointZero;
+}
+
 -(void)update:(NSUInteger)index {
-    NSLog(@"UPDATE: %i", index);
     [CATransaction begin];
     [CATransaction setValue:(id)kCFBooleanTrue forKey:kCATransactionDisableActions];
 	self.imageLayer.contentsRect = [self rectForFrameIndex:index];

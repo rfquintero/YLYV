@@ -67,6 +67,8 @@
 		4525192D18B6CF0000D1B561 /* WalterTurncoat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4525192B18B6CF0000D1B561 /* WalterTurncoat.ttf */; };
 		4525193018B70D8900D1B561 /* BYCAddEntryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4525192F18B70D8900D1B561 /* BYCAddEntryView.m */; };
 		4525193118B70D8900D1B561 /* BYCAddEntryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4525192F18B70D8900D1B561 /* BYCAddEntryView.m */; };
+		4566E69F18C56CA00055DECD /* BYCMoodAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566E69E18C56CA00055DECD /* BYCMoodAnimator.m */; };
+		4566E6A018C56CA00055DECD /* BYCMoodAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566E69E18C56CA00055DECD /* BYCMoodAnimator.m */; };
 		458F0C7C18BEAD74002FEC75 /* BYCSpriteLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F0C7B18BEAD74002FEC75 /* BYCSpriteLayer.m */; };
 		458F0C7D18BEAD74002FEC75 /* BYCSpriteLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F0C7B18BEAD74002FEC75 /* BYCSpriteLayer.m */; };
 		458F0CA318BEAF9F002FEC75 /* angry.1.png in Resources */ = {isa = PBXBuildFile; fileRef = 458F0C8018BEAF9F002FEC75 /* angry.1.png */; };
@@ -311,6 +313,8 @@
 		4525192B18B6CF0000D1B561 /* WalterTurncoat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = WalterTurncoat.ttf; sourceTree = "<group>"; };
 		4525192E18B70D8900D1B561 /* BYCAddEntryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCAddEntryView.h; sourceTree = "<group>"; };
 		4525192F18B70D8900D1B561 /* BYCAddEntryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCAddEntryView.m; sourceTree = "<group>"; };
+		4566E69D18C56CA00055DECD /* BYCMoodAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCMoodAnimator.h; sourceTree = "<group>"; };
+		4566E69E18C56CA00055DECD /* BYCMoodAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCMoodAnimator.m; sourceTree = "<group>"; };
 		458F0C7A18BEAD74002FEC75 /* BYCSpriteLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCSpriteLayer.h; sourceTree = "<group>"; };
 		458F0C7B18BEAD74002FEC75 /* BYCSpriteLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCSpriteLayer.m; sourceTree = "<group>"; };
 		458F0C8018BEAF9F002FEC75 /* angry.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = angry.1.png; sourceTree = "<group>"; };
@@ -720,6 +724,8 @@
 				458F0CD418BEB270002FEC75 /* BYCMood.m */,
 				458F0CD718BEB54E002FEC75 /* BYCMoodSprite.h */,
 				458F0CD818BEB54E002FEC75 /* BYCMoodSprite.m */,
+				4566E69D18C56CA00055DECD /* BYCMoodAnimator.h */,
+				4566E69E18C56CA00055DECD /* BYCMoodAnimator.m */,
 			);
 			name = Moods;
 			sourceTree = "<group>";
@@ -1351,6 +1357,7 @@
 				452518B418B679DE00D1B561 /* BYCApplicationState.m in Sources */,
 				458F0FC818BFD516002FEC75 /* UIImage+Custom.m in Sources */,
 				452518D218B6822800D1B561 /* BYCContentView.m in Sources */,
+				4566E69F18C56CA00055DECD /* BYCMoodAnimator.m in Sources */,
 				452518C618B67BF400D1B561 /* UIColor+Custom.m in Sources */,
 				452518B818B67AC100D1B561 /* BYCSplitViewController.m in Sources */,
 				458F0FE018C0F9A4002FEC75 /* BYCReasonsView.m in Sources */,
@@ -1376,6 +1383,7 @@
 				452518B518B679DE00D1B561 /* BYCApplicationState.m in Sources */,
 				4592F1E018B7A744009CCC65 /* BYCTalkViewController.m in Sources */,
 				452518BF18B67BD400D1B561 /* BYCUI.m in Sources */,
+				4566E6A018C56CA00055DECD /* BYCMoodAnimator.m in Sources */,
 				458F0CDA18BEB54E002FEC75 /* BYCMoodSprite.m in Sources */,
 				458F0FDD18C0EA87002FEC75 /* BYCAddReasonsViewController.m in Sources */,
 				4525192A18B6A2A400D1B561 /* BYCSideViewCell.m in Sources */,

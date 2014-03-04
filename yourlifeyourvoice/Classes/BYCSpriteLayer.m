@@ -18,6 +18,26 @@
     return self;
 }
 
+-(void)animateFrames:(NSArray*)frames fps:(CGFloat)fps {
+    NSInteger totalFrames = 0;
+    if(frames.count > 0) {
+        NSInteger start = [frames[0] integerValue];
+        for(int i=1; i<frames.count; i++) {
+            NSInteger end = [frames[i] integerValue];
+            totalFrames += labs(start-end);
+            start = end;
+        }
+    }
+    if(totalFrames > 0) {
+        CAKeyframeAnimation *anim = [CAKeyframeAnimation animationWithKeyPath:@"spriteFrame"];
+        anim.values = frames;
+        anim.duration = totalFrames/fps;
+        anim.repeatCount = 1;
+        anim.delegate = self;
+        [self addAnimation:anim forKey:nil];
+    }
+}
+
 -(void)animateFrom:(NSUInteger)start to:(NSUInteger)end duration:(CGFloat)duration {
     NSUInteger frames = labs(start - end);
     if(start < end) {
