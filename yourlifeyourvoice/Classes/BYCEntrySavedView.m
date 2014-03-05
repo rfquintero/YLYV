@@ -68,8 +68,8 @@
     CGFloat talkOffsetY = (self.largeText.hidden ? CGRectGetMaxY(self.smallText.frame)+15 :
                            (self.reminderButton.hidden ? self.reminderButton.frame.origin.y : CGRectGetMaxY(self.reminderButton.frame)+padding));
     self.talkButton.frame = CGRectMake(padding, talkOffsetY, paddedWidth, buttonHeight);
-    self.moodsButton.frame = CGRectMake(padding, CGRectGetMaxY(self.talkButton.frame)+padding, paddedWidth, textButtonHeight);
-    self.infoButton.frame = CGRectMake(padding, self.moodsButton.frame.origin.y, paddedWidth, buttonHeight);
+    self.moodsButton.frame = CGRectMake(padding, CGRectGetMaxY(self.talkButton.frame)+padding, paddedWidth, buttonHeight);
+    self.infoButton.frame = CGRectMake(padding, self.moodsButton.frame.origin.y, paddedWidth, textButtonHeight);
     self.cancelButton.frame = CGRectMake(padding, CGRectGetMaxY(self.infoButton.frame)+padding, paddedWidth, textButtonHeight);
 }
 

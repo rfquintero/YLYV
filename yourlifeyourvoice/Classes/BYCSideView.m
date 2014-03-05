@@ -72,14 +72,23 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if(indexPath.row == 0) {
-        [self.delegate entrySelected];
-        self.selectedIndex = 0;
-        [self.tableView reloadData];
-    } else if(indexPath.row == 5) {
-        [self.delegate talkSelected];
-        self.selectedIndex = 5;
-        [self.tableView reloadData];
+    switch(indexPath.row) {
+        case 0:
+            [self.delegate entrySelected];
+            break;
+        case 1:
+            [self.delegate moodsSelected];
+            break;
+        case 5:
+            [self.delegate talkSelected];
+            break;
+        default:
+            break;
+    }
+    if(indexPath.row != self.selectedIndex) {
+        NSArray *paths = @[[NSIndexPath indexPathForRow:self.selectedIndex inSection:0], indexPath];
+        self.selectedIndex = indexPath.row;
+        [tableView reloadRowsAtIndexPaths:paths withRowAnimation:UITableViewRowAnimationAutomatic];
     }
 }
 

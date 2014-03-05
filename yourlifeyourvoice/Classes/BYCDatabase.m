@@ -2,7 +2,7 @@
 #import "BYCDatabaseUtilities.h"
 #import "BYCEntry.h"
 
-#define kSchemaVersion 1
+#define kSchemaVersion 2
 
 @interface BYCDatabase()
 @property (nonatomic) sqlite3* database;
@@ -47,23 +47,26 @@
 }
 
 -(void)performCreate:(sqlite3 *)database {
-    sqlite3_execute(database, @"CREATE TABLE IF NOT EXISTS entries (type INTEGER, note TEXT)");
+    sqlite3_execute(database, @"CREATE TABLE IF NOT EXISTS entries (type INTEGER, note TEXT, created_at INTEGER)");
     sqlite3_execute(database, @"CREATE TABLE IF NOT EXISTS reasons (reason TEXT, entry_id INTEGER NOT NULL)");
     sqlite3_execute(database, @"CREATE TABLE version (version INTEGER PRIMARY KEY)");
     sqlite3_execute(database, [NSString stringWithFormat:@"INSERT INTO version VALUES (%d)", kSchemaVersion]);
 }
 
 -(void)performUpdateOnDatabase:(sqlite3 *)database from:(int)oldVersion to:(int)newVersion {
+    sqlite3_execute(database, @"DROP TABLE IF EXISTS entries");
+    sqlite3_execute(database, @"DROP TABLE IF EXISTS reasons");
     sqlite3_execute(database, @"DROP TABLE IF EXISTS version");
     [self performCreate:database];
 }
 
 -(int64_t)saveWithType:(BYCMoodType)type notes:(NSString*)notes reasons:(NSArray*)reasons {
-    static const char *sql = "INSERT INTO entries (type, note) VALUES (?, ?)";
+    static const char *sql = "INSERT INTO entries (type, note, created_at) VALUES (?, ?, ?)";
     sqlite3_stmt *statement = NULL;
     sqlite3_prepare_v2(self.database, sql, -1, &statement, NULL);
     sqlite3_bind_int(statement, 1, type);
     sqlite3_bind_string(statement, 2, notes);
+    sqlite3_bind_int64(statement, 3, (int64_t)[NSDate timeIntervalSinceReferenceDate]);
     sqlite3_step(statement);
     sqlite3_finalize(statement);
     
@@ -86,15 +89,17 @@
     BYCMoodType type;
     NSString *note;
     NSString *reason;
+    int64_t date;
     
-    static const char *sql = "SELECT entries.type, entries.note, reasons.reason FROM entries LEFT OUTER JOIN reasons ON entries.rowid = reasons.entry_id WHERE entries.rowid = ?";
+    static const char *sql = "SELECT entries.type, entries.note, entries.created_at, reasons.reason FROM entries LEFT OUTER JOIN reasons ON entries.rowid = reasons.entry_id WHERE entries.rowid = ?";
     sqlite3_stmt *statement = NULL;
     sqlite3_prepare_v2(self.database, sql, -1, &statement, NULL);
     sqlite3_bind_int64(statement, 1, uid);
     while(sqlite3_step(statement) == SQLITE_ROW) {
         type = sqlite3_column_int(statement, 0);
         note = sqlite3_column_string(statement, 1);
-        reason = sqlite3_column_string(statement, 2);
+        date = sqlite3_column_int64(statement, 2);
+        reason = sqlite3_column_string(statement, 3);
         if(reason) {
             [reasons addObject:reason];
         }
@@ -102,7 +107,7 @@
     sqlite3_finalize(statement);
     reasons = reasons.count > 0 ? reasons : nil;
     
-    return [BYCEntry entryWithId:uid type:type note:note reasons:reasons];
+    return [BYCEntry entryWithId:uid type:type note:note reasons:reasons createdAt:[NSDate dateWithTimeIntervalSinceReferenceDate:date]];
 }
 
 -(NSArray*)getEntryPage:(NSInteger)page {
@@ -110,7 +115,7 @@
     int limit = 20;
     int offset = page*limit;
     
-    static const char *sql = "SELECT rowid, type, note FROM entries LIMIT ? OFFSET ?";
+    static const char *sql = "SELECT rowid, type, note, created_at FROM entries LIMIT ? OFFSET ?";
     sqlite3_stmt *statement = NULL;
     sqlite3_prepare_v2(self.database, sql, -1, &statement, NULL);
     sqlite3_bind_int(statement, 1, limit);
@@ -119,12 +124,12 @@
         int64_t uid = sqlite3_column_int64(statement, 0);
         BYCMoodType type = sqlite3_column_int(statement, 1);
         NSString *note = sqlite3_column_string(statement, 2);
-        [entries addObject:[BYCEntry entryWithId:uid type:type note:note reasons:nil]];
+        int64_t date = sqlite3_column_int64(statement, 3);
+        [entries addObject:[BYCEntry entryWithId:uid type:type note:note reasons:nil createdAt:[NSDate dateWithTimeIntervalSinceReferenceDate:date]]];
     }
     sqlite3_finalize(statement);
 
     return entries;
 }
-
 
 @end

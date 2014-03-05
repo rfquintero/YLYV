@@ -5,6 +5,7 @@
 #import "BYCViewController.h"
 #import "BYCTalkViewController.h"
 #import "BYCEntryViewController.h"
+#import "BYCEntriesViewController.h"
 
 #define kSidebarMargin 120
 
@@ -102,6 +103,10 @@
 
 -(void)entrySelected {
     [self showViewController:[[BYCEntryViewController alloc] initWithApplicationState:self.applicationState]];
+}
+
+-(void)moodsSelected {
+    [self showViewController:[[BYCEntriesViewController alloc] initWithApplicationState:self.applicationState]];
 }
 
 -(void)talkSelected {

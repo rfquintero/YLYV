@@ -3,6 +3,7 @@
 @protocol BYCSideViewDelegate <NSObject>
 -(void)hideSidebar;
 -(void)entrySelected;
+-(void)moodsSelected;
 -(void)talkSelected;
 @end
 

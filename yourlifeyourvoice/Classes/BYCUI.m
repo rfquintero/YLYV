@@ -10,6 +10,15 @@ return [self labelWithFont:[self fontName:size]];\
 }
 
 @implementation BYCUI
+static NSNumberFormatter* _numberFormatter;
++(NSNumberFormatter*)numberFormatter {
+    if(!_numberFormatter) {
+        _numberFormatter = [[NSNumberFormatter alloc] init];
+        _numberFormatter.numberStyle = NSNumberFormatterDecimalStyle;
+    }
+    return _numberFormatter;
+}
+
 +(UILabel*)labelWithFont:(UIFont*)font {
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
     label.backgroundColor = [UIColor clearColor];
@@ -44,6 +53,18 @@ CREATE_FONT(roundFontOfSize, labelWithRoundFontSize, @"ArialRoundedMTBold");
     button.layer.borderColor = [UIColor borderLightGray].CGColor;
     button.layer.borderWidth = 1.0f;
     return button;
+}
+
++(NSString*)pluralize:(NSUInteger)number singular:(NSString*)singular {
+    return [self pluralize:number singular:singular plural:[NSString stringWithFormat:@"%@s", singular]];
+}
+
++(NSString*)pluralize:(NSUInteger)number singular:(NSString*)singular plural:(NSString*)plural {
+    return [NSString stringWithFormat:@"%@ %@", [self formatNumber:@(number)], (number == 1 ? singular : plural)];
+}
+
++(NSString*)formatNumber:(NSNumber*)number {
+    return [[self numberFormatter] stringFromNumber:number];
 }
 
 @end

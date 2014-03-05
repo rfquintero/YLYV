@@ -5,17 +5,19 @@
 @property (nonatomic, readwrite) BYCMoodType type;
 @property (nonatomic, readwrite) NSString *note;
 @property (nonatomic, readwrite) NSArray *reasons;
+@property (nonatomic, readwrite) NSDate *createdAt;
 @property (nonatomic, readwrite) UIImage *image;
 @property (nonatomic, readwrite) NSURL *audioFile;
 @end
 
 @implementation BYCEntry
-+(instancetype)entryWithId:(int64_t)uid type:(BYCMoodType)type note:(NSString*)note reasons:(NSArray*)reasons {
++(instancetype)entryWithId:(int64_t)uid type:(BYCMoodType)type note:(NSString*)note reasons:(NSArray*)reasons createdAt:(NSDate *)date {
     BYCEntry *entry = [[BYCEntry alloc] init];
     entry.uid = uid;
     entry.type = type;
     entry.note = note;
     entry.reasons = reasons;
+    entry.createdAt = date;
     
     NSString *audioPath = [self audioPathForEntryId:uid];
     NSString *imagePath = [self imagePathForEntryId:uid];

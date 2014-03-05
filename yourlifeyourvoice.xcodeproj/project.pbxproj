@@ -248,6 +248,16 @@
 		45D8279018C7A0B60055ADA5 /* BYCTouchBlocker.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D8278E18C7A0B60055ADA5 /* BYCTouchBlocker.m */; };
 		45D8279318C7ACEF0055ADA5 /* BYCEntrySavedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D8279218C7ACEF0055ADA5 /* BYCEntrySavedView.m */; };
 		45D8279418C7ACEF0055ADA5 /* BYCEntrySavedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D8279218C7ACEF0055ADA5 /* BYCEntrySavedView.m */; };
+		45D8279C18C7C52D0055ADA5 /* BYCEntriesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D8279B18C7C52D0055ADA5 /* BYCEntriesModel.m */; };
+		45D8279D18C7C52D0055ADA5 /* BYCEntriesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D8279B18C7C52D0055ADA5 /* BYCEntriesModel.m */; };
+		45D827A018C7C6A60055ADA5 /* BYCEntriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D8279F18C7C6A60055ADA5 /* BYCEntriesViewController.m */; };
+		45D827A118C7C6A60055ADA5 /* BYCEntriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D8279F18C7C6A60055ADA5 /* BYCEntriesViewController.m */; };
+		45D827A418C7C6C10055ADA5 /* BYCEntriesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D827A318C7C6C10055ADA5 /* BYCEntriesView.m */; };
+		45D827A518C7C6C10055ADA5 /* BYCEntriesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D827A318C7C6C10055ADA5 /* BYCEntriesView.m */; };
+		45D827A818C7C6D50055ADA5 /* BYCEntriesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D827A718C7C6D50055ADA5 /* BYCEntriesCell.m */; };
+		45D827A918C7C6D50055ADA5 /* BYCEntriesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D827A718C7C6D50055ADA5 /* BYCEntriesCell.m */; };
+		45D827AC18C7CB5D0055ADA5 /* NSDate+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D827AB18C7CB5D0055ADA5 /* NSDate+Custom.m */; };
+		45D827AD18C7CB5D0055ADA5 /* NSDate+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D827AB18C7CB5D0055ADA5 /* NSDate+Custom.m */; };
 		45DEC7D318BBBE2600A92550 /* BYCDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DEC7D218BBBE2600A92550 /* BYCDatabase.m */; };
 		45DEC7D418BBBE2600A92550 /* BYCDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DEC7D218BBBE2600A92550 /* BYCDatabase.m */; };
 		45DEC7D718BBBE4800A92550 /* BYCDatabaseUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DEC7D618BBBE4800A92550 /* BYCDatabaseUtilities.m */; };
@@ -447,6 +457,16 @@
 		45D8278E18C7A0B60055ADA5 /* BYCTouchBlocker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCTouchBlocker.m; sourceTree = "<group>"; };
 		45D8279118C7ACEF0055ADA5 /* BYCEntrySavedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCEntrySavedView.h; sourceTree = "<group>"; };
 		45D8279218C7ACEF0055ADA5 /* BYCEntrySavedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCEntrySavedView.m; sourceTree = "<group>"; };
+		45D8279A18C7C52D0055ADA5 /* BYCEntriesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCEntriesModel.h; sourceTree = "<group>"; };
+		45D8279B18C7C52D0055ADA5 /* BYCEntriesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCEntriesModel.m; sourceTree = "<group>"; };
+		45D8279E18C7C6A60055ADA5 /* BYCEntriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCEntriesViewController.h; sourceTree = "<group>"; };
+		45D8279F18C7C6A60055ADA5 /* BYCEntriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCEntriesViewController.m; sourceTree = "<group>"; };
+		45D827A218C7C6C10055ADA5 /* BYCEntriesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCEntriesView.h; sourceTree = "<group>"; };
+		45D827A318C7C6C10055ADA5 /* BYCEntriesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCEntriesView.m; sourceTree = "<group>"; };
+		45D827A618C7C6D50055ADA5 /* BYCEntriesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCEntriesCell.h; sourceTree = "<group>"; };
+		45D827A718C7C6D50055ADA5 /* BYCEntriesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCEntriesCell.m; sourceTree = "<group>"; };
+		45D827AA18C7CB5D0055ADA5 /* NSDate+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Custom.h"; sourceTree = "<group>"; };
+		45D827AB18C7CB5D0055ADA5 /* NSDate+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Custom.m"; sourceTree = "<group>"; };
 		45DEC7D118BBBE2600A92550 /* BYCDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCDatabase.h; sourceTree = "<group>"; };
 		45DEC7D218BBBE2600A92550 /* BYCDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCDatabase.m; sourceTree = "<group>"; };
 		45DEC7D518BBBE4800A92550 /* BYCDatabaseUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCDatabaseUtilities.h; sourceTree = "<group>"; };
@@ -560,6 +580,7 @@
 		452518A818B6774E00D1B561 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				45D8279518C7C4070055ADA5 /* Reports */,
 				458F0FC518BFD507002FEC75 /* Categories */,
 				45DEC7D018BBBE1300A92550 /* Database */,
 				4592F1D918B7A71F009CCC65 /* Talk */,
@@ -890,6 +911,8 @@
 			children = (
 				458F0FC618BFD516002FEC75 /* UIImage+Custom.h */,
 				458F0FC718BFD516002FEC75 /* UIImage+Custom.m */,
+				45D827AA18C7CB5D0055ADA5 /* NSDate+Custom.h */,
+				45D827AB18C7CB5D0055ADA5 /* NSDate+Custom.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -1094,6 +1117,45 @@
 				45D8276C18C77CB20055ADA5 /* BYCEntry.m */,
 			);
 			name = Data;
+			sourceTree = "<group>";
+		};
+		45D8279518C7C4070055ADA5 /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				45D8279918C7C4350055ADA5 /* Models */,
+				45D8279718C7C4250055ADA5 /* Views */,
+				45D8279618C7C41C0055ADA5 /* Controllers */,
+			);
+			name = Reports;
+			sourceTree = "<group>";
+		};
+		45D8279618C7C41C0055ADA5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				45D8279E18C7C6A60055ADA5 /* BYCEntriesViewController.h */,
+				45D8279F18C7C6A60055ADA5 /* BYCEntriesViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		45D8279718C7C4250055ADA5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				45D827A218C7C6C10055ADA5 /* BYCEntriesView.h */,
+				45D827A318C7C6C10055ADA5 /* BYCEntriesView.m */,
+				45D827A618C7C6D50055ADA5 /* BYCEntriesCell.h */,
+				45D827A718C7C6D50055ADA5 /* BYCEntriesCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		45D8279918C7C4350055ADA5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				45D8279A18C7C52D0055ADA5 /* BYCEntriesModel.h */,
+				45D8279B18C7C52D0055ADA5 /* BYCEntriesModel.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		45DEC7D018BBBE1300A92550 /* Database */ = {
@@ -1380,16 +1442,20 @@
 				45DEC7D318BBBE2600A92550 /* BYCDatabase.m in Sources */,
 				4525188118B6750800D1B561 /* main.m in Sources */,
 				4525193018B70D8900D1B561 /* BYCAddEntryView.m in Sources */,
+				45D8279C18C7C52D0055ADA5 /* BYCEntriesModel.m in Sources */,
 				458F0C7C18BEAD74002FEC75 /* BYCSpriteLayer.m in Sources */,
 				458F0CD518BEB270002FEC75 /* BYCMood.m in Sources */,
 				458F0FD418BFEEE4002FEC75 /* BYCImagePickerController.m in Sources */,
 				45AFD60318C149B9002C18F9 /* BYCAudioView.m in Sources */,
 				458F0FD018BFE94F002FEC75 /* BYCEntryModel.m in Sources */,
 				452518CE18B67F3C00D1B561 /* BYCNavigationView.m in Sources */,
+				45D827AC18C7CB5D0055ADA5 /* NSDate+Custom.m in Sources */,
 				45AFD5DF18C10C81002C18F9 /* BYCAddAudioViewController.m in Sources */,
 				4525192318B6976C00D1B561 /* BYCEntryRowLayoutView.m in Sources */,
 				4525192918B6A2A400D1B561 /* BYCSideViewCell.m in Sources */,
 				45D8279318C7ACEF0055ADA5 /* BYCEntrySavedView.m in Sources */,
+				45D827A418C7C6C10055ADA5 /* BYCEntriesView.m in Sources */,
+				45D827A018C7C6A60055ADA5 /* BYCEntriesViewController.m in Sources */,
 				45D8278F18C7A0B60055ADA5 /* BYCTouchBlocker.m in Sources */,
 				4525188518B6750800D1B561 /* BYCAppDelegate.m in Sources */,
 				4592F1DF18B7A744009CCC65 /* BYCTalkViewController.m in Sources */,
@@ -1401,6 +1467,7 @@
 				452518C618B67BF400D1B561 /* UIColor+Custom.m in Sources */,
 				452518B818B67AC100D1B561 /* BYCSplitViewController.m in Sources */,
 				458F0FE018C0F9A4002FEC75 /* BYCReasonsView.m in Sources */,
+				45D827A818C7C6D50055ADA5 /* BYCEntriesCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1420,13 +1487,16 @@
 				458F0FD518BFEEE4002FEC75 /* BYCImagePickerController.m in Sources */,
 				458F0C7D18BEAD74002FEC75 /* BYCSpriteLayer.m in Sources */,
 				452518B918B67AC100D1B561 /* BYCSplitViewController.m in Sources */,
+				45D827A118C7C6A60055ADA5 /* BYCEntriesViewController.m in Sources */,
 				458F0FD118BFE94F002FEC75 /* BYCEntryModel.m in Sources */,
 				452518B518B679DE00D1B561 /* BYCApplicationState.m in Sources */,
 				4592F1E018B7A744009CCC65 /* BYCTalkViewController.m in Sources */,
 				452518BF18B67BD400D1B561 /* BYCUI.m in Sources */,
 				4566E6A018C56CA00055DECD /* BYCMoodAnimator.m in Sources */,
 				458F0CDA18BEB54E002FEC75 /* BYCMoodSprite.m in Sources */,
+				45D827A918C7C6D50055ADA5 /* BYCEntriesCell.m in Sources */,
 				45D8278C18C7A0660055ADA5 /* BYCQueue.m in Sources */,
+				45D827A518C7C6C10055ADA5 /* BYCEntriesView.m in Sources */,
 				458F0FDD18C0EA87002FEC75 /* BYCAddReasonsViewController.m in Sources */,
 				4525192A18B6A2A400D1B561 /* BYCSideViewCell.m in Sources */,
 				458F0FD918C0E121002FEC75 /* BYCAddReasonsView.m in Sources */,
@@ -1440,11 +1510,13 @@
 				452518CB18B67D9200D1B561 /* BYCSideView.m in Sources */,
 				4525190718B68CE400D1B561 /* BYCEntryView.m in Sources */,
 				458F0FC018BFC631002FEC75 /* BYCActionView.m in Sources */,
+				45D827AD18C7CB5D0055ADA5 /* NSDate+Custom.m in Sources */,
 				452518C718B67BF400D1B561 /* UIColor+Custom.m in Sources */,
 				458F0FC918BFD516002FEC75 /* UIImage+Custom.m in Sources */,
 				452518F918B68B3D00D1B561 /* BYCMoodView.m in Sources */,
 				452518CF18B67F3C00D1B561 /* BYCNavigationView.m in Sources */,
 				4525192418B6976C00D1B561 /* BYCEntryRowLayoutView.m in Sources */,
+				45D8279D18C7C52D0055ADA5 /* BYCEntriesModel.m in Sources */,
 				4525190318B68CCA00D1B561 /* BYCEntryViewController.m in Sources */,
 				452518D318B6822800D1B561 /* BYCContentView.m in Sources */,
 			);
