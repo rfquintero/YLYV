@@ -2,6 +2,9 @@
 #import <AVFoundation/AVFoundation.h>
 
 @interface BYCEntryModel()<AVAudioRecorderDelegate, AVAudioPlayerDelegate>
+@property (nonatomic) BYCDatabase *database;
+@property (nonatomic) BYCQueue *queue;
+
 @property (nonatomic) NSMutableArray *reasonsM;
 @property (nonatomic) AVAudioRecorder *recorder;
 @property (nonatomic) AVAudioPlayer *player;
@@ -12,11 +15,40 @@
 
 @implementation BYCEntryModel
 
--(id)init {
+-(id)initWithDatabase:(BYCDatabase*)database queue:(BYCQueue*)queue {
     if(self = [super init]) {
+        self.database = database;
+        self.queue = queue;
         self.reasonsM = [NSMutableArray array];
     }
     return self;
+}
+
+-(void)save {
+    [self.queue performAsync:^{
+        int64_t uid = [self.database saveWithType:self.type notes:(self.note ? self.note : @"") reasons:self.reasons];
+        
+        NSFileManager *manager = [NSFileManager defaultManager];
+        if(self.image) {
+            NSString *imagePath = [BYCEntry imagePathForEntryId:uid];
+            [manager createFileAtPath:imagePath contents:UIImageJPEGRepresentation(self.image, 1.0f) attributes:0];
+        }
+        if(self.hasRecording) {
+            NSString *audioPath = [BYCEntry audioPathForEntryId:uid];
+            [manager moveItemAtPath:self.audioUrl.path toPath:audioPath error:nil];
+        }
+    } callback:^{
+        [[NSNotificationCenter defaultCenter] postNotificationName:BYCEntryModelSaveSuccessful object:self];
+    } blocking:YES];
+}
+
+-(void)reset {
+    [self deleteRecording];
+    self.type = 0;
+    self.recorder = nil;
+    self.audioUrl = nil;
+    self.image = nil;
+    [self.reasonsM removeAllObjects];
 }
 
 -(void)addReason:(NSString *)reason {
@@ -109,12 +141,11 @@
 
 -(void)useSpeaker:(BOOL)speaker {
     _speakerMode = speaker;
+    AVAudioSession *audioSession = [AVAudioSession sharedInstance];
     if(speaker) {
-        UInt32 audioRouteOverride = kAudioSessionOverrideAudioRoute_Speaker;
-        AudioSessionSetProperty(kAudioSessionProperty_OverrideAudioRoute, sizeof(audioRouteOverride), &audioRouteOverride);
+        [audioSession overrideOutputAudioPort:AVAudioSessionPortOverrideSpeaker error:nil];
     } else {
-        UInt32 audioRouteOverride = kAudioSessionOverrideAudioRoute_None;
-        AudioSessionSetProperty(kAudioSessionProperty_OverrideAudioRoute, sizeof(audioRouteOverride), &audioRouteOverride);
+        [audioSession overrideOutputAudioPort:AVAudioSessionPortOverrideNone error:nil];
     }
 }
 

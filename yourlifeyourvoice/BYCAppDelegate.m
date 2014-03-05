@@ -16,9 +16,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    BYCApplicationState *applicationState = [[BYCApplicationState alloc] init];
+    BYCSplitViewController *splitViewController = [[BYCSplitViewController alloc] init];
+    BYCApplicationState *applicationState = [[BYCApplicationState alloc] initWithBlocker:splitViewController.blocker];
+    splitViewController.applicationState = applicationState;
     
-    BYCSplitViewController *splitViewController = [[BYCSplitViewController alloc] initWithApplicationState:applicationState];
     UIViewController *vc = [[BYCEntryViewController alloc] initWithApplicationState:applicationState];
     splitViewController.mainViewController = vc;
     

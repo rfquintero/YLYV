@@ -1,4 +1,5 @@
 #import "BYCContentView.h"
+#import "BYCMood.h"
 
 @protocol BYCEntryViewDelegate <NSObject>
 -(void)entryStarted;
@@ -10,6 +11,7 @@
 -(void)playRecording;
 -(void)stopPlayback;
 -(void)toggleSpeaker;
+-(void)typeSelected:(BYCMoodType)type;
 -(void)noteChanged:(NSString*)note;
 -(void)setNavActive:(BOOL)active;
 @end

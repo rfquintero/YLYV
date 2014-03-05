@@ -14,13 +14,13 @@
 @property (nonatomic) BYCSideView *sideView;
 @property (nonatomic) UIView *mainView;
 @property (nonatomic) UIButton *touchBlocker;
+@property (nonatomic, readwrite) BYCTouchBlocker *blocker;
 @end
 
 @implementation BYCSplitViewController
 
--(id)initWithApplicationState:(BYCApplicationState*)applicationState {
+-(id)init {
     if(self = [super init]) {
-        self.applicationState = applicationState;
         self.navController = [[UINavigationController alloc] init];
     }
     return self;
@@ -39,10 +39,14 @@
     self.touchBlocker = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.touchBlocker addTarget:self action:@selector(hideSidebar) forControlEvents:UIControlEventTouchUpInside];
     
+    self.blocker = [[BYCTouchBlocker alloc] initWithFrame:self.view.bounds];
+    self.blocker.autoresizingMask = BYCFlexibleView;
+    
     [self showSidebar:NO animated:NO];
     [self.view addSubview:self.mainView];
     [self.view addSubview:self.touchBlocker];
     [self.view addSubview:self.sideView];
+    [self.view addSubview:self.blocker];
 }
 
 -(void)viewWillAppear:(BOOL)animated {

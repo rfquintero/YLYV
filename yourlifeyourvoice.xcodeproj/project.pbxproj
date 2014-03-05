@@ -18,7 +18,6 @@
 		4525188F18B6750800D1B561 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4525187418B6750800D1B561 /* Foundation.framework */; };
 		4525189018B6750800D1B561 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4525187818B6750800D1B561 /* UIKit.framework */; };
 		4525189818B6750800D1B561 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4525189618B6750800D1B561 /* InfoPlist.strings */; };
-		4525189A18B6750800D1B561 /* yourlifeyourvoiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4525189918B6750800D1B561 /* yourlifeyourvoiceTests.m */; };
 		452518B018B679A200D1B561 /* BYCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452518AF18B679A200D1B561 /* BYCViewController.m */; };
 		452518B118B679A200D1B561 /* BYCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452518AF18B679A200D1B561 /* BYCViewController.m */; };
 		452518B418B679DE00D1B561 /* BYCApplicationState.m in Sources */ = {isa = PBXBuildFile; fileRef = 452518B318B679DE00D1B561 /* BYCApplicationState.m */; };
@@ -67,6 +66,7 @@
 		4525192D18B6CF0000D1B561 /* WalterTurncoat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4525192B18B6CF0000D1B561 /* WalterTurncoat.ttf */; };
 		4525193018B70D8900D1B561 /* BYCAddEntryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4525192F18B70D8900D1B561 /* BYCAddEntryView.m */; };
 		4525193118B70D8900D1B561 /* BYCAddEntryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4525192F18B70D8900D1B561 /* BYCAddEntryView.m */; };
+		4559EB1818C660D800F63125 /* BYCDatabaseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4559EB1718C660D800F63125 /* BYCDatabaseTest.m */; };
 		4566E69F18C56CA00055DECD /* BYCMoodAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566E69E18C56CA00055DECD /* BYCMoodAnimator.m */; };
 		4566E6A018C56CA00055DECD /* BYCMoodAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566E69E18C56CA00055DECD /* BYCMoodAnimator.m */; };
 		458F0C7C18BEAD74002FEC75 /* BYCSpriteLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F0C7B18BEAD74002FEC75 /* BYCSpriteLayer.m */; };
@@ -239,6 +239,13 @@
 		45C329E918C265ED00CA8A86 /* stressed_small.1.png in Resources */ = {isa = PBXBuildFile; fileRef = 45C329D118C265ED00CA8A86 /* stressed_small.1.png */; };
 		45C329EA18C265ED00CA8A86 /* stressed_small.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45C329D218C265ED00CA8A86 /* stressed_small.plist */; };
 		45C329EC18C26AC100CA8A86 /* animations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45C329EB18C26AC100CA8A86 /* animations.plist */; };
+		45D8276D18C77CB20055ADA5 /* BYCEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D8276C18C77CB20055ADA5 /* BYCEntry.m */; };
+		45D8276E18C77CB20055ADA5 /* BYCEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D8276C18C77CB20055ADA5 /* BYCEntry.m */; };
+		45D8276F18C780510055ADA5 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 45DEC7DB18BBC07100A92550 /* libsqlite3.dylib */; };
+		45D8278B18C7A0660055ADA5 /* BYCQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D8278A18C7A0660055ADA5 /* BYCQueue.m */; };
+		45D8278C18C7A0660055ADA5 /* BYCQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D8278A18C7A0660055ADA5 /* BYCQueue.m */; };
+		45D8278F18C7A0B60055ADA5 /* BYCTouchBlocker.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D8278E18C7A0B60055ADA5 /* BYCTouchBlocker.m */; };
+		45D8279018C7A0B60055ADA5 /* BYCTouchBlocker.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D8278E18C7A0B60055ADA5 /* BYCTouchBlocker.m */; };
 		45DEC7D318BBBE2600A92550 /* BYCDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DEC7D218BBBE2600A92550 /* BYCDatabase.m */; };
 		45DEC7D418BBBE2600A92550 /* BYCDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DEC7D218BBBE2600A92550 /* BYCDatabase.m */; };
 		45DEC7D718BBBE4800A92550 /* BYCDatabaseUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DEC7D618BBBE4800A92550 /* BYCDatabaseUtilities.m */; };
@@ -272,7 +279,6 @@
 		4525188D18B6750800D1B561 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4525189518B6750800D1B561 /* yourlifeyourvoiceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "yourlifeyourvoiceTests-Info.plist"; sourceTree = "<group>"; };
 		4525189718B6750800D1B561 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4525189918B6750800D1B561 /* yourlifeyourvoiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = yourlifeyourvoiceTests.m; sourceTree = "<group>"; };
 		452518AE18B679A200D1B561 /* BYCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCViewController.h; sourceTree = "<group>"; };
 		452518AF18B679A200D1B561 /* BYCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCViewController.m; sourceTree = "<group>"; };
 		452518B218B679DE00D1B561 /* BYCApplicationState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCApplicationState.h; sourceTree = "<group>"; };
@@ -313,6 +319,8 @@
 		4525192B18B6CF0000D1B561 /* WalterTurncoat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = WalterTurncoat.ttf; sourceTree = "<group>"; };
 		4525192E18B70D8900D1B561 /* BYCAddEntryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCAddEntryView.h; sourceTree = "<group>"; };
 		4525192F18B70D8900D1B561 /* BYCAddEntryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCAddEntryView.m; sourceTree = "<group>"; };
+		4559EB1618C660D800F63125 /* BYCDatabaseTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCDatabaseTest.h; sourceTree = "<group>"; };
+		4559EB1718C660D800F63125 /* BYCDatabaseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCDatabaseTest.m; sourceTree = "<group>"; };
 		4566E69D18C56CA00055DECD /* BYCMoodAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCMoodAnimator.h; sourceTree = "<group>"; };
 		4566E69E18C56CA00055DECD /* BYCMoodAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCMoodAnimator.m; sourceTree = "<group>"; };
 		458F0C7A18BEAD74002FEC75 /* BYCSpriteLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCSpriteLayer.h; sourceTree = "<group>"; };
@@ -429,6 +437,12 @@
 		45C329D118C265ED00CA8A86 /* stressed_small.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stressed_small.1.png; sourceTree = "<group>"; };
 		45C329D218C265ED00CA8A86 /* stressed_small.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = stressed_small.plist; sourceTree = "<group>"; };
 		45C329EB18C26AC100CA8A86 /* animations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = animations.plist; path = ../animations.plist; sourceTree = "<group>"; };
+		45D8276B18C77CB20055ADA5 /* BYCEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCEntry.h; sourceTree = "<group>"; };
+		45D8276C18C77CB20055ADA5 /* BYCEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCEntry.m; sourceTree = "<group>"; };
+		45D8278918C7A0660055ADA5 /* BYCQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCQueue.h; sourceTree = "<group>"; };
+		45D8278A18C7A0660055ADA5 /* BYCQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCQueue.m; sourceTree = "<group>"; };
+		45D8278D18C7A0B60055ADA5 /* BYCTouchBlocker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCTouchBlocker.h; sourceTree = "<group>"; };
+		45D8278E18C7A0B60055ADA5 /* BYCTouchBlocker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCTouchBlocker.m; sourceTree = "<group>"; };
 		45DEC7D118BBBE2600A92550 /* BYCDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCDatabase.h; sourceTree = "<group>"; };
 		45DEC7D218BBBE2600A92550 /* BYCDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCDatabase.m; sourceTree = "<group>"; };
 		45DEC7D518BBBE4800A92550 /* BYCDatabaseUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCDatabaseUtilities.h; sourceTree = "<group>"; };
@@ -455,6 +469,7 @@
 			files = (
 				4525188E18B6750800D1B561 /* XCTest.framework in Frameworks */,
 				4525189018B6750800D1B561 /* UIKit.framework in Frameworks */,
+				45D8276F18C780510055ADA5 /* libsqlite3.dylib in Frameworks */,
 				4525188F18B6750800D1B561 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,8 +537,9 @@
 		4525189318B6750800D1B561 /* yourlifeyourvoiceTests */ = {
 			isa = PBXGroup;
 			children = (
-				4525189918B6750800D1B561 /* yourlifeyourvoiceTests.m */,
 				4525189418B6750800D1B561 /* Supporting Files */,
+				4559EB1618C660D800F63125 /* BYCDatabaseTest.h */,
+				4559EB1718C660D800F63125 /* BYCDatabaseTest.m */,
 			);
 			path = yourlifeyourvoiceTests;
 			sourceTree = "<group>";
@@ -608,6 +624,8 @@
 				458F0FBE18BFC631002FEC75 /* BYCActionView.m */,
 				458F0FC118BFD4DC002FEC75 /* BYCImageButton.h */,
 				458F0FC218BFD4DC002FEC75 /* BYCImageButton.m */,
+				45D8278D18C7A0B60055ADA5 /* BYCTouchBlocker.h */,
+				45D8278E18C7A0B60055ADA5 /* BYCTouchBlocker.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -617,6 +635,8 @@
 			children = (
 				452518B218B679DE00D1B561 /* BYCApplicationState.h */,
 				452518B318B679DE00D1B561 /* BYCApplicationState.m */,
+				45D8278918C7A0660055ADA5 /* BYCQueue.h */,
+				45D8278A18C7A0660055ADA5 /* BYCQueue.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -637,6 +657,7 @@
 		452518BB18B67BAA00D1B561 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				45D8276A18C77C9E0055ADA5 /* Data */,
 				458F0C7918BEAD5B002FEC75 /* Moods */,
 				4525192618B6A27E00D1B561 /* Split Controller */,
 				4525192518B69E2F00D1B561 /* BYCConstants.h */,
@@ -1060,6 +1081,15 @@
 			path = stressed_small.atlasc;
 			sourceTree = "<group>";
 		};
+		45D8276A18C77C9E0055ADA5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				45D8276B18C77CB20055ADA5 /* BYCEntry.h */,
+				45D8276C18C77CB20055ADA5 /* BYCEntry.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		45DEC7D018BBBE1300A92550 /* Database */ = {
 			isa = PBXGroup;
 			children = (
@@ -1326,6 +1356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				452518F818B68B3D00D1B561 /* BYCMoodView.m in Sources */,
+				45D8276D18C77CB20055ADA5 /* BYCEntry.m in Sources */,
 				458F0FDC18C0EA87002FEC75 /* BYCAddReasonsViewController.m in Sources */,
 				452518BE18B67BD400D1B561 /* BYCUI.m in Sources */,
 				4525190218B68CCA00D1B561 /* BYCEntryViewController.m in Sources */,
@@ -1338,6 +1369,7 @@
 				452518B018B679A200D1B561 /* BYCViewController.m in Sources */,
 				45DEC7D718BBBE4800A92550 /* BYCDatabaseUtilities.m in Sources */,
 				458F0FC318BFD4DC002FEC75 /* BYCImageButton.m in Sources */,
+				45D8278B18C7A0660055ADA5 /* BYCQueue.m in Sources */,
 				458F0FD818C0E121002FEC75 /* BYCAddReasonsView.m in Sources */,
 				45DEC7D318BBBE2600A92550 /* BYCDatabase.m in Sources */,
 				4525188118B6750800D1B561 /* main.m in Sources */,
@@ -1351,6 +1383,7 @@
 				45AFD5DF18C10C81002C18F9 /* BYCAddAudioViewController.m in Sources */,
 				4525192318B6976C00D1B561 /* BYCEntryRowLayoutView.m in Sources */,
 				4525192918B6A2A400D1B561 /* BYCSideViewCell.m in Sources */,
+				45D8278F18C7A0B60055ADA5 /* BYCTouchBlocker.m in Sources */,
 				4525188518B6750800D1B561 /* BYCAppDelegate.m in Sources */,
 				4592F1DF18B7A744009CCC65 /* BYCTalkViewController.m in Sources */,
 				4592F1E318B7A76B009CCC65 /* BYCTalkView.m in Sources */,
@@ -1369,28 +1402,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				45AFD5DC18C10C4F002C18F9 /* BYCAddAudioView.m in Sources */,
+				45D8276E18C77CB20055ADA5 /* BYCEntry.m in Sources */,
 				45AFD5E018C10C81002C18F9 /* BYCAddAudioViewController.m in Sources */,
 				45AFD60418C149B9002C18F9 /* BYCAudioView.m in Sources */,
 				45DEC7D818BBBE4800A92550 /* BYCDatabaseUtilities.m in Sources */,
+				45D8279018C7A0B60055ADA5 /* BYCTouchBlocker.m in Sources */,
 				4525193118B70D8900D1B561 /* BYCAddEntryView.m in Sources */,
 				4592F1E418B7A76B009CCC65 /* BYCTalkView.m in Sources */,
 				458F0CD618BEB270002FEC75 /* BYCMood.m in Sources */,
 				458F0FD518BFEEE4002FEC75 /* BYCImagePickerController.m in Sources */,
 				458F0C7D18BEAD74002FEC75 /* BYCSpriteLayer.m in Sources */,
 				452518B918B67AC100D1B561 /* BYCSplitViewController.m in Sources */,
-				4525189A18B6750800D1B561 /* yourlifeyourvoiceTests.m in Sources */,
 				458F0FD118BFE94F002FEC75 /* BYCEntryModel.m in Sources */,
 				452518B518B679DE00D1B561 /* BYCApplicationState.m in Sources */,
 				4592F1E018B7A744009CCC65 /* BYCTalkViewController.m in Sources */,
 				452518BF18B67BD400D1B561 /* BYCUI.m in Sources */,
 				4566E6A018C56CA00055DECD /* BYCMoodAnimator.m in Sources */,
 				458F0CDA18BEB54E002FEC75 /* BYCMoodSprite.m in Sources */,
+				45D8278C18C7A0660055ADA5 /* BYCQueue.m in Sources */,
 				458F0FDD18C0EA87002FEC75 /* BYCAddReasonsViewController.m in Sources */,
 				4525192A18B6A2A400D1B561 /* BYCSideViewCell.m in Sources */,
 				458F0FD918C0E121002FEC75 /* BYCAddReasonsView.m in Sources */,
 				452518C318B67BE800D1B561 /* UIView+Layouts.m in Sources */,
 				458F0FC418BFD4DC002FEC75 /* BYCImageButton.m in Sources */,
 				458F0FE118C0F9A4002FEC75 /* BYCReasonsView.m in Sources */,
+				4559EB1818C660D800F63125 /* BYCDatabaseTest.m in Sources */,
 				45DEC7D418BBBE2600A92550 /* BYCDatabase.m in Sources */,
 				452518B118B679A200D1B561 /* BYCViewController.m in Sources */,
 				452518CB18B67D9200D1B561 /* BYCSideView.m in Sources */,

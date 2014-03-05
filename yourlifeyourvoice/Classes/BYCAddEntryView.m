@@ -225,6 +225,7 @@ typedef enum {
 }
 
 -(void)resetContent {
+    self.noteView.text = @"";
     [self.scrollView setContentOffset:CGPointZero animated:NO];
     [self layoutSubviews];
 }

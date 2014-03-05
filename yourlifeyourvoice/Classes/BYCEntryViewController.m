@@ -16,7 +16,7 @@
 -(void)loadView {
     [super loadView];
     
-    self.model = [[BYCEntryModel alloc] init];
+    self.model = [[BYCEntryModel alloc] initWithDatabase:self.applicationState.database queue:self.applicationState.queue];
     
     self.entryView = [[BYCEntryView alloc] initWithFrame:self.view.bounds];
     self.entryView.delegate = self;
@@ -86,6 +86,10 @@
     [self.entryView setSpeakerMode:self.model.speakerMode];
 }
 
+-(void)typeSelected:(BYCMoodType)type {
+    self.model.type = type;
+}
+
 -(void)noteChanged:(NSString*)note {
     self.model.note = note;
 }
@@ -94,7 +98,8 @@
     [self.entryView discardEntry];
     [self.navView setNavTitleHidden:NO animated:YES];
     [self.navView setLeftButtonHidden:YES animated:YES];
-
+    [self.model reset];
+    [self refreshView];
 }
 
 -(void)entryStarted {

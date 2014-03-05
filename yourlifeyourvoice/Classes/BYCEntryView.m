@@ -92,6 +92,7 @@
 
 -(void)moodView:(BYCMoodView*)view selectedWithType:(BYCMoodType)type {
     [self.largeMood setType:type];
+    [self.delegate typeSelected:type];
     
     CGRect start = [self.scrollView convertRect:view.frame fromView:self.rowLayout];
     CGRect end = self.largeMood.frame;
