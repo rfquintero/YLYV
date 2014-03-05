@@ -4,6 +4,7 @@
 @interface BYCReasonsView()
 @property (nonatomic) UILabel *title;
 @property (nonatomic) UILabel *label;
+@property (nonatomic, readwrite) BOOL hasContent;
 @end
 
 @implementation BYCReasonsView
@@ -38,6 +39,7 @@
 }
 
 -(void)setReasons:(NSArray*)reasons {
+    _hasContent = reasons.count > 0;
     NSString *text = [[reasons componentsJoinedByString:@", "] lowercaseString];
     NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:text];
     

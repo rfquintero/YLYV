@@ -5,6 +5,7 @@
 #import "BYCImageButton.h"
 #import "BYCReasonsView.h"
 #import "BYCAudioView.h"
+#import "BYCEntrySavedView.h"
 
 typedef enum {
     Action_Because,
@@ -24,6 +25,7 @@ typedef enum {
 @property (nonatomic) UITextView *noteView;
 @property (nonatomic) UIButton *saveButton;
 @property (nonatomic) UIButton *deleteButton;
+@property (nonatomic) BYCEntrySavedView *savedView;
 @property (nonatomic) BYCActionView *actionView;
 @property (nonatomic) UITapGestureRecognizer *tapRecognizer;
 
@@ -84,6 +86,8 @@ typedef enum {
         self.saveButton = [BYCUI standardButtonWithTitle:@"SAVE MOOD" target:self action:@selector(saveSelected)];
         self.deleteButton = [BYCUI deleteButtonWithTarget:self action:@selector(deleteSelected)];
         
+        self.savedView = [[BYCEntrySavedView alloc] initWithFrame:CGRectZero];
+        
         self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectZero];
         self.scrollView.delegate = self;
         
@@ -105,10 +109,13 @@ typedef enum {
         [self.scrollView addSubview:self.noteView];
         [self.scrollView addSubview:self.saveButton];
         [self.scrollView addSubview:self.deleteButton];
+        [self.scrollView addSubview:self.savedView];
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardUp:) name:UIKeyboardWillShowNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDown) name:UIKeyboardWillHideNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChanged) name:UITextViewTextDidChangeNotification object:self.noteView];
+        
+        [self setSavedViewHidden:YES];
     }
     return self;
 }
@@ -144,8 +151,10 @@ typedef enum {
     [self.saveButton setFrame:CGRectMake(padding, CGRectGetMaxY(self.noteView.frame)+padding, paddedWidth, saveSize.height)];
     [self.deleteButton centerHorizonallyAtY:CGRectGetMaxY(self.saveButton.frame)+padding inBounds:self.bounds thatFits:CGSizeUnbounded];
     
-    CGFloat scrollHeight = MAX(height+self.contentOffset-self.minOffset, CGRectGetMaxY(self.deleteButton.frame)+padding);
+    CGFloat contentHeight = self.savedView.hidden ? CGRectGetMaxY(self.deleteButton.frame)+padding : 0;
+    CGFloat scrollHeight = MAX(height+self.contentOffset-self.minOffset, contentHeight);
     [self.scrollView setContentSize:CGSizeMake(width, scrollHeight)];
+    self.savedView.frame = CGRectMake(0, offsetY, width, scrollHeight-offsetY);
     
     CGFloat actionHeight = (height-topHeight-padding-self.addButton.frame.size.height/2);
     if(self.showAction) {
@@ -185,15 +194,20 @@ typedef enum {
     return CGRectGetMaxY(self.addButton.frame) - offset;
 }
 
+-(void)setDelegate:(id<BYCAddEntryViewDelegate>)delegate {
+    _delegate = delegate;
+    self.savedView.delegate = delegate;
+}
+
 -(void)setImage:(UIImage *)image {
     self.photo.image = image;
-    self.photo.hidden = !image;
+    self.photo.hidden = !self.photo.hasContent;
     [self setNeedsLayout];
 }
 
 -(void)setReasons:(NSArray*)reasons {
     [self.reasonsView setReasons:reasons];
-    self.reasonsView.hidden = reasons.count == 0;
+    self.reasonsView.hidden = !self.reasonsView.hasContent;
     [self setNeedsLayout];
 }
 
@@ -202,13 +216,11 @@ typedef enum {
 }
 
 -(void)setAudioDuration:(NSTimeInterval)duration {
-    if(duration > 0) {
-        [self.audioView setDuration:duration];
-        self.audioView.hidden = NO;
-    } else {
-        self.audioView.hidden = YES;
-    }
+    [self.audioView setDuration:duration];
+    self.audioView.hidden = !self.audioView.hasContent;
+    [self setNeedsLayout];
 }
+
 -(void)playbackStopped {
     [self.audioView playbackStopped];
 }
@@ -227,7 +239,31 @@ typedef enum {
 -(void)resetContent {
     self.noteView.text = @"";
     [self.scrollView setContentOffset:CGPointZero animated:NO];
+    [self setSavedViewHidden:YES];
     [self layoutSubviews];
+}
+
+-(void)setSavedStandardTitle:(NSString*)title hideReminders:(BOOL)hideReminders {
+    [self.savedView setStandardTitle:title hideReminders:hideReminders];
+    [self setSavedViewHidden:NO];
+    [self setNeedsLayout];
+}
+
+-(void)setSavedAlternateTitle:(NSString*)title {
+    [self.savedView setAlternateTitle:title];
+    [self setSavedViewHidden:NO];
+    [self setNeedsLayout];
+}
+
+-(void)setSavedViewHidden:(BOOL)hidden {
+    self.savedView.hidden = hidden;
+    self.reasonsView.hidden = !hidden || !self.reasonsView.hasContent;
+    self.photo.hidden = !hidden || !self.photo.hasContent;
+    self.audioView.hidden = !hidden || !self.audioView.hasContent;
+    self.noteView.hidden = !hidden;
+    self.saveButton.hidden = !hidden;
+    self.deleteButton.hidden = !hidden;
+    self.addButton.hidden = !hidden;
 }
 
 -(void)scrollToTop:(BOOL)animated {
@@ -276,6 +312,7 @@ typedef enum {
 }
 
 -(void)saveSelected {
+    [self hideKeyboard];
     [self.delegate saveSelected];
 }
 

@@ -246,6 +246,8 @@
 		45D8278C18C7A0660055ADA5 /* BYCQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D8278A18C7A0660055ADA5 /* BYCQueue.m */; };
 		45D8278F18C7A0B60055ADA5 /* BYCTouchBlocker.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D8278E18C7A0B60055ADA5 /* BYCTouchBlocker.m */; };
 		45D8279018C7A0B60055ADA5 /* BYCTouchBlocker.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D8278E18C7A0B60055ADA5 /* BYCTouchBlocker.m */; };
+		45D8279318C7ACEF0055ADA5 /* BYCEntrySavedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D8279218C7ACEF0055ADA5 /* BYCEntrySavedView.m */; };
+		45D8279418C7ACEF0055ADA5 /* BYCEntrySavedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D8279218C7ACEF0055ADA5 /* BYCEntrySavedView.m */; };
 		45DEC7D318BBBE2600A92550 /* BYCDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DEC7D218BBBE2600A92550 /* BYCDatabase.m */; };
 		45DEC7D418BBBE2600A92550 /* BYCDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DEC7D218BBBE2600A92550 /* BYCDatabase.m */; };
 		45DEC7D718BBBE4800A92550 /* BYCDatabaseUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DEC7D618BBBE4800A92550 /* BYCDatabaseUtilities.m */; };
@@ -443,6 +445,8 @@
 		45D8278A18C7A0660055ADA5 /* BYCQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCQueue.m; sourceTree = "<group>"; };
 		45D8278D18C7A0B60055ADA5 /* BYCTouchBlocker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCTouchBlocker.h; sourceTree = "<group>"; };
 		45D8278E18C7A0B60055ADA5 /* BYCTouchBlocker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCTouchBlocker.m; sourceTree = "<group>"; };
+		45D8279118C7ACEF0055ADA5 /* BYCEntrySavedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCEntrySavedView.h; sourceTree = "<group>"; };
+		45D8279218C7ACEF0055ADA5 /* BYCEntrySavedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCEntrySavedView.m; sourceTree = "<group>"; };
 		45DEC7D118BBBE2600A92550 /* BYCDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCDatabase.h; sourceTree = "<group>"; };
 		45DEC7D218BBBE2600A92550 /* BYCDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCDatabase.m; sourceTree = "<group>"; };
 		45DEC7D518BBBE4800A92550 /* BYCDatabaseUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCDatabaseUtilities.h; sourceTree = "<group>"; };
@@ -708,6 +712,8 @@
 				45AFD5DA18C10C4F002C18F9 /* BYCAddAudioView.m */,
 				45AFD60118C149B9002C18F9 /* BYCAudioView.h */,
 				45AFD60218C149B9002C18F9 /* BYCAudioView.m */,
+				45D8279118C7ACEF0055ADA5 /* BYCEntrySavedView.h */,
+				45D8279218C7ACEF0055ADA5 /* BYCEntrySavedView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -1383,6 +1389,7 @@
 				45AFD5DF18C10C81002C18F9 /* BYCAddAudioViewController.m in Sources */,
 				4525192318B6976C00D1B561 /* BYCEntryRowLayoutView.m in Sources */,
 				4525192918B6A2A400D1B561 /* BYCSideViewCell.m in Sources */,
+				45D8279318C7ACEF0055ADA5 /* BYCEntrySavedView.m in Sources */,
 				45D8278F18C7A0B60055ADA5 /* BYCTouchBlocker.m in Sources */,
 				4525188518B6750800D1B561 /* BYCAppDelegate.m in Sources */,
 				4592F1DF18B7A744009CCC65 /* BYCTalkViewController.m in Sources */,
@@ -1426,6 +1433,7 @@
 				452518C318B67BE800D1B561 /* UIView+Layouts.m in Sources */,
 				458F0FC418BFD4DC002FEC75 /* BYCImageButton.m in Sources */,
 				458F0FE118C0F9A4002FEC75 /* BYCReasonsView.m in Sources */,
+				45D8279418C7ACEF0055ADA5 /* BYCEntrySavedView.m in Sources */,
 				4559EB1818C660D800F63125 /* BYCDatabaseTest.m in Sources */,
 				45DEC7D418BBBE2600A92550 /* BYCDatabase.m in Sources */,
 				452518B118B679A200D1B561 /* BYCViewController.m in Sources */,

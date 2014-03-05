@@ -35,6 +35,7 @@
     [super viewWillAppear:animated];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playbackError) name:BYCEntryModelPlaybackError object:self.model];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playbackStopped) name:BYCEntryModelPlaybackStopped object:self.model];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(saveSuccessful) name:BYCEntryModelSaveSuccessful object:self.model];
     [self refreshView];
 }
 
@@ -67,7 +68,7 @@
 }
 
 -(void)saveSelected {
-    
+    [self.model save];
 }
 
 -(void)playRecording {
@@ -115,6 +116,27 @@
     [self.navView setButtonsAcive:active];
 }
 
+#pragma mark BYCEntrySavedViewDelegate {
+-(void)cancelSelected {
+    [self deleteSelected];
+}
+
+-(void)reminderSelected {
+    
+}
+
+-(void)talkSelected {
+    
+}
+
+-(void)moodsSelected {
+    
+}
+
+-(void)infoSelected {
+    
+}
+
 #pragma mark callbacks
 
 -(void)playbackError {
@@ -124,6 +146,11 @@
 
 -(void)playbackStopped {
     [self.entryView playbackStopped];
+}
+
+-(void)saveSuccessful {
+    [self.entryView setSavedStandardTitle:@"Got it! Bummer." hideReminders:NO];
+//    [self.entryView setSavedAlternateTitle:@"Everything Okay?"];
 }
 
 #pragma mark BYCImagePickerControllerDelegate

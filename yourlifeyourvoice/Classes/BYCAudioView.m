@@ -7,6 +7,7 @@
 @property (nonatomic) UIButton *speakerButton;
 @property (nonatomic) UILabel *durationLabel;
 @property (nonatomic) BOOL playing;
+@property (nonatomic, readwrite) BOOL hasContent;
 @property (nonatomic, weak) id<BYCAudioViewDelegate> delegate;
 @end
 
@@ -57,6 +58,7 @@
 }
 
 -(void)setDuration:(NSTimeInterval)duration {
+    _hasContent = duration > 0;
     int sec = (int)duration % 60;
     int min = (int)(duration/60)%60;
     int hour = (int)(duration/3600);

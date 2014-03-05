@@ -1,7 +1,8 @@
 #import <UIKit/UIKit.h>
 #import "BYCMood.h"
+#import "BYCEntrySavedView.h"
 
-@protocol BYCAddEntryViewDelegate <NSObject>
+@protocol BYCAddEntryViewDelegate <BYCEntrySavedViewDelegate>
 -(void)photoSelected;
 -(void)becauseSelected;
 -(void)audioSelected;
@@ -24,5 +25,7 @@
 -(void)setSpeakerMode:(BOOL)speakerMode;
 -(void)setAudioDuration:(NSTimeInterval)duration;
 -(void)playbackStopped;
+-(void)setSavedStandardTitle:(NSString*)title hideReminders:(BOOL)hideReminders;
+-(void)setSavedAlternateTitle:(NSString*)title;
 -(void)setDelegate:(id<BYCAddEntryViewDelegate>)delegate;
 @end

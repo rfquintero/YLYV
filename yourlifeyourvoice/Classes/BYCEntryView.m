@@ -90,6 +90,14 @@
     [self.addEntry playbackStopped];
 }
 
+-(void)setSavedStandardTitle:(NSString*)title hideReminders:(BOOL)hideReminders {
+    [self.addEntry setSavedStandardTitle:title hideReminders:hideReminders];
+}
+
+-(void)setSavedAlternateTitle:(NSString*)title {
+    [self.addEntry setSavedAlternateTitle:title];
+}
+
 -(void)moodView:(BYCMoodView*)view selectedWithType:(BYCMoodType)type {
     [self.largeMood setType:type];
     [self.delegate typeSelected:type];
@@ -210,6 +218,28 @@
     
     [self layoutLargeMood];
 }
+
+#pragma mark BYCEntrySavedViewDelegate
+-(void)cancelSelected {
+    [self.delegate cancelSelected];
+}
+
+-(void)reminderSelected {
+    [self.delegate reminderSelected];
+}
+
+-(void)talkSelected {
+    [self.delegate talkSelected];
+}
+
+-(void)moodsSelected {
+    [self.delegate moodsSelected];
+}
+
+-(void)infoSelected {
+    [self.delegate infoSelected];
+}
+
 
 #pragma mark moods
 

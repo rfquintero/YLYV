@@ -5,6 +5,7 @@
 @property (nonatomic, readwrite) UIImageView *customImage;
 @property (nonatomic) UIImage *enabledImage;
 @property (nonatomic) UIImage *disabledImage;
+@property (nonatomic, readwrite) BOOL hasContent;
 @end
 
 @implementation BYCImageButton
@@ -35,6 +36,7 @@
 }
 
 -(void)setImage:(UIImage*)image {
+    _hasContent = image != nil;
     self.customImage.image = image;
     self.enabledImage = image;
     self.disabledImage = [image disabledImage];

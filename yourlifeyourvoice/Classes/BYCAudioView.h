@@ -8,6 +8,7 @@
 @end
 
 @interface BYCAudioView : UIView
+@property (nonatomic, readonly) BOOL hasContent;
 -(void)setSpeakerMode:(BOOL)speakerMode;
 -(void)setDuration:(NSTimeInterval)duration;
 -(void)playbackStopped;

@@ -13,6 +13,7 @@ return [self labelWithFont:[self fontName:size]];\
 +(UILabel*)labelWithFont:(UIFont*)font {
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
     label.backgroundColor = [UIColor clearColor];
+    label.textColor = [UIColor blackColor];
     label.font = font;
     return label;
 }
@@ -27,7 +28,7 @@ CREATE_FONT(roundFontOfSize, labelWithRoundFontSize, @"ArialRoundedMTBold");
     [button setTitle:@"X DELETE" forState:UIControlStateNormal];
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     [button setContentEdgeInsets:UIEdgeInsetsMake(10, 10, 10, 10)];
-    [button.titleLabel setFont:[self fontOfSize:14.0f]];
+    [button.titleLabel setFont:[self fontOfSize:16.0f]];
     return button;
 }
 
