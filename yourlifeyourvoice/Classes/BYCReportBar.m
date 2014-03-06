@@ -68,11 +68,20 @@
 }
 
 -(void)animateWithDelay:(CGFloat)delay {
+    [self layoutSubviews];
     self.bar.frame = CGRectMake(self.bar.frame.origin.x, self.bar.frame.origin.y, 0, self.bar.frame.size.height);
-    [UIView animateWithDuration:0.2f delay:delay options:0 animations:^{
-        [self layoutSubviews];
-    } completion:^(BOOL finished) {
-    }];
+    
+    if(SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")) {
+        [UIView animateWithDuration:0.3f delay:delay usingSpringWithDamping:0.5f initialSpringVelocity:0 options:0 animations:^{
+            [self layoutSubviews];
+        } completion:^(BOOL finished) {
+        }];
+    } else {
+        [UIView animateWithDuration:0.3f delay:delay options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            [self layoutSubviews];
+        } completion:^(BOOL finished) {
+        }];
+    }
 }
 
 @end
