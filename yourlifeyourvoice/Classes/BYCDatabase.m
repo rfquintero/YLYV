@@ -113,9 +113,9 @@
 -(NSArray*)getEntryPage:(NSInteger)page {
     NSMutableArray *entries = [NSMutableArray array];
     int limit = 20;
-    int offset = page*limit;
+    int offset = (int)page*limit;
     
-    static const char *sql = "SELECT rowid, type, note, created_at FROM entries LIMIT ? OFFSET ?";
+    static const char *sql = "SELECT rowid, type, note, created_at FROM entries ORDER BY rowid DESC LIMIT ? OFFSET ? ";
     sqlite3_stmt *statement = NULL;
     sqlite3_prepare_v2(self.database, sql, -1, &statement, NULL);
     sqlite3_bind_int(statement, 1, limit);
@@ -130,6 +130,25 @@
     sqlite3_finalize(statement);
 
     return entries;
+}
+
+-(NSArray*)getAllEntries {
+    NSMutableArray *entries = [NSMutableArray array];
+    
+    static const char *sql = "SELECT rowid, type FROM entries ORDER BY rowid DESC";
+    sqlite3_stmt *statement = NULL;
+    sqlite3_prepare_v2(self.database, sql, -1, &statement, NULL);
+    while(sqlite3_step(statement) == SQLITE_ROW) {
+        int64_t uid = sqlite3_column_int64(statement, 0);
+        BYCMoodType type = sqlite3_column_int(statement, 1);
+        NSString *note = sqlite3_column_string(statement, 2);
+        int64_t date = sqlite3_column_int64(statement, 3);
+        [entries addObject:[BYCEntry entryWithId:uid type:type note:note reasons:nil createdAt:[NSDate dateWithTimeIntervalSinceReferenceDate:date]]];
+    }
+    sqlite3_finalize(statement);
+    
+    return entries;
+
 }
 
 @end

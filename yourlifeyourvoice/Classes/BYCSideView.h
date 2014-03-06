@@ -4,6 +4,7 @@
 -(void)hideSidebar;
 -(void)entrySelected;
 -(void)moodsSelected;
+-(void)reportsSelected;
 -(void)talkSelected;
 @end
 

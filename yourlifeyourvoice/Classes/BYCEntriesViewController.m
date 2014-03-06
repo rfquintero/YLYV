@@ -30,6 +30,11 @@
     }
 }
 
+-(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 -(void)entriesRefreshed {
     [self.entryView setEntries:self.model.entries hasMore:self.model.hasMore];
 }

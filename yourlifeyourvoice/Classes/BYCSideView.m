@@ -79,6 +79,9 @@
         case 1:
             [self.delegate moodsSelected];
             break;
+        case 2:
+            [self.delegate reportsSelected];
+            break;
         case 5:
             [self.delegate talkSelected];
             break;

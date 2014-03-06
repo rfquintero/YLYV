@@ -245,7 +245,7 @@
 
 -(NSArray*)moods {
     return @[@(BYCMood_Happy), @(BYCMood_Relieved), @(BYCMood_Confident), @(BYCMood_Proud), @(BYCMood_Depressed),
-             @(BYCMood_Lonely), @(BYCMood_Invisible), @(BYCMood_Embarassed), @(BYCMood_Stressed), @(BYCMood_Confused),
+             @(BYCMood_Lonely), @(BYCMood_Invisible), @(BYCMood_Embarrassed), @(BYCMood_Stressed), @(BYCMood_Confused),
              @(BYCMood_Angry), @(BYCMood_Frustrated)];
 }
 

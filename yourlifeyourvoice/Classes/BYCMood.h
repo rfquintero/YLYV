@@ -5,7 +5,7 @@ typedef enum {
     BYCMood_Confident,
     BYCMood_Confused,
     BYCMood_Depressed,
-    BYCMood_Embarassed,
+    BYCMood_Embarrassed,
     BYCMood_Frustrated,
     BYCMood_Happy,
     BYCMood_Invisible,

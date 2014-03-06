@@ -6,29 +6,29 @@
 +(NSString*)moodString:(BYCMoodType)type {
     switch(type) {
         case BYCMood_Angry:
-            return @"Angry";
+            return @"angry";
         case BYCMood_Confident:
-            return @"Confident";
+            return @"confident";
         case BYCMood_Confused:
-            return @"Confused";
+            return @"confused";
         case BYCMood_Depressed:
-            return @"Depressed";
-        case BYCMood_Embarassed:
-            return @"Embarassed";
+            return @"depressed";
+        case BYCMood_Embarrassed:
+            return @"embarrassed";
         case BYCMood_Frustrated:
-            return @"Frustrated";
+            return @"frustrated";
         case BYCMood_Happy:
-            return @"Happy";
+            return @"happy";
         case BYCMood_Invisible:
-            return @"Invisible";
+            return @"invisible";
         case BYCMood_Lonely:
-            return @"Lonely";
+            return @"lonely";
         case BYCMood_Proud:
-            return @"Proud";
+            return @"proud";
         case BYCMood_Relieved:
-            return @"Relieved";
+            return @"relieved";
         case BYCMood_Stressed:
-            return @"Stressed";
+            return @"stressed";
     }
 }
 
@@ -77,7 +77,7 @@
         case BYCMood_Lonely:
             return [UIColor bgBlue];
         case BYCMood_Invisible:
-        case BYCMood_Embarassed:
+        case BYCMood_Embarrassed:
             return [UIColor bgGreen];
         case BYCMood_Happy:
         case BYCMood_Relieved:

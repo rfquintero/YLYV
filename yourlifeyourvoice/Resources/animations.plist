@@ -60,7 +60,7 @@
 			<string>{52,27}</string>
 		</array>
 	</dict>
-	<key>embarassed</key>
+	<key>embarrassed</key>
 	<dict>
 		<key>fps</key>
 		<integer>30</integer>

@@ -6,6 +6,7 @@
 #import "BYCTalkViewController.h"
 #import "BYCEntryViewController.h"
 #import "BYCEntriesViewController.h"
+#import "BYCReportViewController.h"
 
 #define kSidebarMargin 120
 
@@ -111,6 +112,10 @@
 
 -(void)talkSelected {
     [self showViewController:[[BYCTalkViewController alloc] initWithApplicationState:self.applicationState]];
+}
+
+-(void)reportsSelected {
+    [self showViewController:[[BYCReportViewController alloc] initWithApplicationState:self.applicationState]];
 }
 
 @end
