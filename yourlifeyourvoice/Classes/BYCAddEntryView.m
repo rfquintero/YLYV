@@ -199,6 +199,14 @@ typedef enum {
     self.savedView.delegate = delegate;
 }
 
+-(void)setSaveButtonHidden:(BOOL)hidden {
+    self.saveButton.hidden = hidden;
+}
+
+-(void)setNote:(NSString*)note {
+    self.noteView.text = note;
+}
+
 -(void)setImage:(UIImage *)image {
     self.photo.image = image;
     self.photo.hidden = !self.photo.hasContent;

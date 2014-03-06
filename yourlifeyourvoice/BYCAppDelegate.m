@@ -10,6 +10,7 @@
 #import "BYCApplicationState.h"
 #import "BYCSplitViewController.h"
 #import "BYCEntryViewController.h"
+#import "BYCEntry.h"
 
 @implementation BYCAppDelegate
 
@@ -24,6 +25,8 @@
     splitViewController.mainViewController = vc;
     
     self.window.rootViewController = splitViewController;
+
+    [BYCEntry createDirectories];
     
     [self.window makeKeyAndVisible];
     return YES;

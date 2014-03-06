@@ -1,6 +1,7 @@
 #import "BYCEntriesViewController.h"
 #import "BYCEntriesModel.h"
 #import "BYCEntriesView.h"
+#import "BYCEntryDetailsViewController.h"
 
 @interface BYCEntriesViewController ()<BYCEntriesViewDelegate>
 @property (nonatomic) BYCEntriesModel *model;
@@ -27,6 +28,8 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(entriesRefreshed) name:BYCEntriesModelRefreshed object:self.model];
     if(self.model.entries.count == 0) {
         [self.model nextPage];
+    } else {
+        [self entriesRefreshed];
     }
 }
 
@@ -40,7 +43,10 @@
 }
 
 -(void)entrySelected:(BYCEntry *)entry {
-    
+    BYCEntryDetailsViewController *vc = [[BYCEntryDetailsViewController alloc] initWithApplicationState:self.applicationState];
+    vc.entry = entry;
+    vc.entriesModel = self.model;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 -(void)loadMore {

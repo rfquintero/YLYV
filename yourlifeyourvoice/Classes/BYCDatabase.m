@@ -71,6 +71,35 @@
     sqlite3_finalize(statement);
     
     int64_t uid = sqlite3_last_insert_rowid(self.database);
+    [self addReasonsForEntryId:uid reasons:reasons];
+
+    return uid;
+}
+
+-(void)updateEntry:(BYCEntry*)entry notes:(NSString*)notes reasons:(NSArray*)reasons {
+    static const char *sql = "UPDATE entries SET note = ? WHERE rowid = ?";
+    sqlite3_stmt *statement = NULL;
+    sqlite3_prepare_v2(self.database, sql, -1, &statement, NULL);
+    sqlite3_bind_string(statement, 1, notes);
+    sqlite3_bind_int64(statement, 2, entry.uid);
+    sqlite3_step(statement);
+    sqlite3_finalize(statement);
+    
+    [self removeReasonsForEntry:entry];
+    [self addReasonsForEntryId:entry.uid reasons:reasons];
+}
+
+-(void)deleteEntry:(BYCEntry*)entry {
+    [self removeReasonsForEntry:entry];
+    static const char *sql = "DELETE FROM entries WHERE rowid = ?";
+    sqlite3_stmt *statement = NULL;
+    sqlite3_prepare_v2(self.database, sql, -1, &statement, NULL);
+    sqlite3_bind_int64(statement, 1, entry.uid);
+    sqlite3_step(statement);
+    sqlite3_finalize(statement);
+}
+
+-(void)addReasonsForEntryId:(int64_t)uid reasons:(NSArray*)reasons {
     for(NSString *reason in reasons) {
         static const char *reasonSql = "INSERT INTO reasons (reason, entry_id) VALUES (?,?)";
         sqlite3_stmt *stmt = NULL;
@@ -80,8 +109,15 @@
         sqlite3_step(stmt);
         sqlite3_finalize(stmt);
     }
+}
 
-    return uid;
+-(void)removeReasonsForEntry:(BYCEntry*)entry {
+    static const char *sql = "DELETE FROM reasons WHERE entry_id = ?";
+    sqlite3_stmt *statement = NULL;
+    sqlite3_prepare_v2(self.database, sql, -1, &statement, NULL);
+    sqlite3_bind_int64(statement, 1, entry.uid);
+    sqlite3_step(statement);
+    sqlite3_finalize(statement);
 }
 
 -(BYCEntry*)getEntryWithUid:(int64_t)uid {
@@ -90,12 +126,14 @@
     NSString *note;
     NSString *reason;
     int64_t date;
+    BOOL found = NO;
     
     static const char *sql = "SELECT entries.type, entries.note, entries.created_at, reasons.reason FROM entries LEFT OUTER JOIN reasons ON entries.rowid = reasons.entry_id WHERE entries.rowid = ?";
     sqlite3_stmt *statement = NULL;
     sqlite3_prepare_v2(self.database, sql, -1, &statement, NULL);
     sqlite3_bind_int64(statement, 1, uid);
     while(sqlite3_step(statement) == SQLITE_ROW) {
+        found = YES;
         type = sqlite3_column_int(statement, 0);
         note = sqlite3_column_string(statement, 1);
         date = sqlite3_column_int64(statement, 2);
@@ -107,7 +145,7 @@
     sqlite3_finalize(statement);
     reasons = reasons.count > 0 ? reasons : nil;
     
-    return [BYCEntry entryWithId:uid type:type note:note reasons:reasons createdAt:[NSDate dateWithTimeIntervalSinceReferenceDate:date]];
+    return found ? [BYCEntry entryWithId:uid type:type note:note reasons:reasons createdAt:[NSDate dateWithTimeIntervalSinceReferenceDate:date]] : nil;
 }
 
 -(NSArray*)getEntryPage:(NSInteger)page {

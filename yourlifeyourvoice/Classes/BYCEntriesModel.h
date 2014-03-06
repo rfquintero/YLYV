@@ -9,4 +9,6 @@
 @property (nonatomic, readonly) BOOL hasMore;
 -(id)initWithDatabase:(BYCDatabase*)database queue:(BYCQueue*)queue;
 -(void)nextPage;
+-(void)updateEntry:(BYCEntry*)entry with:(BYCEntry*)newEntry;
+-(void)removeEntry:(BYCEntry*)entry;
 @end

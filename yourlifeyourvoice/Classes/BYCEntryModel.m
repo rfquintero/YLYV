@@ -5,9 +5,13 @@
 @property (nonatomic) BYCDatabase *database;
 @property (nonatomic) BYCQueue *queue;
 
+@property (nonatomic) BYCEntry *entry;
+@property (nonatomic, readwrite) BYCEntry *updatedEntry;
 @property (nonatomic) NSMutableArray *reasonsM;
 @property (nonatomic) AVAudioRecorder *recorder;
 @property (nonatomic) AVAudioPlayer *player;
+
+@property (nonatomic) NSString *imagePath;
 
 @property (nonatomic) NSURL *audioUrl;
 @property (nonatomic, readwrite) BOOL speakerMode;
@@ -24,10 +28,29 @@
     return self;
 }
 
+-(void)setEntry:(BYCEntry *)entry {
+    entry = [self.database getEntryWithUid:entry.uid];
+    _entry = entry;
+    self.type = entry.type;
+    self.note = entry.note;
+    [self.reasonsM addObjectsFromArray:entry.reasons];
+    
+    NSFileManager *manager = [NSFileManager defaultManager];
+    NSString *imagePath = [BYCEntry imagePathForEntryId:entry.uid];
+    NSString *audioPath = [BYCEntry audioPathForEntryId:entry.uid];
+    if([manager fileExistsAtPath:imagePath isDirectory:NO]) {
+        self.image = [UIImage imageWithContentsOfFile:[BYCEntry imagePathForEntryId:entry.uid]];
+        self.imagePath = imagePath;
+    }
+    if([manager fileExistsAtPath:audioPath]) {
+        self.audioUrl = [NSURL fileURLWithPath:[BYCEntry audioPathForEntryId:entry.uid]];
+        [self preparePlayer];
+    }
+}
+
 -(void)save {
     [self.queue performAsync:^{
         int64_t uid = [self.database saveWithType:self.type notes:(self.note ? self.note : @"") reasons:self.reasons];
-        
         NSFileManager *manager = [NSFileManager defaultManager];
         if(self.image) {
             NSString *imagePath = [BYCEntry imagePathForEntryId:uid];
@@ -42,6 +65,27 @@
     } blocking:YES];
 }
 
+-(void)update {
+    [self.queue performAsync:^{
+        [self.database updateEntry:self.entry notes:self.note reasons:self.reasons];
+        
+        NSFileManager *manager = [NSFileManager defaultManager];
+        if(self.image) {
+            NSString *imagePath = [BYCEntry imagePathForEntryId:self.entry.uid];
+            [manager createFileAtPath:imagePath contents:UIImageJPEGRepresentation(self.image, 1.0f) attributes:0];
+        }
+    } callback:^{
+        self.updatedEntry = [BYCEntry entryWithId:self.entry.uid type:self.entry.type note:self.note reasons:self.reasons createdAt:self.entry.createdAt];
+        [[NSNotificationCenter defaultCenter] postNotificationName:BYCEntryModelSaveSuccessful object:self];
+    } blocking:YES];
+}
+
+-(void)deleteEntry {
+    [self deleteImage];
+    [self deleteRecording];
+    [self.database deleteEntry:self.entry];
+}
+
 -(void)reset {
     [self deleteRecording];
     self.type = 0;
@@ -49,6 +93,13 @@
     self.audioUrl = nil;
     self.image = nil;
     [self.reasonsM removeAllObjects];
+}
+
+-(void)deleteImage {
+    if(self.imagePath) {
+        [[NSFileManager defaultManager] removeItemAtPath:self.imagePath error:nil];
+    }
+    self.imagePath = nil;
 }
 
 -(void)addReason:(NSString *)reason {

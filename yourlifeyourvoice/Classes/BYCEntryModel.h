@@ -16,11 +16,14 @@
 @property (nonatomic, readonly) BOOL hasRecording;
 @property (nonatomic, readonly) BOOL speakerMode;
 @property (nonatomic, readonly) NSTimeInterval recordingDuration;
+@property (nonatomic, readonly) BYCEntry *updatedEntry;
 
 -(id)initWithDatabase:(BYCDatabase*)database queue:(BYCQueue*)queue;
+-(void)setEntry:(BYCEntry*)entry;
 
 -(void)addReason:(NSString*)reason;
 -(void)removeReason:(NSString*)reason;
+-(void)deleteImage;
 
 -(void)prepareRecording;
 -(BOOL)startRecording;
@@ -34,4 +37,6 @@
 
 -(void)reset;
 -(void)save;
+-(void)update;
+-(void)deleteEntry;
 @end

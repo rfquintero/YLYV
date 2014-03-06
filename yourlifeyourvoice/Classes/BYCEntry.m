@@ -41,8 +41,15 @@
 +(NSString*)imagePathForEntryId:(int64_t)uid {
     NSString *file = [NSString stringWithFormat:@"%010lli.jpg", uid];
     NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains (NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-    NSString *path = [documentsDirectory stringByAppendingPathComponent:@"image"];
+    NSString *path = [documentsDirectory stringByAppendingPathComponent:@"images"];
     return [path stringByAppendingPathComponent:file];
+}
+
++(void)createDirectories {
+    NSFileManager *manager = [NSFileManager defaultManager];
+    NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains (NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    [manager createDirectoryAtPath:[documentsDirectory stringByAppendingPathComponent:@"images"] withIntermediateDirectories:YES attributes:nil error:nil];
+    [manager createDirectoryAtPath:[documentsDirectory stringByAppendingPathComponent:@"audio"] withIntermediateDirectories:YES attributes:nil error:nil];
 }
 
 @end

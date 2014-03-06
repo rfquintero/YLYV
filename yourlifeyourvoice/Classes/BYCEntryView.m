@@ -42,7 +42,7 @@
         
         self.addEntry = [[BYCAddEntryView alloc] initWithFrame:CGRectZero];
         self.addEntry.delegate = self;
-        self.addEntry.contentOffset = [self layoutLargeMood];;
+        self.addEntry.contentOffset = [self layoutLargeMood];
         [self setAddEntryHidden:YES animated:NO];
         
         [self.scrollView addSubview:self.rowLayout];

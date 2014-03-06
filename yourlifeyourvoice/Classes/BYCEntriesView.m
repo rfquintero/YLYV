@@ -66,4 +66,8 @@
     return cell;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.delegate entrySelected:self.entries[indexPath.row]];
+}
+
 @end

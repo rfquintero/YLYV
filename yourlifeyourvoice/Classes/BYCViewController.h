@@ -4,7 +4,7 @@
 
 #define BYCFlexibleView UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth
 
-@interface BYCViewController : UIViewController
+@interface BYCViewController : UIViewController<UIAlertViewDelegate>
 @property (nonatomic, readonly) BYCApplicationState *applicationState;
 @property (nonatomic, readonly) BYCNavigationView *navView;
 

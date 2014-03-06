@@ -14,4 +14,5 @@
 
 +(NSString*)audioPathForEntryId:(int64_t)uid;
 +(NSString*)imagePathForEntryId:(int64_t)uid;
++(void)createDirectories;
 @end

@@ -7,4 +7,6 @@
 -(BYCEntry*)getEntryWithUid:(int64_t)uid;
 -(NSArray*)getEntryPage:(NSInteger)page;
 -(NSArray*)getAllEntries;
+-(void)updateEntry:(BYCEntry*)entry notes:(NSString*)notes reasons:(NSArray*)reasons;
+-(void)deleteEntry:(BYCEntry*)entry;
 @end

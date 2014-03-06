@@ -19,6 +19,7 @@
 @interface BYCAddEntryView : UIView
 @property (nonatomic) CGFloat contentOffset;
 -(void)setMood:(BYCMoodType)type;
+-(void)setNote:(NSString*)note;
 -(void)setImage:(UIImage*)image;
 -(void)setReasons:(NSArray*)reasons;
 -(void)resetContent;
@@ -27,5 +28,6 @@
 -(void)playbackStopped;
 -(void)setSavedStandardTitle:(NSString*)title hideReminders:(BOOL)hideReminders;
 -(void)setSavedAlternateTitle:(NSString*)title;
+-(void)setSaveButtonHidden:(BOOL)hidden;
 -(void)setDelegate:(id<BYCAddEntryViewDelegate>)delegate;
 @end

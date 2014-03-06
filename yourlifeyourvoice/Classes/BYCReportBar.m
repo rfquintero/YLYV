@@ -62,7 +62,7 @@
     [self.moodView setType:type];
     self.bar.backgroundColor = [BYCMood moodColor:type];
     self.mood.text = [BYCMood moodString:type];
-    self.percent.text = [NSString stringWithFormat:@"(%lu) %i%%", (unsigned long)count, (int)roundf(percent*100)];
+    self.percent.text = [NSString stringWithFormat:@"(%@) %i%%", [BYCUI formatNumber:@(count)], (int)roundf(percent*100)];
     self.widthPercentage = percent;
     [self setNeedsLayout];
 }
@@ -77,7 +77,7 @@
         } completion:^(BOOL finished) {
         }];
     } else {
-        [UIView animateWithDuration:0.3f delay:delay options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        [UIView animateWithDuration:0.2f delay:delay options:UIViewAnimationOptionCurveEaseInOut animations:^{
             [self layoutSubviews];
         } completion:^(BOOL finished) {
         }];

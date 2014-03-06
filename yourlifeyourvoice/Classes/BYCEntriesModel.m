@@ -36,4 +36,13 @@
     return self.entriesM;
 }
 
+-(void)updateEntry:(BYCEntry*)entry with:(BYCEntry*)newEntry {
+    NSUInteger index = [self.entriesM indexOfObject:entry];
+    [self.entriesM replaceObjectAtIndex:index withObject:newEntry];
+}
+
+-(void)removeEntry:(BYCEntry*)entry {
+    [self.entriesM removeObject:entry];
+}
+
 @end
