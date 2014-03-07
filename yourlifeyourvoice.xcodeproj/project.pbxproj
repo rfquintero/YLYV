@@ -125,6 +125,12 @@
 		452365E318CA5084008AA4FC /* face_stressed_start.png in Resources */ = {isa = PBXBuildFile; fileRef = 4523658418CA5084008AA4FC /* face_stressed_start.png */; };
 		452365E418CA5084008AA4FC /* face_stressed_start@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4523658518CA5084008AA4FC /* face_stressed_start@2x.png */; };
 		452365E518CA5084008AA4FC /* face_stressed_start@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4523658518CA5084008AA4FC /* face_stressed_start@2x.png */; };
+		452365E818CA5FB5008AA4FC /* BYCTipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452365E718CA5FB5008AA4FC /* BYCTipsViewController.m */; };
+		452365E918CA5FB5008AA4FC /* BYCTipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452365E718CA5FB5008AA4FC /* BYCTipsViewController.m */; };
+		452365EC18CA6027008AA4FC /* BYCTipsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 452365EB18CA6027008AA4FC /* BYCTipsView.m */; };
+		452365ED18CA6027008AA4FC /* BYCTipsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 452365EB18CA6027008AA4FC /* BYCTipsView.m */; };
+		452365F218CA6626008AA4FC /* tips.plist in Resources */ = {isa = PBXBuildFile; fileRef = 452365F118CA6626008AA4FC /* tips.plist */; };
+		452365F318CA6626008AA4FC /* tips.plist in Resources */ = {isa = PBXBuildFile; fileRef = 452365F118CA6626008AA4FC /* tips.plist */; };
 		4525187518B6750800D1B561 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4525187418B6750800D1B561 /* Foundation.framework */; };
 		4525187718B6750800D1B561 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4525187618B6750800D1B561 /* CoreGraphics.framework */; };
 		4525187918B6750800D1B561 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4525187818B6750800D1B561 /* UIKit.framework */; };
@@ -386,6 +392,11 @@
 		4523658318CA5084008AA4FC /* face_stressed_end@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "face_stressed_end@2x.png"; path = "stills/face_stressed_end@2x.png"; sourceTree = "<group>"; };
 		4523658418CA5084008AA4FC /* face_stressed_start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = face_stressed_start.png; path = stills/face_stressed_start.png; sourceTree = "<group>"; };
 		4523658518CA5084008AA4FC /* face_stressed_start@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "face_stressed_start@2x.png"; path = "stills/face_stressed_start@2x.png"; sourceTree = "<group>"; };
+		452365E618CA5FB5008AA4FC /* BYCTipsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCTipsViewController.h; sourceTree = "<group>"; };
+		452365E718CA5FB5008AA4FC /* BYCTipsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCTipsViewController.m; sourceTree = "<group>"; };
+		452365EA18CA6027008AA4FC /* BYCTipsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCTipsView.h; sourceTree = "<group>"; };
+		452365EB18CA6027008AA4FC /* BYCTipsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCTipsView.m; sourceTree = "<group>"; };
+		452365F118CA6626008AA4FC /* tips.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tips.plist; sourceTree = "<group>"; };
 		4525187118B6750800D1B561 /* yourlifeyourvoice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yourlifeyourvoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4525187418B6750800D1B561 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4525187618B6750800D1B561 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -688,6 +699,7 @@
 				452518DB18B6892400D1B561 /* icon_navbar_close@2x.png */,
 				452518DC18B6892400D1B561 /* icon_navbar_menu.png */,
 				452518DD18B6892400D1B561 /* icon_navbar_menu@2x.png */,
+				452365F118CA6626008AA4FC /* tips.plist */,
 			);
 			name = Resources;
 			path = yourlifeyourvoice/Resources;
@@ -991,6 +1003,8 @@
 				4592F1DE18B7A744009CCC65 /* BYCTalkViewController.m */,
 				4523654718C94DB5008AA4FC /* BYCReminderViewController.h */,
 				4523654818C94DB5008AA4FC /* BYCReminderViewController.m */,
+				452365E618CA5FB5008AA4FC /* BYCTipsViewController.h */,
+				452365E718CA5FB5008AA4FC /* BYCTipsViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -1002,6 +1016,8 @@
 				4523654418C941B0008AA4FC /* BYCReminderView.m */,
 				4592F1E118B7A76B009CCC65 /* BYCTalkView.h */,
 				4592F1E218B7A76B009CCC65 /* BYCTalkView.m */,
+				452365EA18CA6027008AA4FC /* BYCTipsView.h */,
+				452365EB18CA6027008AA4FC /* BYCTipsView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -1260,6 +1276,7 @@
 				458F0CC118BEAF9F002FEC75 /* invisible.plist in Resources */,
 				458F0CC918BEAF9F002FEC75 /* proud.plist in Resources */,
 				458F0CA518BEAF9F002FEC75 /* angry.plist in Resources */,
+				452365F218CA6626008AA4FC /* tips.plist in Resources */,
 				458F0CAB18BEAF9F002FEC75 /* confused.1.png in Resources */,
 				458F0CAF18BEAF9F002FEC75 /* depressed.1.png in Resources */,
 				458F0CB718BEAF9F002FEC75 /* frustrated.1.png in Resources */,
@@ -1377,6 +1394,7 @@
 				452365D118CA5084008AA4FC /* face_proud_end@2x.png in Resources */,
 				452365BB18CA5084008AA4FC /* face_happy_start.png in Resources */,
 				452365DF18CA5084008AA4FC /* face_stressed_end.png in Resources */,
+				452365F318CA6626008AA4FC /* tips.plist in Resources */,
 				4523659318CA5084008AA4FC /* face_confident_start.png in Resources */,
 				458F0CCE18BEAF9F002FEC75 /* relieved.plist in Resources */,
 				458F0CC418BEAF9F002FEC75 /* lonely.1.png in Resources */,
@@ -1440,6 +1458,7 @@
 				45D8278B18C7A0660055ADA5 /* BYCQueue.m in Sources */,
 				458F0FD818C0E121002FEC75 /* BYCAddReasonsView.m in Sources */,
 				4523653918C8EAA5008AA4FC /* BYCReportView.m in Sources */,
+				452365E818CA5FB5008AA4FC /* BYCTipsViewController.m in Sources */,
 				4523654D18CA1F9E008AA4FC /* BYCReminderTime.m in Sources */,
 				45DEC7D318BBBE2600A92550 /* BYCDatabase.m in Sources */,
 				4525188118B6750800D1B561 /* main.m in Sources */,
@@ -1451,6 +1470,7 @@
 				45AFD60318C149B9002C18F9 /* BYCAudioView.m in Sources */,
 				458F0FD018BFE94F002FEC75 /* BYCEntryModel.m in Sources */,
 				452518CE18B67F3C00D1B561 /* BYCNavigationView.m in Sources */,
+				452365EC18CA6027008AA4FC /* BYCTipsView.m in Sources */,
 				45D827AC18C7CB5D0055ADA5 /* NSDate+Custom.m in Sources */,
 				4523653518C8EA84008AA4FC /* BYCReportViewController.m in Sources */,
 				4523654118C912B2008AA4FC /* BYCEntryDetailsView.m in Sources */,
@@ -1485,6 +1505,7 @@
 				45D8276E18C77CB20055ADA5 /* BYCEntry.m in Sources */,
 				45AFD5E018C10C81002C18F9 /* BYCAddAudioViewController.m in Sources */,
 				45AFD60418C149B9002C18F9 /* BYCAudioView.m in Sources */,
+				452365ED18CA6027008AA4FC /* BYCTipsView.m in Sources */,
 				45DEC7D818BBBE4800A92550 /* BYCDatabaseUtilities.m in Sources */,
 				4523653618C8EA84008AA4FC /* BYCReportViewController.m in Sources */,
 				4523654618C941B0008AA4FC /* BYCReminderView.m in Sources */,
@@ -1519,6 +1540,7 @@
 				4523653A18C8EAA5008AA4FC /* BYCReportView.m in Sources */,
 				45D8279418C7ACEF0055ADA5 /* BYCEntrySavedView.m in Sources */,
 				4559EB1818C660D800F63125 /* BYCDatabaseTest.m in Sources */,
+				452365E918CA5FB5008AA4FC /* BYCTipsViewController.m in Sources */,
 				45DEC7D418BBBE2600A92550 /* BYCDatabase.m in Sources */,
 				452518B118B679A200D1B561 /* BYCViewController.m in Sources */,
 				452518CB18B67D9200D1B561 /* BYCSideView.m in Sources */,

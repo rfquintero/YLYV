@@ -8,6 +8,7 @@
 #import "BYCEntriesViewController.h"
 #import "BYCReportViewController.h"
 #import "BYCReminderViewController.h"
+#import "BYCTipsViewController.h"
 
 #define kSidebarMargin 120
 
@@ -124,7 +125,7 @@
 }
 
 -(void)tipsSelected {
-    
+    [self showViewController:[[BYCTipsViewController alloc] initWithApplicationState:self.applicationState]];
 }
 
 -(void)infoSelected {
