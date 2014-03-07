@@ -9,6 +9,7 @@
 #import "BYCReportViewController.h"
 #import "BYCReminderViewController.h"
 #import "BYCTipsViewController.h"
+#import "BYCInfoViewController.h"
 
 #define kSidebarMargin 120
 
@@ -129,7 +130,7 @@
 }
 
 -(void)infoSelected {
-    
+    [self showViewController:[[BYCInfoViewController alloc] initWithApplicationState:self.applicationState]];
 }
 
 @end

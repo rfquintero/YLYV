@@ -131,6 +131,14 @@
 		452365ED18CA6027008AA4FC /* BYCTipsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 452365EB18CA6027008AA4FC /* BYCTipsView.m */; };
 		452365F218CA6626008AA4FC /* tips.plist in Resources */ = {isa = PBXBuildFile; fileRef = 452365F118CA6626008AA4FC /* tips.plist */; };
 		452365F318CA6626008AA4FC /* tips.plist in Resources */ = {isa = PBXBuildFile; fileRef = 452365F118CA6626008AA4FC /* tips.plist */; };
+		452365F918CA6F09008AA4FC /* BYCInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452365F818CA6F09008AA4FC /* BYCInfoViewController.m */; };
+		452365FA18CA6F09008AA4FC /* BYCInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452365F818CA6F09008AA4FC /* BYCInfoViewController.m */; };
+		452365FD18CA6F23008AA4FC /* BYCInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 452365FC18CA6F23008AA4FC /* BYCInfoView.m */; };
+		452365FE18CA6F23008AA4FC /* BYCInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 452365FC18CA6F23008AA4FC /* BYCInfoView.m */; };
+		4523660118CA70E7008AA4FC /* icon_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 452365FF18CA70E7008AA4FC /* icon_logo.png */; };
+		4523660218CA70E7008AA4FC /* icon_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 452365FF18CA70E7008AA4FC /* icon_logo.png */; };
+		4523660318CA70E7008AA4FC /* icon_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4523660018CA70E7008AA4FC /* icon_logo@2x.png */; };
+		4523660418CA70E7008AA4FC /* icon_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4523660018CA70E7008AA4FC /* icon_logo@2x.png */; };
 		4525187518B6750800D1B561 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4525187418B6750800D1B561 /* Foundation.framework */; };
 		4525187718B6750800D1B561 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4525187618B6750800D1B561 /* CoreGraphics.framework */; };
 		4525187918B6750800D1B561 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4525187818B6750800D1B561 /* UIKit.framework */; };
@@ -397,6 +405,12 @@
 		452365EA18CA6027008AA4FC /* BYCTipsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCTipsView.h; sourceTree = "<group>"; };
 		452365EB18CA6027008AA4FC /* BYCTipsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCTipsView.m; sourceTree = "<group>"; };
 		452365F118CA6626008AA4FC /* tips.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tips.plist; sourceTree = "<group>"; };
+		452365F718CA6F09008AA4FC /* BYCInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCInfoViewController.h; sourceTree = "<group>"; };
+		452365F818CA6F09008AA4FC /* BYCInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCInfoViewController.m; sourceTree = "<group>"; };
+		452365FB18CA6F23008AA4FC /* BYCInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCInfoView.h; sourceTree = "<group>"; };
+		452365FC18CA6F23008AA4FC /* BYCInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCInfoView.m; sourceTree = "<group>"; };
+		452365FF18CA70E7008AA4FC /* icon_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_logo.png; sourceTree = "<group>"; };
+		4523660018CA70E7008AA4FC /* icon_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_logo@2x.png"; sourceTree = "<group>"; };
 		4525187118B6750800D1B561 /* yourlifeyourvoice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yourlifeyourvoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4525187418B6750800D1B561 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4525187618B6750800D1B561 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -681,6 +695,8 @@
 		452518AA18B6774E00D1B561 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				452365FF18CA70E7008AA4FC /* icon_logo.png */,
+				4523660018CA70E7008AA4FC /* icon_logo@2x.png */,
 				45AFD60518C167B5002C18F9 /* face stills */,
 				458F0C7E18BEAF9F002FEC75 /* sprites */,
 				45AFD5E318C134E8002C18F9 /* icon_button_play.png */,
@@ -1005,6 +1021,8 @@
 				4523654818C94DB5008AA4FC /* BYCReminderViewController.m */,
 				452365E618CA5FB5008AA4FC /* BYCTipsViewController.h */,
 				452365E718CA5FB5008AA4FC /* BYCTipsViewController.m */,
+				452365F718CA6F09008AA4FC /* BYCInfoViewController.h */,
+				452365F818CA6F09008AA4FC /* BYCInfoViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -1018,6 +1036,8 @@
 				4592F1E218B7A76B009CCC65 /* BYCTalkView.m */,
 				452365EA18CA6027008AA4FC /* BYCTipsView.h */,
 				452365EB18CA6027008AA4FC /* BYCTipsView.m */,
+				452365FB18CA6F23008AA4FC /* BYCInfoView.h */,
+				452365FC18CA6F23008AA4FC /* BYCInfoView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -1251,6 +1271,7 @@
 				458F0CBB18BEAF9F002FEC75 /* happy.1.png in Resources */,
 				452365DA18CA5084008AA4FC /* face_relieved_start.png in Resources */,
 				452518EC18B6892400D1B561 /* icon_navbar_close@2x.png in Resources */,
+				4523660118CA70E7008AA4FC /* icon_logo.png in Resources */,
 				452365C818CA5084008AA4FC /* face_lonely_end@2x.png in Resources */,
 				458F0CA918BEAF9F002FEC75 /* confident.plist in Resources */,
 				4523659A18CA5084008AA4FC /* face_confused_start.png in Resources */,
@@ -1263,6 +1284,7 @@
 				4523655418CA4454008AA4FC /* embarrassed.plist in Resources */,
 				452365B018CA5084008AA4FC /* face_frustrated_end@2x.png in Resources */,
 				452365DC18CA5084008AA4FC /* face_relieved_start@2x.png in Resources */,
+				4523660318CA70E7008AA4FC /* icon_logo@2x.png in Resources */,
 				4523658C18CA5084008AA4FC /* face_angry_start@2x.png in Resources */,
 				45C329EC18C26AC100CA8A86 /* animations.plist in Resources */,
 				458F0CAD18BEAF9F002FEC75 /* confused.plist in Resources */,
@@ -1345,6 +1367,7 @@
 				458F0CB818BEAF9F002FEC75 /* frustrated.1.png in Resources */,
 				45AFD5FC18C147CD002C18F9 /* icon_speaker_off@2x.png in Resources */,
 				45AFD5E818C134E8002C18F9 /* icon_button_play@2x.png in Resources */,
+				4523660218CA70E7008AA4FC /* icon_logo.png in Resources */,
 				452365BF18CA5084008AA4FC /* face_invisible_end.png in Resources */,
 				452365E318CA5084008AA4FC /* face_stressed_start.png in Resources */,
 				458F0CAC18BEAF9F002FEC75 /* confused.1.png in Resources */,
@@ -1363,6 +1386,7 @@
 				45AFD5FE18C147CD002C18F9 /* icon_speaker_on.png in Resources */,
 				452365DD18CA5084008AA4FC /* face_relieved_start@2x.png in Resources */,
 				458F0CC218BEAF9F002FEC75 /* invisible.plist in Resources */,
+				4523660418CA70E7008AA4FC /* icon_logo@2x.png in Resources */,
 				45AFD5EE18C13936002C18F9 /* icon_button_stop@2x.png in Resources */,
 				458F0CD018BEAF9F002FEC75 /* stressed.1.png in Resources */,
 				458F0CCA18BEAF9F002FEC75 /* proud.plist in Resources */,
@@ -1445,10 +1469,12 @@
 				4523653D18C91282008AA4FC /* BYCEntryDetailsViewController.m in Sources */,
 				45AFD5DB18C10C4F002C18F9 /* BYCAddAudioView.m in Sources */,
 				458F0FBF18BFC631002FEC75 /* BYCActionView.m in Sources */,
+				452365F918CA6F09008AA4FC /* BYCInfoViewController.m in Sources */,
 				452518CA18B67D9200D1B561 /* BYCSideView.m in Sources */,
 				4525190618B68CE400D1B561 /* BYCEntryView.m in Sources */,
 				452518C218B67BE800D1B561 /* UIView+Layouts.m in Sources */,
 				4523653118C8C7D3008AA4FC /* BYCReportModel.m in Sources */,
+				452365FD18CA6F23008AA4FC /* BYCInfoView.m in Sources */,
 				458F0CD918BEB54E002FEC75 /* BYCMoodSprite.m in Sources */,
 				4523654918C94DB5008AA4FC /* BYCReminderViewController.m in Sources */,
 				452518B018B679A200D1B561 /* BYCViewController.m in Sources */,
@@ -1503,6 +1529,7 @@
 				4523654E18CA1F9E008AA4FC /* BYCReminderTime.m in Sources */,
 				45AFD5DC18C10C4F002C18F9 /* BYCAddAudioView.m in Sources */,
 				45D8276E18C77CB20055ADA5 /* BYCEntry.m in Sources */,
+				452365FA18CA6F09008AA4FC /* BYCInfoViewController.m in Sources */,
 				45AFD5E018C10C81002C18F9 /* BYCAddAudioViewController.m in Sources */,
 				45AFD60418C149B9002C18F9 /* BYCAudioView.m in Sources */,
 				452365ED18CA6027008AA4FC /* BYCTipsView.m in Sources */,
@@ -1540,6 +1567,7 @@
 				4523653A18C8EAA5008AA4FC /* BYCReportView.m in Sources */,
 				45D8279418C7ACEF0055ADA5 /* BYCEntrySavedView.m in Sources */,
 				4559EB1818C660D800F63125 /* BYCDatabaseTest.m in Sources */,
+				452365FE18CA6F23008AA4FC /* BYCInfoView.m in Sources */,
 				452365E918CA5FB5008AA4FC /* BYCTipsViewController.m in Sources */,
 				45DEC7D418BBBE2600A92550 /* BYCDatabase.m in Sources */,
 				452518B118B679A200D1B561 /* BYCViewController.m in Sources */,
