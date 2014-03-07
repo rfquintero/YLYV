@@ -6,7 +6,7 @@
 
 #define kLargeSize 190.0f
 
-@interface BYCEntryDetailsView()
+@interface BYCEntryDetailsView()<BYCMoodViewDelegate>
 @property (nonatomic) BYCMoodView *largeMood;
 @property (nonatomic, readwrite) BYCAddEntryView *addEntry;
 @end
@@ -17,8 +17,9 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.largeMood = [[BYCMoodView alloc] initWithFrame:CGRectZero type:type small:NO];
-        self.largeMood.userInteractionEnabled = NO;
+        self.largeMood.userInteractionEnabled = YES;
         self.largeMood.faceSize = kLargeSize;
+        self.largeMood.delegate = self;
         [self.largeMood setTextHidden:YES animated:NO];
         
         self.addEntry = [[BYCAddEntryView alloc] initWithFrame:CGRectZero];
@@ -44,6 +45,10 @@
 
 -(void)setNavView:(UIView *)navView {
     [navView addSubview:self.largeMood];
+}
+
+-(void)moodView:(BYCMoodView *)view selectedWithType:(BYCMoodType)type {
+    [self.largeMood animateStep];
 }
 
 -(void)offsetChanged:(CGFloat)percent {

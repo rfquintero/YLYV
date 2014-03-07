@@ -35,9 +35,10 @@
         [self.animator start];
         
         self.largeMood = [[BYCMoodView alloc] initWithFrame:CGRectZero type:BYCMood_Lonely small:NO];
-        self.largeMood.userInteractionEnabled = NO;
+        self.largeMood.userInteractionEnabled = YES;
         self.largeMood.faceSize = kLargeSize;
         [self.largeMood setTextHidden:YES animated:NO];
+        self.largeMood.delegate = self;
         self.largeMood.hidden = YES;
         
         self.addEntry = [[BYCAddEntryView alloc] initWithFrame:CGRectZero];
@@ -107,38 +108,42 @@
 }
 
 -(void)moodView:(BYCMoodView*)view selectedWithType:(BYCMoodType)type {
-    [self.largeMood setType:type];
-    [self.delegate typeSelected:type];
-    
-    CGRect start = [self.scrollView convertRect:view.frame fromView:self.rowLayout];
-    CGRect end = self.largeMood.frame;
-    CGPoint center = self.rowLayout.center;
-    CGFloat scale = kLargeSize/kSmallSize;
-
-    CGFloat newX = center.x - scale*(center.x-start.origin.x);
-    CGFloat newY = center.y - scale*(center.y-start.origin.y);
-
-    CGFloat tx = end.origin.x - newX;
-    CGFloat ty = (end.origin.y+self.scrollView.contentOffset.y) - newY;
-    
-    [view setTextHidden:YES animated:NO];
-    [self.delegate entryStarted];
-    [self.addEntry setMood:type];
-    [self.animator stop];
-    [UIView animateWithDuration:0.3f animations:^{
-        self.rowLayout.transform = CGAffineTransformMake(scale, 0.f, 0.f, scale, tx, ty);
-        for(UIView *icon in self.rowLayout.icons) {
-            if(icon != view) {
-                icon.alpha = 0.0f;
-            }
-        }
-    } completion:^(BOOL finished) {
+    if(view == self.largeMood) {
         [self.largeMood animateStep];
-        self.largeMood.hidden = NO;
-        self.rowLayout.hidden = YES;
-        self.scrollView.scrollEnabled = NO;
-        [self setAddEntryHidden:NO animated:YES];
-    }];
+    } else {
+        [self.largeMood setType:type];
+        [self.delegate typeSelected:type];
+        
+        CGRect start = [self.scrollView convertRect:view.frame fromView:self.rowLayout];
+        CGRect end = self.largeMood.frame;
+        CGPoint center = self.rowLayout.center;
+        CGFloat scale = kLargeSize/kSmallSize;
+
+        CGFloat newX = center.x - scale*(center.x-start.origin.x);
+        CGFloat newY = center.y - scale*(center.y-start.origin.y);
+
+        CGFloat tx = end.origin.x - newX;
+        CGFloat ty = (end.origin.y+self.scrollView.contentOffset.y) - newY;
+        
+        [view setTextHidden:YES animated:NO];
+        [self.delegate entryStarted];
+        [self.addEntry setMood:type];
+        [self.animator stop];
+        [UIView animateWithDuration:0.3f animations:^{
+            self.rowLayout.transform = CGAffineTransformMake(scale, 0.f, 0.f, scale, tx, ty);
+            for(UIView *icon in self.rowLayout.icons) {
+                if(icon != view) {
+                    icon.alpha = 0.0f;
+                }
+            }
+        } completion:^(BOOL finished) {
+            [self.largeMood animateStep];
+            self.largeMood.hidden = NO;
+            self.rowLayout.hidden = YES;
+            self.scrollView.scrollEnabled = NO;
+            [self setAddEntryHidden:NO animated:YES];
+        }];
+    }
 }
 
 -(void)discardEntry {

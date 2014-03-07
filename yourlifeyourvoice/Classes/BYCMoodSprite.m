@@ -144,7 +144,6 @@
 -(void)stopAnimation {
     [self.spriteLayer removeAllAnimations];
     [self.imageLayer removeAllAnimations];
-    self.currentAnimation = 0;
 }
 
 -(CGPoint)nextAnimation {
