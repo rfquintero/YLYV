@@ -48,8 +48,10 @@
     if(self.time.active) {
         UILocalNotification *notification = [[UILocalNotification alloc] init];
         notification.fireDate = self.time.date;
-        notification.timeZone = [NSTimeZone localTimeZone];
+        notification.timeZone = [NSTimeZone defaultTimeZone];
+        notification.repeatInterval = NSCalendarUnitDay;
         notification.alertBody = @"How are you feeling?";
+        notification.alertAction = @"New Entry";
         [[UIApplication sharedApplication] scheduleLocalNotification:notification];
     }
 }
