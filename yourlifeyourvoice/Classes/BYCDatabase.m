@@ -2,7 +2,7 @@
 #import "BYCDatabaseUtilities.h"
 #import "BYCEntry.h"
 
-#define kSchemaVersion 2
+#define kSchemaVersion 3
 
 @interface BYCDatabase()
 @property (nonatomic) sqlite3* database;
@@ -49,13 +49,12 @@
 -(void)performCreate:(sqlite3 *)database {
     sqlite3_execute(database, @"CREATE TABLE IF NOT EXISTS entries (type INTEGER, note TEXT, created_at INTEGER)");
     sqlite3_execute(database, @"CREATE TABLE IF NOT EXISTS reasons (reason TEXT, entry_id INTEGER NOT NULL)");
+    sqlite3_execute(database, @"CREATE TABLE IF NOT EXISTS reminders (hour INTEGER, minute INTEGER, active INTEGER)");
     sqlite3_execute(database, @"CREATE TABLE version (version INTEGER PRIMARY KEY)");
     sqlite3_execute(database, [NSString stringWithFormat:@"INSERT INTO version VALUES (%d)", kSchemaVersion]);
 }
 
 -(void)performUpdateOnDatabase:(sqlite3 *)database from:(int)oldVersion to:(int)newVersion {
-    sqlite3_execute(database, @"DROP TABLE IF EXISTS entries");
-    sqlite3_execute(database, @"DROP TABLE IF EXISTS reasons");
     sqlite3_execute(database, @"DROP TABLE IF EXISTS version");
     [self performCreate:database];
 }
@@ -186,7 +185,43 @@
     sqlite3_finalize(statement);
     
     return entries;
+}
 
+-(void)saveReminderTime:(BYCReminderTime*)time {
+    [self deleteReminder];
+    static const char *sql = "INSERT INTO reminders (hour, minute, active) VALUES (?, ?, ?)";
+    sqlite3_stmt *statement = NULL;
+    sqlite3_prepare_v2(self.database, sql, -1, &statement, NULL);
+    sqlite3_bind_int(statement, 1, time.hour);
+    sqlite3_bind_int(statement, 2, time.minute);
+    sqlite3_bind_int(statement, 3, time.active);
+    sqlite3_step(statement);
+    sqlite3_finalize(statement);
+}
+
+-(BYCReminderTime*)getReminderTime {
+    static const char *sql = "SELECT hour, minute, active FROM reminders";
+    sqlite3_stmt *statement = NULL;
+    sqlite3_prepare_v2(self.database, sql, -1, &statement, NULL);
+    BYCReminderTime *time = nil;
+    if(sqlite3_step(statement) == SQLITE_ROW) {
+        time = [[BYCReminderTime alloc] init];
+        
+        NSInteger hour = sqlite3_column_int(statement, 0);
+        NSInteger minute = sqlite3_column_int(statement, 1);
+        [time setTimeWithHour:hour minute:minute];
+        time.active = sqlite3_column_int(statement, 2);
+    }
+    sqlite3_finalize(statement);
+    return time;
+}
+
+-(void)deleteReminder {
+    static const char *sql = "DELETE FROM reminders";
+    sqlite3_stmt *statement = NULL;
+    sqlite3_prepare_v2(self.database, sql, -1, &statement, NULL);
+    sqlite3_step(statement);
+    sqlite3_finalize(statement);
 }
 
 @end

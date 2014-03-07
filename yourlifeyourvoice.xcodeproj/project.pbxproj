@@ -19,6 +19,12 @@
 		4523653E18C91282008AA4FC /* BYCEntryDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4523653C18C91282008AA4FC /* BYCEntryDetailsViewController.m */; };
 		4523654118C912B2008AA4FC /* BYCEntryDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4523654018C912B2008AA4FC /* BYCEntryDetailsView.m */; };
 		4523654218C912B2008AA4FC /* BYCEntryDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4523654018C912B2008AA4FC /* BYCEntryDetailsView.m */; };
+		4523654518C941B0008AA4FC /* BYCReminderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4523654418C941B0008AA4FC /* BYCReminderView.m */; };
+		4523654618C941B0008AA4FC /* BYCReminderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4523654418C941B0008AA4FC /* BYCReminderView.m */; };
+		4523654918C94DB5008AA4FC /* BYCReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4523654818C94DB5008AA4FC /* BYCReminderViewController.m */; };
+		4523654A18C94DB5008AA4FC /* BYCReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4523654818C94DB5008AA4FC /* BYCReminderViewController.m */; };
+		4523654D18CA1F9E008AA4FC /* BYCReminderTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 4523654C18CA1F9E008AA4FC /* BYCReminderTime.m */; };
+		4523654E18CA1F9E008AA4FC /* BYCReminderTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 4523654C18CA1F9E008AA4FC /* BYCReminderTime.m */; };
 		4525187518B6750800D1B561 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4525187418B6750800D1B561 /* Foundation.framework */; };
 		4525187718B6750800D1B561 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4525187618B6750800D1B561 /* CoreGraphics.framework */; };
 		4525187918B6750800D1B561 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4525187818B6750800D1B561 /* UIKit.framework */; };
@@ -300,6 +306,12 @@
 		4523653C18C91282008AA4FC /* BYCEntryDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCEntryDetailsViewController.m; sourceTree = "<group>"; };
 		4523653F18C912B2008AA4FC /* BYCEntryDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCEntryDetailsView.h; sourceTree = "<group>"; };
 		4523654018C912B2008AA4FC /* BYCEntryDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCEntryDetailsView.m; sourceTree = "<group>"; };
+		4523654318C941B0008AA4FC /* BYCReminderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCReminderView.h; sourceTree = "<group>"; };
+		4523654418C941B0008AA4FC /* BYCReminderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCReminderView.m; sourceTree = "<group>"; };
+		4523654718C94DB5008AA4FC /* BYCReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCReminderViewController.h; sourceTree = "<group>"; };
+		4523654818C94DB5008AA4FC /* BYCReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCReminderViewController.m; sourceTree = "<group>"; };
+		4523654B18CA1F9E008AA4FC /* BYCReminderTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCReminderTime.h; sourceTree = "<group>"; };
+		4523654C18CA1F9E008AA4FC /* BYCReminderTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCReminderTime.m; sourceTree = "<group>"; };
 		4525187118B6750800D1B561 /* yourlifeyourvoice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yourlifeyourvoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4525187418B6750800D1B561 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4525187618B6750800D1B561 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -605,7 +617,7 @@
 				45D8279518C7C4070055ADA5 /* Reports */,
 				458F0FC518BFD507002FEC75 /* Categories */,
 				45DEC7D018BBBE1300A92550 /* Database */,
-				4592F1D918B7A71F009CCC65 /* Talk */,
+				4592F1D918B7A71F009CCC65 /* Other */,
 				452518F218B68AF400D1B561 /* Entry */,
 				452518BB18B67BAA00D1B561 /* Common */,
 				452518BA18B67BA200D1B561 /* UI */,
@@ -940,14 +952,14 @@
 			name = Categories;
 			sourceTree = "<group>";
 		};
-		4592F1D918B7A71F009CCC65 /* Talk */ = {
+		4592F1D918B7A71F009CCC65 /* Other */ = {
 			isa = PBXGroup;
 			children = (
 				4592F1DC18B7A72D009CCC65 /* Models */,
 				4592F1DB18B7A72A009CCC65 /* Views */,
 				4592F1DA18B7A725009CCC65 /* Controllers */,
 			);
-			name = Talk;
+			name = Other;
 			sourceTree = "<group>";
 		};
 		4592F1DA18B7A725009CCC65 /* Controllers */ = {
@@ -955,6 +967,8 @@
 			children = (
 				4592F1DD18B7A744009CCC65 /* BYCTalkViewController.h */,
 				4592F1DE18B7A744009CCC65 /* BYCTalkViewController.m */,
+				4523654718C94DB5008AA4FC /* BYCReminderViewController.h */,
+				4523654818C94DB5008AA4FC /* BYCReminderViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -962,6 +976,8 @@
 		4592F1DB18B7A72A009CCC65 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4523654318C941B0008AA4FC /* BYCReminderView.h */,
+				4523654418C941B0008AA4FC /* BYCReminderView.m */,
 				4592F1E118B7A76B009CCC65 /* BYCTalkView.h */,
 				4592F1E218B7A76B009CCC65 /* BYCTalkView.m */,
 			);
@@ -1139,6 +1155,8 @@
 			children = (
 				45D8276B18C77CB20055ADA5 /* BYCEntry.h */,
 				45D8276C18C77CB20055ADA5 /* BYCEntry.m */,
+				4523654B18CA1F9E008AA4FC /* BYCReminderTime.h */,
+				4523654C18CA1F9E008AA4FC /* BYCReminderTime.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -1472,6 +1490,7 @@
 				452518C218B67BE800D1B561 /* UIView+Layouts.m in Sources */,
 				4523653118C8C7D3008AA4FC /* BYCReportModel.m in Sources */,
 				458F0CD918BEB54E002FEC75 /* BYCMoodSprite.m in Sources */,
+				4523654918C94DB5008AA4FC /* BYCReminderViewController.m in Sources */,
 				452518B018B679A200D1B561 /* BYCViewController.m in Sources */,
 				4523652D18C8C357008AA4FC /* BYCReportBar.m in Sources */,
 				45DEC7D718BBBE4800A92550 /* BYCDatabaseUtilities.m in Sources */,
@@ -1479,6 +1498,7 @@
 				45D8278B18C7A0660055ADA5 /* BYCQueue.m in Sources */,
 				458F0FD818C0E121002FEC75 /* BYCAddReasonsView.m in Sources */,
 				4523653918C8EAA5008AA4FC /* BYCReportView.m in Sources */,
+				4523654D18CA1F9E008AA4FC /* BYCReminderTime.m in Sources */,
 				45DEC7D318BBBE2600A92550 /* BYCDatabase.m in Sources */,
 				4525188118B6750800D1B561 /* main.m in Sources */,
 				4525193018B70D8900D1B561 /* BYCAddEntryView.m in Sources */,
@@ -1502,6 +1522,7 @@
 				4525188518B6750800D1B561 /* BYCAppDelegate.m in Sources */,
 				4592F1DF18B7A744009CCC65 /* BYCTalkViewController.m in Sources */,
 				4592F1E318B7A76B009CCC65 /* BYCTalkView.m in Sources */,
+				4523654518C941B0008AA4FC /* BYCReminderView.m in Sources */,
 				452518B418B679DE00D1B561 /* BYCApplicationState.m in Sources */,
 				458F0FC818BFD516002FEC75 /* UIImage+Custom.m in Sources */,
 				452518D218B6822800D1B561 /* BYCContentView.m in Sources */,
@@ -1517,12 +1538,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4523654E18CA1F9E008AA4FC /* BYCReminderTime.m in Sources */,
 				45AFD5DC18C10C4F002C18F9 /* BYCAddAudioView.m in Sources */,
 				45D8276E18C77CB20055ADA5 /* BYCEntry.m in Sources */,
 				45AFD5E018C10C81002C18F9 /* BYCAddAudioViewController.m in Sources */,
 				45AFD60418C149B9002C18F9 /* BYCAudioView.m in Sources */,
 				45DEC7D818BBBE4800A92550 /* BYCDatabaseUtilities.m in Sources */,
 				4523653618C8EA84008AA4FC /* BYCReportViewController.m in Sources */,
+				4523654618C941B0008AA4FC /* BYCReminderView.m in Sources */,
 				45D8279018C7A0B60055ADA5 /* BYCTouchBlocker.m in Sources */,
 				4525193118B70D8900D1B561 /* BYCAddEntryView.m in Sources */,
 				4592F1E418B7A76B009CCC65 /* BYCTalkView.m in Sources */,
@@ -1541,6 +1564,7 @@
 				45D827A918C7C6D50055ADA5 /* BYCEntriesCell.m in Sources */,
 				45D8278C18C7A0660055ADA5 /* BYCQueue.m in Sources */,
 				4523653218C8C7D3008AA4FC /* BYCReportModel.m in Sources */,
+				4523654A18C94DB5008AA4FC /* BYCReminderViewController.m in Sources */,
 				45D827A518C7C6C10055ADA5 /* BYCEntriesView.m in Sources */,
 				4523654218C912B2008AA4FC /* BYCEntryDetailsView.m in Sources */,
 				458F0FDD18C0EA87002FEC75 /* BYCAddReasonsViewController.m in Sources */,

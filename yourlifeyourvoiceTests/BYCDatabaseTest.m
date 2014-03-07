@@ -104,4 +104,37 @@
     XCTAssertNil([testObject2 getEntryWithUid:entry1.uid]);
 }
 
+-(void)testWhenReminderTimeIsSetThenItCanBeRetrieved {
+    BYCReminderTime *time = [[BYCReminderTime alloc] init];
+    [time setTimeWithHour:14 minute:30];
+    time.active = YES;
+    
+    [testObject saveReminderTime:time];
+    BYCReminderTime *time2 = [testObject2 getReminderTime];
+    
+    XCTAssertEqual(time.hour, time2.hour);
+    XCTAssertEqual(time.minute, time2.minute);
+    XCTAssertEqual(time.active, time2.active);
+    XCTAssertEqualObjects(time.date, time2.date);
+    XCTAssertEqualObjects(time.string, time2.string);
+}
+
+-(void)testWhenReminderIsUpdatedThenItCanBeRetrieved {
+    BYCReminderTime *time = [[BYCReminderTime alloc] init];
+    [time setTimeWithHour:14 minute:30];
+    [testObject saveReminderTime:time];
+    
+    [time setTimeWithDate:[NSDate date]];
+    time.active = NO;
+    
+    [testObject saveReminderTime:time];
+    BYCReminderTime *time2 = [testObject2 getReminderTime];
+    
+    XCTAssertEqual(time.hour, time2.hour);
+    XCTAssertEqual(time.minute, time2.minute);
+    XCTAssertEqual(time.active, time2.active);
+    XCTAssertEqualObjects(time.date, time2.date);
+    XCTAssertEqualObjects(time.string, time2.string);
+}
+
 @end

@@ -7,6 +7,7 @@
 #import "BYCEntryViewController.h"
 #import "BYCEntriesViewController.h"
 #import "BYCReportViewController.h"
+#import "BYCReminderViewController.h"
 
 #define kSidebarMargin 120
 
@@ -116,6 +117,18 @@
 
 -(void)reportsSelected {
     [self showViewController:[[BYCReportViewController alloc] initWithApplicationState:self.applicationState]];
+}
+
+-(void)reminderSelected {
+    [self showViewController:[[BYCReminderViewController alloc] initWithApplicationState:self.applicationState]];
+}
+
+-(void)tipsSelected {
+    
+}
+
+-(void)infoSelected {
+    
 }
 
 @end

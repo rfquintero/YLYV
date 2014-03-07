@@ -5,7 +5,10 @@
 -(void)entrySelected;
 -(void)moodsSelected;
 -(void)reportsSelected;
+-(void)reminderSelected;
+-(void)tipsSelected;
 -(void)talkSelected;
+-(void)infoSelected;
 @end
 
 @interface BYCSideView : UIView

@@ -82,8 +82,17 @@
         case 2:
             [self.delegate reportsSelected];
             break;
+        case 3:
+            [self.delegate reminderSelected];
+            break;
+        case 4:
+            [self.delegate tipsSelected];
+            break;
         case 5:
             [self.delegate talkSelected];
+            break;
+        case 6:
+            [self.delegate infoSelected];
             break;
         default:
             break;
