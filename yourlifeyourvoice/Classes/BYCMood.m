@@ -32,9 +32,15 @@
     }
 }
 
-+(UIImage*)moodImage:(BYCMoodType)type {
++(UIImage*)moodImageStart:(BYCMoodType)type {
     NSString *mood = [[self moodString:type] lowercaseString];
-    NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"face_%@", mood] ofType:@"png"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"face_%@_start", mood] ofType:@"png"];
+    return [UIImage imageWithContentsOfFile:path];
+}
+
++(UIImage*)moodImageEnd:(BYCMoodType)type {
+    NSString *mood = [[self moodString:type] lowercaseString];
+    NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"face_%@_end", mood] ofType:@"png"];
     return [UIImage imageWithContentsOfFile:path];
 }
 
@@ -51,15 +57,11 @@
 }
 
 +(UIImage*)smallSpriteImage:(BYCMoodType)type {
-    NSString *mood = [[self moodString:type] lowercaseString];
-    NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@_small.1", mood] ofType:@"png"];
-    return [UIImage imageWithContentsOfFile:path];
+    return [self spriteImage:type];
 }
 
 +(NSDictionary*)smallPlist:(BYCMoodType)type {
-    NSString *mood = [[self moodString:type] lowercaseString];
-    NSString* path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@_small", mood] ofType:@"plist"];
-    return [NSDictionary dictionaryWithContentsOfFile:path];
+    return [self plist:type];
 }
 
 +(NSDictionary*)animationList:(BYCMoodType)type {

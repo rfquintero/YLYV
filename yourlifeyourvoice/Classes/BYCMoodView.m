@@ -4,7 +4,7 @@
 
 #define kSpacing 5.0f
 
-@interface BYCMoodView()
+@interface BYCMoodView()<BYCMoodSpriteDelegate>
 @property (nonatomic) BYCMoodSprite *sprite;
 @property (nonatomic) UIImageView *face;
 @property (nonatomic) BYCMoodType type;
@@ -20,7 +20,8 @@
     if (self) {
         self.type = type;
         self.sprite = [[BYCMoodSprite alloc] initWithFrame:CGRectZero type:type small:small];
-        self.face = [[UIImageView alloc] initWithImage:[BYCMood moodImage:type]];
+        self.sprite.delegate = self;
+        self.face = [[UIImageView alloc] initWithImage:[BYCMood moodImageStart:type]];
         
         UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(moodSelected)];
         [self addGestureRecognizer:tapRecognizer];
@@ -55,7 +56,7 @@
 -(void)setType:(BYCMoodType)type {
     _type = type;
     [self.sprite setType:type];
-    self.face.image = [BYCMood moodImage:type];
+    self.face.image = [BYCMood moodImageStart:type];
     self.text.text = [BYCMood moodString:type];
 }
 
@@ -68,13 +69,8 @@
     [self showSprite:YES];
 }
 
--(void)animateAll {
-    [self.sprite animateAll];
-    [self showSprite:YES];
-}
-
--(void)resetAnimation {
-    [self.sprite resetAnimation];
+-(void)stopAnimation {
+    [self.sprite stopAnimation];
     [self showSprite:NO];
 }
 
@@ -84,6 +80,14 @@
         self.sprite.hidden = !show;
         self.face.hidden = show;
     }
+}
+
+-(void)startReached {
+    self.face.image = [BYCMood moodImageStart:self.type];
+}
+
+-(void)endReached {
+    self.face.image = [BYCMood moodImageEnd:self.type];
 }
 
 -(void)setTextHidden:(BOOL)hidden animated:(BOOL)animated {

@@ -7,7 +7,7 @@
             <key>generator</key>
             <string>TexturePacker 3.2.1 - http://www.codeandweb.com/texturepacker</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:1553c68a0d4d97e41c5b7d492ce2b85c:1e9f7b34405f87a554063ec705ace888:845c13551adac46f234f406b21d44300$</string>
+            <string>$TexturePacker:SmartUpdate:5d99272da233d702ff1880069e8668cf:f98eca169e528eef5308139b3c28db46:845c13551adac46f234f406b21d44300$</string>
         </dict>
         <key>format</key>
         <string>APPL</string>
@@ -17,7 +17,7 @@
                 <key>path</key>
                 <string>depressed.1.png</string>
                 <key>size</key>
-                <string>{3850,1750}</string>
+                <string>{3500,1050}</string>
                 <key>subimages</key>
                 <array>
                     <dict>
@@ -26,461 +26,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-depressed_00087.png</string>
+                        <string>face-depressed_00058.png</string>
                         <key>spriteOffset</key>
                         <string>{21,2}</string>
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
                         <string>{{1,1},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00088.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1,1},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00086.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1,351},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00080.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1,701},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00081.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1,701},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00082.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1,701},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00083.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1,701},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00084.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1,701},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00085.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1,701},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00079.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1,1051},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00076.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1,1401},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00077.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1,1401},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00078.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1,1401},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00075.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{351,1},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00074.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{351,351},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00073.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{351,701},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00072.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{351,1051},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00071.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{351,1401},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00070.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{701,1},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00069.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{701,351},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00068.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{701,701},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00067.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{701,1051},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00066.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{701,1401},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00065.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1051,1},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00064.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1051,351},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00063.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1051,701},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00062.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1051,1051},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00061.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1051,1401},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00060.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1401,1},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -496,7 +48,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{1401,351},{348,348}}</string>
+                        <string>{{1,1},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -506,13 +58,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-depressed_00058.png</string>
+                        <string>face-depressed_00060.png</string>
                         <key>spriteOffset</key>
                         <string>{21,2}</string>
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{1401,701},{348,348}}</string>
+                        <string>{{1,1},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -528,39 +80,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{1401,1051},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00054.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1401,1401},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00055.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1401,1401},{348,348}}</string>
+                        <string>{{1,351},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -576,7 +96,39 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{1401,1401},{348,348}}</string>
+                        <string>{{1,701},{348,348}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-depressed_00055.png</string>
+                        <key>spriteOffset</key>
+                        <string>{21,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{351,1},{348,348}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-depressed_00054.png</string>
+                        <key>spriteOffset</key>
+                        <string>{21,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{351,351},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -592,7 +144,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{1751,1},{348,348}}</string>
+                        <string>{{351,701},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -608,7 +160,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{1751,351},{348,348}}</string>
+                        <string>{{701,1},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -624,7 +176,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{1751,701},{348,348}}</string>
+                        <string>{{701,351},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -640,7 +192,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{1751,1051},{348,348}}</string>
+                        <string>{{701,701},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -656,7 +208,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{1751,1401},{348,348}}</string>
+                        <string>{{1051,1},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -672,7 +224,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2101,1},{348,348}}</string>
+                        <string>{{1051,351},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -688,7 +240,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2101,351},{348,348}}</string>
+                        <string>{{1051,701},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -704,7 +256,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2101,701},{348,348}}</string>
+                        <string>{{1401,1},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -720,7 +272,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2101,1051},{348,348}}</string>
+                        <string>{{1401,351},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -736,7 +288,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2101,1401},{348,348}}</string>
+                        <string>{{1401,701},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -752,7 +304,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2451,1},{348,348}}</string>
+                        <string>{{1751,1},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -768,7 +320,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2801,1},{348,348}}</string>
+                        <string>{{1751,351},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -784,7 +336,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{3151,1},{348,348}}</string>
+                        <string>{{1751,701},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -800,7 +352,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{3501,1},{348,348}}</string>
+                        <string>{{2101,1},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -816,7 +368,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2451,351},{348,348}}</string>
+                        <string>{{2101,351},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -832,7 +384,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2451,701},{348,348}}</string>
+                        <string>{{2101,701},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -848,7 +400,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2451,1051},{348,348}}</string>
+                        <string>{{2451,1},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -864,7 +416,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2451,1401},{348,348}}</string>
+                        <string>{{2451,351},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -880,7 +432,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2801,351},{348,348}}</string>
+                        <string>{{2451,701},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -896,7 +448,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{3151,351},{348,348}}</string>
+                        <string>{{2801,1},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -912,7 +464,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{3501,351},{348,348}}</string>
+                        <string>{{3151,1},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -928,7 +480,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2801,701},{348,348}}</string>
+                        <string>{{2801,351},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -944,7 +496,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2801,1051},{348,348}}</string>
+                        <string>{{2801,701},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -960,71 +512,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2801,1401},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00029.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{3151,701},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00028.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{3501,701},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00027.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{3151,1051},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-depressed_00026.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{3151,1401},{348,348}}</string>
+                        <string>{{3151,351},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>

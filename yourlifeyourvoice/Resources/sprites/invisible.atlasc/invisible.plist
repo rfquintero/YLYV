@@ -7,7 +7,7 @@
             <key>generator</key>
             <string>TexturePacker 3.2.1 - http://www.codeandweb.com/texturepacker</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:153af46a62a2069bf90632f48887d5c6:996c04a111cdb45f4774ca37b38a4685:924751817b20a668cac861a5d8f130a2$</string>
+            <string>$TexturePacker:SmartUpdate:fcd8ce918f7f1dcc8d36e2409de86104:2ed5bbf16f939d3c9862b09dcca50fea:924751817b20a668cac861a5d8f130a2$</string>
         </dict>
         <key>format</key>
         <string>APPL</string>
@@ -17,7 +17,7 @@
                 <key>path</key>
                 <string>invisible.1.png</string>
                 <key>size</key>
-                <string>{3150,1050}</string>
+                <string>{3500,350}</string>
                 <key>subimages</key>
                 <array>
                     <dict>
@@ -26,7 +26,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-invisible_00065.png</string>
+                        <string>face-invisible_00058.png</string>
                         <key>spriteOffset</key>
                         <string>{21,2}</string>
                         <key>spriteSourceSize</key>
@@ -42,45 +42,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-invisible_00064.png</string>
+                        <string>face-invisible_00059.png</string>
                         <key>spriteOffset</key>
                         <string>{21,2}</string>
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{1,351},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-invisible_00063.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1,701},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-invisible_00062.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{351,1},{348,348}}</string>
+                        <string>{{1,1},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -96,39 +64,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{351,351},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-invisible_00059.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{351,701},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-invisible_00058.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{701,1},{348,348}}</string>
+                        <string>{{1,1},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -144,199 +80,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{701,351},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-invisible_00054.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{701,701},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-invisible_00053.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1051,1},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-invisible_00052.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1051,351},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-invisible_00048.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1051,701},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-invisible_00047.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1401,1},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-invisible_00046.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1401,351},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-invisible_00044.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1401,701},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-invisible_00045.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1401,701},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-invisible_00049.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1401,701},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-invisible_00050.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1401,701},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-invisible_00051.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1401,701},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-invisible_00055.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1401,701},{348,348}}</string>
+                        <string>{{351,1},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -352,7 +96,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{1401,701},{348,348}}</string>
+                        <string>{{701,1},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -368,7 +112,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{1751,1},{348,348}}</string>
+                        <string>{{1051,1},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -384,7 +128,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{1751,351},{348,348}}</string>
+                        <string>{{1401,1},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -400,7 +144,103 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{1751,701},{348,348}}</string>
+                        <string>{{1751,1},{348,348}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-invisible_00034.png</string>
+                        <key>spriteOffset</key>
+                        <string>{21,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{2101,1},{348,348}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-invisible_00035.png</string>
+                        <key>spriteOffset</key>
+                        <string>{21,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{2101,1},{348,348}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-invisible_00036.png</string>
+                        <key>spriteOffset</key>
+                        <string>{21,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{2101,1},{348,348}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-invisible_00037.png</string>
+                        <key>spriteOffset</key>
+                        <string>{21,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{2101,1},{348,348}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-invisible_00038.png</string>
+                        <key>spriteOffset</key>
+                        <string>{21,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{2101,1},{348,348}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-invisible_00039.png</string>
+                        <key>spriteOffset</key>
+                        <string>{21,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{2101,1},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -426,13 +266,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-invisible_00038.png</string>
+                        <string>face-invisible_00044.png</string>
                         <key>spriteOffset</key>
                         <string>{21,2}</string>
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2101,351},{348,348}}</string>
+                        <string>{{2101,1},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -442,13 +282,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-invisible_00037.png</string>
+                        <string>face-invisible_00045.png</string>
                         <key>spriteOffset</key>
                         <string>{21,2}</string>
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2101,701},{348,348}}</string>
+                        <string>{{2101,1},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -458,13 +298,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-invisible_00036.png</string>
+                        <string>face-invisible_00046.png</string>
                         <key>spriteOffset</key>
                         <string>{21,2}</string>
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2451,1},{348,348}}</string>
+                        <string>{{2101,1},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -474,13 +314,141 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-invisible_00035.png</string>
+                        <string>face-invisible_00047.png</string>
                         <key>spriteOffset</key>
                         <string>{21,2}</string>
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2801,1},{348,348}}</string>
+                        <string>{{2101,1},{348,348}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-invisible_00048.png</string>
+                        <key>spriteOffset</key>
+                        <string>{21,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{2101,1},{348,348}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-invisible_00049.png</string>
+                        <key>spriteOffset</key>
+                        <string>{21,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{2101,1},{348,348}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-invisible_00050.png</string>
+                        <key>spriteOffset</key>
+                        <string>{21,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{2101,1},{348,348}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-invisible_00051.png</string>
+                        <key>spriteOffset</key>
+                        <string>{21,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{2101,1},{348,348}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-invisible_00052.png</string>
+                        <key>spriteOffset</key>
+                        <string>{21,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{2101,1},{348,348}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-invisible_00053.png</string>
+                        <key>spriteOffset</key>
+                        <string>{21,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{2101,1},{348,348}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-invisible_00054.png</string>
+                        <key>spriteOffset</key>
+                        <string>{21,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{2101,1},{348,348}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-invisible_00055.png</string>
+                        <key>spriteOffset</key>
+                        <string>{21,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{2101,1},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -496,39 +464,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2451,351},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-invisible_00034.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{2451,351},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-invisible_00039.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{2451,351},{348,348}}</string>
+                        <string>{{2451,1},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -544,23 +480,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2451,701},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-invisible_00031.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{2801,351},{348,348}}</string>
+                        <string>{{2801,1},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -576,7 +496,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2801,701},{348,348}}</string>
+                        <string>{{3151,1},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -586,29 +506,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-invisible_00061.png</string>
+                        <string>face-invisible_00031.png</string>
                         <key>spriteOffset</key>
                         <string>{21,2}</string>
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2801,701},{348,348}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-invisible_00066.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{2801,701},{348,348}}</string>
+                        <string>{{3151,1},{348,348}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>

@@ -66,6 +66,14 @@
     return CGRectGetMaxY(self.largeMood.frame)-20;
 }
 
+-(void)setAnimating:(BOOL)animating {
+    if(animating) {
+        [self.animator start];
+    } else {
+        [self.animator stop];
+    }
+}
+
 -(void)setNavView:(UIView *)navView {
     [navView addSubview:self.largeMood];
 }
@@ -125,7 +133,7 @@
             }
         }
     } completion:^(BOOL finished) {
-        [self.largeMood animateAll];
+        [self.largeMood animateStep];
         self.largeMood.hidden = NO;
         self.rowLayout.hidden = YES;
         self.scrollView.scrollEnabled = NO;
@@ -134,7 +142,7 @@
 }
 
 -(void)discardEntry {
-    [self.largeMood resetAnimation];
+    [self.largeMood stopAnimation];
     self.largeMood.hidden = YES;
     self.rowLayout.hidden = NO;
     self.scrollView.scrollEnabled = YES;
@@ -213,7 +221,7 @@
     CGFloat minSize = 34.0f;
     CGFloat faceSize = minSize + (kLargeSize-minSize)*percent;
     
-    [self.largeMood resetAnimation];
+    [self.largeMood stopAnimation];
     self.largeMood.faceSize = faceSize;
     
     [self layoutLargeMood];

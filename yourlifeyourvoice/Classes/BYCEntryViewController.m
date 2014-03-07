@@ -39,11 +39,13 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playbackStopped) name:BYCEntryModelPlaybackStopped object:self.model];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(saveSuccessful) name:BYCEntryModelSaveSuccessful object:self.model];
     [self refreshView];
+    self.entryView.animating = YES;
 }
 
 -(void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+    self.entryView.animating = NO;
 }
 
 -(void)refreshView {

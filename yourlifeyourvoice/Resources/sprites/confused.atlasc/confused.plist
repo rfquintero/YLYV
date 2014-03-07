@@ -7,7 +7,7 @@
             <key>generator</key>
             <string>TexturePacker 3.2.1 - http://www.codeandweb.com/texturepacker</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:ee014f22b513c3581b49c0658561dac6:78fd70be036a65280b2d3c33cc62f803:e9d6eb8957ff692f0a4d02f9242ab08c$</string>
+            <string>$TexturePacker:SmartUpdate:130512e8b5c7a0396e77d3be35d1d4bd:528e8c3ff884d00103895f5ae8ab8b44:e9d6eb8957ff692f0a4d02f9242ab08c$</string>
         </dict>
         <key>format</key>
         <string>APPL</string>
@@ -17,7 +17,7 @@
                 <key>path</key>
                 <string>confused.1.png</string>
                 <key>size</key>
-                <string>{2816,1944}</string>
+                <string>{1760,1980}</string>
                 <key>subimages</key>
                 <array>
                     <dict>
@@ -26,461 +26,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-confused_00076.png</string>
+                        <string>face-confused_00054.png</string>
                         <key>spriteOffset</key>
                         <string>{23,2}</string>
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{1,1},{350,396}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-confused_00075.png</string>
-                        <key>spriteOffset</key>
-                        <string>{23,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1,399},{350,396}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-confused_00074.png</string>
-                        <key>spriteOffset</key>
-                        <string>{23,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{353,1},{350,396}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-confused_00073.png</string>
-                        <key>spriteOffset</key>
-                        <string>{23,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1,797},{350,396}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-confused_00072.png</string>
-                        <key>spriteOffset</key>
-                        <string>{23,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{353,399},{350,396}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-confused_00071.png</string>
-                        <key>spriteOffset</key>
-                        <string>{23,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{705,1},{350,396}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-confused_00070.png</string>
-                        <key>spriteOffset</key>
-                        <string>{23,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1,1195},{350,396}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-confused_00069.png</string>
-                        <key>spriteOffset</key>
-                        <string>{23,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1,1593},{396,350}}</string>
-                        <key>textureRotated</key>
-                        <true/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-confused_00068.png</string>
-                        <key>spriteOffset</key>
-                        <string>{23,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{705,399},{350,396}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-confused_00067.png</string>
-                        <key>spriteOffset</key>
-                        <string>{23,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1057,1},{350,396}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-confused_00066.png</string>
-                        <key>spriteOffset</key>
-                        <string>{23,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{353,797},{350,396}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-confused_00065.png</string>
-                        <key>spriteOffset</key>
-                        <string>{23,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{353,1195},{350,396}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-confused_00064.png</string>
-                        <key>spriteOffset</key>
-                        <string>{23,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{399,1593},{396,350}}</string>
-                        <key>textureRotated</key>
-                        <true/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-confused_00063.png</string>
-                        <key>spriteOffset</key>
-                        <string>{23,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1057,399},{350,396}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-confused_00062.png</string>
-                        <key>spriteOffset</key>
-                        <string>{23,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1409,1},{350,396}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-confused_00061.png</string>
-                        <key>spriteOffset</key>
-                        <string>{23,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{705,797},{350,396}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-confused_00060.png</string>
-                        <key>spriteOffset</key>
-                        <string>{23,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{705,1195},{350,396}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-confused_00059.png</string>
-                        <key>spriteOffset</key>
-                        <string>{23,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{797,1593},{396,350}}</string>
-                        <key>textureRotated</key>
-                        <true/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-confused_00058.png</string>
-                        <key>spriteOffset</key>
-                        <string>{23,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1409,399},{350,396}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-confused_00057.png</string>
-                        <key>spriteOffset</key>
-                        <string>{23,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1761,1},{350,396}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-confused_00045.png</string>
-                        <key>spriteOffset</key>
-                        <string>{23,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1057,797},{350,396}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-confused_00044.png</string>
-                        <key>spriteOffset</key>
-                        <string>{23,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1057,1195},{350,396}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-confused_00043.png</string>
-                        <key>spriteOffset</key>
-                        <string>{23,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1195,1593},{396,350}}</string>
-                        <key>textureRotated</key>
-                        <true/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-confused_00046.png</string>
-                        <key>spriteOffset</key>
-                        <string>{23,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1761,399},{350,394}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-confused_00042.png</string>
-                        <key>spriteOffset</key>
-                        <string>{23,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{2113,1},{350,394}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-confused_00056.png</string>
-                        <key>spriteOffset</key>
-                        <string>{23,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{2465,1},{350,392}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-confused_00047.png</string>
-                        <key>spriteOffset</key>
-                        <string>{23,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{2465,395},{350,392}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-confused_00048.png</string>
-                        <key>spriteOffset</key>
-                        <string>{23,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{2113,397},{350,390}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-confused_00041.png</string>
-                        <key>spriteOffset</key>
-                        <string>{23,2}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1409,797},{350,390}}</string>
+                        <string>{{1,1},{350,394}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -496,7 +48,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{1761,795},{350,388}}</string>
+                        <string>{{1,1},{350,394}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -506,13 +58,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-confused_00049.png</string>
+                        <string>face-confused_00056.png</string>
                         <key>spriteOffset</key>
                         <string>{23,2}</string>
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2113,789},{350,388}}</string>
+                        <string>{{1,1},{350,394}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -522,13 +74,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-confused_00054.png</string>
+                        <string>face-confused_00057.png</string>
                         <key>spriteOffset</key>
                         <string>{23,2}</string>
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2465,789},{350,386}}</string>
+                        <string>{{1,1},{350,394}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -538,13 +90,45 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-confused_00050.png</string>
+                        <string>face-confused_00058.png</string>
                         <key>spriteOffset</key>
                         <string>{23,2}</string>
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2465,1177},{350,386}}</string>
+                        <string>{{1,1},{350,394}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-confused_00059.png</string>
+                        <key>spriteOffset</key>
+                        <string>{23,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{1,1},{350,394}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-confused_00060.png</string>
+                        <key>spriteOffset</key>
+                        <string>{23,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{1,1},{350,394}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -560,7 +144,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2113,1179},{350,384}}</string>
+                        <string>{{1,397},{350,394}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -576,7 +160,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{1409,1189},{350,384}}</string>
+                        <string>{{353,1},{350,394}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -592,7 +176,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{1761,1185},{350,384}}</string>
+                        <string>{{1,793},{350,394}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -602,13 +186,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-confused_00039.png</string>
+                        <string>face-confused_00050.png</string>
                         <key>spriteOffset</key>
                         <string>{23,2}</string>
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{1593,1575},{350,350}}</string>
+                        <string>{{353,397},{350,394}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -618,13 +202,141 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-confused_00038.png</string>
+                        <string>face-confused_00049.png</string>
                         <key>spriteOffset</key>
                         <string>{23,2}</string>
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{1945,1571},{350,350}}</string>
+                        <string>{{705,1},{350,394}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-confused_00048.png</string>
+                        <key>spriteOffset</key>
+                        <string>{23,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{1,1189},{350,394}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-confused_00047.png</string>
+                        <key>spriteOffset</key>
+                        <string>{23,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{1,1585},{350,394}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-confused_00046.png</string>
+                        <key>spriteOffset</key>
+                        <string>{23,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{353,793},{350,394}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-confused_00045.png</string>
+                        <key>spriteOffset</key>
+                        <string>{23,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{705,397},{350,394}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-confused_00044.png</string>
+                        <key>spriteOffset</key>
+                        <string>{23,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{1057,1},{350,394}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-confused_00043.png</string>
+                        <key>spriteOffset</key>
+                        <string>{23,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{1409,1},{350,394}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-confused_00042.png</string>
+                        <key>spriteOffset</key>
+                        <string>{23,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{353,1189},{350,394}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-confused_00041.png</string>
+                        <key>spriteOffset</key>
+                        <string>{23,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{353,1585},{350,394}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -640,9 +352,169 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2297,1565},{376,350}}</string>
+                        <string>{{705,793},{350,394}}</string>
                         <key>textureRotated</key>
-                        <true/>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-confused_00039.png</string>
+                        <key>spriteOffset</key>
+                        <string>{23,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{1057,397},{350,394}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-confused_00038.png</string>
+                        <key>spriteOffset</key>
+                        <string>{23,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{1409,397},{350,394}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-confused_00037.png</string>
+                        <key>spriteOffset</key>
+                        <string>{23,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{705,1189},{350,394}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-confused_00036.png</string>
+                        <key>spriteOffset</key>
+                        <string>{23,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{705,1585},{350,394}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-confused_00035.png</string>
+                        <key>spriteOffset</key>
+                        <string>{23,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{1057,793},{350,394}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-confused_00034.png</string>
+                        <key>spriteOffset</key>
+                        <string>{23,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{1409,793},{350,394}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-confused_00033.png</string>
+                        <key>spriteOffset</key>
+                        <string>{23,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{1057,1189},{350,394}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-confused_00032.png</string>
+                        <key>spriteOffset</key>
+                        <string>{23,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{1409,1189},{350,394}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-confused_00031.png</string>
+                        <key>spriteOffset</key>
+                        <string>{23,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{1057,1585},{350,394}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>face-confused_00030.png</string>
+                        <key>spriteOffset</key>
+                        <string>{23,2}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{400,400}</string>
+                        <key>textureRect</key>
+                        <string>{{1409,1585},{350,394}}</string>
+                        <key>textureRotated</key>
+                        <false/>
                     </dict>
                 </array>
             </dict>

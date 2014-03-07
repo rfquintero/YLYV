@@ -192,8 +192,8 @@
     static const char *sql = "INSERT INTO reminders (hour, minute, active) VALUES (?, ?, ?)";
     sqlite3_stmt *statement = NULL;
     sqlite3_prepare_v2(self.database, sql, -1, &statement, NULL);
-    sqlite3_bind_int(statement, 1, time.hour);
-    sqlite3_bind_int(statement, 2, time.minute);
+    sqlite3_bind_int(statement, 1, (int)time.hour);
+    sqlite3_bind_int(statement, 2, (int)time.minute);
     sqlite3_bind_int(statement, 3, time.active);
     sqlite3_step(statement);
     sqlite3_finalize(statement);

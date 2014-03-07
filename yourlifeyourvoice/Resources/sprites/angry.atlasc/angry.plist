@@ -7,7 +7,7 @@
             <key>generator</key>
             <string>TexturePacker 3.2.1 - http://www.codeandweb.com/texturepacker</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:5bb2093a6ecd93b2f6a015650d97691e:fa4c521e78984c1ce932607a3abbd808:3fd687ceece4c8557cea9631026a6289$</string>
+            <string>$TexturePacker:SmartUpdate:80e85dc51aed922b58120af5b75de7a3:f460f62efd96f515d692a0a56c10d6c2:3fd687ceece4c8557cea9631026a6289$</string>
         </dict>
         <key>format</key>
         <string>APPL</string>
@@ -17,7 +17,7 @@
                 <key>path</key>
                 <string>angry.1.png</string>
                 <key>size</key>
-                <string>{3872,1760}</string>
+                <string>{3168,1056}</string>
                 <key>subimages</key>
                 <array>
                     <dict>
@@ -26,7 +26,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-angry_00080.png</string>
+                        <string>face-angry_00058.png</string>
                         <key>spriteOffset</key>
                         <string>{21,1}</string>
                         <key>spriteSourceSize</key>
@@ -42,7 +42,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-angry_00079.png</string>
+                        <string>face-angry_00057.png</string>
                         <key>spriteOffset</key>
                         <string>{21,1}</string>
                         <key>spriteSourceSize</key>
@@ -58,7 +58,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-angry_00078.png</string>
+                        <string>face-angry_00056.png</string>
                         <key>spriteOffset</key>
                         <string>{21,1}</string>
                         <key>spriteSourceSize</key>
@@ -74,39 +74,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-angry_00077.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,1}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1,1057},{350,350}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-angry_00076.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,1}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1,1409},{350,350}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-angry_00075.png</string>
+                        <string>face-angry_00055.png</string>
                         <key>spriteOffset</key>
                         <string>{21,1}</string>
                         <key>spriteSourceSize</key>
@@ -122,7 +90,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-angry_00074.png</string>
+                        <string>face-angry_00054.png</string>
                         <key>spriteOffset</key>
                         <string>{21,1}</string>
                         <key>spriteSourceSize</key>
@@ -138,7 +106,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-angry_00073.png</string>
+                        <string>face-angry_00053.png</string>
                         <key>spriteOffset</key>
                         <string>{21,1}</string>
                         <key>spriteSourceSize</key>
@@ -154,39 +122,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-angry_00072.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,1}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{353,1057},{350,350}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-angry_00071.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,1}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{353,1409},{350,350}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-angry_00070.png</string>
+                        <string>face-angry_00052.png</string>
                         <key>spriteOffset</key>
                         <string>{21,1}</string>
                         <key>spriteSourceSize</key>
@@ -202,7 +138,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-angry_00069.png</string>
+                        <string>face-angry_00051.png</string>
                         <key>spriteOffset</key>
                         <string>{21,1}</string>
                         <key>spriteSourceSize</key>
@@ -218,7 +154,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-angry_00068.png</string>
+                        <string>face-angry_00050.png</string>
                         <key>spriteOffset</key>
                         <string>{21,1}</string>
                         <key>spriteSourceSize</key>
@@ -234,39 +170,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-angry_00067.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,1}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{705,1057},{350,350}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-angry_00066.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,1}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{705,1409},{350,350}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-angry_00065.png</string>
+                        <string>face-angry_00049.png</string>
                         <key>spriteOffset</key>
                         <string>{21,1}</string>
                         <key>spriteSourceSize</key>
@@ -282,7 +186,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-angry_00064.png</string>
+                        <string>face-angry_00048.png</string>
                         <key>spriteOffset</key>
                         <string>{21,1}</string>
                         <key>spriteSourceSize</key>
@@ -298,7 +202,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-angry_00063.png</string>
+                        <string>face-angry_00047.png</string>
                         <key>spriteOffset</key>
                         <string>{21,1}</string>
                         <key>spriteSourceSize</key>
@@ -314,39 +218,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-angry_00062.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,1}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1057,1057},{350,350}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-angry_00061.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,1}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1057,1409},{350,350}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-angry_00060.png</string>
+                        <string>face-angry_00046.png</string>
                         <key>spriteOffset</key>
                         <string>{21,1}</string>
                         <key>spriteSourceSize</key>
@@ -362,7 +234,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-angry_00059.png</string>
+                        <string>face-angry_00045.png</string>
                         <key>spriteOffset</key>
                         <string>{21,1}</string>
                         <key>spriteSourceSize</key>
@@ -378,7 +250,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-angry_00058.png</string>
+                        <string>face-angry_00044.png</string>
                         <key>spriteOffset</key>
                         <string>{21,1}</string>
                         <key>spriteSourceSize</key>
@@ -394,39 +266,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-angry_00057.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,1}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1409,1057},{350,350}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-angry_00056.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,1}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1409,1409},{350,350}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-angry_00055.png</string>
+                        <string>face-angry_00043.png</string>
                         <key>spriteOffset</key>
                         <string>{21,1}</string>
                         <key>spriteSourceSize</key>
@@ -442,7 +282,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-angry_00054.png</string>
+                        <string>face-angry_00042.png</string>
                         <key>spriteOffset</key>
                         <string>{21,1}</string>
                         <key>spriteSourceSize</key>
@@ -458,7 +298,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-angry_00053.png</string>
+                        <string>face-angry_00041.png</string>
                         <key>spriteOffset</key>
                         <string>{21,1}</string>
                         <key>spriteSourceSize</key>
@@ -474,39 +314,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-angry_00052.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,1}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1761,1057},{350,350}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-angry_00051.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,1}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{1761,1409},{350,350}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-angry_00050.png</string>
+                        <string>face-angry_00040.png</string>
                         <key>spriteOffset</key>
                         <string>{21,1}</string>
                         <key>spriteSourceSize</key>
@@ -522,7 +330,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-angry_00049.png</string>
+                        <string>face-angry_00037.png</string>
                         <key>spriteOffset</key>
                         <string>{21,1}</string>
                         <key>spriteSourceSize</key>
@@ -538,141 +346,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-angry_00048.png</string>
+                        <string>face-angry_00038.png</string>
                         <key>spriteOffset</key>
                         <string>{21,1}</string>
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2113,705},{350,350}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-angry_00045.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,1}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{2113,1057},{350,350}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-angry_00046.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,1}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{2113,1057},{350,350}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-angry_00047.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,1}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{2113,1057},{350,350}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-angry_00044.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,1}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{2113,1409},{350,350}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-angry_00043.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,1}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{2465,1},{350,350}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-angry_00042.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,1}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{2817,1},{350,350}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-angry_00041.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,1}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{3169,1},{350,350}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-angry_00040.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,1}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{3521,1},{350,350}}</string>
+                        <string>{{2113,353},{350,350}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -688,7 +368,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2465,353},{350,350}}</string>
+                        <string>{{2113,353},{350,350}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -698,13 +378,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-angry_00037.png</string>
+                        <string>face-angry_00036.png</string>
                         <key>spriteOffset</key>
                         <string>{21,1}</string>
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2465,705},{350,350}}</string>
+                        <string>{{2113,705},{350,350}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -720,7 +400,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2465,1057},{350,350}}</string>
+                        <string>{{2465,1},{350,350}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -736,7 +416,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2465,1409},{350,350}}</string>
+                        <string>{{2817,1},{350,350}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -752,7 +432,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2817,353},{350,350}}</string>
+                        <string>{{2465,353},{350,350}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -768,7 +448,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{3169,353},{350,350}}</string>
+                        <string>{{2465,705},{350,350}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -784,7 +464,7 @@
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{3521,353},{350,350}}</string>
+                        <string>{{2817,353},{350,350}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -810,13 +490,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-angry_00029.png</string>
+                        <string>face-angry_00059.png</string>
                         <key>spriteOffset</key>
                         <string>{21,1}</string>
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2817,1057},{350,350}}</string>
+                        <string>{{2817,705},{350,350}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -826,109 +506,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>face-angry_00028.png</string>
+                        <string>face-angry_00060.png</string>
                         <key>spriteOffset</key>
                         <string>{21,1}</string>
                         <key>spriteSourceSize</key>
                         <string>{400,400}</string>
                         <key>textureRect</key>
-                        <string>{{2817,1409},{350,350}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-angry_00027.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,1}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{3169,705},{350,350}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-angry_00026.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,1}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{3521,705},{350,350}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-angry_00025.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,1}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{3169,1057},{350,350}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-angry_00024.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,1}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{3169,1409},{350,350}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-angry_00023.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,1}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{3521,1057},{350,350}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>face-angry_00022.png</string>
-                        <key>spriteOffset</key>
-                        <string>{21,1}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{400,400}</string>
-                        <key>textureRect</key>
-                        <string>{{3521,1409},{350,350}}</string>
+                        <string>{{2817,705},{350,350}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>

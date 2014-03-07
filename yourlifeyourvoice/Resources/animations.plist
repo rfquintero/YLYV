@@ -10,8 +10,7 @@
 		<array/>
 		<key>loop</key>
 		<array>
-			<string>{0,25}</string>
-			<string>{25,59}</string>
+			<string>{0,30}</string>
 		</array>
 	</dict>
 	<key>confident</key>
@@ -22,12 +21,8 @@
 		<array/>
 		<key>loop</key>
 		<array>
-			<string>{0,31}</string>
-			<string>{31,71}</string>
-			<string>{71,98}</string>
-			<string>{98,71}</string>
-			<string>{71,31}</string>
-			<string>{31,0}</string>
+			<string>{0,30}</string>
+			<string>{30,0}</string>
 		</array>
 	</dict>
 	<key>confused</key>
@@ -36,12 +31,11 @@
 		<integer>30</integer>
 		<key>intro</key>
 		<array>
-			<string>{0,21}</string>
 		</array>
 		<key>loop</key>
 		<array>
-			<string>{21,39}</string>
-			<string>{39,21}</string>
+			<string>{0,30}</string>
+			<string>{30,0}</string>
 		</array>
 	</dict>
 	<key>depressed</key>
@@ -50,14 +44,11 @@
 		<integer>30</integer>
 		<key>intro</key>
 		<array>
-			<string>{0,27}</string>
 		</array>
 		<key>loop</key>
 		<array>
-			<string>{27,52}</string>
-			<string>{52,63}</string>
-			<string>{63,52}</string>
-			<string>{52,27}</string>
+			<string>{0,30}</string>
+			<string>{30,0}</string>
 		</array>
 	</dict>
 	<key>embarrassed</key>
@@ -66,11 +57,11 @@
 		<integer>30</integer>
 		<key>intro</key>
 		<array>
-			<string>{0,17}</string>
 		</array>
 		<key>loop</key>
 		<array>
-			<string>{17,44}</string>
+			<string>{0,30}</string>
+			<string>{30,0}</string>
 		</array>
 	</dict>
 	<key>frustrated</key>
@@ -81,12 +72,8 @@
 		<array/>
 		<key>loop</key>
 		<array>
-			<string>{0,6}</string>
-			<string>{6,20}</string>
-			<string>{20,31}</string>
-			<string>{31,20}</string>
-			<string>{20,6}</string>
-			<string>{6,0}</string>
+			<string>{0,30}</string>
+			<string>{30,0}</string>
 		</array>
 	</dict>
 	<key>happy</key>
@@ -97,8 +84,7 @@
 		<array/>
 		<key>loop</key>
 		<array>
-			<string>{0,7}</string>
-			<string>{7,20}</string>
+			<string>{0,30}</string>
 		</array>
 	</dict>
 	<key>invisible</key>
@@ -109,12 +95,8 @@
 		<array/>
 		<key>loop</key>
 		<array>
-			<string>{0,10}</string>
-			<string>{10,22}</string>
-			<string>{22,37}</string>
-			<string>{37,22}</string>
-			<string>{22,10}</string>
-			<string>{10,0}</string>
+			<string>{0,30}</string>
+			<string>{30,0}</string>
 		</array>
 	</dict>
 	<key>lonely</key>
@@ -125,12 +107,8 @@
 		<array/>
 		<key>loop</key>
 		<array>
-			<string>{0,12}</string>
-			<string>{12,33}</string>
-			<string>{33,41}</string>
-			<string>{41,33}</string>
-			<string>{33,12}</string>
-			<string>{12,0}</string>
+			<string>{0,30}</string>
+			<string>{30,0}</string>
 		</array>
 	</dict>
 	<key>proud</key>
@@ -141,7 +119,7 @@
 		<array/>
 		<key>loop</key>
 		<array>
-			<string>{0,64}</string>
+			<string>{0,30}</string>
 		</array>
 	</dict>
 	<key>relieved</key>
@@ -152,7 +130,7 @@
 		<array/>
 		<key>loop</key>
 		<array>
-			<string>{0,44}</string>
+			<string>{0,30}</string>
 		</array>
 	</dict>
 	<key>stressed</key>
@@ -163,7 +141,7 @@
 		<array/>
 		<key>loop</key>
 		<array>
-			<string>{0,38}</string>
+			<string>{0,30}</string>
 		</array>
 	</dict>
 </dict>

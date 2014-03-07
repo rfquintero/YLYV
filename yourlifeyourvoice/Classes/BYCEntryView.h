@@ -27,5 +27,6 @@
 -(void)playbackStopped;
 -(void)setSavedStandardTitle:(NSString*)title hideReminders:(BOOL)hideReminders;
 -(void)setSavedAlternateTitle:(NSString*)title;
+-(void)setAnimating:(BOOL)animating;
 -(void)setDelegate:(id<BYCEntryViewDelegate>)delegate;
 @end

@@ -14,7 +14,6 @@
 -(void)setTextFont:(UIFont*)font;
 -(void)setType:(BYCMoodType)type;
 -(void)animateStep;
--(void)animateAll;
--(void)resetAnimation;
+-(void)stopAnimation;
 -(void)setDelegate:(id<BYCMoodViewDelegate>)delegate;
 @end

@@ -36,7 +36,6 @@
     self.addEntry.frame = self.bounds;
 }
 
-
 -(CGFloat)layoutLargeMood {
     CGFloat largeMoodY = SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0") ? 25 : 5;
     [self.largeMood centerHorizonallyAtY:largeMoodY inBounds:self.bounds thatFits:CGSizeUnbounded];
@@ -51,7 +50,7 @@
     CGFloat minSize = 34.0f;
     CGFloat faceSize = minSize + (kLargeSize-minSize)*percent;
     
-    [self.largeMood resetAnimation];
+    [self.largeMood stopAnimation];
     self.largeMood.faceSize = faceSize;
     
     [self layoutLargeMood];

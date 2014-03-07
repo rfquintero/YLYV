@@ -20,6 +20,7 @@
 
 @property (nonatomic) NSDictionary *animations;
 @property (nonatomic) NSUInteger currentAnimation;
+@property (nonatomic, weak) id<BYCMoodSpriteDelegate> delegate;
 @end
 
 @implementation BYCMoodSprite
@@ -130,28 +131,17 @@
     [self loadCheck];
     if(!self.spriteLayer.animating) {
         CGPoint point = [self nextAnimation];
-        [self.spriteLayer animateFrom:[self frame:point.x] to:[self frame:point.y] fps:[self.animations[@"fps"] floatValue]];
-    }
-}
-
--(void)animateAll {
-    [self loadCheck];
-    NSArray *intro = self.animations[@"intro"];
-    NSArray *loop = self.animations[@"loop"];
-    NSMutableArray *frames = [NSMutableArray array];
-    
-    for(NSUInteger i=self.currentAnimation; i<intro.count+loop.count; i++) {
-        CGPoint point = [self pointForIndex:i];
-        if(![[frames lastObject] isEqual:@(point.x)]) {
-            [frames addObject:@(point.x)];
+        NSUInteger end = [self frame:point.y];
+        [self.spriteLayer animateFrom:[self frame:point.x] to:end fps:[self.animations[@"fps"] floatValue]];
+        if(end == self.frames.count-1) {
+            [self.delegate endReached];
+        } else if(end == 0) {
+            [self.delegate startReached];
         }
-        [frames addObject:@(point.y)];
     }
-    [self.spriteLayer animateFrames:frames fps:[self.animations[@"fps"] floatValue]];
-    self.currentAnimation = intro.count;
 }
 
--(void)resetAnimation {
+-(void)stopAnimation {
     [self.spriteLayer removeAllAnimations];
     [self.imageLayer removeAllAnimations];
     self.currentAnimation = 0;
