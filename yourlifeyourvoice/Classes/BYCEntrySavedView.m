@@ -60,7 +60,7 @@
     CGFloat buttonHeight = [self.reminderButton sizeThatFits:CGSizeUnbounded].height;
     self.reminderButton.frame = CGRectMake(padding, CGRectGetMaxY(self.blurbText.frame)+10.0f, paddedWidth, buttonHeight);
     
-    CGFloat moodsOffset = self.reminderButton.hidden ? CGRectGetMaxY(self.reminderButton.frame)+padding : self.reminderButton.frame.origin.y;
+    CGFloat moodsOffset = self.reminderButton.hidden ? self.reminderButton.frame.origin.y : CGRectGetMaxY(self.reminderButton.frame)+padding;
     self.moodsButton.frame = CGRectMake(padding, moodsOffset, paddedWidth, buttonHeight);
     self.infoButton.frame = CGRectMake(padding, CGRectGetMaxY(self.moodsButton.frame)+padding, paddedWidth, buttonHeight);
     

@@ -23,7 +23,7 @@
 }
 
 -(void)siteSelected {
-    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:BYCWebSite]];
 }
 
 @end

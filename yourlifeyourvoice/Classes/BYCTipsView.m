@@ -40,13 +40,15 @@
     CGSize maxSize = CGSizeMake(self.bounds.size.width-60, CGFLOAT_MAX);
     [self.tip centerInBounds:self.bounds offsetX:0 offsetY:-self.scrollView.contentInset.top-10 thatFits:maxSize];
     
-    CGSize titleSize = [self.title sizeThatFits:maxSize];
-    [self.title centerHorizonallyAtY:self.tip.frame.origin.y-titleSize.height-10 inBounds:self.bounds withSize:titleSize];
-    [self.tap centerHorizonallyAtY:CGRectGetMaxY(self.tip.frame)+20 inBounds:self.bounds thatFits:maxSize];
+    [self.title centerHorizonallyAtY:10.0f inBounds:self.bounds thatFits:maxSize];
+    
+    CGSize tapSize = [self.tap sizeThatFits:maxSize];
+    [self.tap centerHorizonallyAtY:self.bounds.size.height-tapSize.height-15.0f-self.scrollView.contentInset.top inBounds:self.bounds withSize:tapSize];
+    [self setContentHeight:CGRectGetMaxY(self.tap.frame)];
 }
 
 -(void)setTitle:(NSString*)title tip:(NSString*)tip {
-    self.title.text = title;
+    self.title.text = [title lowercaseString];
     self.tip.text = tip;
     
     if(tip.length < 40) {

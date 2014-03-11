@@ -124,6 +124,10 @@
             [self showViewController:[[BYCTalkViewController alloc] initWithApplicationState:self.applicationState] animated:YES];
             [self.sideView setSelectedMenuItem:BYCSideView_Talk];
             break;
+        case BYCNotificationShowRootController_Tips:
+            [self showViewController:[[BYCTipsViewController alloc] initWithApplicationState:self.applicationState] animated:YES];
+            [self.sideView setSelectedMenuItem:BYCSideView_Tips];
+            break;
     }
 }
 

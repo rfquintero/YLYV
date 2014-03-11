@@ -136,32 +136,33 @@
 }
 
 #pragma mark BYCEntrySavedViewDelegate {
+
 -(void)cancelSelected {
     [self deleteEntry];
 }
 
 -(void)reminderSelected {
-    
+    [self showViewController:BYCNotificationShowRootController_Reminder];
 }
 
 -(void)talkSelected {
-    
+    [self showViewController:BYCNotificationShowRootController_Talk];
 }
 
 -(void)moodsSelected {
-    
+    [self showViewController:BYCNotificationShowRootController_Moods];
 }
 
 -(void)infoSelected {
-    
+    [self showViewController:BYCNotificationShowRootController_Info];
 }
 
 -(void)tipsSelected {
-    
+    [self showViewController:BYCNotificationShowRootController_Tips];
 }
 
 -(void)callSelected {
-    
+    [self callYLYV];
 }
 
 #pragma mark callbacks

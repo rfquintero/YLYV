@@ -51,6 +51,16 @@
     [self.navView setRightButtonHidden:shown animated:animated];
 }
 
+-(void)callYLYV {
+    NSString *phone = [NSString stringWithFormat:@"tel:%@", BYCPhoneNumber];
+    NSURL *url = [NSURL URLWithString:phone];
+    if ([[UIApplication sharedApplication] canOpenURL:url]) {
+        [[UIApplication sharedApplication] openURL:url];
+    } else {
+        [self showError:@"Error" message:@"Your device cannot make phone calls."];
+    }
+}
+
 -(void)showError:(NSString*)title message:(NSString*)message {
     if(!self.alert) {
         self.alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];

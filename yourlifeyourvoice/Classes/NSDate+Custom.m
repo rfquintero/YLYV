@@ -44,4 +44,24 @@ static NSDateFormatter* _dayFormatter;
     return [NSString stringWithFormat:@"%@ ago", time];
 }
 
+-(BOOL)isOnDays:(NSArray*)days startHour:(NSInteger)startHour startMinute:(NSInteger)startMinute endHour:(NSInteger)endHour endMinute:(NSInteger)endMinute {
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    calendar.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"CDT"];
+    
+    NSDateComponents *components = [calendar components:NSCalendarUnitWeekday|NSCalendarUnitHour|NSCalendarUnitMinute fromDate:self];
+    for(NSNumber *day in days) {
+        if(components.weekday == [day integerValue]) {
+            if(components.hour == startHour) {
+                return components.minute >= startMinute;
+            } else if(components.hour == endHour) {
+                return components.minute <= endMinute;
+            } else if(components.hour > startHour && components.hour < endHour) {
+                return YES;
+            }
+        }
+    }
+    
+    return NO;
+}
+
 @end

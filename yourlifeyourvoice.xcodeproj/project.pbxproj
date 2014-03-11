@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		451F44F918CE8F0F00EC38A3 /* responses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 451F44F818CE8F0F00EC38A3 /* responses.plist */; };
 		451F44FA18CE8F0F00EC38A3 /* responses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 451F44F818CE8F0F00EC38A3 /* responses.plist */; };
+		451F44FC18CEA92D00EC38A3 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 451F44FB18CEA92D00EC38A3 /* MessageUI.framework */; };
 		4523652D18C8C357008AA4FC /* BYCReportBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4523652C18C8C357008AA4FC /* BYCReportBar.m */; };
 		4523652E18C8C357008AA4FC /* BYCReportBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4523652C18C8C357008AA4FC /* BYCReportBar.m */; };
 		4523653118C8C7D3008AA4FC /* BYCReportModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4523653018C8C7D3008AA4FC /* BYCReportModel.m */; };
@@ -335,6 +336,7 @@
 
 /* Begin PBXFileReference section */
 		451F44F818CE8F0F00EC38A3 /* responses.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = responses.plist; sourceTree = "<group>"; };
+		451F44FB18CEA92D00EC38A3 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		4523652B18C8C357008AA4FC /* BYCReportBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCReportBar.h; sourceTree = "<group>"; };
 		4523652C18C8C357008AA4FC /* BYCReportBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCReportBar.m; sourceTree = "<group>"; };
 		4523652F18C8C7D3008AA4FC /* BYCReportModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCReportModel.h; sourceTree = "<group>"; };
@@ -566,6 +568,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				451F44FC18CEA92D00EC38A3 /* MessageUI.framework in Frameworks */,
 				45AFD5E218C1284A002C18F9 /* AVFoundation.framework in Frameworks */,
 				45DEC7DC18BBC07100A92550 /* libsqlite3.dylib in Frameworks */,
 				4525187718B6750800D1B561 /* CoreGraphics.framework in Frameworks */,
@@ -621,6 +624,7 @@
 		4525187318B6750800D1B561 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				451F44FB18CEA92D00EC38A3 /* MessageUI.framework */,
 				45AFD5E118C1284A002C18F9 /* AVFoundation.framework */,
 				45DEC7DB18BBC07100A92550 /* libsqlite3.dylib */,
 				4525187418B6750800D1B561 /* Foundation.framework */,
