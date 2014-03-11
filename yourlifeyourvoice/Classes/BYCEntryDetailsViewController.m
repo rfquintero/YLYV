@@ -152,7 +152,7 @@
 #pragma mark ugly
 -(void)reminderSelected {}
 -(void)talkSelected {}
--(void)moodsSelected {}
+-(void)reportSelected {}
 -(void)infoSelected {}
 -(void)cancelSelected {}
 -(void)tipsSelected {}

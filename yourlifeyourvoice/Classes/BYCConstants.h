@@ -5,7 +5,7 @@ typedef enum {
     BYCNotificationShowRootController_Reminder,
     BYCNotificationShowRootController_Talk,
     BYCNotificationShowRootController_Info,
-    BYCNotificationShowRootController_Moods,
+    BYCNotificationShowRootController_Reports,
     BYCNotificationShowRootController_Tips,
 } BYCNotificationShowRootControllerType;
 

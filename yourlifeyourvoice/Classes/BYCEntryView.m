@@ -241,8 +241,8 @@
     [self.delegate talkSelected];
 }
 
--(void)moodsSelected {
-    [self.delegate moodsSelected];
+-(void)reportSelected {
+    [self.delegate reportSelected];
 }
 
 -(void)infoSelected {

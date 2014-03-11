@@ -112,9 +112,9 @@
             [self showViewController:[[BYCInfoViewController alloc] initWithApplicationState:self.applicationState] animated:YES];
             [self.sideView setSelectedMenuItem:BYCSideView_Info];
             break;
-        case BYCNotificationShowRootController_Moods:
-            [self showViewController:[[BYCEntriesViewController alloc] initWithApplicationState:self.applicationState] animated:YES];
-            [self.sideView setSelectedMenuItem:BYCSideView_Moods];
+        case BYCNotificationShowRootController_Reports:
+            [self showViewController:[[BYCReportViewController alloc] initWithApplicationState:self.applicationState] animated:YES];
+            [self.sideView setSelectedMenuItem:BYCSideView_Reports];
             break;
         case BYCNotificationShowRootController_Reminder:
             [self showViewController:[[BYCReminderViewController alloc] initWithApplicationState:self.applicationState] animated:YES];

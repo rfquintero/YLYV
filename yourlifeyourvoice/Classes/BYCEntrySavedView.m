@@ -25,7 +25,7 @@
         self.blurbText = [BYCUI labelWithRoundFontSize:14.0f];
         
         self.reminderButton = [BYCUI standardButtonWithTitle:@"SET A REMINDER" target:self action:@selector(reminderSelected)];
-        self.moodsButton = [BYCUI standardButtonWithTitle:@"MY MOODS" target:self action:@selector(moodsSelected)];
+        self.moodsButton = [BYCUI standardButtonWithTitle:@"MOOD REPORT" target:self action:@selector(reportSelected)];
         self.talkButton = [BYCUI standardButtonWithTitle:@"4 WAYS TO GET HELP" target:self action:@selector(talkSelected)];
         self.tipsButton = [BYCUI standardButtonWithTitle:@"TIPS" target:self action:@selector(tipsSelected)];
         self.infoButton = [BYCUI standardButtonWithTitle:@"YOUR LIFE YOUR VOICE" target:self action:@selector(infoSelected)];
@@ -139,8 +139,8 @@
     [self.delegate talkSelected];
 }
 
--(void)moodsSelected {
-    [self.delegate moodsSelected];
+-(void)reportSelected {
+    [self.delegate reportSelected];
 }
 
 -(void)infoSelected {

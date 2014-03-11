@@ -149,8 +149,8 @@
     [self showViewController:BYCNotificationShowRootController_Talk];
 }
 
--(void)moodsSelected {
-    [self showViewController:BYCNotificationShowRootController_Moods];
+-(void)reportSelected {
+    [self showViewController:BYCNotificationShowRootController_Reports];
 }
 
 -(void)infoSelected {
