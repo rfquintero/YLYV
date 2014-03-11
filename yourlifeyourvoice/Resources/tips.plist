@@ -2,126 +2,148 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Anger in life situations</key>
-	<array>
-		<string>Take a deep breath.</string>
-		<string>Count to 10.</string>
-		<string>Ask yourself if it’s really worth getting upset over. Will it matter in a week, month, or year?</string>
-		<string>Walk away from the situation for a few minutes.</string>
-		<string>Think about what you want to say before you say it……….wait at least 5 seconds.</string>
-		<string>Take a few moments to stop the angry statements running through your head. Replace them with calming statements.</string>
-		<string>Visualize being in a peaceful place.</string>
-		<string>Avoid things that always make you mad (if possible.)</string>
-	</array>
-	<key>Anger and violent emotions</key>
-	<array>
-		<string>Take a deep breath.</string>
-		<string>Try to relax your body, stretch or shake off any tension.</string>
-		<string>Close your eyes and count to 10.</string>
-		<string>Take a few moments to stop the angry statements running through your head. Replace them with calming statements.</string>
-		<string>Visualize being in a peaceful place.</string>
-		<string>Focus on controlling your anger first before trying to problem-solve.</string>
-	</array>
-	<key>Anger in relationships</key>
-	<array>
-		<string>Walk away from the situation for a few minutes.</string>
-		<string>Think about what you want to say before you say it……….wait at least 5 seconds.</string>
-		<string>Share your feelings calmly using “I” statements.</string>
-		<string>Don’t raise your voice, if the other person begins to speak loudly, speak more softly in response.</string>
-		<string>Remember that you can’t take back what you say. Will you regret it later?</string>
-	</array>
-	<key>Depression</key>
-	<array>
-		<string>Set goals—short term and long term.</string>
-		<string>Focus forward, not on the past.</string>
-		<string>Accept the things you can’t change.</string>
-		<string>Take control of the way you look at things.</string>
-		<string>Make a blessings list.</string>
-		<string>Exercise &amp; eat right.</string>
-		<string>Maintain a consistent sleeping schedule.</string>
-		<string>Talk to someone about how you are feeling.</string>
-		<string>Listen to music.</string>
-		<string>Write your feelings in a journal.</string>
-		<string>Do something nice for someone else.</string>
-		<string>Doing nothing will only feed into your depression and only make you more depressed.</string>
-	</array>
-	<key>Depression and feeling alone</key>
-	<array>
-		<string>Talk to someone.</string>
-		<string>Write your feelings in a journal.</string>
-		<string>Do something nice for someone else.</string>
-		<string>Make a list of your best qualities.</string>
-		<string>Identify supportive people in your life.</string>
-		<string>Take care of yourself.</string>
-		<string>Put your best foot forward.</string>
-		<string>Make an apology.</string>
-		<string>Spend time playing with a pet.</string>
-		<string>Try to identify an activity that you can get involved with to meet others with your same interests (music, sports, volunteering at an animal shelter, theatre, etc.)</string>
-	</array>
-	<key>Depression and feeling confused in life</key>
-	<array>
-		<string>Identify what is causing your confusion.</string>
-		<string>Who can help answer your questions?</string>
-		<string>Set goals and focus forward.</string>
-		<string>Be patient.</string>
-		<string>Talk and or write about what’s confusing you – repeatedly, if you need to.</string>
-		<string>Take a break from the confusion when possible. Relax and recharge.</string>
-		<string>Identify things that are meaningful to you, what activities make you feel like you are making a difference in the world.</string>
-	</array>
-	<key>Stressed</key>
-	<array>
-		<string>Identify where your stress is coming from.</string>
-		<string>Focus on the here &amp; now.</string>
-		<string>Eat well and sleep well.</string>
-		<string>Manage your time.</string>
-		<string>Make lists.</string>
-		<string>Set goals.</string>
-		<string>Accept the things you can’t change.</string>
-		<string>Take control of the way you look at things.</string>
-		<string>Keep a worry journal. When you begin to worry about something, write it down. Sometimes it helps to get it out of your head and written on paper.</string>
-		<string>Talk to someone who can help you process what you are going through.</string>
-	</array>
-	<key>Stress in relationships</key>
-	<array>
-		<string>Stay out of pointless drama!</string>
-		<string>Learn to say &quot;no.&quot;</string>
-		<string>Think about what you want to say before you say it……….wait at least 5 seconds.</string>
-		<string>Share your feelings calmly using “I” statements.</string>
-		<string>Don’t raise your voice.</string>
-		<string>Remind yourself that you can&apos;t take back what you say. Will you regret it later?</string>
-	</array>
-	<key>Stress in life situations</key>
-	<array>
-		<string>Take responsibility for your behavior. If you make a mistake, correct it. Apologize, if necessary. People are less likely to be mad at you if you own up to the mistake.</string>
-		<string>Forgive yourself for making mistake or for your imperfections.</string>
-		<string>Set yourself up for success. Set some small, realistic goals that you can accomplish.</string>
-		<string>Learn to say positive things to yourself. Instead of cutting yourself down, build yourself up. Tell yourself that you are a good person, that you will keep trying, or that you are going to remain calm.</string>
-		<string>Learn to solve your own problems. Realize that when you make good decisions you gain more control over what happens to you.</string>
-		<string>Respect yourself. Stick with what you know is right. Don’t let others talk you into doing something for the sake of popularity or status.</string>
-		<string>Be friendly, helpful, and cooperative; that’s what really counts.</string>
-		<string>Learn to be assertive. Being assertive can help you get what you want without hurting others or making a scene.</string>
-	</array>
-	<key>Anxiety</key>
-	<array>
-		<string>Give yourself 10 minutes twice a day to worry about things…….after that, whenever you notice yourself worrying, tell yourself it will still be there tomorrow.</string>
-		<string>Keep a worry journal. When you begin to worry about something, write it down. Sometimes it helps to get it out of your head and written on paper.</string>
-		<string>Take a deep breath. Try to relax.</string>
-		<string>Close your eyes and count to 10.</string>
-		<string>Replace negative statements running through your mind with reality statements and calming thoughts.</string>
-		<string>Visualize being in a peaceful place.</string>
-		<string>Get some exercise.</string>
-	</array>
-	<key>Embarrassing situations</key>
-	<array>
-		<string>Embarrassment is a result of negative thoughts we have about ourselves or situations. Everybody is embarrassed sometimes and that’s okay!</string>
-		<string>Use positive self-talk when you begin to feel embarrassment. Tell yourself that you are a good person, that you will keep trying, or that you are going to remain calm.</string>
-		<string>Do something nice for someone else.  Whenever you help someone else, you take the focus off of you, and can help yourself feel better.</string>
-	</array>
-	<key>Anger</key>
-	<array>
-		<string>Take a deep breath.</string>
-		<string>Count to 10.</string>
-		<string>Ask yourself if it’s really worth getting upset over. Will it matter in a week, month, or year?</string>
-	</array>
+	<key>angry</key>
+	<dict>
+		<key>Angry</key>
+		<array>
+			<string>Focus on controlling your anger first before trying to problem-solve.</string>
+			<string>Try to relax your body, stretch or shake off any tension.</string>
+			<string>Take a deep breath.</string>
+			<string>Count to 10.</string>
+			<string>Ask yourself if it’s really worth getting upset over. Will it matter in a week, month, or year?</string>
+			<string>Walk away from the situation for a few minutes.</string>
+			<string>Think about what you want to say before you say it……….wait at least 5 seconds.</string>
+			<string>Take a few moments to stop the angry statements running through your head. Replace them with calming statements.</string>
+			<string>Visualize being in a peaceful place.</string>
+			<string>Avoid things that always make you mad (if possible.)</string>
+		</array>
+		<key>Angry in relationships</key>
+		<array>
+			<string>Share your feelings calmly using “I” statements.</string>
+			<string>Don’t raise your voice, if the other person begins to speak loudly, speak more softly in response.</string>
+			<string>Remember that you can’t take back what you say. Will you regret it later?</string>
+		</array>
+	</dict>
+	<key>depressed</key>
+	<dict>
+		<key>Depressed</key>
+		<array>
+			<string>Set goals—short term and long term.</string>
+			<string>Focus forward, not on the past.</string>
+			<string>Accept the things you can’t change.</string>
+			<string>Take control of the way you look at things.</string>
+			<string>Make a blessings list.</string>
+			<string>Exercise &amp; eat right.</string>
+			<string>Maintain a consistent sleeping schedule.</string>
+			<string>Talk to someone about how you are feeling.</string>
+			<string>Listen to music.</string>
+			<string>Write your feelings in a journal.</string>
+			<string>Do something nice for someone else.</string>
+			<string>Doing nothing will only feed into your depression and only make you more depressed.</string>
+		</array>
+	</dict>
+	<key>invisible</key>
+	<dict>
+		<key>Invisible</key>
+		<array>
+			<string>Talk to someone.</string>
+			<string>Write your feelings in a journal.</string>
+			<string>Do something nice for someone else.</string>
+			<string>Make a list of your best qualities.</string>
+			<string>Identify supportive people in your life.</string>
+			<string>Take care of yourself.</string>
+			<string>Put your best foot forward.</string>
+			<string>Make an apology.</string>
+			<string>Spend time playing with a pet.</string>
+			<string>Try to identify an activity that you can get involved with to meet others with your same interests (music, sports, volunteering at an animal shelter, theatre, etc.)</string>
+		</array>
+	</dict>
+	<key>lonely</key>
+	<dict>
+		<key>Lonely</key>
+		<array>
+			<string>Talk to someone.</string>
+			<string>Write your feelings in a journal.</string>
+			<string>Do something nice for someone else.</string>
+			<string>Make a list of your best qualities.</string>
+			<string>Identify supportive people in your life.</string>
+			<string>Take care of yourself.</string>
+			<string>Put your best foot forward.</string>
+			<string>Make an apology.</string>
+			<string>Spend time playing with a pet.</string>
+			<string>Try to identify an activity that you can get involved with to meet others with your same interests (music, sports, volunteering at an animal shelter, theatre, etc.)</string>
+		</array>
+	</dict>
+	<key>confused</key>
+	<dict>
+		<key>Confused</key>
+		<array>
+			<string>Identify what is causing your confusion.</string>
+			<string>Who can help answer your questions?</string>
+			<string>Set goals and focus forward.</string>
+			<string>Be patient.</string>
+			<string>Talk and or write about what’s confusing you – repeatedly, if you need to.</string>
+			<string>Take a break from the confusion when possible. Relax and recharge.</string>
+			<string>Identify things that are meaningful to you, what activities make you feel like you are making a difference in the world.</string>
+		</array>
+	</dict>
+	<key>stressed</key>
+	<dict>
+		<key>Stressed</key>
+		<array>
+			<string>Identify where your stress is coming from.</string>
+			<string>Focus on the here &amp; now.</string>
+			<string>Eat well and sleep well.</string>
+			<string>Manage your time.</string>
+			<string>Make lists.</string>
+			<string>Set goals.</string>
+			<string>Accept the things you can’t change.</string>
+			<string>Take control of the way you look at things.</string>
+			<string>Keep a worry journal. When you begin to worry about something, write it down. Sometimes it helps to get it out of your head and written on paper.</string>
+			<string>Talk to someone who can help you process what you are going through.</string>
+		</array>
+		<key>Stressed in relationships</key>
+		<array>
+			<string>Stay out of pointless drama!</string>
+			<string>Learn to say &quot;no.&quot;</string>
+			<string>Think about what you want to say before you say it……….wait at least 5 seconds.</string>
+			<string>Share your feelings calmly using “I” statements.</string>
+			<string>Don’t raise your voice.</string>
+			<string>Remind yourself that you can&apos;t take back what you say. Will you regret it later?</string>
+		</array>
+		<key>Stressed in life situations</key>
+		<array>
+			<string>Take responsibility for your behavior. If you make a mistake, correct it. Apologize, if necessary. People are less likely to be mad at you if you own up to the mistake.</string>
+			<string>Forgive yourself for making mistake or for your imperfections.</string>
+			<string>Set yourself up for success. Set some small, realistic goals that you can accomplish.</string>
+			<string>Learn to say positive things to yourself. Instead of cutting yourself down, build yourself up. Tell yourself that you are a good person, that you will keep trying, or that you are going to remain calm.</string>
+			<string>Learn to solve your own problems. Realize that when you make good decisions you gain more control over what happens to you.</string>
+			<string>Respect yourself. Stick with what you know is right. Don’t let others talk you into doing something for the sake of popularity or status.</string>
+			<string>Be friendly, helpful, and cooperative; that’s what really counts.</string>
+			<string>Learn to be assertive. Being assertive can help you get what you want without hurting others or making a scene.</string>
+		</array>
+	</dict>
+	<key>frustrated</key>
+	<dict>
+		<key>Frustrated</key>
+		<array>
+			<string>Give yourself 10 minutes twice a day to worry about things…….after that, whenever you notice yourself worrying, tell yourself it will still be there tomorrow.</string>
+			<string>Keep a worry journal. When you begin to worry about something, write it down. Sometimes it helps to get it out of your head and written on paper.</string>
+			<string>Take a deep breath. Try to relax.</string>
+			<string>Close your eyes and count to 10.</string>
+			<string>Replace negative statements running through your mind with reality statements and calming thoughts.</string>
+			<string>Visualize being in a peaceful place.</string>
+			<string>Get some exercise.</string>
+		</array>
+	</dict>
+	<key>embarrassed</key>
+	<dict>
+		<key>Embarrassed</key>
+		<array>
+			<string>Embarrassment is a result of negative thoughts we have about ourselves or situations. Everybody is embarrassed sometimes and that’s okay!</string>
+			<string>Use positive self-talk when you begin to feel embarrassment. Tell yourself that you are a good person, that you will keep trying, or that you are going to remain calm.</string>
+			<string>Do something nice for someone else.  Whenever you help someone else, you take the focus off of you, and can help yourself feel better.</string>
+		</array>
+	</dict>
 </dict>
 </plist>

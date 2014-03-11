@@ -16,5 +16,6 @@
 -(void)sidebarShown:(BOOL)shown animated:(BOOL)animated;
 -(void)showError:(NSString*)title message:(NSString*)message;
 -(void)showViewController:(BYCNotificationShowRootControllerType)type;
+-(void)showViewController:(BYCNotificationShowRootControllerType)type userInfo:(NSDictionary*)userInfo;
 -(void)callYLYV;
 @end

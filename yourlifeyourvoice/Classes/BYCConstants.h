@@ -12,6 +12,7 @@ typedef enum {
 #define BYCNotificationShowMenu @"BYCNotificationShowMenu"
 #define BYCNotificationShowRootController @"BYCNotificationShowRootController"
 #define BYCNotificationShowRootControllerKey @"BYCNotificationShowRootControllerKey"
+#define BYCNotificationShowRootControllerMoodKey @"BYCNotificationShowRootControllerMoodKey"
 
 #define BYCPhoneNumber @"1-800-448-3000"
 #define BYCWebSite @"http://yourlifeyourvoice.org"

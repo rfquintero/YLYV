@@ -44,7 +44,13 @@
 }
 
 -(void)showViewController:(BYCNotificationShowRootControllerType)type {
-    [[NSNotificationCenter defaultCenter] postNotificationName:BYCNotificationShowRootController object:self.navigationController userInfo:@{ BYCNotificationShowRootControllerKey : @(type)}];
+    [self showViewController:type userInfo:@{}];
+}
+
+-(void)showViewController:(BYCNotificationShowRootControllerType)type userInfo:(NSDictionary*)userInfo {
+    NSMutableDictionary* info = [userInfo mutableCopy];
+    info[BYCNotificationShowRootControllerKey] = @(type);
+    [[NSNotificationCenter defaultCenter] postNotificationName:BYCNotificationShowRootController object:self.navigationController userInfo:info];
 }
 
 -(void)sidebarShown:(BOOL)shown animated:(BOOL)animated {

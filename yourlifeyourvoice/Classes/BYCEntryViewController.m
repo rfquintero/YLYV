@@ -158,7 +158,7 @@
 }
 
 -(void)tipsSelected {
-    [self showViewController:BYCNotificationShowRootController_Tips];
+    [self showViewController:BYCNotificationShowRootController_Tips userInfo:@{BYCNotificationShowRootControllerMoodKey : @(self.model.type)}];
 }
 
 -(void)callSelected {

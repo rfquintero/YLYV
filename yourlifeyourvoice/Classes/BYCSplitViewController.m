@@ -107,6 +107,7 @@
 
 -(void)showRootViewController:(NSNotification*)notification {
     BYCNotificationShowRootControllerType type = [notification.userInfo[BYCNotificationShowRootControllerKey] intValue];
+    NSNumber *moodType = notification.userInfo[BYCNotificationShowRootControllerMoodKey];
     switch (type) {
         case BYCNotificationShowRootController_Info:
             [self showViewController:[[BYCInfoViewController alloc] initWithApplicationState:self.applicationState] animated:YES];
@@ -124,10 +125,13 @@
             [self showViewController:[[BYCTalkViewController alloc] initWithApplicationState:self.applicationState] animated:YES];
             [self.sideView setSelectedMenuItem:BYCSideView_Talk];
             break;
-        case BYCNotificationShowRootController_Tips:
-            [self showViewController:[[BYCTipsViewController alloc] initWithApplicationState:self.applicationState] animated:YES];
+        case BYCNotificationShowRootController_Tips: {
+            BYCTipsViewController *vc = [[BYCTipsViewController alloc] initWithApplicationState:self.applicationState];
+            vc.mood = moodType;
+            [self showViewController:vc animated:YES];
             [self.sideView setSelectedMenuItem:BYCSideView_Tips];
             break;
+        }
     }
 }
 
