@@ -6,6 +6,7 @@
 @property (nonatomic) UILabel *text;
 @property (nonatomic) UIButton *talkButton;
 @property (nonatomic) UIButton *siteButton;
+@property (nonatomic, weak) id<BYCInfoViewDelegate> delegate;
 @end
 
 @implementation BYCInfoView
@@ -40,14 +41,16 @@
     [self.text centerHorizonallyAtY:CGRectGetMaxY(self.logo.frame)+10 inBounds:self.bounds thatFits:CGSizeMake(width-30, CGFLOAT_MAX)];
     self.talkButton.frame = CGRectMake(padding, CGRectGetMaxY(self.text.frame)+20, buttonWidth, buttonHeight);
     self.siteButton.frame = CGRectMake(padding, CGRectGetMaxY(self.talkButton.frame)+10, buttonWidth, buttonHeight);
+    
+    [self setContentHeight:CGRectGetMaxY(self.siteButton.frame)+10.0f];
 }
 
 -(void)talkSelected {
-    
+    [self.delegate talkSelected];
 }
 
 -(void)siteSelected {
-    
+    [self.delegate siteSelected];
 }
 
 @end

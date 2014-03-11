@@ -1,6 +1,7 @@
 #import <UIKit/UIKit.h>
 #import "BYCApplicationState.h"
 #import "BYCNavigationView.h"
+#import "BYCConstants.h"
 
 #define BYCFlexibleView UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth
 
@@ -14,4 +15,5 @@
 
 -(void)sidebarShown:(BOOL)shown animated:(BOOL)animated;
 -(void)showError:(NSString*)title message:(NSString*)message;
+-(void)showViewController:(BYCNotificationShowRootControllerType)type;
 @end

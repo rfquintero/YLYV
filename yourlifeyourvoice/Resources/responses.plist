@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>neutral</key>
+	<array>
+		<string>Keep Calm and Carry On.</string>
+		<string>You Got This!</string>
+		<string>Keep On, Keepin&apos; On.</string>
+		<string>This Too Shall Pass.</string>
+	</array>
+	<key>negative</key>
+	<array>
+		<string>Aw, Nuts!</string>
+		<string>Everything Okay?</string>
+		<string>We&apos;re Here For You.</string>
+		<string>Do You Want to Talk?</string>
+		<string>You&apos;re Not Alone.</string>
+		<string>It Will Get Better.</string>
+		<string>Sorry to Hear That.</string>
+	</array>
+	<key>positive</key>
+	<array>
+		<string>Nice Job Self!</string>
+		<string>Nice Job, Mood-maker!</string>
+		<string>Yippie and Hooray!</string>
+		<string>Awesomesauce!</string>
+		<string>Yee-haw!</string>
+		<string>Sunshine and Lollipops!</string>
+		<string>Keep on Smiling!</string>
+		<string>That&apos;s Toats Amaze!</string>
+	</array>
+</dict>
+</plist>

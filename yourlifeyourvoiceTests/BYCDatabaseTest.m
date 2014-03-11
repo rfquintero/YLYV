@@ -137,4 +137,14 @@
     XCTAssertEqualObjects(time.string, time2.string);
 }
 
+-(void)testWhenLaunchedIsSetThenItCanBeRetrieved {
+    XCTAssertTrue([testObject isFirstLaunch]);
+    
+    [testObject2 setLaunched];
+    XCTAssertFalse([testObject isFirstLaunch]);
+
+    [testObject2 setLaunched];
+    XCTAssertFalse([testObject isFirstLaunch]);
+}
+
 @end

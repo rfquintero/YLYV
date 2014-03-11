@@ -70,6 +70,47 @@
     return [NSDictionary dictionaryWithContentsOfFile:path][mood];
 }
 
++(NSString*)responseForCategory:(BYCMoodCategory)category {
+    NSString* path = [[NSBundle mainBundle] pathForResource:@"responses" ofType:@"plist"];
+    NSDictionary *plist = [NSDictionary dictionaryWithContentsOfFile:path];
+    
+    NSString *key;
+    switch(category) {
+        case BYCMoodCategory_Neutral:
+            key = @"neutral";
+            break;
+        case BYCMoodCategory_Negative:
+            key = @"negative";
+            break;
+        case BYCMoodCategory_Positive:
+            key = @"positive";
+            break;
+    }
+    
+    NSArray *responses = plist[key];
+    return responses[random()%responses.count];
+}
+
++(BYCMoodCategory)categoryForMood:(BYCMoodType)type {
+    switch (type) {
+        case BYCMood_Angry:
+        case BYCMood_Depressed:
+        case BYCMood_Frustrated:
+        case BYCMood_Invisible:
+        case BYCMood_Lonely:
+            return BYCMoodCategory_Negative;
+        case BYCMood_Confident:
+        case BYCMood_Happy:
+        case BYCMood_Proud:
+        case BYCMood_Relieved:
+            return BYCMoodCategory_Positive;
+        case BYCMood_Confused:
+        case BYCMood_Embarrassed:
+        case BYCMood_Stressed:
+            return BYCMoodCategory_Neutral;
+    }
+}
+
 +(UIColor*)moodColor:(BYCMoodType)type {
     switch(type) {
         case BYCMood_Confident:

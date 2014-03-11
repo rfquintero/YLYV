@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Dealing with anger in life situations</key>
+	<key>anger in life situations</key>
 	<array>
 		<string>Take a deep breath.</string>
 		<string>Count to 10.</string>
@@ -13,7 +13,7 @@
 		<string>Visualize being in a peaceful place.</string>
 		<string>Avoid things that always make you mad (if possible.)</string>
 	</array>
-	<key>Dealing with anger and violent emotions</key>
+	<key>anger and violent emotions</key>
 	<array>
 		<string>Take a deep breath.</string>
 		<string>Try to relax your body, stretch or shake off any tension.</string>
@@ -84,11 +84,11 @@
 	<key>Dealing with stress in relationships</key>
 	<array>
 		<string>Stay out of pointless drama!</string>
-		<string>Learn to say "no."</string>
+		<string>Learn to say &quot;no.&quot;</string>
 		<string>Think about what you want to say before you say it……….wait at least 5 seconds.</string>
 		<string>Share your feelings calmly using “I” statements.</string>
 		<string>Don’t raise your voice.</string>
-		<string>Remind yourself that you can't take back what you say. Will you regret it later?</string>
+		<string>Remind yourself that you can&apos;t take back what you say. Will you regret it later?</string>
 	</array>
 	<key>Dealing with stress in life situations</key>
 	<array>

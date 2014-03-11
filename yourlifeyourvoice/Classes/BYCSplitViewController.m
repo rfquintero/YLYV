@@ -57,10 +57,15 @@
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showSidebar) name:BYCNotificationShowMenu object:self.navController];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showRootViewController:) name:BYCNotificationShowRootController object:self.navController];
 }
 
 -(void)setMainViewController:(UIViewController*)viewController {
-    [self.navController setViewControllers:@[viewController] animated:NO];
+    [self setMainViewController:viewController animated:NO];
+}
+
+-(void)setMainViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    [self.navController setViewControllers:@[viewController] animated:animated];
 }
 
 -(void)layoutSidebarShown:(BOOL)show {
@@ -100,37 +105,59 @@
     [self showSidebar:YES animated:YES];
 }
 
--(void)showViewController:(UIViewController*)vc {
-    self.mainViewController = vc;
+-(void)showRootViewController:(NSNotification*)notification {
+    BYCNotificationShowRootControllerType type = [notification.userInfo[BYCNotificationShowRootControllerKey] intValue];
+    switch (type) {
+        case BYCNotificationShowRootController_Info:
+            [self showViewController:[[BYCInfoViewController alloc] initWithApplicationState:self.applicationState] animated:YES];
+            [self.sideView setSelectedMenuItem:BYCSideView_Info];
+            break;
+        case BYCNotificationShowRootController_Moods:
+            [self showViewController:[[BYCEntriesViewController alloc] initWithApplicationState:self.applicationState] animated:YES];
+            [self.sideView setSelectedMenuItem:BYCSideView_Moods];
+            break;
+        case BYCNotificationShowRootController_Reminder:
+            [self showViewController:[[BYCReminderViewController alloc] initWithApplicationState:self.applicationState] animated:YES];
+            [self.sideView setSelectedMenuItem:BYCSideView_Reminders];
+            break;
+        case BYCNotificationShowRootController_Talk:
+            [self showViewController:[[BYCTalkViewController alloc] initWithApplicationState:self.applicationState] animated:YES];
+            [self.sideView setSelectedMenuItem:BYCSideView_Talk];
+            break;
+    }
+}
+
+-(void)showViewController:(UIViewController*)vc animated:(BOOL)animated {
+    [self setMainViewController:vc animated:animated];
     [self hideSidebar];
 }
 
 -(void)entrySelected {
-    [self showViewController:[[BYCEntryViewController alloc] initWithApplicationState:self.applicationState]];
+    [self showViewController:[[BYCEntryViewController alloc] initWithApplicationState:self.applicationState] animated:NO];
 }
 
 -(void)moodsSelected {
-    [self showViewController:[[BYCEntriesViewController alloc] initWithApplicationState:self.applicationState]];
+    [self showViewController:[[BYCEntriesViewController alloc] initWithApplicationState:self.applicationState] animated:NO];
 }
 
 -(void)talkSelected {
-    [self showViewController:[[BYCTalkViewController alloc] initWithApplicationState:self.applicationState]];
+    [self showViewController:[[BYCTalkViewController alloc] initWithApplicationState:self.applicationState] animated:NO];
 }
 
 -(void)reportsSelected {
-    [self showViewController:[[BYCReportViewController alloc] initWithApplicationState:self.applicationState]];
+    [self showViewController:[[BYCReportViewController alloc] initWithApplicationState:self.applicationState] animated:NO];
 }
 
 -(void)reminderSelected {
-    [self showViewController:[[BYCReminderViewController alloc] initWithApplicationState:self.applicationState]];
+    [self showViewController:[[BYCReminderViewController alloc] initWithApplicationState:self.applicationState] animated:NO];
 }
 
 -(void)tipsSelected {
-    [self showViewController:[[BYCTipsViewController alloc] initWithApplicationState:self.applicationState]];
+    [self showViewController:[[BYCTipsViewController alloc] initWithApplicationState:self.applicationState] animated:NO];
 }
 
 -(void)infoSelected {
-    [self showViewController:[[BYCInfoViewController alloc] initWithApplicationState:self.applicationState]];
+    [self showViewController:[[BYCInfoViewController alloc] initWithApplicationState:self.applicationState] animated:NO];
 }
 
 @end

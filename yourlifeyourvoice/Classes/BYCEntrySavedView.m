@@ -1,14 +1,16 @@
 #import "BYCEntrySavedView.h"
 #import "BYCUI.h"
+#import "BYCConstants.h"
 
 @interface BYCEntrySavedView()
 @property (nonatomic) UILabel *titleText;
-@property (nonatomic) UILabel *largeText;
-@property (nonatomic) UILabel *smallText;
+@property (nonatomic) UILabel *blurbText;
 @property (nonatomic) UIButton *reminderButton;
 @property (nonatomic) UIButton *talkButton;
 @property (nonatomic) UIButton *moodsButton;
 @property (nonatomic) UIButton *infoButton;
+@property (nonatomic) UIButton *tipsButton;
+@property (nonatomic) UIButton *callButton;
 @property (nonatomic) UIButton *cancelButton;
 @property (nonatomic, weak) id<BYCEntrySavedViewDelegate> delegate;
 @end
@@ -20,28 +22,22 @@
     if (self) {
         self.titleText = [BYCUI labelWithRoundFontSize:20.0f];
         
-        self.largeText = [BYCUI labelWithRoundFontSize:14.0f];
-        self.largeText.text = @"What's next?";
-        
-        self.smallText = [BYCUI labelWithFont:[UIFont systemFontOfSize:13.0f]];
-        self.smallText.text = @"Hey, it looks like things haven't been going so good. We're here if you want to talk about it.";
-        self.smallText.numberOfLines = 0;
+        self.blurbText = [BYCUI labelWithRoundFontSize:14.0f];
         
         self.reminderButton = [BYCUI standardButtonWithTitle:@"SET A REMINDER" target:self action:@selector(reminderSelected)];
-        self.talkButton = [BYCUI standardButtonWithTitle:@"TALK TO SOMEONE" target:self action:@selector(talkSelected)];
         self.moodsButton = [BYCUI standardButtonWithTitle:@"MY MOODS" target:self action:@selector(moodsSelected)];
+        self.talkButton = [BYCUI standardButtonWithTitle:@"4 WAYS TO GET HELP" target:self action:@selector(talkSelected)];
+        self.tipsButton = [BYCUI standardButtonWithTitle:@"TIPS" target:self action:@selector(tipsSelected)];
+        self.infoButton = [BYCUI standardButtonWithTitle:@"YOUR LIFE YOUR VOICE" target:self action:@selector(infoSelected)];
+        self.callButton = [BYCUI standardButtonWithTitle:[NSString stringWithFormat:@"CALL %@", BYCPhoneNumber] target:self action:@selector(callSelected)];
 
-        self.infoButton = [BYCUI deleteButtonWithTarget:self action:@selector(infoSelected)];
-        [self.infoButton setTitle:@"maybe? tell more more" forState:UIControlStateNormal];
-        [self.infoButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [self.infoButton setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
-        
         self.cancelButton = [BYCUI deleteButtonWithTarget:self action:@selector(cancelSelected)];
         [self.cancelButton setTitle:@"no, thank you." forState:UIControlStateNormal];
         
         [self addSubview:self.titleText];
-        [self addSubview:self.largeText];
-        [self addSubview:self.smallText];
+        [self addSubview:self.blurbText];
+        [self addSubview:self.tipsButton];
+        [self addSubview:self.callButton];
         [self addSubview:self.reminderButton];
         [self addSubview:self.talkButton];
         [self addSubview:self.moodsButton];
@@ -59,42 +55,78 @@
     CGFloat textButtonHeight = 25.0f;
     
     [self.titleText centerHorizonallyAtY:0 inBounds:self.bounds thatFits:CGSizeUnbounded];
-    [self.largeText centerHorizonallyAtY:CGRectGetMaxY(self.titleText.frame)+15.0f inBounds:self.bounds thatFits:CGSizeUnbounded];
-    [self.smallText centerHorizonallyAtY:CGRectGetMaxY(self.titleText.frame)+5.0f inBounds:self.bounds thatFits:CGSizeMake(paddedWidth, CGFLOAT_MAX)];
+    [self.blurbText centerHorizonallyAtY:CGRectGetMaxY(self.titleText.frame)+10.0f inBounds:self.bounds thatFits:CGSizeMake(paddedWidth, CGFLOAT_MAX)];
 
     CGFloat buttonHeight = [self.reminderButton sizeThatFits:CGSizeUnbounded].height;
-    self.reminderButton.frame = CGRectMake(padding, CGRectGetMaxY(self.largeText.frame)+10.0f, paddedWidth, buttonHeight);
+    self.reminderButton.frame = CGRectMake(padding, CGRectGetMaxY(self.blurbText.frame)+10.0f, paddedWidth, buttonHeight);
     
-    CGFloat talkOffsetY = (self.largeText.hidden ? CGRectGetMaxY(self.smallText.frame)+15 :
-                           (self.reminderButton.hidden ? self.reminderButton.frame.origin.y : CGRectGetMaxY(self.reminderButton.frame)+padding));
-    self.talkButton.frame = CGRectMake(padding, talkOffsetY, paddedWidth, buttonHeight);
-    self.moodsButton.frame = CGRectMake(padding, CGRectGetMaxY(self.talkButton.frame)+padding, paddedWidth, buttonHeight);
-    self.infoButton.frame = CGRectMake(padding, self.moodsButton.frame.origin.y, paddedWidth, textButtonHeight);
-    self.cancelButton.frame = CGRectMake(padding, CGRectGetMaxY(self.infoButton.frame)+padding, paddedWidth, textButtonHeight);
+    CGFloat moodsOffset = self.reminderButton.hidden ? CGRectGetMaxY(self.reminderButton.frame)+padding : self.reminderButton.frame.origin.y;
+    self.moodsButton.frame = CGRectMake(padding, moodsOffset, paddedWidth, buttonHeight);
+    self.infoButton.frame = CGRectMake(padding, CGRectGetMaxY(self.moodsButton.frame)+padding, paddedWidth, buttonHeight);
+    
+    self.callButton.frame = self.reminderButton.frame;
+    self.talkButton.frame = CGRectMake(padding, CGRectGetMaxY(self.callButton.frame)+padding, paddedWidth, buttonHeight);
+    
+    CGFloat tipsOffsetY = self.cancelButton.hidden ? CGRectGetMaxY(self.moodsButton.frame)+padding : CGRectGetMaxY(self.talkButton.frame)+padding;
+    self.tipsButton.frame = CGRectMake(padding, tipsOffsetY, paddedWidth, buttonHeight);
+    
+    self.cancelButton.frame = CGRectMake(padding, CGRectGetMaxY(self.tipsButton.frame)+padding, paddedWidth, textButtonHeight);
 }
 
--(void)setStandardTitle:(NSString*)title hideReminders:(BOOL)hideReminders {
+-(void)setMoodCategory:(BYCMoodCategory)category title:(NSString *)title moodString:(NSString *)moodString hideReminders:(BOOL)hideReminders {
+    switch(category) {
+        case BYCMoodCategory_Negative:
+            [self setNegativeTitle:title moodString:moodString];
+            break;
+        case BYCMoodCategory_Neutral:
+            [self setNeutralTitle:title moodString:moodString hideReminders:hideReminders];
+            break;
+        case BYCMoodCategory_Positive:
+            [self setPositiveTitle:title hideReminders:hideReminders];
+            break;
+    }
+    [self setNeedsLayout];
+}
+
+-(void)setPositiveTitle:(NSString*)title hideReminders:(BOOL)hideReminders {
     self.titleText.text = title;
-    self.largeText.hidden = NO;
-    self.smallText.hidden = YES;
+    self.blurbText.text = @"What's next?";
     self.reminderButton.hidden = hideReminders;
     self.moodsButton.hidden = NO;
-    self.infoButton.hidden = YES;
+    self.infoButton.hidden = NO;
+    
+    self.tipsButton.hidden = YES;
+    self.callButton.hidden = YES;
+    self.talkButton.hidden = YES;
     self.cancelButton.hidden = YES;
-    [self.talkButton setTitle:@"TALK TO SOMEONE" forState:UIControlStateNormal];
-    [self setNeedsLayout];
 }
 
--(void)setAlternateTitle:(NSString*)title {
+-(void)setNeutralTitle:(NSString*)title moodString:(NSString*)moodString hideReminders:(BOOL)hideReminders {
     self.titleText.text = title;
-    self.largeText.hidden = YES;
-    self.smallText.hidden = NO;
-    self.reminderButton.hidden = YES;
-    self.moodsButton.hidden = YES;
-    self.infoButton.hidden = NO;
+    self.blurbText.text = @"What's next?";
+    [self.tipsButton setTitle:[NSString stringWithFormat:@"%@ TIPS", [moodString uppercaseString]] forState:UIControlStateNormal];
+    self.reminderButton.hidden = hideReminders;
+    self.moodsButton.hidden = NO;
+    self.tipsButton.hidden = NO;
+    
+    self.infoButton.hidden = YES;
+    self.callButton.hidden = YES;
+    self.talkButton.hidden = YES;
+    self.cancelButton.hidden = YES;
+}
+
+-(void)setNegativeTitle:(NSString*)title moodString:(NSString*)moodString {
+    self.titleText.text = title;
+    self.blurbText.text = @"We're here if you want to talk about it.";
+    [self.tipsButton setTitle:[NSString stringWithFormat:@"%@ TIPS", [moodString uppercaseString]] forState:UIControlStateNormal];
+    self.tipsButton.hidden = NO;
+    self.callButton.hidden = NO;
+    self.talkButton.hidden = NO;
     self.cancelButton.hidden = NO;
-    [self.talkButton setTitle:@"YES, LET'S TALK" forState:UIControlStateNormal];
-    [self setNeedsLayout];
+    
+    self.moodsButton.hidden = YES;
+    self.infoButton.hidden = YES;
+    self.reminderButton.hidden = YES;
 }
 
 #pragma mark callbacks
@@ -117,6 +149,14 @@
 
 -(void)cancelSelected {
     [self.delegate cancelSelected];
+}
+
+-(void)callSelected {
+    [self.delegate callSelected];
+}
+
+-(void)tipsSelected {
+    [self.delegate tipsSelected];
 }
 
 @end

@@ -99,12 +99,8 @@
     [self.addEntry playbackStopped];
 }
 
--(void)setSavedStandardTitle:(NSString*)title hideReminders:(BOOL)hideReminders {
-    [self.addEntry setSavedStandardTitle:title hideReminders:hideReminders];
-}
-
--(void)setSavedAlternateTitle:(NSString*)title {
-    [self.addEntry setSavedAlternateTitle:title];
+-(void)setMoodCategory:(BYCMoodCategory)category title:(NSString*)title moodString:(NSString*)moodString hideReminders:(BOOL)hideReminders {
+    [self.addEntry setMoodCategory:category title:title moodString:moodString hideReminders:hideReminders];
 }
 
 -(void)moodView:(BYCMoodView*)view selectedWithType:(BYCMoodType)type {
@@ -253,6 +249,13 @@
     [self.delegate infoSelected];
 }
 
+-(void)tipsSelected {
+    [self.delegate tipsSelected];
+}
+
+-(void)callSelected {
+    [self.delegate callSelected];
+}
 
 #pragma mark moods
 

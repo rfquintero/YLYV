@@ -24,7 +24,6 @@
     self.entryView.addEntry.delegate = self;
     self.entryView.navView = self.navView;
     self.entryView.addEntry.note = self.model.note;
-    self.entryView.addEntry.saveButtonHidden = YES;
     
     self.imagePicker = [[BYCImagePickerController alloc] initWithDelegate:self presentingVC:self.navigationController];
     
@@ -156,5 +155,7 @@
 -(void)moodsSelected {}
 -(void)infoSelected {}
 -(void)cancelSelected {}
+-(void)tipsSelected {}
+-(void)callSelected {}
 
 @end

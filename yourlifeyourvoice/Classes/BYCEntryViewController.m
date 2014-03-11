@@ -48,6 +48,15 @@
     self.entryView.animating = NO;
 }
 
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    if([self.applicationState.database isFirstLaunch]) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"DISCLAIMER" message:@"You might be entering some personal information in this app. For your own privacy you might want to consider updating the security settings on your device." delegate:nil cancelButtonTitle:@"I Understand" otherButtonTitles:nil];
+        [alert show];
+        [self.applicationState.database setLaunched];
+    }
+}
+
 -(void)refreshView {
     self.entryView.image = self.model.image;
     self.entryView.reasons = self.model.reasons;
@@ -147,6 +156,14 @@
     
 }
 
+-(void)tipsSelected {
+    
+}
+
+-(void)callSelected {
+    
+}
+
 #pragma mark callbacks
 
 -(void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
@@ -167,8 +184,11 @@
 }
 
 -(void)saveSuccessful {
-    [self.entryView setSavedStandardTitle:@"Got it! Bummer." hideReminders:NO];
-//    [self.entryView setSavedAlternateTitle:@"Everything Okay?"];
+    BOOL hasReminder = [self.applicationState.database getReminderTime].active;
+    BYCMoodCategory category = [BYCMood categoryForMood:self.model.type];
+    NSString *response = [BYCMood responseForCategory:category];
+    
+    [self.entryView setMoodCategory:category title:response moodString:[BYCMood moodString:self.model.type] hideReminders:hasReminder];
 }
 
 #pragma mark BYCImagePickerControllerDelegate

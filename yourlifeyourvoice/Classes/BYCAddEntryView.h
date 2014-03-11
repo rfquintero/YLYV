@@ -26,8 +26,6 @@
 -(void)setSpeakerMode:(BOOL)speakerMode;
 -(void)setAudioDuration:(NSTimeInterval)duration;
 -(void)playbackStopped;
--(void)setSavedStandardTitle:(NSString*)title hideReminders:(BOOL)hideReminders;
--(void)setSavedAlternateTitle:(NSString*)title;
--(void)setSaveButtonHidden:(BOOL)hidden;
+-(void)setMoodCategory:(BYCMoodCategory)category title:(NSString*)title moodString:(NSString*)moodString hideReminders:(BOOL)hideReminders;
 -(void)setDelegate:(id<BYCAddEntryViewDelegate>)delegate;
 @end

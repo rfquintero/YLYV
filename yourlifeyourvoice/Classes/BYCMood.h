@@ -15,6 +15,12 @@ typedef enum {
     BYCMood_Stressed,
 } BYCMoodType;
 
+typedef enum {
+    BYCMoodCategory_Neutral,
+    BYCMoodCategory_Positive,
+    BYCMoodCategory_Negative,
+} BYCMoodCategory;
+
 @interface BYCMood : NSObject
 
 +(NSString*)moodString:(BYCMoodType)type;
@@ -26,4 +32,6 @@ typedef enum {
 +(UIImage*)smallSpriteImage:(BYCMoodType)type;
 +(NSDictionary*)smallPlist:(BYCMoodType)type;
 +(NSDictionary*)animationList:(BYCMoodType)type;
++(NSString*)responseForCategory:(BYCMoodCategory)category;
++(BYCMoodCategory)categoryForMood:(BYCMoodType)type;
 @end

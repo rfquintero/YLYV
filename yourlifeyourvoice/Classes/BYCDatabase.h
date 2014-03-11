@@ -14,4 +14,7 @@
 
 -(void)saveReminderTime:(BYCReminderTime*)time;
 -(BYCReminderTime*)getReminderTime;
+
+-(void)setLaunched;
+-(BOOL)isFirstLaunch;
 @end

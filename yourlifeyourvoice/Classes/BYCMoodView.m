@@ -26,7 +26,7 @@
         UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(moodSelected)];
         [self addGestureRecognizer:tapRecognizer];
         
-        self.text = [BYCUI labelWithFontSize:14.0f];
+        self.text = [BYCUI labelWithFontSize:18.0f];
         self.text.text = [BYCMood moodString:type];
         
         [self addSubview:self.sprite];

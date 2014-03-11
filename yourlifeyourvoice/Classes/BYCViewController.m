@@ -1,5 +1,4 @@
 #import "BYCViewController.h"
-#import "BYCConstants.h"
 
 @interface BYCViewController ()<UIAlertViewDelegate>
 @property (nonatomic, readwrite) BYCApplicationState *applicationState;
@@ -42,6 +41,10 @@
 
 -(void)showMenu {
     [[NSNotificationCenter defaultCenter] postNotificationName:BYCNotificationShowMenu object:self.navigationController];
+}
+
+-(void)showViewController:(BYCNotificationShowRootControllerType)type {
+    [[NSNotificationCenter defaultCenter] postNotificationName:BYCNotificationShowRootController object:self.navigationController userInfo:@{ BYCNotificationShowRootControllerKey : @(type)}];
 }
 
 -(void)sidebarShown:(BOOL)shown animated:(BOOL)animated {

@@ -2,7 +2,7 @@
 #import "BYCDatabaseUtilities.h"
 #import "BYCEntry.h"
 
-#define kSchemaVersion 3
+#define kSchemaVersion 4
 
 @interface BYCDatabase()
 @property (nonatomic) sqlite3* database;
@@ -50,6 +50,7 @@
     sqlite3_execute(database, @"CREATE TABLE IF NOT EXISTS entries (type INTEGER, note TEXT, created_at INTEGER)");
     sqlite3_execute(database, @"CREATE TABLE IF NOT EXISTS reasons (reason TEXT, entry_id INTEGER NOT NULL)");
     sqlite3_execute(database, @"CREATE TABLE IF NOT EXISTS reminders (hour INTEGER, minute INTEGER, active INTEGER)");
+    sqlite3_execute(database, @"CREATE TABLE IF NOT EXISTS launched (first INTEGER)");
     sqlite3_execute(database, @"CREATE TABLE version (version INTEGER PRIMARY KEY)");
     sqlite3_execute(database, [NSString stringWithFormat:@"INSERT INTO version VALUES (%d)", kSchemaVersion]);
 }
@@ -222,6 +223,27 @@
     sqlite3_prepare_v2(self.database, sql, -1, &statement, NULL);
     sqlite3_step(statement);
     sqlite3_finalize(statement);
+}
+
+-(void)setLaunched {
+    static const char *sql = "INSERT INTO launched (first) VALUES (?)";
+    sqlite3_stmt *statement = NULL;
+    sqlite3_prepare_v2(self.database, sql, -1, &statement, NULL);
+    sqlite3_bind_int(statement, 1, YES);
+    sqlite3_step(statement);
+    sqlite3_finalize(statement);
+}
+
+-(BOOL)isFirstLaunch {
+    static const char *sql = "SELECT * FROM launched";
+    sqlite3_stmt *statement = NULL;
+    sqlite3_prepare_v2(self.database, sql, -1, &statement, NULL);
+    BOOL launched = YES;
+    if(sqlite3_step(statement) == SQLITE_ROW) {
+        launched = NO;
+    }
+    sqlite3_finalize(statement);
+    return launched;
 }
 
 @end
