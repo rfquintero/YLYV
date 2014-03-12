@@ -66,7 +66,7 @@
         [self saveMediaForUid:uid];
     } callback:^{
         [[NSNotificationCenter defaultCenter] postNotificationName:BYCEntryModelSaveSuccessful object:self];
-    } blocking:YES];
+    } blocking:NO];
 }
 
 -(void)update {
@@ -76,7 +76,7 @@
     } callback:^{
         self.updatedEntry = [BYCEntry entryWithId:self.entry.uid type:self.entry.type note:self.note reasons:self.reasons createdAt:self.entry.createdAt];
         [[NSNotificationCenter defaultCenter] postNotificationName:BYCEntryModelSaveSuccessful object:self];
-    } blocking:YES];
+    } blocking:NO];
 }
 
 -(void)deleteEntry {

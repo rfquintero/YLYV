@@ -3,6 +3,7 @@
 @interface BYCApplicationState()
 @property (nonatomic, readwrite) BYCDatabase* database;
 @property (nonatomic, readwrite) BYCQueue *queue;
+@property (nonatomic, readwrite) BYCTouchBlocker *blocker;
 @end
 
 @implementation BYCApplicationState
@@ -14,6 +15,7 @@
         self.database = [[BYCDatabase alloc] initWithDatabasePath:dbPath];
         
         self.queue = [[BYCQueue alloc] initWithQueue:[[NSOperationQueue alloc] init] blocker:blocker];
+        self.blocker = blocker;
     }
     return self;
 }

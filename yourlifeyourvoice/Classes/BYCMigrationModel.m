@@ -52,6 +52,7 @@ ASSIGN;\
             }
         }
         [self commitEntries:entries];
+        sleep(2);
     } callback:^{
         completion();
     } blocking:YES];
@@ -107,6 +108,10 @@ ASSIGN;\
                 [manager moveItemAtPath:migrationEntry.audioPath toPath:audioPath error:&error];
             }
         }
+    }
+    
+    for(NSString *path in [BYCMigrationModel allPaths]) {
+        [manager removeItemAtPath:path error:nil];
     }
 }
 

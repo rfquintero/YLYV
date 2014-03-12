@@ -2,4 +2,5 @@
 
 @interface BYCTouchBlocker : UIButton
 -(void)show:(BOOL)show;
+-(void)setText:(NSString*)text;
 @end

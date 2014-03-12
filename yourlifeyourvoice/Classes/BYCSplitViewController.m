@@ -27,6 +27,7 @@
 -(id)init {
     if(self = [super init]) {
         self.navController = [[UINavigationController alloc] init];
+        self.blocker = [[BYCTouchBlocker alloc] initWithFrame:CGRectZero];
     }
     return self;
 }
@@ -44,7 +45,7 @@
     self.touchBlocker = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.touchBlocker addTarget:self action:@selector(hideSidebar) forControlEvents:UIControlEventTouchUpInside];
     
-    self.blocker = [[BYCTouchBlocker alloc] initWithFrame:self.view.bounds];
+    self.blocker.frame = self.view.bounds;
     self.blocker.autoresizingMask = BYCFlexibleView;
     
     [self showSidebar:NO animated:NO];

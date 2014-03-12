@@ -333,6 +333,7 @@ typedef enum {
 
 -(void)saveSelected {
     [self hideKeyboard];
+    self.saveButton.userInteractionEnabled = NO;
     [self.delegate saveSelected];
 }
 

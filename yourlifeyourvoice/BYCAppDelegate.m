@@ -43,8 +43,10 @@
 -(void)firstLaunchCheck {
     if([self.applicationState.database isFirstLaunch]) {
         if([BYCMigrationModel needsMigration:self.applicationState.database]) {
+            [self.applicationState.blocker setText:@"Welcome to version 2.0!\n\nPlease wait while we import your existing entries."];
             BYCMigrationModel *model = [[BYCMigrationModel alloc] initWithDatabase:self.applicationState.database queue:self.applicationState.queue];
             [model performMigration:^{
+                [self.applicationState.blocker setText:@""];
                 [self showDisclaimer];
             }];
         } else {

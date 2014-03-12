@@ -15,10 +15,10 @@
 
 - (id)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        NSAttributedString *title = [[NSAttributedString alloc] initWithString:@"my voice" attributes:@{NSUnderlineStyleAttributeName : @(NSUnderlineStyleSingle), NSFontAttributeName : [UIFont systemFontOfSize:14.0f]}];
+        NSAttributedString *title = [[NSAttributedString alloc] initWithString:@"edit" attributes:@{NSUnderlineStyleAttributeName : @(NSUnderlineStyleSingle), NSFontAttributeName : [UIFont systemFontOfSize:14.0f]}];
         self.editButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [self.editButton setAttributedTitle:title forState:UIControlStateNormal];
-        [self.editButton setContentEdgeInsets:UIEdgeInsetsMake(12, 8, 12, 8)];
+        [self.editButton setContentEdgeInsets:UIEdgeInsetsMake(12, 8, 12, 0)];
         [self.editButton addTarget:self action:@selector(editSelected) forControlEvents:UIControlEventTouchUpInside];
         
         self.playButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -42,12 +42,14 @@
 
 -(void)layoutSubviews {
     [super layoutSubviews];
-    [self.playButton centerInBounds:self.bounds offsetX:0 offsetY:0];
+    CGFloat padding = 10.0f;
+    CGFloat width = self.bounds.size.width;
+    [self.playButton centerVerticallyAtX:padding inBounds:self.bounds thatFits:CGSizeUnbounded];
     
     CGSize editSize = [self.editButton sizeThatFits:CGSizeUnbounded];
-    [self.editButton centerVerticallyAtX:self.playButton.frame.origin.x-4-editSize.width inBounds:self.bounds withSize:editSize];
+    [self.editButton centerVerticallyAtX:width-padding-editSize.width inBounds:self.bounds withSize:editSize];
 
-    CGFloat offsetX = CGRectGetMaxX(self.playButton.frame) + 12;
+    CGFloat offsetX = CGRectGetMaxX(self.playButton.frame) + 20;
     [self.durationLabel setFrameAtOriginThatFitsUnbounded:CGPointMake(offsetX, self.playButton.center.y+5)];
     CGSize speakerSize = [self.speakerButton sizeThatFits:CGSizeUnbounded];
     self.speakerButton.frame = CGRectMake(offsetX-5, self.playButton.center.y-speakerSize.height+4, speakerSize.width, speakerSize.height);

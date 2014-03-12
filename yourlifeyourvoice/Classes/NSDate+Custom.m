@@ -31,7 +31,7 @@ static NSDateFormatter* _dayFormatter;
     } else if(time < 60*60*24) {
         return [self ago:[BYCUI pluralize:(int)(time/(60*60)) singular:@"hour"] withDay:NO];
     } else if(time < 60*60*24*7) {
-        return [self ago:[BYCUI pluralize:(int)(time/(60*60*24)) singular:@"day"] withDay:YES];
+        return [self ago:[BYCUI pluralize:ceilf((time/(60*60*24))) singular:@"day"] withDay:YES];
     } else {
         return [[NSDate dateFormatter] stringFromDate:self];
     }
