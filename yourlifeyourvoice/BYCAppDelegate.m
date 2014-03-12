@@ -13,7 +13,7 @@
 #import "BYCEntry.h"
 #import "BYCMigrationModel.h"
 
-@interface BYCAppDelegate()
+@interface BYCAppDelegate()<UIAlertViewDelegate>
 @property (nonatomic) BYCApplicationState *applicationState;
 @end
 
@@ -34,13 +34,13 @@
     self.window.rootViewController = splitViewController;
 
     [BYCEntry createDirectories];
-    [self firstLaunchCheck];
+    [self launchCheck];
     
     [self.window makeKeyAndVisible];
     return YES;
 }
 
--(void)firstLaunchCheck {
+-(void)launchCheck {
     if([self.applicationState.database isFirstLaunch]) {
         if([BYCMigrationModel needsMigration:self.applicationState.database]) {
             [self.applicationState.blocker setText:@"Welcome to version 2.0!\n\nPlease wait while we import your existing entries."];
@@ -54,12 +54,26 @@
         }
         
         [self.applicationState.database setLaunched];
+    } else if(![self.applicationState.database isRated] && [self.applicationState.database getAllEntries].count >= 20) {
+        [self showRatings];
+        [self.applicationState.database setRated];
     }
 }
 
 -(void)showDisclaimer {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"DISCLAIMER" message:@"You might be entering some personal information in this app. For your own privacy you might want to consider updating the security settings on your device." delegate:nil cancelButtonTitle:@"I Understand" otherButtonTitles:nil];
     [alert show];
+}
+
+-(void)showRatings {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Please rate us!" message:@"We hope you enjoy using this app. We would love to get your feedback on the app store!" delegate:self cancelButtonTitle:@"No, Thanks" otherButtonTitles:@"Ok!", nil];
+    [alert show];
+}
+
+-(void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    if(buttonIndex != alertView.cancelButtonIndex) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://itunes.apple.com/app/appName/id626899759"]];
+    }
 }
 
 @end

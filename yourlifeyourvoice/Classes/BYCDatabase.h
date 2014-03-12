@@ -18,4 +18,6 @@
 
 -(void)setLaunched;
 -(BOOL)isFirstLaunch;
+-(void)setRated;
+-(BOOL)isRated;
 @end

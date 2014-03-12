@@ -284,6 +284,7 @@ typedef enum {
         self.detailsView.hidden = !hidden;
         self.addButton.hidden = !hidden;
     }
+    self.saveButton.userInteractionEnabled = YES;
 }
 
 -(void)scrollToTop:(BOOL)animated {

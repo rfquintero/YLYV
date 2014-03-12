@@ -147,4 +147,16 @@
     XCTAssertFalse([testObject isFirstLaunch]);
 }
 
+-(void)testWhenRatedIsSetThenItCanBeRetrieved {
+    XCTAssertFalse([testObject isRated]);
+    
+    [testObject2 setLaunched];
+    XCTAssertFalse([testObject isRated]);
+    
+    [testObject2 setRated];
+    XCTAssertTrue([testObject isRated]);
+    [testObject2 setRated];
+    XCTAssertTrue([testObject isRated]);
+}
+
 @end

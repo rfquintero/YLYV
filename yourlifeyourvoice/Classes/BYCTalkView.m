@@ -64,6 +64,8 @@
     self.email.frame = CGRectMake(padding, CGRectGetMaxY(self.call.frame)+padding, itemWidth, buttonHeight);
     self.chat.frame = CGRectMake(padding, CGRectGetMaxY(self.email.frame)+padding, itemWidth, buttonHeight);
     self.message.frame = CGRectMake(padding, CGRectGetMaxY(self.chat.frame)+padding, itemWidth, buttonHeight);
+    
+    [self setContentHeight:CGRectGetMaxY(self.message.frame)+padding];
 }
 
 -(void)siteSelected {

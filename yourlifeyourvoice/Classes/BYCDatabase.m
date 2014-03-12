@@ -230,10 +230,11 @@
 }
 
 -(void)setLaunched {
+    [self removeLaunch];
     static const char *sql = "INSERT INTO launched (first) VALUES (?)";
     sqlite3_stmt *statement = NULL;
     sqlite3_prepare_v2(self.database, sql, -1, &statement, NULL);
-    sqlite3_bind_int(statement, 1, YES);
+    sqlite3_bind_int(statement, 1, 1);
     sqlite3_step(statement);
     sqlite3_finalize(statement);
 }
@@ -248,6 +249,37 @@
     }
     sqlite3_finalize(statement);
     return launched;
+}
+
+-(void)setRated {
+    [self removeLaunch];
+    static const char *sql = "INSERT INTO launched (first) VALUES (?)";
+    sqlite3_stmt *statement = NULL;
+    sqlite3_prepare_v2(self.database, sql, -1, &statement, NULL);
+    sqlite3_bind_int(statement, 1, 2);
+    sqlite3_step(statement);
+    sqlite3_finalize(statement);
+}
+
+-(BOOL)isRated {
+    static const char *sql = "SELECT first FROM launched";
+    sqlite3_stmt *statement = NULL;
+    sqlite3_prepare_v2(self.database, sql, -1, &statement, NULL);
+    BOOL rated = NO;
+    if(sqlite3_step(statement) == SQLITE_ROW) {
+        int value = sqlite3_column_int(statement, 0);
+        rated = value > 1;
+    }
+    sqlite3_finalize(statement);
+    return rated;
+}
+
+-(void)removeLaunch {
+    static const char *sql = "DELETE FROM launched";
+    sqlite3_stmt *statement = NULL;
+    sqlite3_prepare_v2(self.database, sql, -1, &statement, NULL);
+    sqlite3_step(statement);
+    sqlite3_finalize(statement);
 }
 
 @end
