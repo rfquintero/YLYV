@@ -31,4 +31,9 @@
     return [self imageWithColor:[UIColor grayColor]];
 }
 
+-(CGFloat)scaledHeightForWidth:(CGFloat)width {
+    CGFloat ratio = self.size.height/self.size.width;
+    return width*ratio;
+}
+
 @end

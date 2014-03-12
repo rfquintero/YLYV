@@ -6,6 +6,7 @@
 #import "BYCReasonsView.h"
 #import "BYCAudioView.h"
 #import "BYCEntrySavedView.h"
+#import "UIImage+Custom.h"
 
 typedef enum {
     Action_Because,
@@ -145,7 +146,7 @@ typedef enum {
     CGFloat offsetY = self.contentOffset + topHeight;
     [self.reasonsView centerHorizonallyAtY:offsetY inBounds:self.bounds thatFits:CGSizeMake(paddedWidth, CGFLOAT_MAX)];
     offsetY = [self offset:offsetY belowView:self.reasonsView];
-    [self.photo setFrame:CGRectMake(padding, offsetY, paddedWidth, paddedWidth)];
+    [self.photo setFrame:CGRectMake(padding, offsetY, paddedWidth, [self.photo.customImage.image scaledHeightForWidth:paddedWidth])];
     offsetY = [self offset:offsetY belowView:self.photo];
     [self.audioView centerHorizonallyAtY:offsetY inBounds:self.bounds thatFits:CGSizeMake(paddedWidth, CGFLOAT_MAX)];
     offsetY = [self offset:offsetY belowView:self.audioView];
@@ -159,6 +160,7 @@ typedef enum {
     CGFloat scrollHeight = MAX(height+self.contentOffset-self.minOffset, contentHeight);
     self.detailsView.frame = CGRectMake(0, 0, width, scrollHeight);
     [self.scrollView setContentSize:CGSizeMake(width, scrollHeight)];
+    offsetY = self.contentOffset + topHeight;
     self.savedView.frame = CGRectMake(0, offsetY, width, scrollHeight-offsetY);
     
     CGFloat actionHeight = (height-topHeight-padding-self.addButton.frame.size.height/2);

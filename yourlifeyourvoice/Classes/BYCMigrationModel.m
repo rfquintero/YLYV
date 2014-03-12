@@ -1,5 +1,6 @@
 #import "BYCMigrationModel.h"
 #import "BYCLegacyDatabase.h"
+#import "UIImage+Custom.h"
 
 #define checkType(OBJ, TYPE, ASSIGN) \
 if([OBJ isKindOfClass:TYPE.class]) {\
@@ -94,11 +95,16 @@ ASSIGN;\
             int64_t uid = [self.database saveWithType:entry.type notes:entry.note reasons:entry.reasons createdAt:entry.createdAt];
             NSString *imagePath = [BYCEntry imagePathForEntryId:uid];
             NSString *audioPath = [BYCEntry legacyAudioPathForEntryId:uid];
+            NSError *error = nil;
             if(migrationEntry.imagePath.length > 0) {
-                [manager moveItemAtPath:migrationEntry.imagePath toPath:imagePath error:nil];
+                UIImage *image = [self scaledImageAtPath:migrationEntry.imagePath];
+                if(image) {
+                    [manager createFileAtPath:imagePath contents:UIImageJPEGRepresentation(image, 1.0f) attributes:0];
+                    [manager removeItemAtPath:migrationEntry.imagePath error:&error];
+                }
             }
             if(migrationEntry.audioPath.length > 0) {
-                [manager moveItemAtPath:migrationEntry.audioPath toPath:audioPath error:nil];
+                [manager moveItemAtPath:migrationEntry.audioPath toPath:audioPath error:&error];
             }
         }
     }
@@ -115,8 +121,8 @@ ASSIGN;\
             checkType(value[0], NSString, type = [self typeFromString:value[0]]);
             checkType(value[1], NSString, reason = value[1]);
             checkType(value[2], NSString, notes = value[2]);
-            checkType(value[3], NSString, wavFile = value[3]);
-            checkType(value[4], NSString, imageFile = value[4]);
+            checkType(value[3], NSString, wavFile = [self cleanPath:value[3]]);
+            checkType(value[4], NSString, imageFile = [self cleanPath:value[4]]);
             checkType(value[5], NSString, dateString = value[5]; date = [formatter dateFromString:dateString]);
             
             if(date && type >= 0) {
@@ -168,6 +174,8 @@ ASSIGN;\
     return [path stringByAppendingPathComponent:@"Backups/localstorage.appdata.db"];
 }
 
+// conversions/fixes
+
 -(int)typeFromString:(NSString*)string {
     string = [string lowercaseString];
     if([string isEqual:@"angry"]) {
@@ -196,6 +204,26 @@ ASSIGN;\
         return BYCMood_Stressed;
     }
     return -1;
+}
+
+-(NSString*)cleanPath:(NSString*)path {
+    NSString *clean = @"file://localhost";
+    return [path stringByReplacingOccurrencesOfString:clean withString:@"" options:NSAnchoredSearch range:NSMakeRange(0, path.length)];
+}
+
+-(UIImage*)scaledImageAtPath:(NSString*)path {
+    UIImage *image = [UIImage imageWithContentsOfFile:path];
+    if(image) {
+        CGFloat size = 640.0f;
+        CGSize newSize = CGSizeMake(size, [image scaledHeightForWidth:size]);
+        
+        UIGraphicsBeginImageContextWithOptions(newSize, NO, 1.0);
+        [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+        UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+        return newImage;
+    }
+    return nil;
 }
 
 @end
