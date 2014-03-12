@@ -16,6 +16,7 @@ typedef enum {
 @property (nonatomic) UIButton *deleteButton;
 @property (nonatomic) UIButton *speakerButton;
 @property (nonatomic) BOOL playing;
+@property (nonatomic) AudioState state;
 @property (nonatomic, weak) id<BYCAddAudioViewDelegate> delegate;
 @end
 
@@ -70,6 +71,7 @@ typedef enum {
 }
 
 -(void)setState:(AudioState)state {
+    _state = state;
     self.title.attributedText = [self titleForState:state];
     self.recordButton.layer.borderWidth = (state == AudioState_Recording ? 5.0f : 15.0f);
     [self setNeedsLayout];
@@ -115,8 +117,10 @@ typedef enum {
 }
 
 -(void)stopRecording {
+    if(_state == AudioState_Recording) {
+            [self.delegate stopRecording];
+    }
     self.state = AudioState_Record;
-    [self.delegate stopRecording];
 }
 
 -(void)playRecording {

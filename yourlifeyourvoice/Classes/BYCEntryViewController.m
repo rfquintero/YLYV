@@ -48,15 +48,6 @@
     self.entryView.animating = NO;
 }
 
--(void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    if([self.applicationState.database isFirstLaunch]) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"DISCLAIMER" message:@"You might be entering some personal information in this app. For your own privacy you might want to consider updating the security settings on your device." delegate:nil cancelButtonTitle:@"I Understand" otherButtonTitles:nil];
-        [alert show];
-        [self.applicationState.database setLaunched];
-    }
-}
-
 -(void)refreshView {
     self.entryView.image = self.model.image;
     self.entryView.reasons = self.model.reasons;

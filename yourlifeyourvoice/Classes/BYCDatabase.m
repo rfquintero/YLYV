@@ -1,6 +1,5 @@
 #import "BYCDatabase.h"
 #import "BYCDatabaseUtilities.h"
-#import "BYCEntry.h"
 
 #define kSchemaVersion 4
 
@@ -60,13 +59,18 @@
     [self performCreate:database];
 }
 
+
 -(int64_t)saveWithType:(BYCMoodType)type notes:(NSString*)notes reasons:(NSArray*)reasons {
+    return [self saveWithType:type notes:notes reasons:reasons createdAt:[NSDate date]];
+}
+
+-(int64_t)saveWithType:(BYCMoodType)type notes:(NSString*)notes reasons:(NSArray*)reasons createdAt:(NSDate*)date {
     static const char *sql = "INSERT INTO entries (type, note, created_at) VALUES (?, ?, ?)";
     sqlite3_stmt *statement = NULL;
     sqlite3_prepare_v2(self.database, sql, -1, &statement, NULL);
     sqlite3_bind_int(statement, 1, type);
     sqlite3_bind_string(statement, 2, notes);
-    sqlite3_bind_int64(statement, 3, (int64_t)[NSDate timeIntervalSinceReferenceDate]);
+    sqlite3_bind_int64(statement, 3, (int64_t)[date timeIntervalSinceReferenceDate]);
     sqlite3_step(statement);
     sqlite3_finalize(statement);
     

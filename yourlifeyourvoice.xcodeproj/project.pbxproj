@@ -10,6 +10,11 @@
 		451F44F918CE8F0F00EC38A3 /* responses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 451F44F818CE8F0F00EC38A3 /* responses.plist */; };
 		451F44FA18CE8F0F00EC38A3 /* responses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 451F44F818CE8F0F00EC38A3 /* responses.plist */; };
 		451F44FC18CEA92D00EC38A3 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 451F44FB18CEA92D00EC38A3 /* MessageUI.framework */; };
+		451F450118CF935700EC38A3 /* BYCMigrationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 451F450018CF935700EC38A3 /* BYCMigrationModel.m */; };
+		451F450218CF935700EC38A3 /* BYCMigrationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 451F450018CF935700EC38A3 /* BYCMigrationModel.m */; };
+		451F450518CFA61900EC38A3 /* BYCLegacyDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 451F450418CFA61900EC38A3 /* BYCLegacyDatabase.m */; };
+		451F450618CFA61900EC38A3 /* BYCLegacyDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 451F450418CFA61900EC38A3 /* BYCLegacyDatabase.m */; };
+		451F450818CFBAC800EC38A3 /* BYCLegacyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 451F450718CFBAC800EC38A3 /* BYCLegacyTest.m */; };
 		4523652D18C8C357008AA4FC /* BYCReportBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4523652C18C8C357008AA4FC /* BYCReportBar.m */; };
 		4523652E18C8C357008AA4FC /* BYCReportBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4523652C18C8C357008AA4FC /* BYCReportBar.m */; };
 		4523653118C8C7D3008AA4FC /* BYCReportModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4523653018C8C7D3008AA4FC /* BYCReportModel.m */; };
@@ -337,6 +342,11 @@
 /* Begin PBXFileReference section */
 		451F44F818CE8F0F00EC38A3 /* responses.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = responses.plist; sourceTree = "<group>"; };
 		451F44FB18CEA92D00EC38A3 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		451F44FF18CF935700EC38A3 /* BYCMigrationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCMigrationModel.h; sourceTree = "<group>"; };
+		451F450018CF935700EC38A3 /* BYCMigrationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCMigrationModel.m; sourceTree = "<group>"; };
+		451F450318CFA61900EC38A3 /* BYCLegacyDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCLegacyDatabase.h; sourceTree = "<group>"; };
+		451F450418CFA61900EC38A3 /* BYCLegacyDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCLegacyDatabase.m; sourceTree = "<group>"; };
+		451F450718CFBAC800EC38A3 /* BYCLegacyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCLegacyTest.m; sourceTree = "<group>"; };
 		4523652B18C8C357008AA4FC /* BYCReportBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCReportBar.h; sourceTree = "<group>"; };
 		4523652C18C8C357008AA4FC /* BYCReportBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCReportBar.m; sourceTree = "<group>"; };
 		4523652F18C8C7D3008AA4FC /* BYCReportModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCReportModel.h; sourceTree = "<group>"; };
@@ -663,6 +673,7 @@
 			children = (
 				4525189418B6750800D1B561 /* Supporting Files */,
 				4559EB1718C660D800F63125 /* BYCDatabaseTest.m */,
+				451F450718CFBAC800EC38A3 /* BYCLegacyTest.m */,
 			);
 			path = yourlifeyourvoiceTests;
 			sourceTree = "<group>";
@@ -1181,6 +1192,10 @@
 				45DEC7D218BBBE2600A92550 /* BYCDatabase.m */,
 				45DEC7D518BBBE4800A92550 /* BYCDatabaseUtilities.h */,
 				45DEC7D618BBBE4800A92550 /* BYCDatabaseUtilities.m */,
+				451F44FF18CF935700EC38A3 /* BYCMigrationModel.h */,
+				451F450018CF935700EC38A3 /* BYCMigrationModel.m */,
+				451F450318CFA61900EC38A3 /* BYCLegacyDatabase.h */,
+				451F450418CFA61900EC38A3 /* BYCLegacyDatabase.m */,
 			);
 			name = Database;
 			sourceTree = "<group>";
@@ -1525,8 +1540,10 @@
 				458F0FC818BFD516002FEC75 /* UIImage+Custom.m in Sources */,
 				452518D218B6822800D1B561 /* BYCContentView.m in Sources */,
 				4566E69F18C56CA00055DECD /* BYCMoodAnimator.m in Sources */,
+				451F450518CFA61900EC38A3 /* BYCLegacyDatabase.m in Sources */,
 				452518C618B67BF400D1B561 /* UIColor+Custom.m in Sources */,
 				452518B818B67AC100D1B561 /* BYCSplitViewController.m in Sources */,
+				451F450118CF935700EC38A3 /* BYCMigrationModel.m in Sources */,
 				458F0FE018C0F9A4002FEC75 /* BYCReasonsView.m in Sources */,
 				45D827A818C7C6D50055ADA5 /* BYCEntriesCell.m in Sources */,
 			);
@@ -1575,8 +1592,11 @@
 				458F0FC418BFD4DC002FEC75 /* BYCImageButton.m in Sources */,
 				458F0FE118C0F9A4002FEC75 /* BYCReasonsView.m in Sources */,
 				4523653A18C8EAA5008AA4FC /* BYCReportView.m in Sources */,
+				451F450218CF935700EC38A3 /* BYCMigrationModel.m in Sources */,
 				45D8279418C7ACEF0055ADA5 /* BYCEntrySavedView.m in Sources */,
+				451F450818CFBAC800EC38A3 /* BYCLegacyTest.m in Sources */,
 				4559EB1818C660D800F63125 /* BYCDatabaseTest.m in Sources */,
+				451F450618CFA61900EC38A3 /* BYCLegacyDatabase.m in Sources */,
 				452365FE18CA6F23008AA4FC /* BYCInfoView.m in Sources */,
 				452365E918CA5FB5008AA4FC /* BYCTipsViewController.m in Sources */,
 				45DEC7D418BBBE2600A92550 /* BYCDatabase.m in Sources */,

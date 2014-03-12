@@ -35,31 +35,35 @@
     self.note = entry.note;
     [self.reasonsM addObjectsFromArray:entry.reasons];
     
-    NSFileManager *manager = [NSFileManager defaultManager];
-    NSString *imagePath = [BYCEntry imagePathForEntryId:entry.uid];
-    NSString *audioPath = [BYCEntry audioPathForEntryId:entry.uid];
-    if([manager fileExistsAtPath:imagePath isDirectory:NO]) {
-        self.image = [UIImage imageWithContentsOfFile:[BYCEntry imagePathForEntryId:entry.uid]];
-        self.imagePath = imagePath;
-    }
-    if([manager fileExistsAtPath:audioPath]) {
-        self.audioUrl = [NSURL fileURLWithPath:[BYCEntry audioPathForEntryId:entry.uid]];
+    self.image = entry.image;
+    self.imagePath = entry.imagePath;
+
+    if(entry.audioFile) {
+        self.audioUrl = entry.audioFile;
         [self preparePlayer];
+    }
+}
+
+-(void)saveMediaForUid:(int64_t)uid {
+    NSFileManager *manager = [NSFileManager defaultManager];
+    if(self.image) {
+        NSString *imagePath = [BYCEntry imagePathForEntryId:uid];
+        if(![manager fileExistsAtPath:imagePath]) {
+            [manager createFileAtPath:imagePath contents:UIImageJPEGRepresentation(self.image, 1.0f) attributes:0];
+        }
+    }
+    if(self.hasRecording && !self.entry.legacyAudio) {
+        NSString *audioPath = [BYCEntry audioPathForEntryId:uid];
+        if(![manager fileExistsAtPath:audioPath]) {
+            [manager moveItemAtPath:self.audioUrl.path toPath:audioPath error:nil];
+        }
     }
 }
 
 -(void)save {
     [self.queue performAsync:^{
         int64_t uid = [self.database saveWithType:self.type notes:(self.note ? self.note : @"") reasons:self.reasons];
-        NSFileManager *manager = [NSFileManager defaultManager];
-        if(self.image) {
-            NSString *imagePath = [BYCEntry imagePathForEntryId:uid];
-            [manager createFileAtPath:imagePath contents:UIImageJPEGRepresentation(self.image, 1.0f) attributes:0];
-        }
-        if(self.hasRecording) {
-            NSString *audioPath = [BYCEntry audioPathForEntryId:uid];
-            [manager moveItemAtPath:self.audioUrl.path toPath:audioPath error:nil];
-        }
+        [self saveMediaForUid:uid];
     } callback:^{
         [[NSNotificationCenter defaultCenter] postNotificationName:BYCEntryModelSaveSuccessful object:self];
     } blocking:YES];
@@ -68,12 +72,7 @@
 -(void)update {
     [self.queue performAsync:^{
         [self.database updateEntry:self.entry notes:self.note reasons:self.reasons];
-        
-        NSFileManager *manager = [NSFileManager defaultManager];
-        if(self.image) {
-            NSString *imagePath = [BYCEntry imagePathForEntryId:self.entry.uid];
-            [manager createFileAtPath:imagePath contents:UIImageJPEGRepresentation(self.image, 1.0f) attributes:0];
-        }
+        [self saveMediaForUid:_entry.uid];
     } callback:^{
         self.updatedEntry = [BYCEntry entryWithId:self.entry.uid type:self.entry.type note:self.note reasons:self.reasons createdAt:self.entry.createdAt];
         [[NSNotificationCenter defaultCenter] postNotificationName:BYCEntryModelSaveSuccessful object:self];
@@ -143,7 +142,8 @@
 -(void)prepareRecording {
     if(!self.audioUrl) {
         self.audioUrl = self.tempAudioFile;
-        
+    }
+    if(!self.recorder) {
         NSDictionary *settings = @{ AVFormatIDKey : @(kAudioFormatAppleIMA4),
                                     AVSampleRateKey : @(16000.0),
                                     AVNumberOfChannelsKey : @(1)};
@@ -166,6 +166,9 @@
 -(void)deleteRecording {
     [[NSFileManager defaultManager] removeItemAtURL:self.audioUrl error:nil];
     self.player = nil;
+    self.recorder = nil;
+    self.audioUrl = nil;
+    self.entry.legacyAudio = NO;
 }
 
 -(void)preparePlayer {

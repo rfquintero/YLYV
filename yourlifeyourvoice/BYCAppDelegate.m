@@ -11,6 +11,11 @@
 #import "BYCSplitViewController.h"
 #import "BYCEntryViewController.h"
 #import "BYCEntry.h"
+#import "BYCMigrationModel.h"
+
+@interface BYCAppDelegate()
+@property (nonatomic) BYCApplicationState *applicationState;
+@end
 
 @implementation BYCAppDelegate
 
@@ -20,6 +25,7 @@
 
     BYCSplitViewController *splitViewController = [[BYCSplitViewController alloc] init];
     BYCApplicationState *applicationState = [[BYCApplicationState alloc] initWithBlocker:splitViewController.blocker];
+    self.applicationState = applicationState;
     splitViewController.applicationState = applicationState;
     
     UIViewController *vc = [[BYCEntryViewController alloc] initWithApplicationState:applicationState];
@@ -28,9 +34,30 @@
     self.window.rootViewController = splitViewController;
 
     [BYCEntry createDirectories];
+    [self firstLaunchCheck];
     
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+-(void)firstLaunchCheck {
+    if([self.applicationState.database isFirstLaunch]) {
+        if([BYCMigrationModel needsMigration:self.applicationState.database]) {
+            BYCMigrationModel *model = [[BYCMigrationModel alloc] initWithDatabase:self.applicationState.database queue:self.applicationState.queue];
+            [model performMigration:^{
+                [self showDisclaimer];
+            }];
+        } else {
+            [self showDisclaimer];
+        }
+        
+        [self.applicationState.database setLaunched];
+    }
+}
+
+-(void)showDisclaimer {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"DISCLAIMER" message:@"You might be entering some personal information in this app. For your own privacy you might want to consider updating the security settings on your device." delegate:nil cancelButtonTitle:@"I Understand" otherButtonTitles:nil];
+    [alert show];
 }
 
 @end
