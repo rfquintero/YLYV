@@ -29,6 +29,7 @@
         
         self.bottomBar = [[UIView alloc] initWithFrame:CGRectZero];
         self.bottomBar.backgroundColor = [UIColor bgSidebarGray];
+        self.bottomBar.hidden = YES;
         
         self.recentButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [self.recentButton.titleLabel setFont:[BYCUI roundFontOfSize:16.0f]];
