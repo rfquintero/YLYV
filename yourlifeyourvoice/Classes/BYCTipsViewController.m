@@ -21,11 +21,13 @@
     
     [self.navView setContentView:self.entryView];
     [self.navView setNavTitle:@"Life Tips"];
+    self.screenName = @"Life Tips";
     [self setupMenuButton];
     [self nextTip:NO];
 }
 
 -(void)nextTip {
+    [self trackEvent:@"Life Tips" action:@"next tip" label:nil value:nil];
     [self nextTip:YES];
 }
 
@@ -38,7 +40,6 @@
         self.otherTips = [NSMutableDictionary dictionary];
     }
 
-    
     NSString *key = [self random:self.currentTips.allKeys];
     NSMutableArray *tips = self.currentTips[key];
     NSString *tip = [self random:tips];

@@ -12,6 +12,7 @@
 #import "BYCEntryViewController.h"
 #import "BYCEntry.h"
 #import "BYCMigrationModel.h"
+#import "GAIDictionaryBuilder.h"
 
 @interface BYCAppDelegate()<UIAlertViewDelegate>
 @property (nonatomic) BYCApplicationState *applicationState;
@@ -22,6 +23,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     application.applicationSupportsShakeToEdit = YES;
+    
+    [self setupTracker];
 
     BYCSplitViewController *splitViewController = [[BYCSplitViewController alloc] init];
     BYCApplicationState *applicationState = [[BYCApplicationState alloc] initWithBlocker:splitViewController.blocker];
@@ -36,8 +39,15 @@
     [BYCEntry createDirectories];
     [self launchCheck];
     
+    
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+-(void)setupTracker {
+    [[GAI sharedInstance] setTrackUncaughtExceptions:YES];
+    [[GAI sharedInstance] setDispatchInterval:60.0f];
+    [[GAI sharedInstance] trackerWithTrackingId:@"UA-48947227-1"];
 }
 
 -(void)launchCheck {

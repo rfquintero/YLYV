@@ -25,6 +25,7 @@
     [self.navView setContentView:self.entryView];
     [self.navView setNavTitle:@"Reminder"];
     [self setupMenuButton];
+    self.screenName = @"Reminder";
 }
 
 -(void)refresh {

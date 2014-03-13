@@ -17,16 +17,19 @@
     
     [self.navView setContentView:self.talkView];
     [self.navView setNavTitle:@"Talk"];
+    self.screenName = @"Talk";
     [self setupMenuButton];
 }
 
 #pragma mark BYCTalkViewDelegate
 
 -(void)callSelected {
+    [self trackEvent:BYCTrackingContact action:@"call" label:@"talk" value:nil];
     [self callYLYV];
 }
 
 -(void)emailSelected {
+    [self trackEvent:BYCTrackingContact action:@"email" label:@"talk" value:nil];
     if([MFMailComposeViewController canSendMail]) {
         MFMailComposeViewController *vc = [[MFMailComposeViewController alloc] init];
         [vc setSubject:@"My Mood"];
@@ -39,6 +42,7 @@
 }
 
 -(void)chatSelected {
+    [self trackEvent:BYCTrackingContact action:@"chat" label:@"talk" value:nil];
     if([[NSDate date] isOnDays:@[@(2),@(3),@(4),@(5)] startHour:19 startMinute:30 endHour:23 endMinute:59]) {
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.lifeline-chat.org/SightMaxAgentInterface/PreChatSurvey.aspx?accountID=5&siteID=8&queueID=17"]];
     } else {
@@ -47,6 +51,7 @@
 }
 
 -(void)textSelected {
+    [self trackEvent:BYCTrackingContact action:@"text" label:@"talk" value:nil];
     if([[NSDate date] isOnDays:@[@(2),@(4)] startHour:19 startMinute:00 endHour:23 endMinute:59]) {
         if([MFMessageComposeViewController canSendText]) {
             MFMessageComposeViewController *vc = [[MFMessageComposeViewController alloc] init];

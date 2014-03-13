@@ -31,6 +31,7 @@
     [self.navView setLeftButtonHidden:YES animated:NO];
     [self.entryView setNavView:self.navView];
     [self setupMenuButton];
+    self.screenName = @"I'm feeling...";
 }
 
 -(void)viewWillAppear:(BOOL)animated {
@@ -72,6 +73,7 @@
 }
 
 -(void)saveSelected {
+    [self trackEvent:@"New Mood Entry" action:@"entry saved" label:nil value:nil];
     [self.model save];
 }
 
@@ -153,6 +155,7 @@
 }
 
 -(void)callSelected {
+    [self trackEvent:BYCTrackingContact action:@"call" label:@"new entry" value:nil];
     [self callYLYV];
 }
 

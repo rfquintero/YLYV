@@ -30,6 +30,7 @@
     [self.navView setContentView:self.entryView];
     [self.entryView setNavView:self.navView];
     [self.navView setupBackButton:self action:@selector(saveSelected)];
+    self.screenName = @"Mood Details";
 }
 
 -(void)viewWillAppear:(BOOL)animated {

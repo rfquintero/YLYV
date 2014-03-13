@@ -2,10 +2,11 @@
 #import "BYCApplicationState.h"
 #import "BYCNavigationView.h"
 #import "BYCConstants.h"
+#import "GAI.h"
 
 #define BYCFlexibleView UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth
 
-@interface BYCViewController : UIViewController<UIAlertViewDelegate>
+@interface BYCViewController : GAITrackedViewController<UIAlertViewDelegate>
 @property (nonatomic, readonly) BYCApplicationState *applicationState;
 @property (nonatomic, readonly) BYCNavigationView *navView;
 
@@ -18,4 +19,6 @@
 -(void)showViewController:(BYCNotificationShowRootControllerType)type;
 -(void)showViewController:(BYCNotificationShowRootControllerType)type userInfo:(NSDictionary*)userInfo;
 -(void)callYLYV;
+
+-(void)trackEvent:(NSString*)category action:(NSString*)action label:(NSString*)label value:(NSNumber*)value;
 @end

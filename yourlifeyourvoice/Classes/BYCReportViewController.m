@@ -18,6 +18,7 @@
     
     [self.navView setContentView:self.entryView];
     [self.navView setNavTitle:@"Reports"];
+    self.screenName = @"Reports";
     [self setupMenuButton];
 }
 

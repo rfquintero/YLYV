@@ -20,6 +20,7 @@
  
     [self.navView setContentView:self.entryView];
     [self.navView setNavTitle:@"My Moods"];
+    self.screenName = @"My Moods";
     [self setupMenuButton];
 }
 
