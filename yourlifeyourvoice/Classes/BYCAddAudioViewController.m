@@ -21,7 +21,6 @@
     self.entryView = [[BYCAddAudioView alloc] initWithFrame:self.view.bounds];
     self.entryView.delegate = self;
     [self.entryView setHasAudio:self.model.hasRecording];
-    [self.entryView setSpeakerMode:self.model.speakerMode];
 
     [self.navView setContentView:self.entryView];
     [self.navView setNavTitle:@"Add Audio"];
@@ -35,6 +34,7 @@
     } else {
         [self.model prepareRecording];
     }
+    [self.entryView setSpeakerMode:self.model.speakerMode];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playbackError) name:BYCEntryModelPlaybackError object:self.model];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playbackStopped) name:BYCEntryModelPlaybackStopped object:self.model];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(recordingError) name:BYCEntryModelRecordingError object:self.model];
@@ -55,6 +55,7 @@
 -(void)stopRecording {
     [self.model stopRecording];
     [self.model preparePlayer];
+    [self.entryView setSpeakerMode:self.model.speakerMode];
 }
 
 -(void)playRecording {
@@ -84,6 +85,7 @@
     if(buttonIndex != alertView.cancelButtonIndex) {
         [self.model deleteRecording];
         [self.entryView setHasAudio:self.model.hasRecording];
+        [self.model prepareRecording];
     }
 }
 

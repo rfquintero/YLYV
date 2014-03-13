@@ -14,7 +14,6 @@
 @property (nonatomic) NSString *imagePath;
 
 @property (nonatomic) NSURL *audioUrl;
-@property (nonatomic, readwrite) BOOL speakerMode;
 @end
 
 @implementation BYCEntryModel
@@ -193,8 +192,15 @@
     self.player.currentTime = 0;
 }
 
+-(BOOL)speakerMode {
+    for(AVAudioSessionPortDescription *port in [[[AVAudioSession sharedInstance] currentRoute] outputs]) {
+        if([port.portType isEqual:AVAudioSessionPortBuiltInSpeaker])
+            return YES;
+    }
+    return NO;
+}
+
 -(void)useSpeaker:(BOOL)speaker {
-    _speakerMode = speaker;
     AVAudioSession *audioSession = [AVAudioSession sharedInstance];
     if(speaker) {
         [audioSession overrideOutputAudioPort:AVAudioSessionPortOverrideSpeaker error:nil];
