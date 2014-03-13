@@ -104,8 +104,14 @@ ASSIGN;\
                     [manager removeItemAtPath:migrationEntry.imagePath error:&error];
                 }
             }
+            if(error) {
+                NSLog(@"%@", error); error = nil;
+            }
             if(migrationEntry.audioPath.length > 0) {
                 [manager moveItemAtPath:migrationEntry.audioPath toPath:audioPath error:&error];
+            }
+            if(error) {
+                NSLog(@"%@", error); error = nil;
             }
         }
     }
@@ -212,8 +218,10 @@ ASSIGN;\
 }
 
 -(NSString*)cleanPath:(NSString*)path {
-    NSString *clean = @"file://localhost";
-    return [path stringByReplacingOccurrencesOfString:clean withString:@"" options:NSAnchoredSearch range:NSMakeRange(0, path.length)];
+    NSRange range = [path rangeOfString:@"Documents/"];
+    NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains (NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString *file = [path substringFromIndex:(range.location+range.length)];
+    return [documentsDirectory stringByAppendingPathComponent:file];
 }
 
 -(UIImage*)scaledImageAtPath:(NSString*)path {
