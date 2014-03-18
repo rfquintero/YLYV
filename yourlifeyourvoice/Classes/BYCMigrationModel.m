@@ -219,9 +219,14 @@ ASSIGN;\
 
 -(NSString*)cleanPath:(NSString*)path {
     NSRange range = [path rangeOfString:@"Documents/"];
-    NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains (NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-    NSString *file = [path substringFromIndex:(range.location+range.length)];
-    return [documentsDirectory stringByAppendingPathComponent:file];
+    if(range.location == NSNotFound) {
+        NSString *clean = @"file://localhost";
+        return [path stringByReplacingOccurrencesOfString:clean withString:@"" options:NSAnchoredSearch range:NSMakeRange(0, path.length)];
+    } else {
+        NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains (NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+        NSString *file = [path substringFromIndex:(range.location+range.length)];
+        return [documentsDirectory stringByAppendingPathComponent:file];
+    }
 }
 
 -(UIImage*)scaledImageAtPath:(NSString*)path {
