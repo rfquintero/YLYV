@@ -22,9 +22,19 @@ static NSDateFormatter* _dayFormatter;
     return _dayFormatter;
 }
 
+-(NSDate*)midnight {
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDateComponents *components = [calendar components:NSCalendarUnitDay|NSCalendarUnitMonth|NSCalendarUnitYear fromDate:self];
+    components.hour = 0;
+    components.minute = 0;
+    components.second = 0;
+    return [calendar dateFromComponents:components];
+}
+
 -(NSString*)timeAgo {
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSDateComponents *components = [calendar components:NSCalendarUnitDay fromDate:self toDate:[NSDate date] options:0];
+    
+    NSDateComponents *days = [calendar components:NSCalendarUnitDay fromDate:[self midnight] toDate:[[NSDate date] midnight] options:0];
     NSTimeInterval time = -[self timeIntervalSinceNow];
     if(time < 60) {
         return @"just now";
@@ -33,7 +43,7 @@ static NSDateFormatter* _dayFormatter;
     } else if(time < 60*60*24) {
         return [self ago:[BYCUI pluralize:(int)(time/(60*60)) singular:@"hour"] withDay:NO];
     } else if(time < 60*60*24*7) {
-        return [self ago:[BYCUI pluralize:components.day singular:@"day"] withDay:YES];
+        return [self ago:[BYCUI pluralize:days.day singular:@"day"] withDay:YES];
     } else {
         return [[NSDate dateFormatter] stringFromDate:self];
     }
