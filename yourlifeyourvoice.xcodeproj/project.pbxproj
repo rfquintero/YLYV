@@ -1785,7 +1785,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/Ruben/code/boystown/ios/yourlifeyourvoice/Frameworks/GoogleAnalytics,
+					"$(SRCROOT)/Frameworks/GoogleAnalytics",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -1804,7 +1804,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/Ruben/code/boystown/ios/yourlifeyourvoice/Frameworks/GoogleAnalytics,
+					"$(SRCROOT)/Frameworks/GoogleAnalytics",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
