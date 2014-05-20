@@ -47,7 +47,7 @@
 -(void)setupTracker {
     [[GAI sharedInstance] setTrackUncaughtExceptions:YES];
     [[GAI sharedInstance] setDispatchInterval:60.0f];
-    [[GAI sharedInstance] trackerWithTrackingId:@"UA-48947227-1"];
+    [[GAI sharedInstance] trackerWithTrackingId:@"UA-3928670-32"];
 }
 
 -(void)launchCheck {

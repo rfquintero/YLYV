@@ -14,7 +14,7 @@
     self.entryView.delegate = self;
     
     [self.navView setContentView:self.entryView];
-    [self.navView setNavTitle:@"Your Life Your Voice"];
+    [self.navView setNavTitle:@""];
     [self setupMenuButton];
     
     self.screenName = @"Your Life Your Voice";
