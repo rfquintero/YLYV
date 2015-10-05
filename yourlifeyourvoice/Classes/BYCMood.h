@@ -13,6 +13,15 @@ typedef enum {
     BYCMood_Proud,
     BYCMood_Relieved,
     BYCMood_Stressed,
+    BYCMood_Anxious,
+    BYCMood_Bored,
+    BYCMood_Disgusted,
+    BYCMood_Excited,
+    BYCMood_Fine,
+    BYCMood_Focused,
+    BYCMood_Numb,
+    BYCMood_Sad,
+    BYCMood_Scared,
 } BYCMoodType;
 
 typedef enum {

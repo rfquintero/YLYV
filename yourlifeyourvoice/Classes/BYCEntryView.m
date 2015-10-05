@@ -5,11 +5,12 @@
 #import "BYCUI.h"
 #import "BYCConstants.h"
 #import "BYCMoodAnimator.h"
+#import "BYCHelpView.h"
 
 #define kLargeSize 190.0f
 #define kSmallSize 110.0f
 
-@interface BYCEntryView()<BYCMoodViewDelegate, BYCAddEntryViewDelegate>
+@interface BYCEntryView()<BYCMoodViewDelegate, BYCAddEntryViewDelegate, BYCHelpViewDelegate>
 @property (nonatomic) BYCEntryRowLayoutView *rowLayout;
 @property (nonatomic) BYCMoodView *largeMood;
 @property (nonatomic) BYCAddEntryView *addEntry;
@@ -24,11 +25,19 @@
     if (self) {
         self.rowLayout = [[BYCEntryRowLayoutView alloc] initWithFrame:CGRectZero];
         
-        for(NSNumber *type in self.moods) {
+        NSArray *moods = self.moods;
+        for(NSNumber *type in moods) {
             BYCMoodView *mood = [[BYCMoodView alloc] initWithFrame:CGRectZero type:[type intValue] small:YES];
             mood.faceSize = kSmallSize;
             mood.delegate = self;
             [self.rowLayout addSmallIconView:mood];
+        }
+        
+        if(moods.count%2 == 1) {
+            BYCHelpView *help = [[BYCHelpView alloc] initWithFrame:CGRectZero];
+            help.faceSize = kSmallSize;
+            help.delegate = self;
+            [self.rowLayout addSmallIconView:help];
         }
         
         self.animator = [[BYCMoodAnimator alloc] initWithViews:self.rowLayout.icons delay:1.5f];
@@ -257,12 +266,18 @@
     [self.delegate callSelected];
 }
 
+-(void)helpSelected {
+    [self.delegate talkSelected];
+}
+
 #pragma mark moods
 
 -(NSArray*)moods {
-    return @[@(BYCMood_Happy), @(BYCMood_Relieved), @(BYCMood_Confident), @(BYCMood_Proud), @(BYCMood_Depressed),
-             @(BYCMood_Lonely), @(BYCMood_Invisible), @(BYCMood_Embarrassed), @(BYCMood_Stressed), @(BYCMood_Confused),
-             @(BYCMood_Angry), @(BYCMood_Frustrated)];
+    return @[@(BYCMood_Happy), @(BYCMood_Excited), @(BYCMood_Relieved), @(BYCMood_Focused),
+             @(BYCMood_Confident), @(BYCMood_Proud), @(BYCMood_Fine), @(BYCMood_Bored), @(BYCMood_Depressed), @(BYCMood_Sad),
+             @(BYCMood_Lonely), @(BYCMood_Scared), @(BYCMood_Disgusted), @(BYCMood_Embarrassed),
+             @(BYCMood_Invisible), @(BYCMood_Numb), @(BYCMood_Angry), @(BYCMood_Frustrated),
+             @(BYCMood_Stressed), @(BYCMood_Confused), @(BYCMood_Anxious)];
 }
 
 @end

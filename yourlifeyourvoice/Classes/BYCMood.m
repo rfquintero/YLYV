@@ -29,6 +29,24 @@
             return @"relieved";
         case BYCMood_Stressed:
             return @"stressed";
+        case BYCMood_Anxious:
+            return @"anxious";
+        case BYCMood_Bored:
+            return @"bored";
+        case BYCMood_Disgusted:
+            return @"disgusted";
+        case BYCMood_Excited:
+            return @"excited";
+        case BYCMood_Fine:
+            return @"fine";
+        case BYCMood_Focused:
+            return @"focused";
+        case BYCMood_Numb:
+            return @"numb";
+        case BYCMood_Sad:
+            return @"sad";
+        case BYCMood_Scared:
+            return @"scared";
     }
 }
 
@@ -98,15 +116,24 @@
         case BYCMood_Frustrated:
         case BYCMood_Invisible:
         case BYCMood_Lonely:
+        case BYCMood_Sad:
+        case BYCMood_Scared:
+        case BYCMood_Numb:
             return BYCMoodCategory_Negative;
         case BYCMood_Confident:
         case BYCMood_Happy:
         case BYCMood_Proud:
         case BYCMood_Relieved:
+        case BYCMood_Excited:
+        case BYCMood_Focused:
             return BYCMoodCategory_Positive;
         case BYCMood_Confused:
         case BYCMood_Embarrassed:
         case BYCMood_Stressed:
+        case BYCMood_Disgusted:
+        case BYCMood_Anxious:
+        case BYCMood_Fine:
+        case BYCMood_Bored:
             return BYCMoodCategory_Neutral;
     }
 }
@@ -118,15 +145,24 @@
             return [UIColor bgPurple];
         case BYCMood_Depressed:
         case BYCMood_Lonely:
+        case BYCMood_Scared:
+        case BYCMood_Sad:
             return [UIColor bgBlue];
         case BYCMood_Invisible:
+        case BYCMood_Numb:
         case BYCMood_Embarrassed:
+        case BYCMood_Disgusted:
             return [UIColor bgGreen];
         case BYCMood_Happy:
         case BYCMood_Relieved:
+        case BYCMood_Excited:
+        case BYCMood_Focused:
             return [UIColor bgYellow];
         case BYCMood_Confused:
         case BYCMood_Stressed:
+        case BYCMood_Fine:
+        case BYCMood_Bored:
+        case BYCMood_Anxious:
             return [UIColor bgOrange];
         case BYCMood_Angry:
         case BYCMood_Frustrated:

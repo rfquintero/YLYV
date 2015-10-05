@@ -13,6 +13,29 @@
 			<string>{0,30}</string>
 		</array>
 	</dict>
+	<key>anxious</key>
+	<dict>
+		<key>fps</key>
+		<integer>25</integer>
+		<key>intro</key>
+		<array/>
+		<key>loop</key>
+		<array>
+			<string>{0,25}</string>
+		</array>
+	</dict>
+	<key>bored</key>
+	<dict>
+		<key>fps</key>
+		<integer>25</integer>
+		<key>intro</key>
+		<array/>
+		<key>loop</key>
+		<array>
+			<string>{0,25}</string>
+			<string>{25,0}</string>
+		</array>
+	</dict>
 	<key>confident</key>
 	<dict>
 		<key>fps</key>
@@ -51,6 +74,18 @@
 			<string>{30,0}</string>
 		</array>
 	</dict>
+	<key>disgusted</key>
+	<dict>
+		<key>fps</key>
+		<integer>25</integer>
+		<key>intro</key>
+		<array/>
+		<key>loop</key>
+		<array>
+			<string>{0,25}</string>
+			<string>{25,0}</string>
+		</array>
+	</dict>
 	<key>embarrassed</key>
 	<dict>
 		<key>fps</key>
@@ -62,6 +97,42 @@
 		<array>
 			<string>{0,30}</string>
 			<string>{30,0}</string>
+		</array>
+	</dict>
+	<key>excited</key>
+	<dict>
+		<key>fps</key>
+		<integer>25</integer>
+		<key>intro</key>
+		<array/>
+		<key>loop</key>
+		<array>
+			<string>{0,25}</string>
+			<string>{25,0}</string>
+		</array>
+	</dict>
+	<key>fine</key>
+	<dict>
+		<key>fps</key>
+		<integer>20</integer>
+		<key>intro</key>
+		<array/>
+		<key>loop</key>
+		<array>
+			<string>{0,20}</string>
+			<string>{20,0}</string>
+		</array>
+	</dict>
+	<key>focused</key>
+	<dict>
+		<key>fps</key>
+		<integer>25</integer>
+		<key>intro</key>
+		<array/>
+		<key>loop</key>
+		<array>
+			<string>{0,25}</string>
+			<string>{25,0}</string>
 		</array>
 	</dict>
 	<key>frustrated</key>
@@ -111,6 +182,18 @@
 			<string>{30,0}</string>
 		</array>
 	</dict>
+	<key>numb</key>
+	<dict>
+		<key>fps</key>
+		<integer>25</integer>
+		<key>intro</key>
+		<array/>
+		<key>loop</key>
+		<array>
+			<string>{0,25}</string>
+			<string>{25,0}</string>
+		</array>
+	</dict>
 	<key>proud</key>
 	<dict>
 		<key>fps</key>
@@ -131,6 +214,29 @@
 		<key>loop</key>
 		<array>
 			<string>{0,30}</string>
+		</array>
+	</dict>
+	<key>sad</key>
+	<dict>
+		<key>fps</key>
+		<integer>25</integer>
+		<key>intro</key>
+		<array/>
+		<key>loop</key>
+		<array>
+			<string>{0,25}</string>
+		</array>
+	</dict>
+	<key>scared</key>
+	<dict>
+		<key>fps</key>
+		<integer>25</integer>
+		<key>intro</key>
+		<array/>
+		<key>loop</key>
+		<array>
+			<string>{0,25}</string>
+			<string>{25,0}</string>
 		</array>
 	</dict>
 	<key>stressed</key>
