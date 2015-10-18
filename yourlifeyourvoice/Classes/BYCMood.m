@@ -160,13 +160,14 @@
             return [UIColor bgYellow];
         case BYCMood_Confused:
         case BYCMood_Stressed:
-        case BYCMood_Fine:
-        case BYCMood_Bored:
         case BYCMood_Anxious:
             return [UIColor bgOrange];
         case BYCMood_Angry:
         case BYCMood_Frustrated:
             return [UIColor bgRed];
+        case BYCMood_Fine:
+        case BYCMood_Bored:
+            return [UIColor bgLightOrange];
     }
 }
 

@@ -145,5 +145,112 @@
 			<string>Do something nice for someone else.  Whenever you help someone else, you take the focus off of you, and can help yourself feel better.</string>
 		</array>
 	</dict>
+	<key>numb</key>
+	<dict>
+		<key>Numb</key>
+		<array>
+			<string>Exercise &amp; eat right.</string>
+			<string>Maintain a consistent sleeping schedule.</string>
+			<string>Talk to someone about how you are feeling.</string>
+			<string>Listen to music.</string>
+			<string>Write your feelings in a journal.</string>
+			<string>Do something nice for someone else.</string>
+			<string>Make a list of your best qualities.</string>
+			<string>Identify supportive people in your life.</string>
+			<string>Take care of yourself.</string>
+			<string>Put your best foot forward.</string>
+			<string>Spend time playing with a pet.</string>
+		</array>
+	</dict>
+	<key>sad</key>
+	<dict>
+		<key>Sad</key>
+		<array>
+			<string>Set goals—short term and long term.</string>
+			<string>Focus forward, not on the past.</string>
+			<string>Accept the things you can’t change.</string>
+			<string>Take control of the way you look at things.</string>
+			<string>Make a blessings list.</string>
+			<string>Exercise &amp; eat right.</string>
+			<string>Maintain a consistent sleeping schedule.</string>
+			<string>Talk to someone about how you are feeling.</string>
+			<string>Listen to music.</string>
+			<string>Do something nice for someone else.</string>
+			<string>Spend time playing with a pet.</string>
+		</array>
+	</dict>
+	<key>scared</key>
+	<dict>
+		<key>Scared</key>
+		<array>
+			<string>Talk to someone about how you are feeling.</string>
+			<string>Take a deep breath.</string>
+			<string>Visualize being in a peaceful place.</string>
+			<string>Avoid things that scare you (if possible.)</string>
+			<string>Try to relax your body, stretch or shake off any tension.</string>
+			<string>Set yourself up for success. Set some small, realistic goals that you can accomplish.</string> 
+			<string>Learn to solve your own problems. Realize that when you make good decisions you gain more control over what happens to you.</string> 
+			<string>Respect yourself. Stick with what you know is right. Don’t let others talk you into doing something for the sake of popularity or status.</string>
+		</array>
+	</dict>
+	<key>fine</key>
+	<dict>
+		<key>Fine</key>
+		<array>
+			<string>Talk to someone.</string>
+			<string>Do something nice for someone else.</string>
+			<string>Identify supportive people in your life.</string> 
+			<string>Take care of yourself.</string> 
+			<string>Spend time playing with a pet.</string>
+			<string>Try to identify an activity that you can get involved with to meet others with your same interests (music, sports, volunteering at an animal shelter, theatre, etc.)</string>
+			<string>Make a shopping or travel wish list by browsing the internet.</string>
+			<string>Draw, paint, write a poem—or just create something.</string>
+			<string>Go outside and take a walk or run.</string>
+		</array>
+	</dict>
+	<key>bored</key>
+	<dict>
+		<key>Bored</key>
+		<array>
+			<string>Talk to someone.</string>
+			<string>Do something nice for someone else.</string>
+			<string>Identify supportive people in your life.</string> 
+			<string>Take care of yourself.</string> 
+			<string>Spend time playing with a pet.</string>
+			<string>Try to identify an activity that you can get involved with to meet others with your same interests (music, sports, volunteering at an animal shelter, theatre, etc.)</string>
+			<string>Make a shopping or travel wish list by browsing the internet.</string>
+			<string>Draw, paint, write a poem—or just create something.</string>
+			<string>Go outside and take a walk or run.</string>
+		</array>
+	</dict>
+	<key>anxious</key>
+	<dict>
+		<key>Anxious</key>
+		<array>
+			<string>Give yourself 10 minutes twice a day to worry about things……after that, whenever you notice yourself worrying, tell yourself it will still be there tomorrow.</string>
+			<string>Take a deep breath.  Try to relax.</string>
+			<string>Close your eyes and count to 10.</string>
+			<string>Replace negative statements running through your mind with reality statements and calming thoughts.</string> 
+			<string>Visualize being in a peaceful place.</string>
+			<string>Try to relax your body, stretch or shake off any tension.</string>
+			<string>Set yourself up for success. Set some small, realistic goals that you can accomplish.</string>
+		</array>
+	</dict>
+	<key>disgusted</key>
+	<dict>
+		<key>Disgusted</key>
+		<array>
+			<string>Visualize being in a peaceful place.</string>
+			<string>Replace negative statements running through your mind with reality statements and calming thoughts.</string> 
+			<string>Try to relax your body, stretch or shake off any tension.</string>
+			<string>Make an apology.</string>
+			<string>Talk to someone.</string>
+			<string>Do something nice for someone else.</string>
+			<string>Focus forward, not on the past.</string>
+			<string>Accept the things you can’t change.</string>
+			<string>Be patient.</string>
+			<string>Replace negative statements running through your mind with reality statements and calming thoughts.</string>
+		</array>
+	</dict>
 </dict>
 </plist>

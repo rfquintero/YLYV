@@ -21,6 +21,7 @@ CREATE_HEX_COLOR(bgPurple, @"#B051F4");
 CREATE_HEX_COLOR(bgGreen, @"#88EA2A");
 CREATE_HEX_COLOR(bgOrange, @"#FF9000");
 CREATE_HEX_COLOR(bgRed, @"#FF3200");
+CREATE_HEX_COLOR(bgLightOrange, @"#FDD619");
 
 CREATE_HEX_COLOR(textOrange, @"#EF722B");
 CREATE_HEX_COLOR(textRed, @"#EA283A");

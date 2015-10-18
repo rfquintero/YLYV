@@ -10,6 +10,7 @@
 +(UIColor*)bgGreen;
 +(UIColor*)bgOrange;
 +(UIColor*)bgRed;
++(UIColor*)bgLightOrange;
 
 +(UIColor*)textOrange;
 +(UIColor*)textRed;
