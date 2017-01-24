@@ -26,18 +26,18 @@
         self.rowLayout = [[BYCEntryRowLayoutView alloc] initWithFrame:CGRectZero];
         
         NSArray *moods = self.moods;
-        for(NSNumber *type in moods) {
-            BYCMoodView *mood = [[BYCMoodView alloc] initWithFrame:CGRectZero type:[type intValue] small:YES];
-            mood.faceSize = kSmallSize;
-            mood.delegate = self;
-            [self.rowLayout addSmallIconView:mood];
-        }
-        
         if(moods.count%2 == 1) {
             BYCHelpView *help = [[BYCHelpView alloc] initWithFrame:CGRectZero];
             help.faceSize = kSmallSize;
             help.delegate = self;
             [self.rowLayout addSmallIconView:help];
+        }
+        
+        for(NSNumber *type in moods) {
+            BYCMoodView *mood = [[BYCMoodView alloc] initWithFrame:CGRectZero type:[type intValue] small:YES];
+            mood.faceSize = kSmallSize;
+            mood.delegate = self;
+            [self.rowLayout addSmallIconView:mood];
         }
         
         self.animator = [[BYCMoodAnimator alloc] initWithViews:self.rowLayout.icons delay:1.5f];

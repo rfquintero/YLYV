@@ -21,8 +21,8 @@
         [self.button.titleLabel setFont:[BYCUI roundFontOfSize:18.0f]];
         [self.button addTarget:self action:@selector(helpSelected) forControlEvents:UIControlEventTouchUpInside];
         
-        self.text = [BYCUI labelWithFontSize:18.0f];
-        self.text.text = @"4 ways to talk";
+        self.text = [BYCUI labelWithFontSize:16.0f];
+        self.text.text = @"4 Ways to Get Help";
         
         [self addSubview:self.button];
         [self addSubview:self.text];
