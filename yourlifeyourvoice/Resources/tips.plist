@@ -252,5 +252,154 @@
 			<string>Replace negative statements running through your mind with reality statements and calming thoughts.</string>
 		</array>
 	</dict>
+  <key>annoyed</key>
+  <dict>
+    <key>Annoyed</key>
+    <array>
+      <string>Close your eyes and count to 10.</string>
+      <string>Ask yourself if it’s really worth feeling so annoyed. Will it matter in a week, month, or year?</string>
+      <string>Walk away from the situation for a few minutes.</string>
+      <string>Remember that you can’t take back what you say. Will you regret it later?</string>
+      <string>Try to relax your body, stretch or shake off any tension.</string>
+      <string>Visualize being in a peaceful place.</string>
+      <string>Take a deep breath.</string>
+      <string>Stop reading or watching whatever is annoying you--unplug yourself!</string>
+      <string>Spend time with family or close friends for support when the world or local events are troubling you.</string>
+      <string>Talk to a trusted adult about your feelings. Or contact a counselor at Your Life Your Voice.</string>
+    </array>
+  </dict>
+  <key>cautious</key>
+  <dict>
+    <key>Cautious</key>
+    <array>
+      <string>Replace negative statements running through your mind with reality statements and calming thoughts.</string>
+      <string>Focus forward, not on the past.</string>
+      <string>Take control of the way you look at things.</string>
+      <string>Talk to someone about how you are feeling.</string>
+      <string>Write your feelings in a journal.</string>
+      <string>Identify what is making you feel cautious. Is it the situation, person, environment, etc?</string>
+      <string>Learn to say &quot;no.&quot;</string>
+      <string>Respect yourself. Stick with what you know is right. Don’t let others talk you into doing something for the sake of popularity or status.</string>
+      <string>Learn to be assertive. Being assertive can help you get what you want without hurting others or making a scene.</string>
+      <string>Identify what is making you feel cautious.</string>
+      <string>Talk to someone who can help you process what you are going through.</string>
+    </array>
+  </dict>
+  <key>meh</key>
+  <dict>
+    <key>Meh</key>
+    <array>
+      <string>Imagine your situation being better, healthier, and happier no matter how good things may already be.</string>
+      <string>Happiness comes from within. We are responsible for nurturing it!</string>
+      <string>Things don’t make people happy.  Meaning, value and strength come from within you.</string>
+      <string>No one else can give you happiness, and no one else can take it away.</string>
+      <string>Give yourself time to evaluate your thoughts and feelings before you make decisions.</string>
+      <string>Do something nice for someone else. Whenever you help someone else, you take the focus off of you, and can help yourself feel better.</string>
+      <string>Let your mind take a break for a while and do something good for others.</string>
+      <string>Take control of the way you look at things.</string>
+      <string>Set yourself up for success. Set some small, realistic goals that you can accomplish.</string>
+      <string>Be friendly, helpful, and cooperative; that’s what really counts.</string>
+      <string>Get some exercise.</string>
+      <string>Spend time playing with a pet.</string>
+      <string>Make a blessings list.</string>
+      <string>Visit a friend.</string>
+      <string>Talk to someone.</string>
+    </array>
+  </dict>
+  <key>overwhelmed</key>
+  <dict>
+    <key>Overwhelmed</key>
+    <array>
+        <string>Take a deep breath. Try to relax.</string>
+        <string>Replace overwhelming thoughts running through your mind with reality statements and calming thoughts.</string>
+        <string>Try to relax your body, stretch or shake off any tension.</string>
+        <string>Visualize being in a peaceful place.</string>
+        <string>Focus forward, not on the past.</string>
+        <string>Accept the things you can’t change.</string>
+        <string>Focus on controlling your thoughts first before trying to problem-solve.</string>
+        <string>Take control of the way you look at things.</string>
+        <string>Make a blessings list.</string>
+        <string>Listen to music.</string>
+        <string>Write your feelings in a journal.</string>
+        <string>Talk to someone about how you are feeling.</string>
+        <string>Maintain a consistent sleeping schedule.</string>
+        <string>Take care of yourself.</string>
+        <string>Take a break from the situation when possible. Relax and recharge.</string>
+        <string>No one else can give you happiness, and no one else can take it away.</string>
+        <string>Respect yourself. Stick with what you know is right. Don’t let others talk you into doing something for the sake of popularity or status.</string>
+        <string>Learn to say &quot;no.&quot;</string>
+        <string>Identify what is making you feel so overwhelmed.</string>
+    </array>
+  </dict>
+  <key>guilty</key>
+  <dict>
+    <key>Guilty</key>
+    <array>
+      <string>Identify what is causing your guilty feelings and thoughts.</string>
+      <string>Focus forward, not on the past.</string>
+      <string>Replace negative statements running through your mind with reality statements and calming thoughts.</string>
+      <string>Make an apology.</string>
+      <string>Do something nice for someone else.</string>
+      <string>Accept the things you can’t change.</string>
+      <string>Take control of the way you look at things.</string>
+      <string>Talk to someone about how you are feeling.</string>
+      <string>Make a list of your best qualities.</string>
+      <string>Talk and or write about what’s making you feel guilty – repeatedly, if you need to.</string>
+      <string>Identify things that are meaningful to you, what activities make you feel like you are making a difference in the world.</string>
+      <string>Talk to someone who can help you process what you are going through.</string>
+      <string>Take responsibility for your behavior. If you make a mistake, correct it. Apologize, if necessary. People are less likely to be mad at you if you own up to the mistake.</string>
+      <string>Forgive yourself for making mistake or for your imperfections.</string>
+      <string>Learn to say positive things to yourself. Instead of cutting yourself down, build yourself up. Tell yourself that you are a good person and that you will keep trying.</string>
+    </array>
+  </dict>
+  <key>uncomfortable</key>
+  <dict>
+    <key>Uncomfortable</key>
+    <array>
+      <string>Identify what is causing your discomfort.</string>
+      <string>Stay out of pointless drama!</string>
+      <string>Take control of the way you look at things.</string>
+      <string>Write your feelings in a journal.</string>
+      <string>Focus forward, not on the past.</string>
+      <string>Accept the things you can’t change.</string>
+      <string>Talk to someone about how you are feeling.</string>
+      <string>Walk away from the situation for a few minutes.</string>
+      <string>Ask yourself if it’s really worth getting upset over. Will it matter in a week, month, or year?</string>
+      <string>Visualize being in a peaceful place.</string>
+      <string>Give yourself 10 minutes twice a day to worry about things…… .after that, whenever you notice yourself worrying, tell yourself it will still be there tomorrow.</string>
+      <string>Put your best foot forward.</string>
+      <string>Avoid situations that can make you feel uncomfortable (if possible.)</string>
+      <string>Replace negative statements running through your mind with reality statements and calming thoughts.</string>
+      <string>Take a deep breath.</string>
+      <string>Make a blessings list.</string>
+      <string>Take a break from the situation when possible. Relax and recharge.</string>
+      <string>Talk to someone who can help you process what you are going through.</string>
+      <string>Forgive yourself for making mistake or for your imperfections.</string>
+      <string>Respect yourself. Stick with what you know is right. Don’t let others talk you into doing something for the sake of popularity or status.</string>
+      <string>Be friendly, helpful, and cooperative; that’s what really counts.</string>
+    </array>
+  </dict>
+  <key>exhausted</key>
+  <dict>
+    <key>Exhausted</key>
+    <array>
+      <string>Exercise &amp; eat right.</string>
+      <string>Maintain a consistent sleeping schedule.</string>
+      <string>Take care of yourself.</string>
+      <string>Accept the things you can’t change.</string>
+      <string>Talk to someone about how you are feeling.</string>
+      <string>Try to relax your body, stretch or shake off any tension.</string>
+      <string>Visualize being in a peaceful place.</string>
+      <string>Set yourself up for success. Set some small, realistic goals that you can accomplish.</string>
+      <string>Take control of the way you look at things.</string>
+      <string>Take a break from what’s causing you to feel exhausted when possible. Relax and recharge.</string>
+      <string>Focus on the here &amp; now.</string>
+      <string>Talk to someone who can help you process what you are going through.</string>
+      <string>Learn to say &quot;no.&quot;</string>
+      <string>Close your eyes and count to 10.</string>
+      <string>Organize your thoughts and decide what one thing you would like to work on first. Don’t attempt to solve all of your problems at once.</string>
+      <string>Take time to recharge. Watch a funny movie, spend some time alone, or sleep a few extra hours this weekend.</string>
+    </array>
+  </dict>
 </dict>
 </plist>

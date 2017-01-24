@@ -146,7 +146,6 @@
         case BYCMood_Overwhelmed:
         case BYCMood_Guilty:
         case BYCMood_Uncomfortable:
-        case BYCMood_Exhausted:
             return BYCMoodCategory_Negative;
         case BYCMood_Confident:
         case BYCMood_Happy:
@@ -170,6 +169,7 @@
         case BYCMood_Annoyed:
         case BYCMood_Cautious:
         case BYCMood_Meh:
+        case BYCMood_Exhausted:
             return BYCMoodCategory_Neutral;
     }
 }
