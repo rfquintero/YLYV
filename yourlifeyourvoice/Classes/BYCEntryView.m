@@ -273,11 +273,13 @@
 #pragma mark moods
 
 -(NSArray*)moods {
-    return @[@(BYCMood_Happy), @(BYCMood_Excited), @(BYCMood_Relieved), @(BYCMood_Focused),
-             @(BYCMood_Confident), @(BYCMood_Proud), @(BYCMood_Fine), @(BYCMood_Bored), @(BYCMood_Depressed), @(BYCMood_Sad),
-             @(BYCMood_Lonely), @(BYCMood_Scared), @(BYCMood_Disgusted), @(BYCMood_Embarrassed),
+    return @[@(BYCMood_Happy), @(BYCMood_Excited), @(BYCMood_Relieved), @(BYCMood_Focused), @(BYCMood_Grateful), @(BYCMood_Inspired),
+             @(BYCMood_Confident), @(BYCMood_Proud), @(BYCMood_Brave), @(BYCMood_Peaceful), @(BYCMood_Surprised),
+             @(BYCMood_Fine), @(BYCMood_Bored), @(BYCMood_Cautious), @(BYCMood_Meh),
+             @(BYCMood_Depressed), @(BYCMood_Sad), @(BYCMood_Lonely), @(BYCMood_Scared), @(BYCMood_Overwhelmed), @(BYCMood_Exhausted),
+             @(BYCMood_Disgusted), @(BYCMood_Embarrassed), @(BYCMood_Guilty), @(BYCMood_Uncomfortable),
              @(BYCMood_Invisible), @(BYCMood_Numb), @(BYCMood_Angry), @(BYCMood_Frustrated),
-             @(BYCMood_Stressed), @(BYCMood_Confused), @(BYCMood_Anxious)];
+             @(BYCMood_Stressed), @(BYCMood_Confused), @(BYCMood_Anxious), @(BYCMood_Annoyed)];
 }
 
 @end

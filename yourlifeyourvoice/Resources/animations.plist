@@ -13,6 +13,18 @@
 			<string>{0,30}</string>
 		</array>
 	</dict>
+	<key>annoyed</key>
+	<dict>
+		<key>fps</key>
+		<integer>30</integer>
+		<key>intro</key>
+		<array/>
+		<key>loop</key>
+		<array>
+			<string>{0,25}</string>
+      <string>{25,0}</string>
+		</array>
+	</dict>
 	<key>anxious</key>
 	<dict>
 		<key>fps</key>
@@ -34,6 +46,29 @@
 		<array>
 			<string>{0,25}</string>
 			<string>{25,0}</string>
+		</array>
+	</dict>
+	<key>brave</key>
+	<dict>
+		<key>fps</key>
+		<integer>35</integer>
+		<key>intro</key>
+		<array/>
+		<key>loop</key>
+		<array>
+			<string>{0,58}</string>
+		</array>
+	</dict>
+	<key>cautious</key>
+	<dict>
+		<key>fps</key>
+		<integer>30</integer>
+		<key>intro</key>
+		<array/>
+		<key>loop</key>
+		<array>
+			<string>{0,19}</string>
+      <string>{19,0}</string>
 		</array>
 	</dict>
 	<key>confident</key>
@@ -111,6 +146,18 @@
 			<string>{25,0}</string>
 		</array>
 	</dict>
+	<key>exhausted</key>
+	<dict>
+		<key>fps</key>
+		<integer>30</integer>
+		<key>intro</key>
+		<array/>
+		<key>loop</key>
+		<array>
+			<string>{0,23}</string>
+      <string>{23,0}</string>
+		</array>
+	</dict>
 	<key>fine</key>
 	<dict>
 		<key>fps</key>
@@ -147,6 +194,30 @@
 			<string>{30,0}</string>
 		</array>
 	</dict>
+	<key>grateful</key>
+	<dict>
+		<key>fps</key>
+		<integer>30</integer>
+		<key>intro</key>
+		<array/>
+		<key>loop</key>
+		<array>
+			<string>{0,29}</string>
+      <string>{29,0}</string>
+		</array>
+	</dict>
+	<key>guilty</key>
+	<dict>
+		<key>fps</key>
+		<integer>30</integer>
+		<key>intro</key>
+		<array/>
+		<key>loop</key>
+		<array>
+			<string>{0,34}</string>
+      <string>{34,0}</string>
+		</array>
+	</dict>
 	<key>happy</key>
 	<dict>
 		<key>fps</key>
@@ -156,6 +227,18 @@
 		<key>loop</key>
 		<array>
 			<string>{0,30}</string>
+		</array>
+	</dict>
+	<key>inspired</key>
+	<dict>
+		<key>fps</key>
+		<integer>30</integer>
+		<key>intro</key>
+		<array/>
+		<key>loop</key>
+		<array>
+			<string>{0,20}</string>
+      <string>{20,0}</string>
 		</array>
 	</dict>
 	<key>invisible</key>
@@ -182,6 +265,18 @@
 			<string>{30,0}</string>
 		</array>
 	</dict>
+	<key>meh</key>
+	<dict>
+		<key>fps</key>
+		<integer>30</integer>
+		<key>intro</key>
+		<array/>
+		<key>loop</key>
+		<array>
+			<string>{0,25}</string>
+      <string>{25,0}</string>
+		</array>
+	</dict>
 	<key>numb</key>
 	<dict>
 		<key>fps</key>
@@ -192,6 +287,30 @@
 		<array>
 			<string>{0,25}</string>
 			<string>{25,0}</string>
+		</array>
+	</dict>
+	<key>overwhelmed</key>
+	<dict>
+		<key>fps</key>
+		<integer>30</integer>
+		<key>intro</key>
+		<array/>
+		<key>loop</key>
+		<array>
+			<string>{0,18}</string>
+      <string>{18,0}</string>
+		</array>
+	</dict>
+	<key>peaceful</key>
+	<dict>
+		<key>fps</key>
+		<integer>30</integer>
+		<key>intro</key>
+		<array/>
+		<key>loop</key>
+		<array>
+			<string>{0,17}</string>
+      <string>{17,0}</string>
 		</array>
 	</dict>
 	<key>proud</key>
@@ -239,6 +358,17 @@
 			<string>{25,0}</string>
 		</array>
 	</dict>
+	<key>surprised</key>
+	<dict>
+		<key>fps</key>
+		<integer>30</integer>
+		<key>intro</key>
+		<array/>
+		<key>loop</key>
+		<array>
+			<string>{0,35}</string>
+		</array>
+	</dict>
 	<key>stressed</key>
 	<dict>
 		<key>fps</key>
@@ -248,6 +378,18 @@
 		<key>loop</key>
 		<array>
 			<string>{0,30}</string>
+		</array>
+	</dict>
+	<key>uncomfortable</key>
+	<dict>
+		<key>fps</key>
+		<integer>30</integer>
+		<key>intro</key>
+		<array/>
+		<key>loop</key>
+		<array>
+			<string>{0,22}</string>
+      <string>{22,0}</string>
 		</array>
 	</dict>
 </dict>

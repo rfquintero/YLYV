@@ -47,6 +47,30 @@
             return @"sad";
         case BYCMood_Scared:
             return @"scared";
+        case BYCMood_Annoyed:
+            return @"annoyed";
+        case BYCMood_Brave:
+            return @"brave";
+        case BYCMood_Cautious:
+            return @"cautious";
+        case BYCMood_Exhausted:
+            return @"exhausted";
+        case BYCMood_Grateful:
+            return @"grateful";
+        case BYCMood_Guilty:
+            return @"guilty";
+        case BYCMood_Inspired:
+            return @"inspired";
+        case BYCMood_Meh:
+            return @"meh";
+        case BYCMood_Overwhelmed:
+            return @"overwhelmed";
+        case BYCMood_Peaceful:
+            return @"peaceful";
+        case BYCMood_Surprised:
+            return @"surprised";
+        case BYCMood_Uncomfortable:
+            return @"uncomfortable";
     }
 }
 
@@ -119,6 +143,10 @@
         case BYCMood_Sad:
         case BYCMood_Scared:
         case BYCMood_Numb:
+        case BYCMood_Overwhelmed:
+        case BYCMood_Guilty:
+        case BYCMood_Uncomfortable:
+        case BYCMood_Exhausted:
             return BYCMoodCategory_Negative;
         case BYCMood_Confident:
         case BYCMood_Happy:
@@ -126,6 +154,11 @@
         case BYCMood_Relieved:
         case BYCMood_Excited:
         case BYCMood_Focused:
+        case BYCMood_Brave:
+        case BYCMood_Grateful:
+        case BYCMood_Inspired:
+        case BYCMood_Peaceful:
+        case BYCMood_Surprised:
             return BYCMoodCategory_Positive;
         case BYCMood_Confused:
         case BYCMood_Embarrassed:
@@ -134,6 +167,9 @@
         case BYCMood_Anxious:
         case BYCMood_Fine:
         case BYCMood_Bored:
+        case BYCMood_Annoyed:
+        case BYCMood_Cautious:
+        case BYCMood_Meh:
             return BYCMoodCategory_Neutral;
     }
 }
@@ -142,31 +178,43 @@
     switch(type) {
         case BYCMood_Confident:
         case BYCMood_Proud:
+        case BYCMood_Brave:
+        case BYCMood_Surprised:
+        case BYCMood_Peaceful:
             return [UIColor bgPurple];
         case BYCMood_Depressed:
         case BYCMood_Lonely:
         case BYCMood_Scared:
         case BYCMood_Sad:
+        case BYCMood_Exhausted:
+        case BYCMood_Overwhelmed:
             return [UIColor bgBlue];
         case BYCMood_Invisible:
         case BYCMood_Numb:
         case BYCMood_Embarrassed:
         case BYCMood_Disgusted:
+        case BYCMood_Guilty:
+        case BYCMood_Uncomfortable:
             return [UIColor bgGreen];
         case BYCMood_Happy:
         case BYCMood_Relieved:
         case BYCMood_Excited:
         case BYCMood_Focused:
+        case BYCMood_Grateful:
+        case BYCMood_Inspired:
             return [UIColor bgYellow];
         case BYCMood_Confused:
         case BYCMood_Stressed:
         case BYCMood_Anxious:
+        case BYCMood_Annoyed:
             return [UIColor bgOrange];
         case BYCMood_Angry:
         case BYCMood_Frustrated:
             return [UIColor bgRed];
         case BYCMood_Fine:
         case BYCMood_Bored:
+        case BYCMood_Cautious:
+        case BYCMood_Meh:
             return [UIColor bgLightOrange];
     }
 }

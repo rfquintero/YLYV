@@ -22,6 +22,18 @@ typedef enum {
     BYCMood_Numb,
     BYCMood_Sad,
     BYCMood_Scared,
+    BYCMood_Annoyed,
+    BYCMood_Brave,
+    BYCMood_Cautious,
+    BYCMood_Exhausted,
+    BYCMood_Grateful,
+    BYCMood_Guilty,
+    BYCMood_Inspired,
+    BYCMood_Meh,
+    BYCMood_Overwhelmed,
+    BYCMood_Peaceful,
+    BYCMood_Surprised,
+    BYCMood_Uncomfortable,
 } BYCMoodType;
 
 typedef enum {
