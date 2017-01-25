@@ -42,13 +42,19 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.1</string>
+	<string>2.2</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>2</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Camera access allows you to attach photos to your journal entries.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Microphone access allows you to attach audio to your journal entries.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Photo access allows you to attach photos to your journal entries.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>WalterTurncoat.ttf</string>
