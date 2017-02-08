@@ -40,7 +40,7 @@
     CGSize imageSize = self.viewSize;
     CGFloat spacingY = 15.0f;
     
-    return (offsetY - spacingY)/imageSize.height;
+    return (offsetY - spacingY)/(imageSize.height + spacingY);
 }
 
 -(CGSize)viewSize {
