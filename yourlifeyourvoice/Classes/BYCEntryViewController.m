@@ -28,7 +28,9 @@
     [self.navView setContentView:self.entryView];
     [self.navView setNavTitle:@"I'm feeling..."];
     [self.navView setupBackButton:self action:@selector(backSelected)];
+    [self.navView setupLeftButton2:[UIImage imageNamed:@"icon_navbar_help"] target:self action:@selector(talkSelected)];
     [self.navView setLeftButtonHidden:YES animated:NO];
+    [self.navView setLeftButton2Hidden:NO animated:NO];
     [self.entryView setNavView:self.navView];
     [self setupMenuButton];
     self.screenName = @"I'm feeling...";
@@ -111,12 +113,14 @@
     [self.entryView discardEntry];
     [self.navView setNavTitleHidden:NO animated:YES];
     [self.navView setLeftButtonHidden:YES animated:YES];
+    [self.navView setLeftButton2Hidden:NO animated:YES];
     [self.model reset];
     [self refreshView];
 }
 
 -(void)entryStarted {
     [self.navView setLeftButtonHidden:NO animated:YES];
+    [self.navView setLeftButton2Hidden:YES animated:YES];
     [self.navView setNavTitleHidden:YES animated:YES];
 }
 

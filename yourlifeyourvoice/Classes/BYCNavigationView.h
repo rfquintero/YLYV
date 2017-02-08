@@ -10,9 +10,11 @@
 -(void)setupBackButton:(id)target action:(SEL)action;
 -(void)setupMenuButton:(id)target action:(SEL)action;
 -(void)setupLeftButton:(UIImage*)image target:(id)target action:(SEL)action;
+-(void)setupLeftButton2:(UIImage*)image target:(id)target action:(SEL)action;
 -(void)setupRightButton:(UIImage*)image target:(id)target action:(SEL)action;
 -(void)setLeftButtonHidden:(BOOL)hidden animated:(BOOL)animated;
 -(void)setRightButtonHidden:(BOOL)hidden animated:(BOOL)animated;
+-(void)setLeftButton2Hidden:(BOOL)hidden animated:(BOOL)animated;
 -(void)setButtonsAcive:(BOOL)active;
 
 +(CGFloat)navbarHeight;
