@@ -9,4 +9,5 @@
 
 -(void)addSmallIconView:(UIView *)view;
 -(void)setDelegate:(id<BYCEntryRowLayoutViewDelegate>)delegate;
+-(NSInteger)rowAtOffset:(CGFloat)offsetY;
 @end

@@ -43,8 +43,15 @@
 
 -(void)animate {
     if(self.moodViews.count > 0) {
-        int i = rand()%self.moodViews.count;
-        BYCMoodView *view = self.moodViews[i];
+        NSRange range = [self.delegate animatorVisibleRange:self];
+        NSInteger index = 0;
+        if(range.length > 0) {
+            index = (range.location + rand()%range.length);
+        } else {
+            index = rand()%self.moodViews.count;
+        }
+        index = MAX(0, MIN(self.moodViews.count-1, index));
+        BYCMoodView *view = self.moodViews[index];
         [view animateStep];
     }
 }

@@ -10,7 +10,7 @@
 #define kLargeSize 190.0f
 #define kSmallSize 110.0f
 
-@interface BYCEntryView()<BYCMoodViewDelegate, BYCAddEntryViewDelegate, BYCHelpViewDelegate>
+@interface BYCEntryView()<BYCMoodViewDelegate, BYCAddEntryViewDelegate, BYCHelpViewDelegate, BYCMoodAnimatorDelegate>
 @property (nonatomic) BYCEntryRowLayoutView *rowLayout;
 @property (nonatomic) BYCMoodView *largeMood;
 @property (nonatomic) BYCAddEntryView *addEntry;
@@ -26,13 +26,6 @@
         self.rowLayout = [[BYCEntryRowLayoutView alloc] initWithFrame:CGRectZero];
         
         NSArray *moods = self.moods;
-        if(moods.count%2 == 1) {
-            BYCHelpView *help = [[BYCHelpView alloc] initWithFrame:CGRectZero];
-            help.faceSize = kSmallSize;
-            help.delegate = self;
-            [self.rowLayout addSmallIconView:help];
-        }
-        
         for(NSNumber *type in moods) {
             BYCMoodView *mood = [[BYCMoodView alloc] initWithFrame:CGRectZero type:[type intValue] small:YES];
             mood.faceSize = kSmallSize;
@@ -41,6 +34,7 @@
         }
         
         self.animator = [[BYCMoodAnimator alloc] initWithViews:self.rowLayout.icons delay:1.5f];
+        self.animator.delegate = self;
         [self.animator start];
         
         self.largeMood = [[BYCMoodView alloc] initWithFrame:CGRectZero type:BYCMood_Lonely small:NO];
@@ -268,6 +262,12 @@
 
 -(void)helpSelected {
     [self.delegate talkSelected];
+}
+
+-(NSRange)animatorVisibleRange:(BYCMoodAnimator*)animator {
+    NSInteger startRow = [self.rowLayout rowAtOffset:self.scrollView.contentOffset.y];
+    NSInteger endRow = [self.rowLayout rowAtOffset:self.scrollView.contentOffset.y + self.scrollView.frame.size.height];
+    return NSMakeRange(2*startRow, 2*(endRow-startRow));
 }
 
 #pragma mark moods

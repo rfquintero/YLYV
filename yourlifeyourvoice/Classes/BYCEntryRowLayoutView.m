@@ -36,6 +36,13 @@
     }
 }
 
+-(NSInteger)rowAtOffset:(CGFloat)offsetY {
+    CGSize imageSize = self.viewSize;
+    CGFloat spacingY = 15.0f;
+    
+    return (offsetY - spacingY)/imageSize.height;
+}
+
 -(CGSize)viewSize {
     if(self.smallIconViews.count > 0) {
         return [(UIView*)self.smallIconViews[0] sizeThatFits:CGSizeUnbounded];
