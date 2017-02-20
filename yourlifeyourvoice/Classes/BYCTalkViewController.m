@@ -43,10 +43,10 @@
 
 -(void)chatSelected {
     [self trackEvent:BYCTrackingContact action:@"chat" label:@"talk" value:nil];
-    if([[NSDate date] isOnDays:@[@(2),@(3),@(4),@(5)] startHour:19 startMinute:00 endHour:23 endMinute:59]) {
+    if([[NSDate date] isOnDays:@[@(2),@(3),@(4),@(5),@(6)] startHour:18 startMinute:00 endHour:23 endMinute:59]) {
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.lifeline-chat.org/SightMaxAgentInterface/PreChatSurvey.aspx?accountID=5&siteID=8&queueID=17"]];
     } else {
-        [self showError:@"Online Chat Unavailable" message:@"Chat will be available on Mondays - Thursdays from 7:00PM - 12:00 AM CDT. Please call or email."];
+        [self showError:@"Online Chat Unavailable" message:@"Chat will be available on Mondays - Fridays from 6:00PM - 12:00 AM CDT. Please call or email."];
     }
 }
 

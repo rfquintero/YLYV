@@ -202,6 +202,8 @@
 		4525192D18B6CF0000D1B561 /* WalterTurncoat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4525192B18B6CF0000D1B561 /* WalterTurncoat.ttf */; };
 		4525193018B70D8900D1B561 /* BYCAddEntryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4525192F18B70D8900D1B561 /* BYCAddEntryView.m */; };
 		4525193118B70D8900D1B561 /* BYCAddEntryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4525192F18B70D8900D1B561 /* BYCAddEntryView.m */; };
+		454C5BE21E4AE407009B5DAA /* icon_navbar_help.png in Resources */ = {isa = PBXBuildFile; fileRef = 454C5BE01E4AE407009B5DAA /* icon_navbar_help.png */; };
+		454C5BE31E4AE407009B5DAA /* icon_navbar_help@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 454C5BE11E4AE407009B5DAA /* icon_navbar_help@2x.png */; };
 		4559EB1818C660D800F63125 /* BYCDatabaseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4559EB1718C660D800F63125 /* BYCDatabaseTest.m */; };
 		455D89751BC2322D00256F7E /* BYCHelpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 455D89741BC2322D00256F7E /* BYCHelpView.m */; };
 		455D89761BC2322D00256F7E /* BYCHelpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 455D89741BC2322D00256F7E /* BYCHelpView.m */; };
@@ -629,6 +631,8 @@
 		4525192B18B6CF0000D1B561 /* WalterTurncoat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = WalterTurncoat.ttf; sourceTree = "<group>"; };
 		4525192E18B70D8900D1B561 /* BYCAddEntryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCAddEntryView.h; sourceTree = "<group>"; };
 		4525192F18B70D8900D1B561 /* BYCAddEntryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCAddEntryView.m; sourceTree = "<group>"; };
+		454C5BE01E4AE407009B5DAA /* icon_navbar_help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_navbar_help.png; sourceTree = "<group>"; };
+		454C5BE11E4AE407009B5DAA /* icon_navbar_help@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_navbar_help@2x.png"; sourceTree = "<group>"; };
 		4559EB1718C660D800F63125 /* BYCDatabaseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCDatabaseTest.m; sourceTree = "<group>"; };
 		455D89731BC2322D00256F7E /* BYCHelpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCHelpView.h; sourceTree = "<group>"; };
 		455D89741BC2322D00256F7E /* BYCHelpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCHelpView.m; sourceTree = "<group>"; };
@@ -1025,6 +1029,8 @@
 				452518D918B6892400D1B561 /* icon_navbar_back@2x.png */,
 				452518DA18B6892400D1B561 /* icon_navbar_close.png */,
 				452518DB18B6892400D1B561 /* icon_navbar_close@2x.png */,
+				454C5BE01E4AE407009B5DAA /* icon_navbar_help.png */,
+				454C5BE11E4AE407009B5DAA /* icon_navbar_help@2x.png */,
 				452518DC18B6892400D1B561 /* icon_navbar_menu.png */,
 				452518DD18B6892400D1B561 /* icon_navbar_menu@2x.png */,
 				452365F118CA6626008AA4FC /* tips.plist */,
@@ -1962,6 +1968,7 @@
 				45BCA6F51E371FD0009E2A22 /* annoyed.plist in Resources */,
 				452365DC18CA5084008AA4FC /* face_relieved_start@2x.png in Resources */,
 				4523660318CA70E7008AA4FC /* icon_logo@2x.png in Resources */,
+				454C5BE31E4AE407009B5DAA /* icon_navbar_help@2x.png in Resources */,
 				4523658C18CA5084008AA4FC /* face_angry_start@2x.png in Resources */,
 				45C329EC18C26AC100CA8A86 /* animations.plist in Resources */,
 				45BCA7031E371FD0009E2A22 /* depressed.plist in Resources */,
@@ -2061,6 +2068,7 @@
 				452365B218CA5084008AA4FC /* face_frustrated_start.png in Resources */,
 				45BCA6841E371FBE009E2A22 /* face_peaceful_end@2x.png in Resources */,
 				45BCA70F1E371FD0009E2A22 /* focused.plist in Resources */,
+				454C5BE21E4AE407009B5DAA /* icon_navbar_help.png in Resources */,
 				452518E018B6892400D1B561 /* icon_button_add@2x.png in Resources */,
 				452518EA18B6892400D1B561 /* icon_navbar_close.png in Resources */,
 				452365BC18CA5084008AA4FC /* face_happy_start@2x.png in Resources */,

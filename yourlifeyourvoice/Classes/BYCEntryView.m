@@ -267,7 +267,7 @@
 -(NSRange)animatorVisibleRange:(BYCMoodAnimator*)animator {
     NSInteger startRow = [self.rowLayout rowAtOffset:self.scrollView.contentOffset.y];
     NSInteger endRow = [self.rowLayout rowAtOffset:self.scrollView.contentOffset.y + self.scrollView.frame.size.height];
-    return NSMakeRange(2*startRow, 2*(endRow-startRow));
+    return NSMakeRange(2*startRow, 2*(endRow-startRow+1));
 }
 
 #pragma mark moods
