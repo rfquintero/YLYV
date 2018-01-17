@@ -39,7 +39,8 @@
 }
 
 -(void)animateFrom:(NSUInteger)start to:(NSUInteger)end duration:(CGFloat)duration {
-    NSUInteger frames = start - end;
+    // Removing this labs breaks the animations...must be a type mismatch somewhere?
+    NSUInteger frames = labs(start - end);
     if(start < end) {
         end += 1;
     }
@@ -56,7 +57,8 @@
 }
 
 -(void)animateFrom:(NSUInteger)start to:(NSUInteger)end fps:(CGFloat)fps {
-    NSUInteger frames = start - end;
+    // Removing this labs breaks the animations...must be a type mismatch somewhere?
+    NSUInteger frames = labs(start - end);
     if(frames > 0) {
         [self animateFrom:start to:end duration:frames/fps];
     }
