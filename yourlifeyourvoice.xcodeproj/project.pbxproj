@@ -285,6 +285,13 @@
 		455D8A421BC235D700256F7E /* face_scared_start@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 455D89F61BC235D700256F7E /* face_scared_start@2x.png */; };
 		4566E69F18C56CA00055DECD /* BYCMoodAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566E69E18C56CA00055DECD /* BYCMoodAnimator.m */; };
 		4566E6A018C56CA00055DECD /* BYCMoodAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566E69E18C56CA00055DECD /* BYCMoodAnimator.m */; };
+		457AD734200F007500592043 /* BYCSafetyPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 457AD733200F007500592043 /* BYCSafetyPlanViewController.m */; };
+		457AD737200F009100592043 /* BYCSafetyPlanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 457AD736200F009100592043 /* BYCSafetyPlanView.m */; };
+		457AD73A200F07C100592043 /* BYCAccordionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 457AD739200F07C100592043 /* BYCAccordionView.m */; };
+		457AD73E200F08A000592043 /* BYCAccordionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 457AD73D200F08A000592043 /* BYCAccordionHeaderView.m */; };
+		457AD740200F1F7700592043 /* safety_plan.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 457AD73F200F1F7700592043 /* safety_plan.pdf */; };
+		457AD744200F21CB00592043 /* BYCPdfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 457AD743200F21CB00592043 /* BYCPdfViewController.m */; };
+		457AD747200F247700592043 /* BYCPdfView.m in Sources */ = {isa = PBXBuildFile; fileRef = 457AD746200F247700592043 /* BYCPdfView.m */; };
 		458F0C7C18BEAD74002FEC75 /* BYCSpriteLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F0C7B18BEAD74002FEC75 /* BYCSpriteLayer.m */; };
 		458F0C7D18BEAD74002FEC75 /* BYCSpriteLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F0C7B18BEAD74002FEC75 /* BYCSpriteLayer.m */; };
 		458F0CD518BEB270002FEC75 /* BYCMood.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F0CD418BEB270002FEC75 /* BYCMood.m */; };
@@ -676,6 +683,19 @@
 		455D89F61BC235D700256F7E /* face_scared_start@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "face_scared_start@2x.png"; path = "stills/face_scared_start@2x.png"; sourceTree = "<group>"; };
 		4566E69D18C56CA00055DECD /* BYCMoodAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCMoodAnimator.h; sourceTree = "<group>"; };
 		4566E69E18C56CA00055DECD /* BYCMoodAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCMoodAnimator.m; sourceTree = "<group>"; };
+		457AD732200F007500592043 /* BYCSafetyPlanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYCSafetyPlanViewController.h; sourceTree = "<group>"; };
+		457AD733200F007500592043 /* BYCSafetyPlanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYCSafetyPlanViewController.m; sourceTree = "<group>"; };
+		457AD735200F009100592043 /* BYCSafetyPlanView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYCSafetyPlanView.h; sourceTree = "<group>"; };
+		457AD736200F009100592043 /* BYCSafetyPlanView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYCSafetyPlanView.m; sourceTree = "<group>"; };
+		457AD738200F07C100592043 /* BYCAccordionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYCAccordionView.h; sourceTree = "<group>"; };
+		457AD739200F07C100592043 /* BYCAccordionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYCAccordionView.m; sourceTree = "<group>"; };
+		457AD73C200F08A000592043 /* BYCAccordionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYCAccordionHeaderView.h; sourceTree = "<group>"; };
+		457AD73D200F08A000592043 /* BYCAccordionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYCAccordionHeaderView.m; sourceTree = "<group>"; };
+		457AD73F200F1F7700592043 /* safety_plan.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = safety_plan.pdf; sourceTree = "<group>"; };
+		457AD742200F21CB00592043 /* BYCPdfViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYCPdfViewController.h; sourceTree = "<group>"; };
+		457AD743200F21CB00592043 /* BYCPdfViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYCPdfViewController.m; sourceTree = "<group>"; };
+		457AD745200F247700592043 /* BYCPdfView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYCPdfView.h; sourceTree = "<group>"; };
+		457AD746200F247700592043 /* BYCPdfView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYCPdfView.m; sourceTree = "<group>"; };
 		458F0C7A18BEAD74002FEC75 /* BYCSpriteLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCSpriteLayer.h; sourceTree = "<group>"; };
 		458F0C7B18BEAD74002FEC75 /* BYCSpriteLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCSpriteLayer.m; sourceTree = "<group>"; };
 		458F0CD318BEB270002FEC75 /* BYCMood.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCMood.h; sourceTree = "<group>"; };
@@ -949,6 +969,7 @@
 				452518A818B6774E00D1B561 /* Classes */,
 				4525188318B6750800D1B561 /* BYCAppDelegate.h */,
 				4525188418B6750800D1B561 /* BYCAppDelegate.m */,
+				457AD73F200F1F7700592043 /* safety_plan.pdf */,
 				4525188618B6750800D1B561 /* Images.xcassets */,
 				4525187B18B6750800D1B561 /* Supporting Files */,
 			);
@@ -988,6 +1009,7 @@
 		452518A818B6774E00D1B561 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				457AD731200F000B00592043 /* Safety Plan */,
 				45D8279518C7C4070055ADA5 /* Reports */,
 				458F0FC518BFD507002FEC75 /* Categories */,
 				45DEC7D018BBBE1300A92550 /* Database */,
@@ -1095,6 +1117,8 @@
 		452518BB18B67BAA00D1B561 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				457AD741200F21B500592043 /* PDF */,
+				457AD73B200F088D00592043 /* AccordionView */,
 				45D8276A18C77C9E0055ADA5 /* Data */,
 				458F0C7918BEAD5B002FEC75 /* Moods */,
 				4525192618B6A27E00D1B561 /* Split Controller */,
@@ -1174,6 +1198,39 @@
 				4525192818B6A2A400D1B561 /* BYCSideViewCell.m */,
 			);
 			name = "Split Controller";
+			sourceTree = "<group>";
+		};
+		457AD731200F000B00592043 /* Safety Plan */ = {
+			isa = PBXGroup;
+			children = (
+				457AD732200F007500592043 /* BYCSafetyPlanViewController.h */,
+				457AD733200F007500592043 /* BYCSafetyPlanViewController.m */,
+				457AD735200F009100592043 /* BYCSafetyPlanView.h */,
+				457AD736200F009100592043 /* BYCSafetyPlanView.m */,
+			);
+			name = "Safety Plan";
+			sourceTree = "<group>";
+		};
+		457AD73B200F088D00592043 /* AccordionView */ = {
+			isa = PBXGroup;
+			children = (
+				457AD73C200F08A000592043 /* BYCAccordionHeaderView.h */,
+				457AD73D200F08A000592043 /* BYCAccordionHeaderView.m */,
+				457AD738200F07C100592043 /* BYCAccordionView.h */,
+				457AD739200F07C100592043 /* BYCAccordionView.m */,
+			);
+			name = AccordionView;
+			sourceTree = "<group>";
+		};
+		457AD741200F21B500592043 /* PDF */ = {
+			isa = PBXGroup;
+			children = (
+				457AD742200F21CB00592043 /* BYCPdfViewController.h */,
+				457AD743200F21CB00592043 /* BYCPdfViewController.m */,
+				457AD745200F247700592043 /* BYCPdfView.h */,
+				457AD746200F247700592043 /* BYCPdfView.m */,
+			);
+			name = PDF;
 			sourceTree = "<group>";
 		};
 		458F0C7918BEAD5B002FEC75 /* Moods */ = {
@@ -2118,6 +2175,7 @@
 				452365DE18CA5084008AA4FC /* face_stressed_end.png in Resources */,
 				455D8A2D1BC235D700256F7E /* face_numb_end@2x.png in Resources */,
 				45AFD5FD18C147CD002C18F9 /* icon_speaker_on.png in Resources */,
+				457AD740200F1F7700592043 /* safety_plan.pdf in Resources */,
 				455D89FF1BC235D700256F7E /* face_bored_end.png in Resources */,
 				45BCA63B1E32EAD3009E2A22 /* face_brave_end.png in Resources */,
 				45BCA7011E371FD0009E2A22 /* confused.plist in Resources */,
@@ -2261,7 +2319,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				457AD73E200F08A000592043 /* BYCAccordionHeaderView.m in Sources */,
 				452518F818B68B3D00D1B561 /* BYCMoodView.m in Sources */,
+				457AD737200F009100592043 /* BYCSafetyPlanView.m in Sources */,
 				45D8276D18C77CB20055ADA5 /* BYCEntry.m in Sources */,
 				458F0FDC18C0EA87002FEC75 /* BYCAddReasonsViewController.m in Sources */,
 				452518BE18B67BD400D1B561 /* BYCUI.m in Sources */,
@@ -2285,6 +2345,8 @@
 				45D8278B18C7A0660055ADA5 /* BYCQueue.m in Sources */,
 				458F0FD818C0E121002FEC75 /* BYCAddReasonsView.m in Sources */,
 				4523653918C8EAA5008AA4FC /* BYCReportView.m in Sources */,
+				457AD744200F21CB00592043 /* BYCPdfViewController.m in Sources */,
+				457AD747200F247700592043 /* BYCPdfView.m in Sources */,
 				452365E818CA5FB5008AA4FC /* BYCTipsViewController.m in Sources */,
 				4523654D18CA1F9E008AA4FC /* BYCReminderTime.m in Sources */,
 				45DEC7D318BBBE2600A92550 /* BYCDatabase.m in Sources */,
@@ -2297,6 +2359,7 @@
 				45AFD60318C149B9002C18F9 /* BYCAudioView.m in Sources */,
 				458F0FD018BFE94F002FEC75 /* BYCEntryModel.m in Sources */,
 				452518CE18B67F3C00D1B561 /* BYCNavigationView.m in Sources */,
+				457AD734200F007500592043 /* BYCSafetyPlanViewController.m in Sources */,
 				452365EC18CA6027008AA4FC /* BYCTipsView.m in Sources */,
 				45D827AC18C7CB5D0055ADA5 /* NSDate+Custom.m in Sources */,
 				4523653518C8EA84008AA4FC /* BYCReportViewController.m in Sources */,
@@ -2315,6 +2378,7 @@
 				452518B418B679DE00D1B561 /* BYCApplicationState.m in Sources */,
 				458F0FC818BFD516002FEC75 /* UIImage+Custom.m in Sources */,
 				452518D218B6822800D1B561 /* BYCContentView.m in Sources */,
+				457AD73A200F07C100592043 /* BYCAccordionView.m in Sources */,
 				4566E69F18C56CA00055DECD /* BYCMoodAnimator.m in Sources */,
 				451F450518CFA61900EC38A3 /* BYCLegacyDatabase.m in Sources */,
 				452518C618B67BF400D1B561 /* UIColor+Custom.m in Sources */,
@@ -2504,6 +2568,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 59D2RY7Q66;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "yourlifeyourvoice/yourlifeyourvoice-Prefix.pch";
@@ -2527,6 +2592,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 59D2RY7Q66;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "yourlifeyourvoice/yourlifeyourvoice-Prefix.pch";

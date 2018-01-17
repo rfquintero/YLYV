@@ -18,7 +18,7 @@
     if (self) {
         self.backgroundColor = [UIColor bgSidebarGray];
         
-        self.items = @[@(BYCSideView_Entry), @(BYCSideView_Moods), @(BYCSideView_Reports), @(BYCSideView_Reminders), @(BYCSideView_Tips), @(BYCSideView_Talk), @(BYCSideView_Info)];
+        self.items = @[@(BYCSideView_Entry), @(BYCSideView_Moods), @(BYCSideView_Reports), @(BYCSideView_Reminders), @(BYCSideView_Tips), @(BYCSideView_SafetyPlan), @(BYCSideView_Talk), @(BYCSideView_Info)];
         
         self.tableView = [[UITableView alloc] initWithFrame:CGRectZero];
         self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -102,6 +102,8 @@
         case BYCSideView_Info:
             [self.delegate infoSelected];
             break;
+        case BYCSideView_SafetyPlan:
+            [self.delegate safetyPlanSelected];
         default:
             break;
     }
@@ -129,6 +131,8 @@
             return @"Talk";
         case BYCSideView_Info:
             return @"YourLife YourVoice";
+        case BYCSideView_SafetyPlan:
+            return @"Safety Plan";
     }
 }
 

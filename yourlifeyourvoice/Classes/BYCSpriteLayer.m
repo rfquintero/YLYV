@@ -1,6 +1,6 @@
 #import "BYCSpriteLayer.h"
 
-@interface BYCSpriteLayer()
+@interface BYCSpriteLayer()<CAAnimationDelegate>
 @property (nonatomic) NSUInteger spriteFrame;
 @property (nonatomic, readwrite) BOOL animating;
 @property (nonatomic, weak) id<BYCSpriteLayerDataSource> dataSource;
@@ -39,7 +39,7 @@
 }
 
 -(void)animateFrom:(NSUInteger)start to:(NSUInteger)end duration:(CGFloat)duration {
-    NSUInteger frames = labs(start - end);
+    NSUInteger frames = start - end;
     if(start < end) {
         end += 1;
     }
@@ -56,7 +56,7 @@
 }
 
 -(void)animateFrom:(NSUInteger)start to:(NSUInteger)end fps:(CGFloat)fps {
-    NSUInteger frames = labs(start - end);
+    NSUInteger frames = start - end;
     if(frames > 0) {
         [self animateFrom:start to:end duration:frames/fps];
     }

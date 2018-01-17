@@ -11,6 +11,7 @@
 +(UIColor*)bgOrange;
 +(UIColor*)bgRed;
 +(UIColor*)bgLightOrange;
++(UIColor*)bgAccordion;
 
 +(UIColor*)textOrange;
 +(UIColor*)textRed;

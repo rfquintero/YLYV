@@ -8,6 +8,7 @@ typedef enum {
     BYCSideView_Tips,
     BYCSideView_Talk,
     BYCSideView_Info,
+    BYCSideView_SafetyPlan,
 } BYCSideViewItem;
 
 @protocol BYCSideViewDelegate <NSObject>
@@ -19,6 +20,7 @@ typedef enum {
 -(void)tipsSelected;
 -(void)talkSelected;
 -(void)infoSelected;
+-(void)safetyPlanSelected;
 @end
 
 @interface BYCSideView : UIView

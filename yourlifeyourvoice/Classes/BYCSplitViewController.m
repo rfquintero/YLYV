@@ -10,6 +10,7 @@
 #import "BYCReminderViewController.h"
 #import "BYCTipsViewController.h"
 #import "BYCInfoViewController.h"
+#import "BYCSafetyPlanViewController.h"
 
 #define kSidebarMargin 120
 
@@ -167,6 +168,10 @@
 
 -(void)infoSelected {
     [self showViewController:[[BYCInfoViewController alloc] initWithApplicationState:self.applicationState] animated:NO];
+}
+
+-(void)safetyPlanSelected {
+    [self showViewController:[[BYCSafetyPlanViewController alloc] initWithApplicationState:self.applicationState] animated:NO];
 }
 
 @end
