@@ -24,12 +24,12 @@
 #pragma mark BYCTalkViewDelegate
 
 -(void)callSelected {
-    [self trackEvent:BYCTrackingContact action:@"call" label:@"talk" value:nil];
+    [self trackEvent:BYCTrackingContact action:@"call" label:@"talk"];
     [self callYLYV];
 }
 
 -(void)emailSelected {
-    [self trackEvent:BYCTrackingContact action:@"email" label:@"talk" value:nil];
+    [self trackEvent:BYCTrackingContact action:@"email" label:@"talk"];
     if([MFMailComposeViewController canSendMail]) {
         MFMailComposeViewController *vc = [[MFMailComposeViewController alloc] init];
         [vc setSubject:@"My Mood"];
@@ -42,7 +42,7 @@
 }
 
 -(void)chatSelected {
-    [self trackEvent:BYCTrackingContact action:@"chat" label:@"talk" value:nil];
+    [self trackEvent:BYCTrackingContact action:@"chat" label:@"talk"];
     if([[NSDate date] isOnDays:@[@(2),@(3),@(4),@(5),@(6)] startHour:18 startMinute:00 endHour:23 endMinute:59]) {
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.lifeline-chat.org/SightMaxAgentInterface/PreChatSurvey.aspx?accountID=5&siteID=8&queueID=17"]];
     } else {
@@ -51,7 +51,7 @@
 }
 
 -(void)textSelected {
-    [self trackEvent:BYCTrackingContact action:@"text" label:@"talk" value:nil];
+    [self trackEvent:BYCTrackingContact action:@"text" label:@"talk"];
     if([MFMessageComposeViewController canSendText]) {
         MFMessageComposeViewController *vc = [[MFMessageComposeViewController alloc] init];
         [vc setRecipients:@[@"20121"]];

@@ -202,6 +202,8 @@
 		4525192D18B6CF0000D1B561 /* WalterTurncoat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4525192B18B6CF0000D1B561 /* WalterTurncoat.ttf */; };
 		4525193018B70D8900D1B561 /* BYCAddEntryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4525192F18B70D8900D1B561 /* BYCAddEntryView.m */; };
 		4525193118B70D8900D1B561 /* BYCAddEntryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4525192F18B70D8900D1B561 /* BYCAddEntryView.m */; };
+		4533EC372455E41100BB0DC9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4533EC362455E41100BB0DC9 /* GoogleService-Info.plist */; };
+		4533EC382455E41100BB0DC9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4533EC362455E41100BB0DC9 /* GoogleService-Info.plist */; };
 		454C5BE21E4AE407009B5DAA /* icon_navbar_help.png in Resources */ = {isa = PBXBuildFile; fileRef = 454C5BE01E4AE407009B5DAA /* icon_navbar_help.png */; };
 		454C5BE31E4AE407009B5DAA /* icon_navbar_help@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 454C5BE11E4AE407009B5DAA /* icon_navbar_help@2x.png */; };
 		4559EB1818C660D800F63125 /* BYCDatabaseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4559EB1718C660D800F63125 /* BYCDatabaseTest.m */; };
@@ -341,9 +343,6 @@
 		45AFD60018C147CD002C18F9 /* icon_speaker_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45AFD5F818C147CD002C18F9 /* icon_speaker_on@2x.png */; };
 		45AFD60318C149B9002C18F9 /* BYCAudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AFD60218C149B9002C18F9 /* BYCAudioView.m */; };
 		45AFD60418C149B9002C18F9 /* BYCAudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AFD60218C149B9002C18F9 /* BYCAudioView.m */; };
-		45B9615418D2124A00B8FDD0 /* libAdIdAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B9614B18D2124A00B8FDD0 /* libAdIdAccess.a */; };
-		45B9615518D2124A00B8FDD0 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B9614C18D2124A00B8FDD0 /* libGoogleAnalyticsServices.a */; };
-		45B9615718D21BB400B8FDD0 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B9615618D21BB400B8FDD0 /* AdSupport.framework */; };
 		45B9615918D21BBD00B8FDD0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B9615818D21BBD00B8FDD0 /* CoreData.framework */; };
 		45B9615B18D21BC300B8FDD0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B9615A18D21BC300B8FDD0 /* SystemConfiguration.framework */; };
 		45B9615D18D21BCC00B8FDD0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B9615C18D21BCC00B8FDD0 /* libz.dylib */; };
@@ -486,6 +485,8 @@
 		45DEC7D718BBBE4800A92550 /* BYCDatabaseUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DEC7D618BBBE4800A92550 /* BYCDatabaseUtilities.m */; };
 		45DEC7D818BBBE4800A92550 /* BYCDatabaseUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DEC7D618BBBE4800A92550 /* BYCDatabaseUtilities.m */; };
 		45DEC7DC18BBC07100A92550 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 45DEC7DB18BBC07100A92550 /* libsqlite3.dylib */; };
+		4C5C4CFAC0501175A4E182E4 /* Pods_yourlifeyourvoice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B6652118DC24942538F0A5B /* Pods_yourlifeyourvoice.framework */; };
+		C7B8B0C18BB1CBF38AA46367 /* Pods_yourlifeyourvoiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB93A8504ED1D9FC2D2455A0 /* Pods_yourlifeyourvoiceTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -638,6 +639,7 @@
 		4525192B18B6CF0000D1B561 /* WalterTurncoat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = WalterTurncoat.ttf; sourceTree = "<group>"; };
 		4525192E18B70D8900D1B561 /* BYCAddEntryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCAddEntryView.h; sourceTree = "<group>"; };
 		4525192F18B70D8900D1B561 /* BYCAddEntryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCAddEntryView.m; sourceTree = "<group>"; };
+		4533EC362455E41100BB0DC9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		454C5BE01E4AE407009B5DAA /* icon_navbar_help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_navbar_help.png; sourceTree = "<group>"; };
 		454C5BE11E4AE407009B5DAA /* icon_navbar_help@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_navbar_help@2x.png"; sourceTree = "<group>"; };
 		4559EB1718C660D800F63125 /* BYCDatabaseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCDatabaseTest.m; sourceTree = "<group>"; };
@@ -737,15 +739,6 @@
 		45AFD5F818C147CD002C18F9 /* icon_speaker_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_speaker_on@2x.png"; sourceTree = "<group>"; };
 		45AFD60118C149B9002C18F9 /* BYCAudioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCAudioView.h; sourceTree = "<group>"; };
 		45AFD60218C149B9002C18F9 /* BYCAudioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCAudioView.m; sourceTree = "<group>"; };
-		45B9614B18D2124A00B8FDD0 /* libAdIdAccess.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdIdAccess.a; sourceTree = "<group>"; };
-		45B9614C18D2124A00B8FDD0 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
-		45B9614E18D2124A00B8FDD0 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
-		45B9614F18D2124A00B8FDD0 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
-		45B9615018D2124A00B8FDD0 /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
-		45B9615118D2124A00B8FDD0 /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
-		45B9615218D2124A00B8FDD0 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
-		45B9615318D2124A00B8FDD0 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
-		45B9615618D21BB400B8FDD0 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		45B9615818D21BBD00B8FDD0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		45B9615A18D21BC300B8FDD0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		45B9615C18D21BCC00B8FDD0 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -887,6 +880,12 @@
 		45DEC7D518BBBE4800A92550 /* BYCDatabaseUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCDatabaseUtilities.h; sourceTree = "<group>"; };
 		45DEC7D618BBBE4800A92550 /* BYCDatabaseUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCDatabaseUtilities.m; sourceTree = "<group>"; };
 		45DEC7DB18BBC07100A92550 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		67D80D6D569D374C34FAA988 /* Pods-yourlifeyourvoice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yourlifeyourvoice.release.xcconfig"; path = "Target Support Files/Pods-yourlifeyourvoice/Pods-yourlifeyourvoice.release.xcconfig"; sourceTree = "<group>"; };
+		7B6652118DC24942538F0A5B /* Pods_yourlifeyourvoice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yourlifeyourvoice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5CF5535370B96B9D217380A /* Pods-yourlifeyourvoiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yourlifeyourvoiceTests.release.xcconfig"; path = "Target Support Files/Pods-yourlifeyourvoiceTests/Pods-yourlifeyourvoiceTests.release.xcconfig"; sourceTree = "<group>"; };
+		BAF9FD3ACA0C2617E89A3E72 /* Pods-yourlifeyourvoiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yourlifeyourvoiceTests.debug.xcconfig"; path = "Target Support Files/Pods-yourlifeyourvoiceTests/Pods-yourlifeyourvoiceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE8E34D5B197FCDC40754E35 /* Pods-yourlifeyourvoice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yourlifeyourvoice.debug.xcconfig"; path = "Target Support Files/Pods-yourlifeyourvoice/Pods-yourlifeyourvoice.debug.xcconfig"; sourceTree = "<group>"; };
+		FB93A8504ED1D9FC2D2455A0 /* Pods_yourlifeyourvoiceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yourlifeyourvoiceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -897,15 +896,13 @@
 				45B9615D18D21BCC00B8FDD0 /* libz.dylib in Frameworks */,
 				45B9615B18D21BC300B8FDD0 /* SystemConfiguration.framework in Frameworks */,
 				45B9615918D21BBD00B8FDD0 /* CoreData.framework in Frameworks */,
-				45B9615718D21BB400B8FDD0 /* AdSupport.framework in Frameworks */,
 				451F44FC18CEA92D00EC38A3 /* MessageUI.framework in Frameworks */,
-				45B9615418D2124A00B8FDD0 /* libAdIdAccess.a in Frameworks */,
 				45AFD5E218C1284A002C18F9 /* AVFoundation.framework in Frameworks */,
-				45B9615518D2124A00B8FDD0 /* libGoogleAnalyticsServices.a in Frameworks */,
 				45DEC7DC18BBC07100A92550 /* libsqlite3.dylib in Frameworks */,
 				4525187718B6750800D1B561 /* CoreGraphics.framework in Frameworks */,
 				4525187918B6750800D1B561 /* UIKit.framework in Frameworks */,
 				4525187518B6750800D1B561 /* Foundation.framework in Frameworks */,
+				4C5C4CFAC0501175A4E182E4 /* Pods_yourlifeyourvoice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -917,6 +914,7 @@
 				4525189018B6750800D1B561 /* UIKit.framework in Frameworks */,
 				45D8276F18C780510055ADA5 /* libsqlite3.dylib in Frameworks */,
 				4525188F18B6750800D1B561 /* Foundation.framework in Frameworks */,
+				C7B8B0C18BB1CBF38AA46367 /* Pods_yourlifeyourvoiceTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -932,6 +930,7 @@
 				4525187218B6750800D1B561 /* Products */,
 				452518AA18B6774E00D1B561 /* Resources */,
 				452518A918B6774E00D1B561 /* Fonts */,
+				E9AD142C19B3B487FC7724B8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -950,8 +949,6 @@
 				45B9615C18D21BCC00B8FDD0 /* libz.dylib */,
 				45B9615A18D21BC300B8FDD0 /* SystemConfiguration.framework */,
 				45B9615818D21BBD00B8FDD0 /* CoreData.framework */,
-				45B9615618D21BB400B8FDD0 /* AdSupport.framework */,
-				45B9614A18D2124A00B8FDD0 /* GoogleAnalytics */,
 				451F44FB18CEA92D00EC38A3 /* MessageUI.framework */,
 				45AFD5E118C1284A002C18F9 /* AVFoundation.framework */,
 				45DEC7DB18BBC07100A92550 /* libsqlite3.dylib */,
@@ -959,6 +956,8 @@
 				4525187618B6750800D1B561 /* CoreGraphics.framework */,
 				4525187818B6750800D1B561 /* UIKit.framework */,
 				4525188D18B6750800D1B561 /* XCTest.framework */,
+				7B6652118DC24942538F0A5B /* Pods_yourlifeyourvoice.framework */,
+				FB93A8504ED1D9FC2D2455A0 /* Pods_yourlifeyourvoiceTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -979,6 +978,7 @@
 		4525187B18B6750800D1B561 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4533EC362455E41100BB0DC9 /* GoogleService-Info.plist */,
 				4525187C18B6750800D1B561 /* yourlifeyourvoice-Info.plist */,
 				4525187D18B6750800D1B561 /* InfoPlist.strings */,
 				4525188018B6750800D1B561 /* main.m */,
@@ -1490,30 +1490,6 @@
 			name = "face stills";
 			sourceTree = "<group>";
 		};
-		45B9614A18D2124A00B8FDD0 /* GoogleAnalytics */ = {
-			isa = PBXGroup;
-			children = (
-				45B9614B18D2124A00B8FDD0 /* libAdIdAccess.a */,
-				45B9614C18D2124A00B8FDD0 /* libGoogleAnalyticsServices.a */,
-				45B9614D18D2124A00B8FDD0 /* Library */,
-			);
-			name = GoogleAnalytics;
-			path = Frameworks/GoogleAnalytics;
-			sourceTree = "<group>";
-		};
-		45B9614D18D2124A00B8FDD0 /* Library */ = {
-			isa = PBXGroup;
-			children = (
-				45B9614E18D2124A00B8FDD0 /* GAI.h */,
-				45B9614F18D2124A00B8FDD0 /* GAIDictionaryBuilder.h */,
-				45B9615018D2124A00B8FDD0 /* GAIFields.h */,
-				45B9615118D2124A00B8FDD0 /* GAILogger.h */,
-				45B9615218D2124A00B8FDD0 /* GAITrackedViewController.h */,
-				45B9615318D2124A00B8FDD0 /* GAITracker.h */,
-			);
-			path = Library;
-			sourceTree = "<group>";
-		};
 		45BCA68F1E371FD0009E2A22 /* angry.atlasc */ = {
 			isa = PBXGroup;
 			children = (
@@ -1888,6 +1864,17 @@
 			name = Database;
 			sourceTree = "<group>";
 		};
+		E9AD142C19B3B487FC7724B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E34D5B197FCDC40754E35 /* Pods-yourlifeyourvoice.debug.xcconfig */,
+				67D80D6D569D374C34FAA988 /* Pods-yourlifeyourvoice.release.xcconfig */,
+				BAF9FD3ACA0C2617E89A3E72 /* Pods-yourlifeyourvoiceTests.debug.xcconfig */,
+				B5CF5535370B96B9D217380A /* Pods-yourlifeyourvoiceTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1895,9 +1882,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4525189D18B6750800D1B561 /* Build configuration list for PBXNativeTarget "yourlifeyourvoice" */;
 			buildPhases = (
+				77CB7972C2386078EE52F2BB /* [CP] Check Pods Manifest.lock */,
 				4525186D18B6750800D1B561 /* Sources */,
 				4525186E18B6750800D1B561 /* Frameworks */,
 				4525186F18B6750800D1B561 /* Resources */,
+				2664D791B679C867826DE807 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1912,6 +1901,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 452518A018B6750800D1B561 /* Build configuration list for PBXNativeTarget "yourlifeyourvoiceTests" */;
 			buildPhases = (
+				E09ED2FB9918C8F0CFD05FC1 /* [CP] Check Pods Manifest.lock */,
 				4525188818B6750800D1B561 /* Sources */,
 				4525188918B6750800D1B561 /* Frameworks */,
 				4525188A18B6750800D1B561 /* Resources */,
@@ -1937,7 +1927,7 @@
 				ORGANIZATIONNAME = "Banyan Communications";
 				TargetAttributes = {
 					4525187018B6750800D1B561 = {
-						DevelopmentTeam = 59D2RY7Q66;
+						DevelopmentTeam = CUEURXH9W3;
 					};
 					4525188B18B6750800D1B561 = {
 						TestTargetID = 4525187018B6750800D1B561;
@@ -1949,6 +1939,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 4525186818B6750800D1B561;
@@ -2092,6 +2083,7 @@
 				45BCA71A1E371FD0009E2A22 /* invisible.1.png in Resources */,
 				452518DE18B6892400D1B561 /* icon_button_add.png in Resources */,
 				452365CE18CA5084008AA4FC /* face_proud_end.png in Resources */,
+				4533EC372455E41100BB0DC9 /* GoogleService-Info.plist in Resources */,
 				452518EE18B6892400D1B561 /* icon_navbar_menu.png in Resources */,
 				45BCA6761E371FBE009E2A22 /* face_guilty_start@2x.png in Resources */,
 				45BCA7101E371FD0009E2A22 /* frustrated.1.png in Resources */,
@@ -2244,6 +2236,7 @@
 				452365A918CA5084008AA4FC /* face_embarrassed_end@2x.png in Resources */,
 				452365A318CA5084008AA4FC /* face_depressed_start.png in Resources */,
 				452365D918CA5084008AA4FC /* face_relieved_end@2x.png in Resources */,
+				4533EC382455E41100BB0DC9 /* GoogleService-Info.plist in Resources */,
 				45AFD5E618C134E8002C18F9 /* icon_button_play.png in Resources */,
 				455D89FC1BC235D700256F7E /* face_anxious_start.png in Resources */,
 				455D8A341BC235D700256F7E /* face_sad_end.png in Resources */,
@@ -2313,6 +2306,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2664D791B679C867826DE807 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-yourlifeyourvoice/Pods-yourlifeyourvoice-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-yourlifeyourvoice/Pods-yourlifeyourvoice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77CB7972C2386078EE52F2BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yourlifeyourvoice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E09ED2FB9918C8F0CFD05FC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yourlifeyourvoiceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4525186D18B6750800D1B561 /* Sources */ = {
@@ -2563,17 +2625,18 @@
 		};
 		4525189E18B6750800D1B561 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE8E34D5B197FCDC40754E35 /* Pods-yourlifeyourvoice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 59D2RY7Q66;
+				DEVELOPMENT_TEAM = CUEURXH9W3;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "yourlifeyourvoice/yourlifeyourvoice-Prefix.pch";
 				INFOPLIST_FILE = "yourlifeyourvoice/yourlifeyourvoice-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/Frameworks/GoogleAnalytics",
@@ -2587,17 +2650,18 @@
 		};
 		4525189F18B6750800D1B561 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67D80D6D569D374C34FAA988 /* Pods-yourlifeyourvoice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 59D2RY7Q66;
+				DEVELOPMENT_TEAM = CUEURXH9W3;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "yourlifeyourvoice/yourlifeyourvoice-Prefix.pch";
 				INFOPLIST_FILE = "yourlifeyourvoice/yourlifeyourvoice-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/Frameworks/GoogleAnalytics",
@@ -2611,6 +2675,7 @@
 		};
 		452518A118B6750800D1B561 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAF9FD3ACA0C2617E89A3E72 /* Pods-yourlifeyourvoiceTests.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/yourlifeyourvoice.app/yourlifeyourvoice";
@@ -2634,6 +2699,7 @@
 		};
 		452518A218B6750800D1B561 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5CF5535370B96B9D217380A /* Pods-yourlifeyourvoiceTests.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/yourlifeyourvoice.app/yourlifeyourvoice";

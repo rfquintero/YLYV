@@ -75,7 +75,7 @@
 }
 
 -(void)saveSelected {
-    [self trackEvent:@"New Mood Entry" action:@"entry saved" label:nil value:nil];
+    [self trackEvent:@"new_mood_entry" action:@"entry saved" label:nil];
     [self.model save];
 }
 
@@ -159,7 +159,7 @@
 }
 
 -(void)callSelected {
-    [self trackEvent:BYCTrackingContact action:@"call" label:@"new entry" value:nil];
+    [self trackEvent:BYCTrackingContact action:@"call" label:@"new entry"];
     [self callYLYV];
 }
 

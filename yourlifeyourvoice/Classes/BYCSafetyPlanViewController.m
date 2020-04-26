@@ -20,9 +20,9 @@
     self.screenName = @"Safety Plan";
     [self setupMenuButton];
 }
-
+ 
 -(void)emailSelected {
-    [self trackEvent:BYCTrackingContact action:@"email" label:@"safety plan" value:nil];
+    [self trackEvent:BYCTrackingContact action:@"email" label:@"safety plan"];
     if([MFMailComposeViewController canSendMail]) {
         NSString *path = [[NSBundle mainBundle] pathForResource:@"safety_plan" ofType:@"pdf"];
         NSData *data = [NSData dataWithContentsOfFile:path];

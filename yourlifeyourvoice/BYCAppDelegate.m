@@ -12,7 +12,7 @@
 #import "BYCEntryViewController.h"
 #import "BYCEntry.h"
 #import "BYCMigrationModel.h"
-#import "GAIDictionaryBuilder.h"
+@import Firebase;
 
 @interface BYCAppDelegate()<UIAlertViewDelegate>
 @property (nonatomic) BYCApplicationState *applicationState;
@@ -24,7 +24,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     application.applicationSupportsShakeToEdit = YES;
     
-    [self setupTracker];
+    [FIRApp configure];
 
     BYCSplitViewController *splitViewController = [[BYCSplitViewController alloc] init];
     BYCApplicationState *applicationState = [[BYCApplicationState alloc] initWithBlocker:splitViewController.blocker];
@@ -42,12 +42,6 @@
     
     [self.window makeKeyAndVisible];
     return YES;
-}
-
--(void)setupTracker {
-    [[GAI sharedInstance] setTrackUncaughtExceptions:YES];
-    [[GAI sharedInstance] setDispatchInterval:60.0f];
-    [[GAI sharedInstance] trackerWithTrackingId:@"UA-3928670-32"];
 }
 
 -(void)launchCheck {

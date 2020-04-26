@@ -27,7 +27,7 @@
 }
 
 -(void)nextTip {
-    [self trackEvent:@"Life Tips" action:@"next tip" label:nil value:nil];
+    [self trackEvent:@"life_tips" action:@"next tip" label:nil];
     [self nextTip:YES];
 }
 

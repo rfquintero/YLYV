@@ -1,5 +1,4 @@
 #import "BYCViewController.h"
-#import "GAIDictionaryBuilder.h"
 
 @interface BYCViewController ()<UIAlertViewDelegate>
 @property (nonatomic, readwrite) BYCApplicationState *applicationState;
@@ -68,9 +67,15 @@
     }
 }
 
--(void)trackEvent:(NSString*)category action:(NSString*)action label:(NSString*)label value:(NSNumber*)value {
-    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
-    [tracker send:[[GAIDictionaryBuilder createEventWithCategory:category action:action label:label value:value] build]];
+-(void)trackEvent:(NSString*)name action:(NSString*)action label:(NSString*)label {
+    [FIRAnalytics logEventWithName:name parameters:@{
+        @"action":action,
+        @"label": label
+    }];
+}
+
+-(void)setScreenName:(NSString *)screenName {
+    [FIRAnalytics setScreenName:screenName screenClass:nil];
 }
 
 -(void)showError:(NSString*)title message:(NSString*)message {
