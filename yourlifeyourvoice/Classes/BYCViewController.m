@@ -27,6 +27,11 @@
     self.navigationController.navigationBar.hidden = YES;
 }
 
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [FIRAnalytics setScreenName:self.screenName screenClass:nil];
+}
+
 -(void)setupMenuButton {
     [self.navView setupMenuButton:self action:@selector(showMenu)];
 }
@@ -68,14 +73,14 @@
 }
 
 -(void)trackEvent:(NSString*)name action:(NSString*)action label:(NSString*)label {
-    [FIRAnalytics logEventWithName:name parameters:@{
-        @"action":action,
-        @"label": label
-    }];
-}
-
--(void)setScreenName:(NSString *)screenName {
-    [FIRAnalytics setScreenName:screenName screenClass:nil];
+    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+    if(action) {
+        params[@"action"] = action;
+    }
+    if(label) {
+        params[@"label"] = label;
+    }
+    [FIRAnalytics logEventWithName:name parameters:params];
 }
 
 -(void)showError:(NSString*)title message:(NSString*)message {
