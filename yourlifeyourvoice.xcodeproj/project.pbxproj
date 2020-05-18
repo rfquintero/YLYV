@@ -1927,7 +1927,7 @@
 				ORGANIZATIONNAME = "Banyan Communications";
 				TargetAttributes = {
 					4525187018B6750800D1B561 = {
-						DevelopmentTeam = CUEURXH9W3;
+						DevelopmentTeam = 59D2RY7Q66;
 					};
 					4525188B18B6750800D1B561 = {
 						TestTargetID = 4525187018B6750800D1B561;
@@ -2631,7 +2631,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = CUEURXH9W3;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 59D2RY7Q66;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "yourlifeyourvoice/yourlifeyourvoice-Prefix.pch";
@@ -2641,6 +2642,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/Frameworks/GoogleAnalytics",
 				);
+				MARKETING_VERSION = 2.4;
 				PRODUCT_BUNDLE_IDENTIFIER = org.boystown.myvoice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -2656,7 +2658,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = CUEURXH9W3;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 59D2RY7Q66;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "yourlifeyourvoice/yourlifeyourvoice-Prefix.pch";
@@ -2666,6 +2669,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/Frameworks/GoogleAnalytics",
 				);
+				MARKETING_VERSION = 2.4;
 				PRODUCT_BUNDLE_IDENTIFIER = org.boystown.myvoice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
