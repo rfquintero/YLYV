@@ -486,6 +486,7 @@
 		45DEC7D818BBBE4800A92550 /* BYCDatabaseUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DEC7D618BBBE4800A92550 /* BYCDatabaseUtilities.m */; };
 		45DEC7DC18BBC07100A92550 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 45DEC7DB18BBC07100A92550 /* libsqlite3.dylib */; };
 		45E735B324737089000665D3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E735B224737089000665D3 /* WebKit.framework */; };
+		45E735B524737E07000665D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E735B424737E07000665D3 /* LaunchScreen.storyboard */; };
 		4C5C4CFAC0501175A4E182E4 /* Pods_yourlifeyourvoice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B6652118DC24942538F0A5B /* Pods_yourlifeyourvoice.framework */; };
 		C7B8B0C18BB1CBF38AA46367 /* Pods_yourlifeyourvoiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB93A8504ED1D9FC2D2455A0 /* Pods_yourlifeyourvoiceTests.framework */; };
 /* End PBXBuildFile section */
@@ -882,6 +883,7 @@
 		45DEC7D618BBBE4800A92550 /* BYCDatabaseUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCDatabaseUtilities.m; sourceTree = "<group>"; };
 		45DEC7DB18BBC07100A92550 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		45E735B224737089000665D3 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		45E735B424737E07000665D3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67D80D6D569D374C34FAA988 /* Pods-yourlifeyourvoice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yourlifeyourvoice.release.xcconfig"; path = "Target Support Files/Pods-yourlifeyourvoice/Pods-yourlifeyourvoice.release.xcconfig"; sourceTree = "<group>"; };
 		7B6652118DC24942538F0A5B /* Pods_yourlifeyourvoice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yourlifeyourvoice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5CF5535370B96B9D217380A /* Pods-yourlifeyourvoiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yourlifeyourvoiceTests.release.xcconfig"; path = "Target Support Files/Pods-yourlifeyourvoiceTests/Pods-yourlifeyourvoiceTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -975,6 +977,7 @@
 				457AD73F200F1F7700592043 /* safety_plan.pdf */,
 				4525188618B6750800D1B561 /* Images.xcassets */,
 				4525187B18B6750800D1B561 /* Supporting Files */,
+				45E735B424737E07000665D3 /* LaunchScreen.storyboard */,
 			);
 			path = yourlifeyourvoice;
 			sourceTree = "<group>";
@@ -1940,11 +1943,11 @@
 			};
 			buildConfigurationList = 4525186C18B6750800D1B561 /* Build configuration list for PBXProject "yourlifeyourvoice" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
+				Base,
 			);
 			mainGroup = 4525186818B6750800D1B561;
 			productRefGroup = 4525187218B6750800D1B561 /* Products */;
@@ -1990,6 +1993,7 @@
 				455D8A0F1BC235D700256F7E /* face_embarassed_end.png in Resources */,
 				45BCA71C1E371FD0009E2A22 /* lonely.1.png in Resources */,
 				455D8A111BC235D700256F7E /* face_embarassed_end@2x.png in Resources */,
+				45E735B524737E07000665D3 /* LaunchScreen.storyboard in Resources */,
 				452365DA18CA5084008AA4FC /* face_relieved_start.png in Resources */,
 				452518EC18B6892400D1B561 /* icon_navbar_close@2x.png in Resources */,
 				45BCA6FC1E371FD0009E2A22 /* cautious.1.png in Resources */,
@@ -2635,17 +2639,14 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 59D2RY7Q66;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "yourlifeyourvoice/yourlifeyourvoice-Prefix.pch";
 				INFOPLIST_FILE = "yourlifeyourvoice/yourlifeyourvoice-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/Frameworks/GoogleAnalytics",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 2.4;
 				PRODUCT_BUNDLE_IDENTIFIER = org.boystown.myvoice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2662,17 +2663,14 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 59D2RY7Q66;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "yourlifeyourvoice/yourlifeyourvoice-Prefix.pch";
 				INFOPLIST_FILE = "yourlifeyourvoice/yourlifeyourvoice-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/Frameworks/GoogleAnalytics",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 2.4;
 				PRODUCT_BUNDLE_IDENTIFIER = org.boystown.myvoice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
