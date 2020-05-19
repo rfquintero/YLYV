@@ -1,16 +1,16 @@
 #import "BYCPdfView.h"
 #import "BYCNavigationView.h"
+#import <WebKit/WebKit.h>
 
 @interface BYCPdfView()
-@property (nonatomic) UIWebView *webView;
+@property (nonatomic) WKWebView *webView;
 @end
 
 @implementation BYCPdfView
 
 -(id)initWithFrame:(CGRect)frame {
     if(self = [super initWithFrame:frame]) {
-        self.webView = [[UIWebView alloc] initWithFrame:frame];
-        self.webView.scalesPageToFit = YES;
+        self.webView = [[WKWebView alloc] initWithFrame:frame];
         
         [self addSubview:self.webView];
     }

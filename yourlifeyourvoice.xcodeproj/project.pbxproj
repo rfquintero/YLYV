@@ -485,6 +485,7 @@
 		45DEC7D718BBBE4800A92550 /* BYCDatabaseUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DEC7D618BBBE4800A92550 /* BYCDatabaseUtilities.m */; };
 		45DEC7D818BBBE4800A92550 /* BYCDatabaseUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DEC7D618BBBE4800A92550 /* BYCDatabaseUtilities.m */; };
 		45DEC7DC18BBC07100A92550 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 45DEC7DB18BBC07100A92550 /* libsqlite3.dylib */; };
+		45E735B324737089000665D3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E735B224737089000665D3 /* WebKit.framework */; };
 		4C5C4CFAC0501175A4E182E4 /* Pods_yourlifeyourvoice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B6652118DC24942538F0A5B /* Pods_yourlifeyourvoice.framework */; };
 		C7B8B0C18BB1CBF38AA46367 /* Pods_yourlifeyourvoiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB93A8504ED1D9FC2D2455A0 /* Pods_yourlifeyourvoiceTests.framework */; };
 /* End PBXBuildFile section */
@@ -880,6 +881,7 @@
 		45DEC7D518BBBE4800A92550 /* BYCDatabaseUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCDatabaseUtilities.h; sourceTree = "<group>"; };
 		45DEC7D618BBBE4800A92550 /* BYCDatabaseUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYCDatabaseUtilities.m; sourceTree = "<group>"; };
 		45DEC7DB18BBC07100A92550 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		45E735B224737089000665D3 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		67D80D6D569D374C34FAA988 /* Pods-yourlifeyourvoice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yourlifeyourvoice.release.xcconfig"; path = "Target Support Files/Pods-yourlifeyourvoice/Pods-yourlifeyourvoice.release.xcconfig"; sourceTree = "<group>"; };
 		7B6652118DC24942538F0A5B /* Pods_yourlifeyourvoice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yourlifeyourvoice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5CF5535370B96B9D217380A /* Pods-yourlifeyourvoiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yourlifeyourvoiceTests.release.xcconfig"; path = "Target Support Files/Pods-yourlifeyourvoiceTests/Pods-yourlifeyourvoiceTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -903,6 +905,7 @@
 				4525187918B6750800D1B561 /* UIKit.framework in Frameworks */,
 				4525187518B6750800D1B561 /* Foundation.framework in Frameworks */,
 				4C5C4CFAC0501175A4E182E4 /* Pods_yourlifeyourvoice.framework in Frameworks */,
+				45E735B324737089000665D3 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -946,6 +949,7 @@
 		4525187318B6750800D1B561 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				45E735B224737089000665D3 /* WebKit.framework */,
 				45B9615C18D21BCC00B8FDD0 /* libz.dylib */,
 				45B9615A18D21BC300B8FDD0 /* SystemConfiguration.framework */,
 				45B9615818D21BBD00B8FDD0 /* CoreData.framework */,
