@@ -2,6 +2,7 @@
 #import "BYCUI.h"
 #import "BYCSideViewCell.h"
 #import "BYCConstants.h"
+#import "BYCNavigationView.h"
 
 @interface BYCSideView()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic) UITableView *tableView;
@@ -41,9 +42,8 @@
 
 -(void)layoutSubviews {
     [super layoutSubviews];
-    CGFloat extra = SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0") ? 20 : 0;
-    CGFloat offsetY = 44 + extra;
-    [self.closeButton setFrameAtOriginThatFitsUnbounded:CGPointMake(10, 2+extra)];
+    CGFloat offsetY = [BYCNavigationView navbarHeight];
+    [self.closeButton setFrameAtOriginThatFitsUnbounded:CGPointMake(10, 2+[BYCNavigationView navbarInset])];
     self.tableView.frame = CGRectMake(0, offsetY, self.bounds.size.width, self.bounds.size.height-offsetY);
 }
 

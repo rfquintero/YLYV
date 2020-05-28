@@ -25,7 +25,7 @@
         self.tableView.rowHeight = 60.0f;
         self.tableView.separatorColor = [UIColor lightGrayColor];
         self.tableView.backgroundColor = [UIColor bgLightGray];
-        self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, [BYCNavigationView navbarHeight])];
+        [BYCUI setContentInsets:self.tableView];
         
         self.bottomBar = [[UIView alloc] initWithFrame:CGRectZero];
         self.bottomBar.backgroundColor = [UIColor bgSidebarGray];

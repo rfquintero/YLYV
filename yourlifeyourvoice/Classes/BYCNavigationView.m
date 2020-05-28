@@ -48,10 +48,7 @@
 -(void)layoutSubviews {
     [super layoutSubviews];
     CGFloat width = self.bounds.size.width;
-    CGFloat extra = 0;
-    if(SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")) {
-        extra = 20;
-    }
+    CGFloat extra = [BYCNavigationView navbarInset];
     
     self.barView.frame = CGRectMake(0, 0, width, kBarHeight+extra);
     [self.leftButton centerVerticallyAtX:0 inBounds:self.barView.bounds thatFits:CGSizeUnbounded offsetY:extra/2];
@@ -155,8 +152,12 @@
     self.barView.userInteractionEnabled = active;
 }
 
++(CGFloat)navbarInset {
+    return [BYCUI topWindowInset] + (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0") ? 20.0f : 0.0f);
+}
+
 +(CGFloat)navbarHeight {
-    return kBarHeight + (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0") ? 20.0f : 0.0f);
+    return kBarHeight + [self navbarInset];
 }
 
 @end

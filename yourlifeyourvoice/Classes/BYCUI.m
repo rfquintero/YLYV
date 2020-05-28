@@ -1,5 +1,6 @@
 #import "BYCUI.h"
 #import <QuartzCore/QuartzCore.h>
+#import "BYCNavigationView.h"
 
 #define CREATE_FONT(fontName, labelName, font) \
 +(UIFont *)fontName:(CGFloat)size { \
@@ -66,5 +67,33 @@ CREATE_FONT(roundFontOfSize, labelWithRoundFontSize, @"ArialRoundedMTBold");
 +(NSString*)formatNumber:(NSNumber*)number {
     return [[self numberFormatter] stringFromNumber:number];
 }
+
++(CGFloat)topWindowInset {
+    if (@available(iOS 11.0, *)) {
+        if([UIApplication sharedApplication].keyWindow.safeAreaInsets.top > 20) {
+            return 20;
+        }
+    }
+    return 0;
+}
+
++(CGFloat)bottomWindowInset {
+    if (@available(iOS 11.0, *)) {
+        if([UIApplication sharedApplication].keyWindow.safeAreaInsets.top > 20) {
+            return [UIApplication sharedApplication].keyWindow.safeAreaInsets.bottom;
+        }
+    }
+    return 0;
+}
+
++(void)setContentInsets:(UIScrollView*)scrollView {
+    scrollView.contentInset = UIEdgeInsetsMake([BYCNavigationView navbarHeight], 0, [self bottomWindowInset], 0);
+    
+    if (@available(iOS 11.0, *)) {
+        scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    } else {
+    }
+}
+
 
 @end

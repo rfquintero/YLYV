@@ -12,7 +12,7 @@
     if (self) {
         self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectZero];
         self.scrollView.backgroundColor = [UIColor bgLightGray];
-        self.scrollView.contentInset = UIEdgeInsetsMake(44, 0, 0, 0);
+        [BYCUI setContentInsets:self.scrollView];
         
         [self addSubview:self.scrollView];
     }

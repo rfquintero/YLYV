@@ -20,8 +20,8 @@
         self.tableView.rowHeight = 70.0f;
         self.tableView.separatorColor = [UIColor lightGrayColor];
         self.tableView.backgroundColor = [UIColor bgLightGray];
+        [BYCUI setContentInsets:self.tableView];
         
-        self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 44)];
         
         self.loadingMore = YES;
         

@@ -17,5 +17,6 @@
 -(void)setLeftButton2Hidden:(BOOL)hidden animated:(BOOL)animated;
 -(void)setButtonsAcive:(BOOL)active;
 
++(CGFloat)navbarInset;
 +(CGFloat)navbarHeight;
 @end

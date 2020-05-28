@@ -43,7 +43,8 @@
     [self.title centerHorizonallyAtY:10.0f inBounds:self.bounds thatFits:maxSize];
     
     CGSize tapSize = [self.tap sizeThatFits:maxSize];
-    [self.tap centerHorizonallyAtY:self.bounds.size.height-tapSize.height-15.0f-self.scrollView.contentInset.top inBounds:self.bounds withSize:tapSize];
+    [self.tap centerHorizonallyAtY:self.bounds.size.height-tapSize.height-15.0f-self.scrollView.contentInset.top-self.scrollView.contentInset.bottom inBounds:self.bounds withSize:tapSize];
+    
     [self setContentHeight:CGRectGetMaxY(self.tap.frame)];
 }
 

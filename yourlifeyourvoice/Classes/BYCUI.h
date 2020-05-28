@@ -16,4 +16,8 @@
 +(NSString*)pluralize:(NSUInteger)number singular:(NSString*)singular;
 +(NSString*)pluralize:(NSUInteger)number singular:(NSString*)singular plural:(NSString*)plural;
 +(NSString*)formatNumber:(NSNumber*)number;
+
++(CGFloat)topWindowInset;
++(CGFloat)bottomWindowInset;
++(void)setContentInsets:(UIScrollView*)scrollView;
 @end

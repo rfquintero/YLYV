@@ -22,8 +22,7 @@
         self.tableView.dataSource = self;
         self.tableView.rowHeight = 50.0f;
         self.tableView.backgroundColor = [UIColor bgLightGray];
-        
-        self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 44)];
+        [BYCUI setContentInsets:self.tableView];
         
         UIButton *clear = [BYCUI deleteButtonWithTarget:self action:@selector(clearSelected)];
         [clear setTitle:@"CLEAR" forState:UIControlStateNormal];
