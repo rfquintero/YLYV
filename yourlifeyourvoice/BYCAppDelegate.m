@@ -39,7 +39,6 @@
     [BYCEntry createDirectories];
     [self launchCheck];
     
-    
     [self.window makeKeyAndVisible];
     return YES;
 }

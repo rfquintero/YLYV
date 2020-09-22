@@ -1,5 +1,6 @@
 #import "BYCReminderViewController.h"
 #import "BYCReminderView.h"
+#import "BYCNotifications.h"
 
 @interface BYCReminderViewController ()<BYCReminderViewDelegate>
 @property (nonatomic) BYCReminderView *entryView;
@@ -45,16 +46,17 @@
 }
 
 -(void)setupNotification {
-    [[UIApplication sharedApplication] cancelAllLocalNotifications];
-    if(self.time.active) {
-        UILocalNotification *notification = [[UILocalNotification alloc] init];
-        notification.fireDate = self.time.date;
-        notification.timeZone = [NSTimeZone defaultTimeZone];
-        notification.repeatInterval = NSCalendarUnitDay;
-        notification.alertBody = @"How are you feeling?";
-        notification.alertAction = @"New Entry";
-        [[UIApplication sharedApplication] scheduleLocalNotification:notification];
-    }
+    [BYCNotifications setReminderTime:self.time completion:^(BOOL successful) {
+        if(!successful) {
+            [self removeNotification];
+        }
+    }];
+}
+
+-(void)removeNotification {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Oops!" message:@"Unable to setup a reminder. Please check in Settings that Notifications are allowed for this application." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [self.entryView setActive:NO];
+    [alert show];
 }
 
 @end

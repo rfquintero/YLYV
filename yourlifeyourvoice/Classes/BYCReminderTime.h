@@ -5,6 +5,7 @@
 @property (nonatomic, readonly) NSInteger minute;
 @property (nonatomic, readonly) NSString *string;
 @property (nonatomic, readonly) NSDate *date;
+@property (nonatomic, readonly) NSDateComponents *components;
 @property (nonatomic) BOOL active;
 
 -(void)setTimeWithDate:(NSDate*)date;

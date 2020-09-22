@@ -1,7 +1,7 @@
 #import "BYCReminderTime.h"
 
 @interface BYCReminderTime()
-@property (nonatomic) NSDateComponents *components;
+@property (nonatomic, readwrite) NSDateComponents *components;
 @property (nonatomic, readwrite) NSDate *date;
 @end
 

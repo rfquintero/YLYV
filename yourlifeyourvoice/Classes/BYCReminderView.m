@@ -67,6 +67,11 @@
     [self.textButton centerHorizonallyAtY:CGRectGetMaxY(self.timeButton.frame)+40.0f inBounds:self.bounds thatFits:CGSizeMake(200, CGFLOAT_MAX)];
 }
 
+-(void)setActive:(BOOL)active {
+    self.switchView.on = active;
+    [self setNeedsLayout];
+}
+
 -(void)setTime:(BYCReminderTime*)time {
     [self.picker setDate:time.date animated:NO];
     self.switchView.on = time.active;

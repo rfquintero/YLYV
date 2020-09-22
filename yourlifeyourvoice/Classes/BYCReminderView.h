@@ -8,5 +8,6 @@
 
 @interface BYCReminderView : BYCContentView
 -(void)setTime:(BYCReminderTime*)time;
+-(void)setActive:(BOOL)active;
 -(void)setDelegate:(id<BYCReminderViewDelegate>)delegate;
 @end

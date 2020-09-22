@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		451CE62F25197268004101A2 /* BYCNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 451CE62E25197268004101A2 /* BYCNotifications.m */; };
 		451F44F918CE8F0F00EC38A3 /* responses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 451F44F818CE8F0F00EC38A3 /* responses.plist */; };
 		451F44FA18CE8F0F00EC38A3 /* responses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 451F44F818CE8F0F00EC38A3 /* responses.plist */; };
 		451F44FC18CEA92D00EC38A3 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 451F44FB18CEA92D00EC38A3 /* MessageUI.framework */; };
@@ -502,6 +503,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		451CE62D25197268004101A2 /* BYCNotifications.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYCNotifications.h; sourceTree = "<group>"; };
+		451CE62E25197268004101A2 /* BYCNotifications.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYCNotifications.m; sourceTree = "<group>"; };
 		451F44F818CE8F0F00EC38A3 /* responses.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = responses.plist; sourceTree = "<group>"; };
 		451F44FB18CEA92D00EC38A3 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		451F44FF18CF935700EC38A3 /* BYCMigrationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYCMigrationModel.h; sourceTree = "<group>"; };
@@ -1104,6 +1107,8 @@
 				452518B318B679DE00D1B561 /* BYCApplicationState.m */,
 				45D8278918C7A0660055ADA5 /* BYCQueue.h */,
 				45D8278A18C7A0660055ADA5 /* BYCQueue.m */,
+				451CE62D25197268004101A2 /* BYCNotifications.h */,
+				451CE62E25197268004101A2 /* BYCNotifications.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -2398,6 +2403,7 @@
 				4525190218B68CCA00D1B561 /* BYCEntryViewController.m in Sources */,
 				4523653D18C91282008AA4FC /* BYCEntryDetailsViewController.m in Sources */,
 				45AFD5DB18C10C4F002C18F9 /* BYCAddAudioView.m in Sources */,
+				451CE62F25197268004101A2 /* BYCNotifications.m in Sources */,
 				458F0FBF18BFC631002FEC75 /* BYCActionView.m in Sources */,
 				452365F918CA6F09008AA4FC /* BYCInfoViewController.m in Sources */,
 				452518CA18B67D9200D1B561 /* BYCSideView.m in Sources */,
