@@ -48,7 +48,7 @@
 -(void)setupNotification {
     [BYCNotifications setReminderTime:self.time completion:^(BOOL successful) {
         if(!successful) {
-            [self removeNotification];
+            [self performSelectorOnMainThread:@selector(removeNotification) withObject:nil waitUntilDone:NO];
         }
     }];
 }

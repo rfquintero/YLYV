@@ -39,6 +39,9 @@
         self.picker = [[UIDatePicker alloc] initWithFrame:CGRectZero];
         [self.picker addTarget:self action:@selector(timeSelected) forControlEvents:UIControlEventValueChanged];
         self.picker.datePickerMode = UIDatePickerModeTime;
+        if (@available(iOS 13.4, *)) {
+            self.picker.preferredDatePickerStyle = UIDatePickerStyleWheels;
+        }
         self.picker.minuteInterval = 1;
         self.picker.backgroundColor = [UIColor whiteColor];
         
@@ -59,7 +62,7 @@
     CGFloat height = self.bounds.size.height;
     
     CGSize pickerSize = [self.picker sizeThatFits:CGSizeUnbounded];
-    self.picker.frame = CGRectMake(0, self.blocker.hidden ? height : height-pickerSize.height, pickerSize.width, pickerSize.height);
+    [self.picker centerHorizonallyAtY:(self.blocker.hidden ? height : height-pickerSize.height) inBounds:self.bounds withSize:CGSizeMake(self.bounds.size.width, pickerSize.height)];
     self.blocker.frame = CGRectMake(0, 0, self.bounds.size.width, height-pickerSize.height);
     
     [self.switchView centerHorizonallyAtY:40.0f inBounds:self.bounds thatFits:CGSizeUnbounded];
